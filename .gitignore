@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Config local del editor/agente (no necesario para el sitio)
+.claude/
