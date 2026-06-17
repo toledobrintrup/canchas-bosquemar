@@ -93,3 +93,34 @@ tfoot td{font-family:'Saira Condensed';font-style:italic;font-weight:900;font-si
 .pos{color:#0a8f4a;font-weight:700}.neg{color:#c0392b;font-weight:700}
 
 @media(max-width:900px){.side{display:none}.kpis{grid-template-columns:1fr 1fr}.grid2,.charts{grid-template-columns:1fr}}
+
+/* ===== componentes módulos ERP ===== */
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.chip2{padding:8px 16px;border-radius:10px;background:#fff;box-shadow:var(--shadow);font-weight:800;font-size:.82rem;cursor:pointer;font-family:'Saira Condensed';font-style:italic;text-transform:uppercase;color:var(--slate)}
+.chip2.on{background:var(--grad-hot);color:#fff}
+.cal-day-grid{display:grid;grid-template-columns:68px repeat(3,1fr);gap:6px;padding:18px}
+.cal-day-grid .hd{font-family:'Saira Condensed';font-style:italic;font-weight:800;text-transform:uppercase;text-align:center;padding:8px 0;color:var(--ink)}
+.cal-day-grid .hr{font-size:.8rem;color:var(--slate);font-weight:600;display:flex;align-items:center;justify-content:flex-end;padding-right:8px}
+.slotcell{background:var(--bg);border-radius:9px;min-height:48px;padding:7px 9px;font-size:.76rem;font-weight:700;display:flex;flex-direction:column;justify-content:center}
+.slotcell small{font-weight:500;opacity:.8}
+.slotcell.bk{background:var(--grad);color:#022}
+.slotcell.bk.o{background:var(--grad-hot);color:#fff}
+.slotcell.free{color:#a9bcb7;align-items:center;justify-content:center;font-weight:600}
+.cli{display:flex;align-items:center;gap:10px}
+.cli .av{width:34px;height:34px;border-radius:50%;background:var(--grad);display:grid;place-items:center;color:#022;font-weight:800;font-family:'Saira Condensed';font-style:italic;font-size:.8rem;flex:none}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:22px}
+.court-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.court-top{height:84px;background:var(--grad-night);display:flex;align-items:flex-end;justify-content:space-between;padding:14px;color:#eafffb}
+.court-top h3{font-style:italic;font-weight:900;text-transform:uppercase;font-size:1.4rem}
+.court-body{padding:8px 16px 14px}
+.court-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.court-row:last-child{border-bottom:0}.court-row b{font-weight:700}
+.cfg-row{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line);gap:14px}
+.cfg-row:last-child{border-bottom:0}
+.cfg-row .lab b{display:block;font-size:.95rem}.cfg-row .lab span{font-size:.82rem;color:var(--slate)}
+.inp{border:1.5px solid var(--line);border-radius:9px;padding:9px 12px;font-family:inherit;font-weight:700;width:150px;text-align:right;color:var(--ink);background:#fff}
+.toggle{width:46px;height:26px;border-radius:999px;background:var(--line);position:relative;cursor:pointer;flex:none}
+.toggle.on{background:var(--teal)}
+.toggle::after{content:"";position:absolute;width:20px;height:20px;border-radius:50%;background:#fff;top:3px;left:3px;transition:.15s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.toggle.on::after{left:23px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr}.cal-day-grid{grid-template-columns:50px repeat(3,1fr);font-size:.7rem}}
