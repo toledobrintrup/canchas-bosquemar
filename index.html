@@ -71,9 +71,11 @@
   /* NAV */
   header{position:sticky;top:0;z-index:40;background:rgba(244,250,247,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
-  .nav-links{display:flex;gap:26px;align-items:center}
-  .nav-links a{font-weight:700;font-size:.9rem;color:var(--slate);text-transform:uppercase;letter-spacing:.04em}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{position:relative;font-family:'Saira Condensed',sans-serif;font-style:italic;font-weight:800;font-size:1.02rem;color:var(--ink);text-transform:uppercase;letter-spacing:.03em;padding:4px 0;transition:color .15s}
+  .nav-links a::after{content:"";position:absolute;left:-2px;bottom:-2px;height:3px;width:0;background:var(--grad-hot);border-radius:2px;transition:width .22s ease}
   .nav-links a:hover{color:var(--orange-hot)}
+  .nav-links a:hover::after{width:calc(100% + 4px)}
   .burger{display:none;background:none;border:0;cursor:pointer;font-size:1.5rem}
 
   /* TICKER */
@@ -129,8 +131,8 @@
   .feature .ic svg{width:28px;height:28px}
   .techa .ic{color:#eafffb;display:grid;place-items:center}
   .techa .ic svg{width:48px;height:48px;stroke-width:1.8}
-  .club-list .ic{color:#0c8f78}
-  .club-list .ic svg{width:22px;height:22px}
+  .club-list .ic{color:#fff}
+  .club-list .ic svg{width:23px;height:23px}
   .feature h3{font-size:1.32rem;font-style:italic;font-weight:800;text-transform:uppercase;margin-bottom:7px}
   .feature p{color:var(--slate);font-size:.93rem}
   .soon{position:absolute;top:16px;right:16px;background:var(--yellow);color:#5a3d00;font-family:'Saira Condensed';font-style:italic;font-weight:900;text-transform:uppercase;font-size:.7rem;padding:4px 11px;border-radius:999px;letter-spacing:.05em}
@@ -149,8 +151,9 @@
   .booker-top{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;padding:24px;color:#eafffb;background-color:#0c2f33;background-image:url("assets/logo/balon-watermark.png"),linear-gradient(135deg,rgba(8,33,37,.92),rgba(14,70,66,.8) 55%,rgba(19,135,122,.6)),url("assets/fotos/patron-oscuro.png");background-repeat:no-repeat,no-repeat,no-repeat;background-position:right -22px center,center,center;background-size:200px,cover,cover}
   .field{display:flex;flex-direction:column;gap:7px}
   .field label{font-family:'Saira Condensed';font-style:italic;font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#9fd6cb}
-  .field select{font-family:inherit;font-size:.95rem;font-weight:600;padding:12px 14px;border-radius:11px;border:0;background:rgba(255,255,255,.95);color:var(--ink);min-width:180px;cursor:pointer}
-  .field select:focus{outline:2px solid var(--teal-bright)}
+  .field select{appearance:none;-webkit-appearance:none;font-family:inherit;font-size:.98rem;font-weight:700;padding:13px 44px 13px 16px;border-radius:12px;border:0;background-color:#fff;color:var(--ink);min-width:200px;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230c2f33' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:17px;box-shadow:0 6px 14px -6px rgba(0,0,0,.3);transition:.15s}
+  .field select:hover{transform:translateY(-1px);box-shadow:0 9px 18px -7px rgba(0,0,0,.38)}
+  .field select:focus{outline:none;box-shadow:0 0 0 3px var(--teal-bright)}
   .courts{display:flex;gap:8px}
   .chip{padding:10px 18px;border-radius:11px;background:rgba(255,255,255,.12);color:#eafffb;cursor:pointer;font-family:'Saira Condensed';font-style:italic;font-weight:800;text-transform:uppercase;font-size:.92rem;transition:.15s;border:1.5px solid transparent}
   .chip.active{background:var(--grad-hot);color:#fff}
@@ -173,7 +176,8 @@
   .club-photo img{width:100%;aspect-ratio:16/11;object-fit:cover}
   .club-list{list-style:none;margin-top:20px;display:grid;gap:14px}
   .club-list li{display:flex;gap:12px;align-items:flex-start;font-size:.98rem}
-  .club-list .ic{background:var(--teal-100);width:38px;height:38px;border-radius:10px;display:grid;place-items:center;flex:none}
+  .club-list .ic{width:46px;height:46px;display:grid;place-items:center;flex:none;background:var(--grad);clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);box-shadow:0 8px 14px -8px rgba(12,143,120,.55)}
+  .club-list li:nth-child(even) .ic{background:var(--grad-hot);box-shadow:0 8px 14px -8px rgba(255,106,0,.55)}
 
   /* UBICACION */
   .loc-card{background:var(--grad-hot);border-radius:22px;padding:32px 36px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;box-shadow:var(--shadow)}
@@ -238,6 +242,17 @@
   footer a,footer p{color:#9fb6b2;font-size:.9rem;display:block;margin-bottom:8px}
   footer a:hover{color:var(--teal-bright)}
   .foot-bottom{border-top:1px solid #143029;padding-top:20px;font-size:.82rem;color:#7d9591;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .foot-contact a{display:flex;align-items:center;gap:10px;width:fit-content}
+  .foot-contact svg{width:18px;height:18px;flex:none}
+  /* botones flotantes */
+  .fab-stack{position:fixed;right:20px;bottom:22px;z-index:90;display:flex;flex-direction:column;gap:13px}
+  .fab{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 12px 26px -8px rgba(0,0,0,.45);transition:.18s ease;animation:fabin .4s ease backwards}
+  .fab:hover{transform:translateY(-3px) scale(1.06);box-shadow:0 16px 30px -8px rgba(0,0,0,.5)}
+  .fab svg{width:30px;height:30px}
+  .fab-wa{background:#25d366}
+  .fab-ig{background:linear-gradient(45deg,#f09433,#e6683c 28%,#dc2743 52%,#cc2366 74%,#bc1888)}
+  .fab-ig{animation-delay:.08s}
+  @keyframes fabin{from{opacity:0;transform:translateY(16px) scale(.8)}to{opacity:1;transform:none}}
 
   @media(max-width:880px){
     .hero-grid,.club,.foot-grid{grid-template-columns:1fr}
@@ -437,7 +452,11 @@
         <p>Canchas de futbolito techadas en la Población Bosquemar. El nuevo epicentro deportivo de Puerto Montt.</p>
       </div>
       <div><h5>Navegación</h5><a href="#reservar">Reservar cancha</a><a href="#features">Cómo funciona</a><a href="#recinto">El recinto</a><a href="#club">Casa Club</a><a href="#ubicacion">Ubicación</a></div>
-      <div><h5>Contacto</h5><a href="#">📱 WhatsApp</a><a href="#">📷 Instagram</a><a href="#">✉️ contacto@canchasbosquemar.cl</a></div>
+      <div class="foot-contact"><h5>Contacto</h5>
+        <a href="https://wa.me/56900000000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.004c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.02zM12.04 20.15a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>WhatsApp</a>
+        <a href="https://instagram.com/canchasbosquemar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>Instagram</a>
+        <a href="mailto:contacto@canchasbosquemar.cl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6 9-6"/></svg>contacto@canchasbosquemar.cl</a>
+      </div>
     </div>
     <div class="foot-bottom"><span>© 2026 Canchas Bosquemar · Puerto Montt</span><span>El nuevo epicentro deportivo</span></div>
   </div>
@@ -497,6 +516,11 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="fab-stack">
+  <a class="fab fab-wa" href="https://wa.me/56900000000" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.004c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.02zM12.04 20.15a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg></a>
+  <a class="fab fab-ig" href="https://instagram.com/canchasbosquemar" target="_blank" rel="noopener" aria-label="Síguenos en Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor" stroke="none"/></svg></a>
 </div>
 
 <div class="toast" id="toast"></div>
