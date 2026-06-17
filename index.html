@@ -91,8 +91,6 @@
   .hero .glow.t{width:300px;height:300px;background:rgba(23,212,173,.45);left:-80px;bottom:40px}
   .hero-decor{position:absolute;inset:0;z-index:1;pointer-events:none}
   .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}
-  .tagline{display:inline-flex;align-items:center;gap:9px;color:var(--teal-bright);font-family:'Saira Condensed';font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.13em;font-size:.82rem;margin-bottom:12px}
-  .tagline::before{content:"";width:26px;height:3px;border-radius:2px;background:var(--orange)}
   .hero h1{font-size:clamp(3rem,7.5vw,5.7rem);font-style:italic;font-weight:900;text-transform:uppercase;margin:0 0 18px;text-shadow:0 3px 22px rgba(0,0,0,.38)}
   .hero h1 em{font-style:italic;color:var(--orange);text-shadow:0 0 30px rgba(255,122,0,.4)}
   .hero p.lead{font-size:1.14rem;color:#bdeee3;max-width:30em;margin-bottom:28px;font-weight:500}
@@ -104,8 +102,6 @@
   .hero-photo{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transform:rotate(-1.4deg);border:3px solid rgba(255,255,255,.1)}
   .hero-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
   .photo-tag{position:absolute;left:14px;bottom:14px;background:var(--grad-hot);color:#fff;font-family:'Saira Condensed';font-style:italic;font-weight:900;text-transform:uppercase;font-size:.9rem;padding:8px 16px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);box-shadow:0 8px 18px -8px rgba(0,0,0,.5)}
-  .hero-photo .hero-ball{position:absolute;right:14px;bottom:12px;width:118px;height:auto;aspect-ratio:auto;object-fit:contain;filter:drop-shadow(0 12px 20px rgba(0,0,0,.45));animation:spin 22s linear infinite}
-  @keyframes spin{to{transform:rotate(360deg)}}
 
   /* SECCIONES */
   section.block{padding:74px 0}
@@ -294,7 +290,6 @@
   <div class="glow o"></div><div class="glow t"></div>
   <div class="wrap hero-grid">
     <div>
-      <span class="tagline">El nuevo epicentro deportivo de Puerto Montt</span>
       <h1>Reserva.<br>Juega.<br><em>Gana.</em></h1>
       <p class="lead">Canchas de futbolito <strong>techadas</strong> en plena Población Bosquemar. Arrienda online, paga al toque y arma tu pichanga — llueva o truene. ☔→☀️</p>
       <div class="hero-cta">
@@ -310,7 +305,6 @@
     <div class="hero-photo">
       <img src="assets/fotos/render-canchas.jpg" alt="Canchas Bosquemar techadas" />
       <span class="photo-tag">⛺ Canchas techadas</span>
-      <img class="hero-ball" src="assets/logo/balon-cb.png" alt="" />
     </div>
   </div>
 </section>
