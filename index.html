@@ -39,6 +39,7 @@
     --grad:linear-gradient(115deg,var(--teal-deep),var(--teal) 70%,var(--teal-bright));
     --grad-hot:linear-gradient(115deg,var(--orange-hot),var(--orange));
     --grad-night:linear-gradient(135deg,#082125,#0e4642 58%,#13877a);
+    --bg-night-tex:linear-gradient(135deg,rgba(8,33,37,.94),rgba(14,70,66,.82) 55%,rgba(19,135,122,.66)),url("assets/fotos/patron-oscuro.png");
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -62,7 +63,7 @@
 
   /* LOGO */
   .logo{display:flex;align-items:center}
-  .logo-badge{display:grid;place-items:center;background:var(--grad-night);padding:10px 15px;border-radius:14px;box-shadow:inset 0 0 0 1.5px rgba(51,240,198,.2),0 8px 18px -10px rgba(8,33,37,.5);transition:.16s}
+  .logo-badge{display:grid;place-items:center;background:var(--bg-night-tex);background-size:cover;background-position:center;padding:10px 15px;border-radius:14px;box-shadow:inset 0 0 0 1.5px rgba(51,240,198,.2),0 8px 18px -10px rgba(8,33,37,.5);transition:.16s}
   .logo-badge:hover{transform:translateY(-2px)}
   .logo-badge img{height:30px;width:auto;display:block}
   .logo-foot{height:96px;width:auto;display:block;margin-bottom:8px}
@@ -83,15 +84,15 @@
   @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
   /* HERO */
-  .hero{position:relative;background:var(--grad-night);color:#eafffb;padding:60px 0 110px;overflow:hidden}
+  .hero{position:relative;background:var(--bg-night-tex);background-size:cover;background-position:center;color:#eafffb;padding:60px 0 110px;overflow:hidden}
   .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--bg);clip-path:polygon(0 100%,100% 100%,100% 0,0 75%)}
   .hero .glow{position:absolute;border-radius:50%;filter:blur(70px);z-index:0}
   .hero .glow.o{width:340px;height:340px;background:rgba(255,106,0,.4);right:-60px;top:-40px}
   .hero .glow.t{width:300px;height:300px;background:rgba(23,212,173,.45);left:-80px;bottom:40px}
-  .hero .pattern{position:absolute;inset:0;opacity:.5;background:repeating-linear-gradient(115deg,transparent 0 38px,rgba(51,240,198,.05) 38px 40px)}
+  .hero-decor{position:absolute;inset:0;z-index:1;pointer-events:none}
   .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}
-  .tagline{display:inline-flex;align-items:center;gap:8px;background:rgba(23,212,173,.14);border:1px solid rgba(51,240,198,.3);color:var(--teal-bright);font-family:'Saira Condensed';font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:.85rem;padding:7px 15px;border-radius:999px;margin-bottom:18px}
-  .hero h1{font-size:clamp(3rem,7.5vw,5.7rem);font-style:italic;font-weight:900;text-transform:uppercase;margin:0 0 18px}
+  .tagline{display:inline-flex;align-items:center;gap:8px;background:rgba(8,33,37,.55);border:1px solid rgba(51,240,198,.45);color:var(--teal-bright);font-family:'Saira Condensed';font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:.85rem;padding:7px 15px;border-radius:999px;margin-bottom:18px;backdrop-filter:blur(4px)}
+  .hero h1{font-size:clamp(3rem,7.5vw,5.7rem);font-style:italic;font-weight:900;text-transform:uppercase;margin:0 0 18px;text-shadow:0 3px 22px rgba(0,0,0,.38)}
   .hero h1 em{font-style:italic;color:var(--orange);text-shadow:0 0 30px rgba(255,122,0,.4)}
   .hero p.lead{font-size:1.14rem;color:#bdeee3;max-width:30em;margin-bottom:28px;font-weight:500}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
@@ -111,7 +112,7 @@
   .sec-head p{color:var(--slate);font-size:1.05rem}
 
   /* franja techadas */
-  .techa{background:var(--grad-night);color:#eafffb;border-radius:22px;padding:34px 38px;display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .techa{background:var(--bg-night-tex);background-size:cover;background-position:center;color:#eafffb;border-radius:22px;padding:34px 38px;display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
   .techa::after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:rgba(255,106,0,.3);filter:blur(50px);right:-50px;top:-60px}
   .techa .ic{font-size:3rem;position:relative}
   .techa h3{font-size:1.9rem;font-style:italic;font-weight:900;text-transform:uppercase;position:relative}
@@ -139,7 +140,7 @@
   /* RESERVA */
   #reservar{background:linear-gradient(180deg,#e8f7f1,#f4faf7)}
   .booker{background:var(--white);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
-  .booker-top{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;padding:24px;background:var(--grad-night);color:#eafffb}
+  .booker-top{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;padding:24px;background:var(--bg-night-tex);background-size:cover;background-position:center;color:#eafffb}
   .field{display:flex;flex-direction:column;gap:7px}
   .field label{font-family:'Saira Condensed';font-style:italic;font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#9fd6cb}
   .field select{font-family:inherit;font-size:.95rem;font-weight:600;padding:12px 14px;border-radius:11px;border:0;background:rgba(255,255,255,.95);color:var(--ink);min-width:180px;cursor:pointer}
@@ -177,7 +178,7 @@
   .overlay.open{display:flex}
   .modal{background:var(--bg);width:100%;max-width:700px;border-radius:22px;box-shadow:0 40px 90px -20px rgba(0,0,0,.5);overflow:hidden;animation:rise .28s ease}
   @keyframes rise{from{transform:translateY(26px) scale(.98);opacity:0}to{transform:none;opacity:1}}
-  .modal-head{background:var(--grad-night);color:#eafffb;padding:22px 26px;display:flex;justify-content:space-between;align-items:center}
+  .modal-head{background:var(--bg-night-tex);background-size:cover;background-position:center;color:#eafffb;padding:22px 26px;display:flex;justify-content:space-between;align-items:center}
   .modal-head h3{font-size:1.6rem;font-style:italic;font-weight:900;text-transform:uppercase}
   .modal-head .x{background:rgba(255,255,255,.15);border:0;color:#fff;width:36px;height:36px;border-radius:10px;cursor:pointer;font-size:1.1rem}
   .modal-body{padding:26px}
@@ -209,7 +210,7 @@
   .add-row input{flex:1;padding:10px 12px;border:2px solid var(--line);border-radius:10px;font-family:inherit;font-size:.88rem}
   .add-row input:focus{outline:none;border-color:var(--teal)}
   .add-row button{background:var(--ink);color:#fff;border:0;border-radius:10px;width:40px;cursor:pointer;font-size:1.2rem}
-  .share-card{background:var(--grad-night);border-radius:20px;padding:26px;color:#eafffb;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+  .share-card{background:var(--bg-night-tex);background-size:cover;background-position:center;border-radius:20px;padding:26px;color:#eafffb;position:relative;overflow:hidden;box-shadow:var(--shadow)}
   .share-card::before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(255,106,0,.3);filter:blur(50px);right:-70px;top:-80px}
   .share-card .sc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;position:relative}
   .sc-badge-img{height:38px;width:auto;display:block}
@@ -225,7 +226,7 @@
   .share-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
   @media(max-width:520px){.share-actions{grid-template-columns:1fr}}
 
-  footer{background:var(--ink);color:#bcd;padding:56px 0 30px;margin-top:34px}
+  footer{background:linear-gradient(rgba(10,35,41,.93),rgba(10,35,41,.93)),url("assets/fotos/patron-oscuro.png");background-size:cover;background-position:center;color:#bcd;padding:56px 0 30px;margin-top:34px}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:36px}
   footer h5{color:#fff;font-family:'Saira Condensed';font-style:italic;text-transform:uppercase;margin-bottom:14px;font-size:1.1rem}
   footer a,footer p{color:#9fb6b2;font-size:.9rem;display:block;margin-bottom:8px}
@@ -275,7 +276,16 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="pattern"></div>
+  <svg class="hero-decor" viewBox="0 0 1440 820" preserveAspectRatio="xMinYMin slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="none" stroke="#33f0c6" stroke-linecap="round">
+      <path d="M-60,150 C320,55 780,38 1500,108" stroke-width="7" opacity=".5"/>
+      <path d="M-60,192 C320,102 780,82 1500,156" stroke-width="6" opacity=".38"/>
+      <path d="M-60,234 C320,150 780,128 1500,204" stroke-width="5" opacity=".27"/>
+      <path d="M-60,276 C320,198 780,176 1500,252" stroke-width="4" opacity=".18"/>
+    </g>
+    <path fill="#ff7a00" opacity=".92" d="M0,0 H402 C372,66 388,132 470,168 C404,222 312,222 268,278 C200,344 104,326 0,286 Z"/>
+    <path fill="#17d4ad" opacity=".85" d="M0,284 C104,324 196,342 264,282 C286,318 282,358 232,392 C156,448 78,430 0,398 Z"/>
+  </svg>
   <div class="glow o"></div><div class="glow t"></div>
   <div class="wrap hero-grid">
     <div>
@@ -305,8 +315,8 @@
     <div class="techa">
       <div class="ic">☔</div>
       <div>
-        <h3>En Puerto Montt llueve… <span style="color:var(--orange)">acá no importa</span></h3>
-        <p>Nuestras tres canchas están 100% techadas. Olvídate de suspender la pichanga por la lluvia: en Canchas Bosquemar se juega todo el año, en cualquier clima.</p>
+        <h3>Donde la pasión <span style="color:var(--orange)">desafía al clima</span></h3>
+        <p>Nuestras 3 canchas están 100% techadas. Olvídate de suspender la pichanga por la lluvia: en Canchas Bosquemar se juega todo el año, llueva o truene.</p>
       </div>
       <div class="cta"><a href="#reservar" class="btn btn-primary">Reservar ⚽</a></div>
     </div>
