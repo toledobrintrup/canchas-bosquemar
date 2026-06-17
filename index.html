@@ -3,42 +3,42 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Centro Deportivo Bosquemar — Reserva, juega, gana</title>
-<meta name="description" content="Arrienda las canchas de futbolito del CDB en Puerto Montt. Reserva online, paga seguro y arma tu pichanga." />
-<link rel="icon" type="image/svg+xml" href="assets/favicon/icon.svg" />
+<title>Canchas Bosquemar — El nuevo epicentro deportivo de Puerto Montt</title>
+<meta name="description" content="Arrienda las canchas de futbolito techadas de Canchas Bosquemar en Puerto Montt. Reserva online, paga seguro y arma tu pichanga. Juega llueva o truene." />
 <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png" />
-<meta name="theme-color" content="#063b34" />
-<meta property="og:title" content="Centro Deportivo Bosquemar — Reserva, juega, gana" />
-<meta property="og:description" content="Arrienda tu cancha de futbolito en Puerto Montt. Reserva online y arma tu pichanga." />
-<meta property="og:image" content="assets/logo/cdb-horizontal-oscuro.png" />
+<meta name="theme-color" content="#0c2f33" />
+<meta property="og:title" content="Canchas Bosquemar — El nuevo epicentro deportivo de Puerto Montt" />
+<meta property="og:description" content="Canchas de futbolito techadas en Puerto Montt. Reserva online y arma tu pichanga, llueva o truene." />
+<meta property="og:image" content="assets/fotos/render-canchas.jpg" />
 <meta property="og:type" content="website" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
   :root{
-    /* Paleta CDB — más punchy */
-    --teal:#0fd9b6;
-    --teal-bright:#2cf0c9;
-    --teal-deep:#067a68;
-    --teal-night:#063b34;
+    /* Paleta Canchas Bosquemar (key visual) */
+    --teal:#17d4ad;
+    --teal-bright:#33f0c6;
+    --teal-deep:#0c8f78;
+    --night:#0c2f33;
+    --night-2:#082125;
     --teal-100:#c8fbef;
-    --orange:#ff7a00;
-    --orange-hot:#ff4d00;
+    --orange:#ff8b00;
+    --orange-hot:#ff6a00;
     --yellow:#ffd21e;
-    --ink:#08211d;
+    --ink:#0a2329;
     --slate:#5a6f6a;
-    --bg:#f3fbf8;
+    --bg:#f4faf7;
     --white:#ffffff;
     --line:#dcefe8;
-    --shadow:0 22px 48px -20px rgba(6,59,52,.45);
-    --shadow-sm:0 10px 26px -14px rgba(6,59,52,.4);
+    --shadow:0 22px 48px -20px rgba(8,33,37,.5);
+    --shadow-sm:0 10px 26px -14px rgba(8,33,37,.42);
     --grad:linear-gradient(115deg,var(--teal-deep),var(--teal) 70%,var(--teal-bright));
     --grad-hot:linear-gradient(115deg,var(--orange-hot),var(--orange));
-    --grad-night:linear-gradient(135deg,#063b34,#0a6e5e 60%,#0fd9b6);
+    --grad-night:linear-gradient(135deg,#082125,#0e4642 58%,#13877a);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -46,13 +46,14 @@
   .display{font-family:'Saira Condensed',system-ui,sans-serif;font-weight:900;font-style:italic;letter-spacing:-.01em;line-height:.92;text-transform:uppercase}
   h1,h2,h3{font-family:'Saira Condensed',sans-serif}
   a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
   .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
-  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'Saira Condensed';font-weight:800;font-style:italic;letter-spacing:.12em;text-transform:uppercase;font-size:.82rem;color:var(--orange-hot)}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'Saira Condensed';font-weight:800;font-style:italic;letter-spacing:.1em;text-transform:uppercase;font-size:.82rem;color:var(--orange-hot)}
   .eyebrow.light{color:var(--teal-bright)}
 
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;cursor:pointer;font-family:'Saira Condensed';font-weight:800;font-style:italic;text-transform:uppercase;letter-spacing:.03em;font-size:1.08rem;padding:14px 28px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);transition:.16s ease}
   .btn:hover{transform:translateY(-2px) scale(1.02)}
-  .btn-primary{background:var(--grad-hot);color:#fff;box-shadow:0 12px 26px -10px rgba(255,77,0,.6)}
+  .btn-primary{background:var(--grad-hot);color:#fff;box-shadow:0 12px 26px -10px rgba(255,106,0,.6)}
   .btn-teal{background:var(--grad);color:#022}
   .btn-ghost{background:var(--white);color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}
   .btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--teal)}
@@ -61,64 +62,61 @@
 
   /* LOGO */
   .logo{display:flex;align-items:center}
-  .logo-badge{display:grid;place-items:center;background:var(--grad-night);padding:11px 16px;border-radius:14px;box-shadow:inset 0 0 0 1.5px rgba(44,240,201,.2),0 8px 18px -10px rgba(6,59,52,.5);transition:.16s}
+  .logo-badge{display:grid;place-items:center;background:var(--grad-night);padding:10px 15px;border-radius:14px;box-shadow:inset 0 0 0 1.5px rgba(51,240,198,.2),0 8px 18px -10px rgba(8,33,37,.5);transition:.16s}
   .logo-badge:hover{transform:translateY(-2px)}
-  .logo-badge img{height:25px;width:auto;display:block}
-  .logo-foot{height:62px;width:auto;display:block;margin-bottom:16px}
+  .logo-badge img{height:30px;width:auto;display:block}
+  .logo-foot{height:96px;width:auto;display:block;margin-bottom:8px}
 
   /* NAV */
-  header{position:sticky;top:0;z-index:40;background:rgba(243,251,248,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-  .nav-links{display:flex;gap:28px;align-items:center}
+  header{position:sticky;top:0;z-index:40;background:rgba(244,250,247,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .nav-links{display:flex;gap:26px;align-items:center}
   .nav-links a{font-weight:700;font-size:.9rem;color:var(--slate);text-transform:uppercase;letter-spacing:.04em}
   .nav-links a:hover{color:var(--orange-hot)}
   .burger{display:none;background:none;border:0;cursor:pointer;font-size:1.5rem}
 
-  /* MARQUEE */
+  /* TICKER */
   .ticker{background:var(--ink);color:var(--teal-bright);overflow:hidden;white-space:nowrap;padding:10px 0;font-family:'Saira Condensed';font-weight:800;font-style:italic;text-transform:uppercase;letter-spacing:.08em;font-size:.92rem}
-  .ticker .run{display:inline-block;animation:scroll 22s linear infinite}
+  .ticker .run{display:inline-block;animation:scroll 24s linear infinite}
   .ticker span{margin:0 22px}
   .ticker b{color:var(--orange)}
   @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
   /* HERO */
-  .hero{position:relative;background:var(--grad-night);color:#eafffb;padding:64px 0 120px;overflow:hidden}
+  .hero{position:relative;background:var(--grad-night);color:#eafffb;padding:60px 0 110px;overflow:hidden}
   .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--bg);clip-path:polygon(0 100%,100% 100%,100% 0,0 75%)}
-  .speedlines{position:absolute;inset:0;opacity:.5;background:repeating-linear-gradient(115deg,transparent 0 38px,rgba(44,240,201,.05) 38px 40px)}
-  .glow{position:absolute;border-radius:50%;filter:blur(70px);z-index:0}
-  .glow.o{width:340px;height:340px;background:rgba(255,77,0,.4);right:-60px;top:-40px}
-  .glow.t{width:300px;height:300px;background:rgba(15,217,182,.5);left:-80px;bottom:40px}
-  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center}
-  .hero h1{font-size:clamp(3rem,7.5vw,6rem);font-style:italic;font-weight:900;text-transform:uppercase;margin:16px 0 18px}
-  .hero h1 em{font-style:italic;color:var(--orange);-webkit-text-stroke:0;text-shadow:0 0 30px rgba(255,122,0,.4)}
-  .hero p.lead{font-size:1.15rem;color:#bdeee3;max-width:30em;margin-bottom:30px;font-weight:500}
+  .hero .glow{position:absolute;border-radius:50%;filter:blur(70px);z-index:0}
+  .hero .glow.o{width:340px;height:340px;background:rgba(255,106,0,.4);right:-60px;top:-40px}
+  .hero .glow.t{width:300px;height:300px;background:rgba(23,212,173,.45);left:-80px;bottom:40px}
+  .hero .pattern{position:absolute;inset:0;opacity:.5;background:repeating-linear-gradient(115deg,transparent 0 38px,rgba(51,240,198,.05) 38px 40px)}
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}
+  .tagline{display:inline-flex;align-items:center;gap:8px;background:rgba(23,212,173,.14);border:1px solid rgba(51,240,198,.3);color:var(--teal-bright);font-family:'Saira Condensed';font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:.85rem;padding:7px 15px;border-radius:999px;margin-bottom:18px}
+  .hero h1{font-size:clamp(3rem,7.5vw,5.7rem);font-style:italic;font-weight:900;text-transform:uppercase;margin:0 0 18px}
+  .hero h1 em{font-style:italic;color:var(--orange);text-shadow:0 0 30px rgba(255,122,0,.4)}
+  .hero p.lead{font-size:1.14rem;color:#bdeee3;max-width:30em;margin-bottom:28px;font-weight:500}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
-  .hero-stats{display:flex;gap:34px;margin-top:40px}
-  .hero-stats b{font-family:'Saira Condensed';font-style:italic;font-size:2.2rem;font-weight:900;color:var(--teal-bright);display:block;line-height:1}
-  .hero-stats span{font-size:.8rem;color:#9fd6cb;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+  .hero-stats{display:flex;gap:32px;margin-top:38px}
+  .hero-stats b{font-family:'Saira Condensed';font-style:italic;font-size:2.1rem;font-weight:900;color:var(--teal-bright);display:block;line-height:1}
+  .hero-stats span{font-size:.78rem;color:#9fd6cb;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
 
-  /* pitch card */
-  .pitch-card{background:rgba(255,255,255,.07);border:1px solid rgba(44,240,201,.2);border-radius:22px;padding:18px;backdrop-filter:blur(6px);box-shadow:var(--shadow);transform:rotate(-1.5deg)}
-  .pitch{border-radius:14px;aspect-ratio:16/11;position:relative;overflow:hidden;background:linear-gradient(180deg,#12b899,#0a8f79)}
-  .pitch .stripes{position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 11%,transparent 11% 22%);animation:slide 6s linear infinite}
-  @keyframes slide{to{background-position:220px 0}}
-  .pitch .lines{position:absolute;inset:13px;border:2px solid rgba(255,255,255,.6);border-radius:7px}
-  .pitch .lines::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:2px;background:rgba(255,255,255,.6)}
-  .pitch .lines::after{content:"";position:absolute;top:50%;left:50%;width:62px;height:62px;border:2px solid rgba(255,255,255,.6);border-radius:50%;transform:translate(-50%,-50%)}
-  .pitch .ball{position:absolute;top:50%;left:50%;width:15px;height:15px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(255,122,0,.6);animation:bounce 2.2s ease-in-out infinite}
-  @keyframes bounce{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-160%,-50%) scale(1.18)}}
-  .pitch-card h4{font-family:'Saira Condensed';font-style:italic;font-weight:800;text-transform:uppercase;margin:14px 6px 2px;font-size:1.15rem;color:#eafffb}
-  .pitch-card .meta{display:flex;justify-content:space-between;align-items:center;padding:0 6px 4px;color:#9fd6cb;font-size:.84rem}
-  .tag-live{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:800;color:#06251f;background:var(--teal-bright);padding:5px 11px;border-radius:999px;text-transform:uppercase}
-  .dot{width:7px;height:7px;border-radius:50%;background:#06251f;animation:ring 1.5s infinite}
-  @keyframes ring{0%{box-shadow:0 0 0 0 rgba(6,37,31,.5)}70%{box-shadow:0 0 0 7px rgba(6,37,31,0)}100%{box-shadow:0 0 0 0 rgba(6,37,31,0)}}
+  .hero-photo{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transform:rotate(-1.4deg);border:3px solid rgba(255,255,255,.1)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+  .photo-tag{position:absolute;left:14px;bottom:14px;background:var(--grad-hot);color:#fff;font-family:'Saira Condensed';font-style:italic;font-weight:900;text-transform:uppercase;font-size:.9rem;padding:8px 16px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);box-shadow:0 8px 18px -8px rgba(0,0,0,.5)}
 
   /* SECCIONES */
   section.block{padding:74px 0}
-  .sec-head{max-width:38em;margin:0 auto 46px;text-align:center}
-  .sec-head h2{font-size:clamp(2.2rem,5vw,3.6rem);font-style:italic;font-weight:900;text-transform:uppercase;margin:10px 0 10px}
+  .sec-head{max-width:40em;margin:0 auto 46px;text-align:center}
+  .sec-head h2{font-size:clamp(2.2rem,5vw,3.5rem);font-style:italic;font-weight:900;text-transform:uppercase;margin:10px 0 10px}
   .sec-head h2 em{font-style:italic;color:var(--orange-hot)}
-  .sec-head p{color:var(--slate);font-size:1.06rem}
+  .sec-head p{color:var(--slate);font-size:1.05rem}
+
+  /* franja techadas */
+  .techa{background:var(--grad-night);color:#eafffb;border-radius:22px;padding:34px 38px;display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .techa::after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:rgba(255,106,0,.3);filter:blur(50px);right:-50px;top:-60px}
+  .techa .ic{font-size:3rem;position:relative}
+  .techa h3{font-size:1.9rem;font-style:italic;font-weight:900;text-transform:uppercase;position:relative}
+  .techa p{color:#bdeee3;font-size:1rem;position:relative;max-width:40em}
+  .techa .cta{position:relative}
 
   .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .feature{position:relative;background:var(--white);border-radius:18px;padding:26px;box-shadow:var(--shadow-sm);transition:.2s;overflow:hidden;border-top:4px solid var(--teal)}
@@ -126,12 +124,20 @@
   .feature:hover{transform:translateY(-6px)}
   .feature .ic{width:52px;height:52px;border-radius:13px;display:grid;place-items:center;font-size:1.5rem;background:var(--teal-100);margin-bottom:14px}
   .feature:nth-child(even) .ic{background:#ffe7d1}
-  .feature h3{font-size:1.35rem;font-style:italic;font-weight:800;text-transform:uppercase;margin-bottom:7px}
+  .feature h3{font-size:1.32rem;font-style:italic;font-weight:800;text-transform:uppercase;margin-bottom:7px}
   .feature p{color:var(--slate);font-size:.93rem}
   .soon{position:absolute;top:16px;right:16px;background:var(--yellow);color:#5a3d00;font-family:'Saira Condensed';font-style:italic;font-weight:900;text-transform:uppercase;font-size:.7rem;padding:4px 11px;border-radius:999px;letter-spacing:.05em}
 
+  /* GALERIA */
+  .galeria{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:16px;height:520px}
+  .gcard{position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm)}
+  .gcard:first-child{grid-row:span 2}
+  .gcard img{width:100%;height:100%;object-fit:cover}
+  .gcard .cap{position:absolute;left:0;right:0;bottom:0;padding:22px 18px 14px;background:linear-gradient(transparent,rgba(8,33,37,.82));color:#fff;font-family:'Saira Condensed';font-style:italic;font-weight:800;text-transform:uppercase;font-size:1.15rem}
+  @media(max-width:760px){.galeria{grid-template-columns:1fr;grid-template-rows:none;height:auto}.gcard{height:220px}.gcard:first-child{height:280px}}
+
   /* RESERVA */
-  #reservar{background:linear-gradient(180deg,#e9f8f2,#f3fbf8)}
+  #reservar{background:linear-gradient(180deg,#e8f7f1,#f4faf7)}
   .booker{background:var(--white);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
   .booker-top{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;padding:24px;background:var(--grad-night);color:#eafffb}
   .field{display:flex;flex-direction:column;gap:7px}
@@ -156,19 +162,18 @@
 
   /* CASA CLUB */
   .club{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
-  .club-card{background:var(--grad-night);border-radius:22px;padding:38px;color:#eafffb;box-shadow:var(--shadow);position:relative;overflow:hidden}
-  .club-card::after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:rgba(255,77,0,.35);filter:blur(46px);right:-50px;bottom:-60px}
-  .club-card h3{font-size:1.9rem;font-style:italic;font-weight:900;text-transform:uppercase;margin-bottom:8px;position:relative}
-  .club-list{list-style:none;margin-top:18px;display:grid;gap:13px;position:relative}
+  .club-photo{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:3px solid #fff}
+  .club-photo img{width:100%;aspect-ratio:16/11;object-fit:cover}
+  .club-list{list-style:none;margin-top:20px;display:grid;gap:14px}
   .club-list li{display:flex;gap:12px;align-items:flex-start;font-size:.98rem}
-  .club-list .ic{background:rgba(44,240,201,.18);width:36px;height:36px;border-radius:10px;display:grid;place-items:center;flex:none}
+  .club-list .ic{background:var(--teal-100);width:38px;height:38px;border-radius:10px;display:grid;place-items:center;flex:none}
 
   /* UBICACION */
-  .loc-card{background:var(--grad-hot);border-radius:22px;padding:32px 36px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .loc-card{background:var(--grad-hot);border-radius:22px;padding:32px 36px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;box-shadow:var(--shadow)}
   .loc-card h3{font-size:1.9rem;font-style:italic;font-weight:900;text-transform:uppercase}
 
   /* MODAL */
-  .overlay{position:fixed;inset:0;background:rgba(4,30,26,.6);backdrop-filter:blur(4px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:28px 16px;overflow-y:auto}
+  .overlay{position:fixed;inset:0;background:rgba(6,28,30,.62);backdrop-filter:blur(4px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:28px 16px;overflow-y:auto}
   .overlay.open{display:flex}
   .modal{background:var(--bg);width:100%;max-width:700px;border-radius:22px;box-shadow:0 40px 90px -20px rgba(0,0,0,.5);overflow:hidden;animation:rise .28s ease}
   @keyframes rise{from{transform:translateY(26px) scale(.98);opacity:0}to{transform:none;opacity:1}}
@@ -181,16 +186,13 @@
   .steps .s.on{background:var(--grad-hot)}
   .step{display:none}.step.show{display:block;animation:fade .25s ease}
   @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-
   .summary{display:flex;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:16px;margin-bottom:18px;box-shadow:var(--shadow-sm)}
   .summary .big{background:var(--teal-100);border-radius:13px;width:60px;height:60px;display:grid;place-items:center;font-size:1.7rem;flex:none}
   .summary .info b{font-family:'Saira Condensed';font-style:italic;font-size:1.25rem;text-transform:uppercase}
   .summary .info span{display:block;color:var(--slate);font-size:.88rem}
   .summary .price{margin-left:auto;text-align:right}
   .summary .price b{font-family:'Saira Condensed';font-style:italic;font-size:1.7rem;color:var(--orange-hot)}
-
   .note{background:#fff7ee;border-left:4px solid var(--orange);border-radius:10px;padding:12px 14px;font-size:.86rem;color:#7a5320;margin-bottom:16px}
-
   .teams{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   .team{border-radius:16px;padding:16px;background:#fff;box-shadow:var(--shadow-sm)}
   .team.A{border-top:5px solid var(--teal)}
@@ -207,12 +209,10 @@
   .add-row input{flex:1;padding:10px 12px;border:2px solid var(--line);border-radius:10px;font-family:inherit;font-size:.88rem}
   .add-row input:focus{outline:none;border-color:var(--teal)}
   .add-row button{background:var(--ink);color:#fff;border:0;border-radius:10px;width:40px;cursor:pointer;font-size:1.2rem}
-
-  /* tarjeta compartible */
   .share-card{background:var(--grad-night);border-radius:20px;padding:26px;color:#eafffb;position:relative;overflow:hidden;box-shadow:var(--shadow)}
-  .share-card::before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(255,77,0,.3);filter:blur(50px);right:-70px;top:-80px}
+  .share-card::before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(255,106,0,.3);filter:blur(50px);right:-70px;top:-80px}
   .share-card .sc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;position:relative}
-  .sc-badge-img{height:42px;width:auto;display:block}
+  .sc-badge-img{height:38px;width:auto;display:block}
   .sc-when{font-size:.82rem;opacity:.85;font-weight:600}
   .sc-title{font-family:'Saira Condensed';font-weight:900;font-style:italic;text-transform:uppercase;font-size:1.9rem;margin-bottom:4px;position:relative}
   .sc-sub{opacity:.85;font-size:.9rem;margin-bottom:18px;position:relative}
@@ -225,7 +225,7 @@
   .share-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
   @media(max-width:520px){.share-actions{grid-template-columns:1fr}}
 
-  footer{background:var(--ink);color:#bcd;padding:56px 0 30px;margin-top:34px;position:relative}
+  footer{background:var(--ink);color:#bcd;padding:56px 0 30px;margin-top:34px}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:36px}
   footer h5{color:#fff;font-family:'Saira Condensed';font-style:italic;text-transform:uppercase;margin-bottom:14px;font-size:1.1rem}
   footer a,footer p{color:#9fb6b2;font-size:.9rem;display:block;margin-bottom:8px}
@@ -235,10 +235,11 @@
   @media(max-width:880px){
     .hero-grid,.club,.foot-grid{grid-template-columns:1fr}
     .features{grid-template-columns:1fr}
+    .techa{grid-template-columns:1fr;text-align:center}
     .nav-links{display:none}
     .burger{display:block}
     .hero{padding:40px 0 90px}
-    .pitch-card{transform:none}
+    .hero-photo{transform:none}
   }
   .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--ink);color:#fff;padding:14px 22px;border-radius:14px;font-weight:700;font-size:.9rem;z-index:200;transition:.3s;box-shadow:var(--shadow)}
   .toast.show{transform:translateX(-50%) translateY(0)}
@@ -247,16 +248,17 @@
 </head>
 <body>
 
-<div class="demo-banner">⚡ Demo de muestra — para alinear estilo y flujo · datos de ejemplo</div>
+<div class="demo-banner">⚡ Reservas online muy pronto · esta es una vista previa del sistema</div>
 
 <header>
   <div class="wrap nav">
-    <a href="#" class="logo" aria-label="CDB · Centro Deportivo Bosquemar">
-      <span class="logo-badge"><img src="assets/logo/cdb-isotipo.svg" alt="CDB Centro Deportivo Bosquemar" /></span>
+    <a href="#" class="logo" aria-label="Canchas Bosquemar">
+      <span class="logo-badge"><img src="assets/logo/cb-isotipo.png" alt="Canchas Bosquemar" /></span>
     </a>
     <nav class="nav-links">
       <a href="#reservar">Reservar</a>
       <a href="#features">Cómo funciona</a>
+      <a href="#recinto">El recinto</a>
       <a href="#club">Casa Club</a>
       <a href="#ubicacion">Ubicación</a>
     </nav>
@@ -267,33 +269,46 @@
 
 <!-- TICKER -->
 <div class="ticker"><div class="run">
-  <span>⚽ Reserva</span><b>·</b><span>Juega</span><b>·</b><span>Gana</span><b>·</b><span>3 canchas 20×40</span><b>·</b><span>Puerto Montt</span><b>·</b><span>Pago online</span><b>·</b><span>Arma tu pichanga</span><b>·</b>
-  <span>⚽ Reserva</span><b>·</b><span>Juega</span><b>·</b><span>Gana</span><b>·</b><span>3 canchas 20×40</span><b>·</b><span>Puerto Montt</span><b>·</b><span>Pago online</span><b>·</b><span>Arma tu pichanga</span><b>·</b>
+  <span>⚽ Canchas techadas</span><b>·</b><span>Juega llueva o truene</span><b>·</b><span>Reserva online</span><b>·</b><span>Puerto Montt</span><b>·</b><span>3 canchas 20×40</span><b>·</b><span>Arma tu pichanga</span><b>·</b>
+  <span>⚽ Canchas techadas</span><b>·</b><span>Juega llueva o truene</span><b>·</b><span>Reserva online</span><b>·</b><span>Puerto Montt</span><b>·</b><span>3 canchas 20×40</span><b>·</b><span>Arma tu pichanga</span><b>·</b>
 </div></div>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="speedlines"></div>
+  <div class="pattern"></div>
   <div class="glow o"></div><div class="glow t"></div>
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow light">⚽ Puerto Montt · Pob. Bosquemar</span>
+      <span class="tagline">🏆 El nuevo epicentro deportivo de Puerto Montt</span>
       <h1>Reserva.<br>Juega.<br><em>Gana.</em></h1>
-      <p class="lead">Arrienda nuestras canchas de futbolito, paga al toque y arma tu pichanga. Tú reservas, el grupo se suma. Cero llamadas, cero esperas.</p>
+      <p class="lead">Canchas de futbolito <strong>techadas</strong> en plena Población Bosquemar. Arrienda online, paga al toque y arma tu pichanga — llueva o truene. ☔→☀️</p>
       <div class="hero-cta">
         <a href="#reservar" class="btn btn-primary">Reservar ahora</a>
         <a href="#features" class="btn btn-light">Cómo funciona</a>
       </div>
       <div class="hero-stats">
         <div><b>3</b><span>canchas 20×40</span></div>
+        <div><b>100%</b><span>techadas</span></div>
         <div><b>09—23h</b><span>todos los días</span></div>
-        <div><b>100%</b><span>online</span></div>
       </div>
     </div>
-    <div class="pitch-card">
-      <div class="pitch"><div class="stripes"></div><div class="lines"></div><div class="ball"></div></div>
-      <h4>Cancha 1 · Sintético</h4>
-      <div class="meta"><span>Hoy · 20:00 hrs</span><span class="tag-live"><i class="dot"></i> Libre</span></div>
+    <div class="hero-photo">
+      <img src="assets/fotos/render-canchas.jpg" alt="Canchas Bosquemar techadas" />
+      <span class="photo-tag">⛺ Canchas techadas</span>
+    </div>
+  </div>
+</section>
+
+<!-- FRANJA TECHADAS -->
+<section class="block" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="techa">
+      <div class="ic">☔</div>
+      <div>
+        <h3>En Puerto Montt llueve… <span style="color:var(--orange)">acá no importa</span></h3>
+        <p>Nuestras tres canchas están 100% techadas. Olvídate de suspender la pichanga por la lluvia: en Canchas Bosquemar se juega todo el año, en cualquier clima.</p>
+      </div>
+      <div class="cta"><a href="#reservar" class="btn btn-primary">Reservar ⚽</a></div>
     </div>
   </div>
 </section>
@@ -312,7 +327,23 @@
       <div class="feature"><div class="ic">📲</div><h3>Manda al grupo</h3><p>Te generamos una invitación lista para el WhatsApp, con fecha, ubicación y botón para agregar al calendario.</p></div>
       <div class="feature"><div class="ic">💸</div><h3>Recupera tu plata</h3><p>Tú confirmas pagando. Si quieres, generas un link para que cada jugador te transfiera su parte. Sin que dependas de que paguen todos.</p></div>
       <div class="feature"><div class="ic">🏆</div><h3>Torneos y ligas</h3><p>Inscríbete a campeonatos, sigue el fixture y la tabla de posiciones desde la misma plataforma.</p></div>
-      <div class="feature"><span class="soon">Pronto</span><div class="ic">🔎</div><h3>Busca jugadores</h3><p>¿Te falta gente? La comunidad CDB: ofrécete para jugar con tu posición y tu nivel del 1 al 10, y completa el equipo.</p></div>
+      <div class="feature"><span class="soon">Pronto</span><div class="ic">🔎</div><h3>Busca jugadores</h3><p>¿Te falta gente? La comunidad CB: ofrécete para jugar con tu posición y tu nivel del 1 al 10, y completa el equipo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA / RECINTO -->
+<section class="block" id="recinto">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">El recinto</span>
+      <h2>Conoce <em>Canchas Bosquemar</em></h2>
+      <p>Canchas techadas de primer nivel y una Casa Club para vivir el deporte.</p>
+    </div>
+    <div class="galeria">
+      <div class="gcard"><img src="assets/fotos/render-canchas.jpg" alt="Vista aérea de las canchas techadas" /><div class="cap">Vista aérea del recinto</div></div>
+      <div class="gcard"><img src="assets/fotos/galpon.jpg" alt="Estructura de las canchas techadas" /><div class="cap">Estructura techada</div></div>
+      <div class="gcard"><img src="assets/fotos/casa-club.jpg" alt="Casa Club Canchas Bosquemar" /><div class="cap">Casa Club</div></div>
     </div>
   </div>
 </section>
@@ -353,20 +384,18 @@
 <section class="block" id="club">
   <div class="wrap club">
     <div>
-      <span class="eyebrow">🏠 Casa Club CDB</span>
+      <span class="eyebrow">🏠 Casa Club CB</span>
       <h2 style="font-size:clamp(2rem,4.5vw,3rem);font-style:italic;font-weight:900;text-transform:uppercase;margin:12px 0 14px">Mucho más<br>que canchas</h2>
-      <p style="color:var(--slate);font-size:1.06rem;margin-bottom:20px">La Casa Club: el cuartel general del CDB. Llega, cámbiate, juega y quédate un rato.</p>
-      <a href="#reservar" class="btn btn-primary">Quiero jugar 🔥</a>
-    </div>
-    <div class="club-card">
-      <h3>En la Casa Club</h3>
+      <p style="color:var(--slate);font-size:1.06rem;margin-bottom:8px">La Casa Club: el cuartel general de Canchas Bosquemar. Llega, cámbiate, juega y quédate un rato.</p>
       <ul class="club-list">
-        <li><span class="ic">🚿</span><div><b>Camarines y duchas</b><br><span style="opacity:.8;font-size:.9rem">Llega listo, ándate listo.</span></div></li>
-        <li><span class="ic">💳</span><div><b>Pagos y atención</b><br><span style="opacity:.8;font-size:.9rem">Reserva online o paga en el local.</span></div></li>
-        <li><span class="ic">🥤</span><div><b>Quiosco</b><br><span style="opacity:.8;font-size:.9rem">Bebidas, hidratación y accesorios.</span></div></li>
-        <li><span class="ic">🔥</span><div><b>Punto de encuentro</b><br><span style="opacity:.8;font-size:.9rem">El corazón de la comunidad CDB.</span></div></li>
+        <li><span class="ic">🚿</span><div><b>Camarines y duchas</b> — llega listo, ándate listo.</div></li>
+        <li><span class="ic">💳</span><div><b>Pagos y atención</b> — reserva online o paga en el local.</div></li>
+        <li><span class="ic">🥤</span><div><b>Quiosco</b> — bebidas, hidratación y accesorios.</div></li>
+        <li><span class="ic">🔥</span><div><b>Punto de encuentro</b> — el corazón de la comunidad CB.</div></li>
       </ul>
+      <div style="margin-top:22px"><a href="#reservar" class="btn btn-primary">Quiero jugar 🔥</a></div>
     </div>
+    <div class="club-photo"><img src="assets/fotos/casa-club.jpg" alt="Casa Club Canchas Bosquemar" /></div>
   </div>
 </section>
 
@@ -387,13 +416,13 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <img class="logo-foot" src="assets/logo/cdb-completo-blanco.svg" alt="Centro Deportivo Bosquemar" />
-        <p>El centro deportivo de la Población Bosquemar. Futbolito, comunidad y buen fútbol en Puerto Montt.</p>
+        <img class="logo-foot" src="assets/logo/cb-completo-blanco.png" alt="Canchas Bosquemar" />
+        <p>Canchas de futbolito techadas en la Población Bosquemar. El nuevo epicentro deportivo de Puerto Montt.</p>
       </div>
-      <div><h5>Navegación</h5><a href="#reservar">Reservar cancha</a><a href="#features">Cómo funciona</a><a href="#club">Casa Club</a><a href="#ubicacion">Ubicación</a></div>
-      <div><h5>Contacto</h5><a href="#">📱 WhatsApp</a><a href="#">📷 Instagram</a><a href="#">✉️ contacto@cdbosquemar.cl</a></div>
+      <div><h5>Navegación</h5><a href="#reservar">Reservar cancha</a><a href="#features">Cómo funciona</a><a href="#recinto">El recinto</a><a href="#club">Casa Club</a><a href="#ubicacion">Ubicación</a></div>
+      <div><h5>Contacto</h5><a href="#">📱 WhatsApp</a><a href="#">📷 Instagram</a><a href="#">✉️ contacto@canchasbosquemar.cl</a></div>
     </div>
-    <div class="foot-bottom"><span>© 2026 Centro Deportivo Bosquemar · Puerto Montt</span><span>Demo construido con Claude Code</span></div>
+    <div class="foot-bottom"><span>© 2026 Canchas Bosquemar · Puerto Montt</span><span>El nuevo epicentro deportivo</span></div>
   </div>
 </footer>
 
@@ -415,14 +444,14 @@
           <button class="btn btn-primary" style="flex:1" onclick="goStep(2)">Pagar y continuar 💳</button>
           <button class="btn btn-ghost" onclick="closeModal()">Cancelar</button>
         </div>
-        <p style="text-align:center;color:var(--slate);font-size:.78rem;margin-top:14px">🔒 Pago simulado en el demo · Webpay · Mercado Pago · Flow</p>
+        <p style="text-align:center;color:var(--slate);font-size:.78rem;margin-top:14px">🔒 Pago simulado en la vista previa · Webpay · Mercado Pago · Flow</p>
       </div>
 
       <div class="step" id="step2">
         <p style="color:var(--slate);font-size:.92rem;margin-bottom:16px">Arma los dos equipos. Puedes saltarte esto y compartir un link para que cada uno se agregue solo.</p>
         <div class="teams">
           <div class="team A"><h4>🟢 Equipo Verde <small id="cntA">0</small></h4><div class="players" id="playersA"></div><div class="add-row"><input id="inA" placeholder="Nombre del jugador" onkeydown="if(event.key==='Enter')addPlayer('A')"><button onclick="addPlayer('A')">+</button></div></div>
-          <div class="team B"><h4>🟠 Equipo Naranjo <small id="cntB">0</small></h4><div class="players" id="playersB"></div><div class="add-row"><input id="inB" placeholder="Nombre del jugador" onkeydown="if(event.key==='Enter')addPlayer('B')"><button onclick="addPlayer('B')">+</button></div></div>
+          <div class="team B"><h4>🟠 Equipo Naranja <small id="cntB">0</small></h4><div class="players" id="playersB"></div><div class="add-row"><input id="inB" placeholder="Nombre del jugador" onkeydown="if(event.key==='Enter')addPlayer('B')"><button onclick="addPlayer('B')">+</button></div></div>
         </div>
         <div style="display:flex;gap:10px;margin-top:20px">
           <button class="btn btn-ghost" onclick="goStep(1)">← Volver</button>
@@ -432,13 +461,13 @@
 
       <div class="step" id="step3">
         <div class="share-card" id="shareCard">
-          <div class="sc-top"><img class="sc-badge-img" src="assets/logo/cdb-isotipo.svg" alt="CDB" /><div class="sc-when" id="sc-when">Hoy · 20:00 hrs</div></div>
+          <div class="sc-top"><img class="sc-badge-img" src="assets/logo/cb-isotipo.png" alt="CB" /><div class="sc-when" id="sc-when">Hoy · 20:00 hrs</div></div>
           <div class="sc-title">¡Tenemos pichanga! ⚽</div>
-          <div class="sc-sub" id="sc-court">Cancha 1 · Centro Deportivo Bosquemar</div>
+          <div class="sc-sub" id="sc-court">Cancha 1 · Canchas Bosquemar</div>
           <div class="sc-teams">
             <div class="sc-team"><h5>🟢 Verde</h5><div id="sc-teamA">Por confirmar</div></div>
             <div class="sc-vs">VS</div>
-            <div class="sc-team"><h5>🟠 Naranjo</h5><div id="sc-teamB">Por confirmar</div></div>
+            <div class="sc-team"><h5>🟠 Naranja</h5><div id="sc-teamB">Por confirmar</div></div>
           </div>
           <div class="sc-foot"><span>📍 Pob. Bosquemar, Pto. Montt</span><span id="sc-price">💳 $32.000</span></div>
         </div>
@@ -463,7 +492,7 @@
   const days = [];
   const dayNames = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
   const monthNames = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
-  const base = new Date(2026,5,8);
+  const base = new Date(2026,5,17);
   for(let i=0;i<7;i++){ const d=new Date(base); d.setDate(base.getDate()+i); days.push(d); }
   const daySel = document.getElementById('day');
   days.forEach((d,i)=>{ const o=document.createElement('option'); o.value=i; o.textContent=(i===0?'Hoy':i===1?'Mañana':dayNames[d.getDay()])+` ${d.getDate()} ${monthNames[d.getMonth()]}`; daySel.appendChild(o); });
@@ -491,7 +520,7 @@
     document.getElementById('sum-when').textContent=whenLabel();
     document.getElementById('sum-price').textContent=fmt(state.price);
     document.getElementById('sc-when').textContent=whenLabel().split(' · ').slice(0,2).join(' · ');
-    document.getElementById('sc-court').textContent=`Cancha ${state.court} · Centro Deportivo Bosquemar`;
+    document.getElementById('sc-court').textContent=`Cancha ${state.court} · Canchas Bosquemar`;
     document.getElementById('sc-price').textContent='💳 '+fmt(state.price);
     state.teams={A:[],B:[]}; renderPlayers(); goStep(1);
     document.getElementById('overlay').classList.add('open'); document.body.style.overflow='hidden';
@@ -514,7 +543,7 @@
     });
   }
   function updateShareCard(){ document.getElementById('sc-teamA').textContent=state.teams.A.length?state.teams.A.join(', '):'Por confirmar'; document.getElementById('sc-teamB').textContent=state.teams.B.length?state.teams.B.join(', '):'Por confirmar'; }
-  function inviteText(){ const A=state.teams.A.length?state.teams.A.join(', '):'(por confirmar)'; const B=state.teams.B.length?state.teams.B.join(', '):'(por confirmar)'; return `⚽ ¡PICHANGA EN EL CDB! ⚽\n\n📅 ${document.getElementById('sc-when').textContent}\n📍 Cancha ${state.court} · Centro Deportivo Bosquemar, Pob. Bosquemar, Puerto Montt\n💳 Total: ${fmt(state.price)}\n\n🟢 Verde: ${A}\n🟠 Naranjo: ${B}\n\n¡Nos vemos en la cancha! 🔥`; }
+  function inviteText(){ const A=state.teams.A.length?state.teams.A.join(', '):'(por confirmar)'; const B=state.teams.B.length?state.teams.B.join(', '):'(por confirmar)'; return `⚽ ¡PICHANGA EN CANCHAS BOSQUEMAR! ⚽\n\n📅 ${document.getElementById('sc-when').textContent}\n📍 Cancha ${state.court} · Canchas Bosquemar, Pob. Bosquemar, Puerto Montt\n💳 Total: ${fmt(state.price)}\n\n🟢 Verde: ${A}\n🟠 Naranja: ${B}\n\n¡Nos vemos en la cancha! 🔥`; }
   function shareWhatsApp(){ window.open('https://wa.me/?text='+encodeURIComponent(inviteText()),'_blank'); }
   function copyText(){ navigator.clipboard.writeText(inviteText()).then(()=>toast('¡Invitación copiada! 📋')); }
   function addToCalendar(){
@@ -522,8 +551,8 @@
     const dt=`${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(state.time)}0000`;
     const endH=state.time+1, endM=state.dur===1?'00':'30';
     const dtEnd=`${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(endH)}${endM}00`;
-    const ics=['BEGIN:VCALENDAR','VERSION:2.0','BEGIN:VEVENT',`SUMMARY:Pichanga CDB - Cancha ${state.court}`,`LOCATION:Centro Deportivo Bosquemar, Poblacion Bosquemar, Puerto Montt`,`DESCRIPTION:Reserva en el Centro Deportivo Bosquemar`,`DTSTART:${dt}`,`DTEND:${dtEnd}`,'END:VEVENT','END:VCALENDAR'].join('\n');
-    const blob=new Blob([ics],{type:'text/calendar'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='pichanga-cdb.ics'; a.click(); toast('📅 Evento descargado');
+    const ics=['BEGIN:VCALENDAR','VERSION:2.0','BEGIN:VEVENT',`SUMMARY:Pichanga Canchas Bosquemar - Cancha ${state.court}`,`LOCATION:Canchas Bosquemar, Poblacion Bosquemar, Puerto Montt`,`DESCRIPTION:Reserva en Canchas Bosquemar`,`DTSTART:${dt}`,`DTEND:${dtEnd}`,'END:VEVENT','END:VCALENDAR'].join('\n');
+    const blob=new Blob([ics],{type:'text/calendar'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='pichanga-canchas-bosquemar.ics'; a.click(); toast('📅 Evento descargado');
   }
   function finish(){ closeModal(); toast('¡Reserva confirmada! Revisa tu correo 📧'); }
   let toastT; function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),2600); }
