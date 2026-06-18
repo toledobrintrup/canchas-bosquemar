@@ -1,5 +1,20 @@
 import type { Metadata, Viewport } from "next";
+import { Inter, Saira_Condensed } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const saira = Saira_Condensed({
+  subsets: ["latin"],
+  weight: ["600", "700", "800", "900"],
+  variable: "--font-saira",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://canchasbosquemar.cl"),
@@ -29,7 +44,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
+    <html lang="es" className={`${inter.variable} ${saira.variable}`}>
       <body>{children}</body>
     </html>
   );
