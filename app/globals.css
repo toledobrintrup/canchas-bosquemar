@@ -274,3 +274,13 @@
   .toast.show{transform:translateX(-50%) translateY(0)}
   .demo-banner{background:var(--grad-hot);color:#fff;text-align:center;font-family:var(--font-saira);font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.82rem;padding:8px}
 
+
+/* ===== PWA: boton instalar ===== */
+.pwa-wrap{position:fixed;left:18px;bottom:22px;z-index:90;display:flex;flex-direction:column;gap:9px;align-items:flex-start}
+.pwa-install{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-saira),sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.03em;font-size:.9rem;color:#eafffb;background:var(--grad-night);border:1px solid rgba(44,240,201,.3);padding:11px 16px;border-radius:999px;cursor:pointer;box-shadow:0 12px 26px -8px rgba(0,0,0,.5);transition:.16s}
+.pwa-install:hover{transform:translateY(-2px)}
+.pwa-x{margin-left:3px;opacity:.55;font-size:.82em;font-style:normal}
+.pwa-x:hover{opacity:1}
+.pwa-hint{max-width:250px;background:#fff;color:var(--ink);border-radius:13px;padding:12px 14px;font-size:.84rem;line-height:1.5;box-shadow:0 16px 32px -10px rgba(8,33,37,.45)}
+.pwa-hint b{color:var(--teal-deep)}
+@media(max-width:520px){.pwa-install{font-size:.82rem;padding:10px 13px}}
