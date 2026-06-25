@@ -3,76 +3,117 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Flujo de caja · Intranet Canchas Bosquemar</title>
+<title>Flujo · Intranet Canchas Bosquemar</title>
 <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-<meta name="theme-color" content="#0c2f33" />
+<meta name="theme-color" content="#0c1614" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/intranet.css" />
 <style>
-  .selbar{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-end;margin-bottom:20px}
-  .selbar .slbl{font-size:.68rem;text-transform:uppercase;letter-spacing:.09em;color:var(--slate);font-weight:800;margin-bottom:7px;display:block}
-  .btn-g{font-family:'Saira Condensed',sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.02em;border:0;border-radius:11px;padding:11px 17px;cursor:pointer;font-size:.9rem}
-  .btn-g.primary{background:var(--grad-hot);color:#fff}
-  .btn-g.ghost{background:#fff;color:var(--ink);box-shadow:var(--shadow)}
-  .saldos-row{display:flex;gap:14px;flex-wrap:wrap}
-  .saldo-chip{background:var(--bg);border-radius:13px;padding:12px 18px;min-width:160px}
-  .saldo-chip .b{font-size:.72rem;color:var(--slate);text-transform:uppercase;letter-spacing:.04em;font-weight:700}
-  .saldo-chip .v{font-family:'Saira Condensed',sans-serif;font-style:italic;font-weight:900;font-size:1.5rem;line-height:1.1;margin-top:3px}
-  .cbtn{background:none;border:0;cursor:pointer;font-size:1.05rem;opacity:.4;filter:grayscale(1)}
-  .cbtn.has{opacity:1;filter:none}
-  .cbtn:hover{opacity:1;filter:none}
-  .cmodal-bg{position:fixed;inset:0;background:rgba(8,33,37,.55);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+  .selbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+  .selbar .grp{display:flex;align-items:center;gap:7px}
+  .selbar .slbl{font-size:.66rem;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);font-weight:700;margin-right:2px}
+  .btn-g{font-weight:600;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:9px;padding:8px 14px;cursor:pointer;font-size:.85rem;font-family:inherit}
+  .btn-g.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .clearf{display:inline-flex;align-items:center;gap:6px;background:var(--teal-soft);color:var(--teal-d);border:0;border-radius:8px;padding:7px 12px;font-weight:600;font-size:.82rem;cursor:pointer}
+
+  /* tarjeta de totales */
+  .totales{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:18px;overflow:hidden}
+  .totales .th{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;border-bottom:1px solid var(--line)}
+  .totales .th h3{font-weight:700;font-size:1rem}
+  .upd{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;color:var(--muted);background:var(--panel-2);border:1px solid var(--line);padding:5px 11px;border-radius:8px}
+  .upd .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 3px var(--teal-soft)}
+  .totgrid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .metric{padding:18px 20px;border-right:1px solid var(--line)}
+  .metric:last-child{border-right:0}
+  .metric .mlbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
+  .metric .mbig{font-weight:800;font-size:1.85rem;letter-spacing:-.035em;margin:6px 0 12px;line-height:1}
+  .brk{display:flex;flex-direction:column;gap:5px}
+  .brk .r{display:flex;justify-content:space-between;font-size:.82rem;font-variant-numeric:tabular-nums}
+  .brk .r.cb{font-weight:700}
+  .brk .r.sub{color:var(--muted);padding-left:12px;font-size:.78rem}
+  .brk .r.sub span:first-child::before{content:"└ ";color:var(--faint)}
+  .brk .r .v{font-weight:600}
+
+  .cbtn{background:none;border:0;cursor:pointer;opacity:.35;padding:2px}
+  .cbtn .ico{width:16px;height:16px;color:var(--muted)}
+  .cbtn.has{opacity:1}.cbtn.has .ico{color:var(--teal-d)}
+  .cbtn:hover{opacity:1}
+
+  /* últimos movimientos (vista rápida) */
+  .quick{display:flex;gap:10px;overflow-x:auto;padding:4px 0 2px}
+  .qcard{flex:none;width:210px;border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:var(--panel)}
+  .qcard .qd{font-size:.72rem;color:var(--muted);font-weight:600}
+  .qcard .qg{font-size:.86rem;font-weight:600;margin:3px 0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .qcard .qm{font-weight:800;font-size:1.05rem;font-variant-numeric:tabular-nums}
+  .minitag{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);background:var(--panel-2);border:1px solid var(--line);padding:2px 7px;border-radius:5px}
+
+  .cmodal-bg{position:fixed;inset:0;background:rgba(10,20,18,.5);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
   .cmodal-bg.open{display:flex}
-  .cmodal{background:#fff;border-radius:18px;max-width:470px;width:100%;box-shadow:0 36px 80px -20px rgba(0,0,0,.5);overflow:hidden;animation:rise .22s ease}
-  @keyframes rise{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}
-  .cmodal header{background:var(--grad-night);color:#eafffb;padding:16px 20px}
-  .cmodal header h3{font-style:italic;font-weight:900;text-transform:uppercase;font-size:1.25rem}
-  .cmodal header span{font-size:.82rem;opacity:.82}
+  .cmodal{background:var(--panel);border-radius:16px;max-width:470px;width:100%;box-shadow:0 30px 70px -18px rgba(0,0,0,.4);overflow:hidden;animation:rise .2s ease}
+  @keyframes rise{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+  .cmodal header{padding:16px 20px;border-bottom:1px solid var(--line)}
+  .cmodal header h3{font-weight:700;font-size:1.05rem}
+  .cmodal header span{font-size:.8rem;color:var(--muted)}
   .cmodal .cbody{padding:18px 20px}
-  .cmodal textarea{width:100%;min-height:96px;border:1.5px solid var(--line);border-radius:11px;padding:11px 13px;font-family:inherit;font-size:.92rem;resize:vertical;color:var(--ink)}
+  .cmeta{font-size:.78rem;color:var(--muted);margin-bottom:9px}
+  .cmeta b{color:var(--ink)}
+  .cview{background:var(--panel-2);border:1px solid var(--line);border-radius:11px;padding:12px 14px;font-size:.9rem;min-height:54px;color:var(--ink);line-height:1.5}
+  .cview.empty{color:var(--faint)}
+  .cmodal textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:11px;padding:11px 13px;font-family:inherit;font-size:.9rem;resize:vertical;color:var(--ink)}
   .cmodal textarea:focus{outline:none;border-color:var(--teal)}
-  .cmodal .acts{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}
-  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--ink);color:#fff;padding:13px 20px;border-radius:12px;font-weight:700;font-size:.9rem;z-index:200;transition:.3s;box-shadow:var(--shadow)}
+  .cacts{display:flex;gap:9px;justify-content:flex-end;margin-top:14px}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--ink);color:#fff;padding:12px 19px;border-radius:11px;font-weight:600;font-size:.88rem;z-index:200;transition:.3s}
   .toast.show{transform:translateX(-50%) translateY(0)}
+  .bartip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:.78rem;font-weight:600;padding:6px 10px;border-radius:8px;opacity:0;transition:opacity .1s;z-index:150;white-space:nowrap}
 </style>
 </head>
 <body>
   <aside class="side">
     <a class="brand" href="/"><span class="mark"><img src="assets/logo/cb-isotipo.png" alt="CB"></span><span><b>Bosquemar</b><small>Intranet</small></span></a>
-    <nav class="nav"><a href="intranet.html"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Resumen</a><a href="intranet-reservas.html"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 14.5l2.3 2.3 4.7-4.6"/></svg>Reservas</a><a href="intranet-calendario.html"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Calendario</a><a href="intranet-clientes.html"><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5"/><circle cx="17" cy="9.5" r="2.4"/><path d="M15 14.2c3.4-.5 6 1.4 6 4.8"/></svg>Clientes</a><a href="intranet-caja.html" class="on"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.3c0-1.1-1.1-1.8-2.5-1.8s-2.5.7-2.5 1.9 1.1 1.6 2.5 1.9 2.6.8 2.6 2-1.2 1.7-2.6 1.7-2.6-.6-2.6-1.8"/></svg>Caja e ingresos</a><div class="sep">Operación</div><a href="intranet-canchas.html"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 5v14M3 12h18"/><circle cx="12" cy="12" r="2.2"/></svg>Canchas</a><a href="intranet-torneos.html"><svg class="ico" viewBox="0 0 24 24"><path d="M6.5 4h11v4.5a5.5 5.5 0 0 1-11 0z"/><path d="M6.5 6H3.5v1a3.5 3.5 0 0 0 3.5 3.5M17.5 6h3v1a3.5 3.5 0 0 1-3.5 3.5"/><path d="M12 13.5v4M8.5 20.5h7M10 20.5l.4-3h3.2l.4 3"/></svg>Torneos y ligas</a><a href="intranet-config.html"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>Configuración</a></nav>
-    <div class="foot"><a href="/"><svg class="ico" viewBox="0 0 24 24" style="display:inline;vertical-align:-5px;margin-right:8px"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>Volver al sitio</a></div>
+    <nav class="nav">
+      <a href="intranet.html"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Resumen</a>
+      <a href="intranet-caja.html" class="on"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.3c0-1.1-1.1-1.8-2.5-1.8s-2.5.7-2.5 1.9 1.1 1.6 2.5 1.9 2.6.8 2.6 2-1.2 1.7-2.6 1.7-2.6-.6-2.6-1.8"/></svg>Flujo</a>
+      <a href="intranet-reservas.html"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 14.5l2.3 2.3 4.7-4.6"/></svg>Reservas</a>
+      <a href="intranet-calendario.html"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Calendario</a>
+      <a href="intranet-clientes.html"><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5"/><circle cx="17" cy="9.5" r="2.4"/><path d="M15 14.2c3.4-.5 6 1.4 6 4.8"/></svg>Clientes</a>
+      <div class="sep">Operación</div>
+      <a href="intranet-canchas.html"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 5v14M3 12h18"/><circle cx="12" cy="12" r="2.2"/></svg>Canchas</a>
+      <a href="intranet-torneos.html"><svg class="ico" viewBox="0 0 24 24"><path d="M6.5 4h11v4.5a5.5 5.5 0 0 1-11 0z"/><path d="M6.5 6H3.5v1a3.5 3.5 0 0 0 3.5 3.5M17.5 6h3v1a3.5 3.5 0 0 1-3.5 3.5"/><path d="M12 13.5v4M8.5 20.5h7M10 20.5l.4-3h3.2l.4 3"/></svg>Torneos y ligas</a>
+      <a href="intranet-config.html"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>Configuración</a>
+    </nav>
+    <div class="foot"><a href="/"><svg class="ico" viewBox="0 0 24 24" style="margin-right:9px"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>Volver al sitio</a></div>
   </aside>
 
   <div class="main">
     <header class="topbar">
-      <h1>Flujo de caja</h1>
-      <div class="right"><span class="pill">⚡ Vista previa</span><div class="user"><span class="av">GT</span><span>Gabriel T.</span></div></div>
+      <h1>Flujo</h1>
+      <div class="right"><span class="pill">Vista previa</span><div class="user"><span class="av">GT</span><span>Gabriel T.</span></div></div>
     </header>
     <div class="content">
-      <div class="demo">💰 <b>Flujo de caja — maqueta.</b> Estructura real: <b>La Capitanía</b> (Banco de Chile + BICE) y <b>Quinque</b> (Banco de Chile). Datos de ejemplo; al conectar la base de datos cargamos tus movimientos reales y el histórico de Quinque.</div>
+
+      <div class="totales">
+        <div class="th"><h3>Totales</h3><span class="upd"><span class="dot"></span>Última actualización · <b id="updFecha" style="color:var(--ink);font-weight:600">&nbsp;</b></span></div>
+        <div class="totgrid" id="totales"></div>
+      </div>
+
+      <div class="card" style="margin-bottom:18px"><div class="card-h"><h3>Últimos movimientos</h3><span style="font-size:.8rem;color:var(--muted)">todas las cuentas</span></div><div class="mini" style="padding:14px 16px"><div class="quick" id="quick"></div></div></div>
 
       <div class="selbar">
-        <div><span class="slbl">Empresa</span><div class="chips" id="selEmpresa"></div></div>
-        <div><span class="slbl">Banco</span><div class="chips" id="selBanco"></div></div>
-        <div style="margin-left:auto;display:flex;gap:10px">
-          <button class="btn-g ghost" onclick="toast('Importador de Excel — se activa al conectar la base de datos')">⇪ Importar Excel</button>
-          <button class="btn-g primary" onclick="toast('Formulario de movimiento — se activa al conectar la base de datos')">+ Movimiento</button>
-        </div>
+        <span class="slbl">Filtrar gráficos y detalle:</span>
+        <div class="grp"><div class="chips" id="selEmpresa"></div></div>
+        <div class="grp"><div class="chips" id="selBanco"></div></div>
+        <span id="clearWrap"></span>
       </div>
-
-      <div class="kpis" id="kpis"></div>
-
-      <div class="card" style="margin-bottom:22px"><div class="card-h"><h3>Saldos por cuenta</h3></div><div class="mini" id="saldos"></div></div>
 
       <div class="charts">
-        <div class="chart-card"><h3>Ingresos vs. egresos</h3><div class="chart-sub">Por mes · la línea naranja es el flujo neto</div><div id="barChart"></div>
-          <div class="legend"><span><i style="background:#17d4ad"></i>Ingresos</span><span><i style="background:#e0654f"></i>Egresos</span><span><i style="background:#ff8b00"></i>Flujo neto</span></div></div>
-        <div class="chart-card"><h3>Egresos por categoría</h3><div class="chart-sub">Selección actual</div><div class="donut-wrap"><div id="donut"></div><div class="donut-legend" id="donutLeg"></div></div></div>
+        <div class="chart-card"><h3>Ingresos vs. egresos</h3><div class="chart-sub" id="barSub">Por mes · egresos en negativo</div><div id="barChart"></div>
+          <div class="legend"><span><i style="background:#10b497"></i>Ingresos</span><span><i style="background:#d2624a"></i>Egresos</span><span><i style="background:#0e1a18"></i>Flujo neto</span></div></div>
+        <div class="chart-card"><h3>Egresos por categoría</h3><div class="chart-sub">Clic en una categoría para filtrar todo</div><div class="donut-wrap"><div id="donut"></div><div class="donut-legend" id="donutLeg"></div></div></div>
       </div>
 
-      <div class="card"><div class="card-h"><h3>Movimientos</h3><a href="#" onclick="return false">Exportar →</a></div>
+      <div class="card"><div class="card-h"><h3>Movimientos <span id="movCount" style="color:var(--muted);font-weight:500;font-size:.82rem"></span></h3><button class="btn-g primary" onclick="toast('Formulario de movimiento — se activa con la base de datos')">+ Movimiento</button></div>
         <table><thead><tr><th>Fecha</th><th>Glosa</th><th>Categoría</th><th>Banco</th><th class="num">Ingreso</th><th class="num">Egreso</th><th class="num">Saldo</th><th></th></tr></thead>
         <tbody id="movs"></tbody></table>
       </div>
@@ -83,177 +124,224 @@
     <div class="cmodal">
       <header><h3>Comentario</h3><span id="cmTitle"></span></header>
       <div class="cbody">
-        <textarea id="cmText" placeholder="Escribe una nota sobre este movimiento…"></textarea>
-        <div class="acts"><button class="btn-g ghost" onclick="cerrarCom()">Cancelar</button><button class="btn-g primary" onclick="guardarCom()">Guardar</button></div>
+        <div class="cmeta" id="cmMeta"></div>
+        <div id="cmViewWrap"><div class="cview" id="cmView"></div></div>
+        <textarea id="cmText" style="display:none" placeholder="Escribe una nota sobre este movimiento…"></textarea>
+        <div class="cacts" id="cmActs"></div>
       </div>
     </div>
   </div>
   <div class="toast" id="toast"></div>
+  <div class="bartip" id="bartip"></div>
 
 <script>
-  const fmt = n => (n<0?'−$':'$') + Math.abs(Math.round(n)).toLocaleString('es-CL');
+  const fmt  = n => (n<0?'−$':'$') + Math.abs(Math.round(n)).toLocaleString('es-CL');
   const fmtM = n => (n<0?'−$':'$') + (Math.abs(n)/1e6).toFixed(1) + 'M';
   const MES = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+  const USUARIO = 'Gabriel Toledo';
+  const ULTIMA_ACT = '2026-06-14';
 
   const CUENTAS = [
-    { id:'lcp-chile', empresa:'LCP', banco:'Banco de Chile', saldoIni:2000000 },
-    { id:'lcp-bice',  empresa:'LCP', banco:'Banco BICE',     saldoIni:6000000 },
-    { id:'qq-chile',  empresa:'QQ',  banco:'Banco de Chile', saldoIni:1500000 },
+    { id:'cb-chile', empresa:'CB', banco:'Banco de Chile', saldoIni:2000000 },
+    { id:'cb-bice',  empresa:'CB', banco:'Banco BICE',     saldoIni:6000000 },
+    { id:'qq-chile', empresa:'QQ', banco:'Banco de Chile', saldoIni:1500000 },
   ];
-  const EMP = { LCP:'La Capitanía', QQ:'Quinque' };
+  const EMP = { CB:'Canchas Bosquemar', QQ:'Quinque' };
+  const COL_BAR = { ing:'#10b497', egr:'#d2624a', neto:'#0e1a18' };
+  const COL_CAT = ['#0a8f78','#d2624a','#3a5a54','#e0954f','#6b8f87','#b5740a','#9aa8a5','#10b497'];
 
   const MOV = [
-    // Quinque — arriendo inmueble (colegios) + financiamiento a La Capitanía
-    {fecha:'2026-01-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios enero',cat:'Arriendo inmueble',com:''},
-    {fecha:'2026-01-12',cuenta:'qq-chile',tipo:'egreso', monto:5000000,glosa:'Transferencia a La Capitanía',cat:'Aporte a LCP',com:'Financiamiento obra canchas'},
-    {fecha:'2026-02-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios febrero',cat:'Arriendo inmueble',com:''},
-    {fecha:'2026-02-16',cuenta:'qq-chile',tipo:'egreso', monto:4000000,glosa:'Transferencia a La Capitanía',cat:'Aporte a LCP',com:''},
-    {fecha:'2026-02-26',cuenta:'qq-chile',tipo:'egreso', monto:90000,  glosa:'Comisiones y mantención cuenta',cat:'Gastos bancarios',com:''},
-    {fecha:'2026-03-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios marzo',cat:'Arriendo inmueble',com:''},
-    {fecha:'2026-03-20',cuenta:'qq-chile',tipo:'egreso', monto:3000000,glosa:'Transferencia a La Capitanía',cat:'Aporte a LCP',com:''},
-    {fecha:'2026-04-05',cuenta:'qq-chile',tipo:'ingreso',monto:4300000,glosa:'Arriendo colegios abril',cat:'Arriendo inmueble',com:''},
-    {fecha:'2026-05-05',cuenta:'qq-chile',tipo:'ingreso',monto:4300000,glosa:'Arriendo colegios mayo',cat:'Arriendo inmueble',com:''},
-    {fecha:'2026-06-05',cuenta:'qq-chile',tipo:'ingreso',monto:4300000,glosa:'Arriendo colegios junio',cat:'Arriendo inmueble',com:''},
-    // La Capitanía · Banco de Chile — aportes de Quinque + obra
-    {fecha:'2026-01-13',cuenta:'lcp-chile',tipo:'ingreso',monto:5000000,glosa:'Aporte Quinque',cat:'Aporte / financiamiento',com:''},
-    {fecha:'2026-01-22',cuenta:'lcp-chile',tipo:'egreso', monto:3500000,glosa:'Maestro obra gruesa',cat:'Construcción / obras',com:'Fundaciones canchas 1 y 2'},
-    {fecha:'2026-02-17',cuenta:'lcp-chile',tipo:'ingreso',monto:4000000,glosa:'Aporte Quinque',cat:'Aporte / financiamiento',com:''},
-    {fecha:'2026-02-21',cuenta:'lcp-chile',tipo:'egreso', monto:2800000,glosa:'Estructura techo (anticipo)',cat:'Construcción / obras',com:''},
-    {fecha:'2026-03-21',cuenta:'lcp-chile',tipo:'ingreso',monto:3000000,glosa:'Aporte Quinque',cat:'Aporte / financiamiento',com:''},
-    {fecha:'2026-03-25',cuenta:'lcp-chile',tipo:'egreso', monto:1900000,glosa:'Mano de obra marzo',cat:'Sueldos y honorarios',com:''},
-    {fecha:'2026-04-10',cuenta:'lcp-chile',tipo:'egreso', monto:2400000,glosa:'Pasto sintético (anticipo)',cat:'Materiales',com:'Proveedor Santiago'},
-    {fecha:'2026-05-12',cuenta:'lcp-chile',tipo:'egreso', monto:1500000,glosa:'Cierre perimetral',cat:'Construcción / obras',com:''},
-    {fecha:'2026-06-08',cuenta:'lcp-chile',tipo:'egreso', monto:900000, glosa:'Iluminación LED',cat:'Materiales',com:''},
-    // La Capitanía · Banco BICE — gastos varios de obra
-    {fecha:'2026-02-03',cuenta:'lcp-bice',tipo:'egreso',monto:2100000,glosa:'Compra estructura carpa',cat:'Construcción / obras',com:'Anticipo 40%'},
-    {fecha:'2026-03-15',cuenta:'lcp-bice',tipo:'egreso',monto:800000, glosa:'Materiales varios ferretería',cat:'Materiales',com:''},
-    {fecha:'2026-04-18',cuenta:'lcp-bice',tipo:'egreso',monto:650000, glosa:'Electricidad obra',cat:'Servicios básicos',com:''},
-    {fecha:'2026-05-20',cuenta:'lcp-bice',tipo:'egreso',monto:1100000,glosa:'Anticipo camarines',cat:'Construcción / obras',com:''},
+    {fecha:'2026-01-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios enero',cat:'Arriendo inmueble',com:'',autor:''},
+    {fecha:'2026-01-12',cuenta:'qq-chile',tipo:'egreso', monto:5000000,glosa:'Transferencia a Canchas Bosquemar',cat:'Aporte a CB',com:'Financiamiento obra canchas',autor:'Gabriel Toledo'},
+    {fecha:'2026-02-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios febrero',cat:'Arriendo inmueble',com:'',autor:''},
+    {fecha:'2026-02-16',cuenta:'qq-chile',tipo:'egreso', monto:4000000,glosa:'Transferencia a Canchas Bosquemar',cat:'Aporte a CB',com:'',autor:''},
+    {fecha:'2026-02-26',cuenta:'qq-chile',tipo:'egreso', monto:90000,  glosa:'Comisiones y mantención cuenta',cat:'Gastos bancarios',com:'',autor:''},
+    {fecha:'2026-03-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios marzo',cat:'Arriendo inmueble',com:'',autor:''},
+    {fecha:'2026-03-20',cuenta:'qq-chile',tipo:'egreso', monto:3000000,glosa:'Transferencia a Canchas Bosquemar',cat:'Aporte a CB',com:'',autor:''},
+    {fecha:'2026-04-05',cuenta:'qq-chile',tipo:'ingreso',monto:4300000,glosa:'Arriendo colegios abril',cat:'Arriendo inmueble',com:'',autor:''},
+    {fecha:'2026-05-05',cuenta:'qq-chile',tipo:'ingreso',monto:4300000,glosa:'Arriendo colegios mayo',cat:'Arriendo inmueble',com:'',autor:''},
+    {fecha:'2026-06-05',cuenta:'qq-chile',tipo:'ingreso',monto:4300000,glosa:'Arriendo colegios junio',cat:'Arriendo inmueble',com:'',autor:''},
+    {fecha:'2026-01-13',cuenta:'cb-chile',tipo:'ingreso',monto:5000000,glosa:'Aporte Quinque',cat:'Aporte / financiamiento',com:'',autor:''},
+    {fecha:'2026-01-22',cuenta:'cb-chile',tipo:'egreso', monto:3500000,glosa:'Maestro obra gruesa',cat:'Construcción / obras',com:'Fundaciones canchas 1 y 2',autor:'Gabriel Toledo'},
+    {fecha:'2026-02-17',cuenta:'cb-chile',tipo:'ingreso',monto:4000000,glosa:'Aporte Quinque',cat:'Aporte / financiamiento',com:'',autor:''},
+    {fecha:'2026-02-21',cuenta:'cb-chile',tipo:'egreso', monto:2800000,glosa:'Estructura techo (anticipo)',cat:'Construcción / obras',com:'',autor:''},
+    {fecha:'2026-03-21',cuenta:'cb-chile',tipo:'ingreso',monto:3000000,glosa:'Aporte Quinque',cat:'Aporte / financiamiento',com:'',autor:''},
+    {fecha:'2026-03-25',cuenta:'cb-chile',tipo:'egreso', monto:1900000,glosa:'Mano de obra marzo',cat:'Sueldos y honorarios',com:'',autor:''},
+    {fecha:'2026-04-10',cuenta:'cb-chile',tipo:'egreso', monto:2400000,glosa:'Pasto sintético (anticipo)',cat:'Materiales',com:'Proveedor Santiago',autor:'Gabriel Toledo'},
+    {fecha:'2026-05-12',cuenta:'cb-chile',tipo:'egreso', monto:1500000,glosa:'Cierre perimetral',cat:'Construcción / obras',com:'',autor:''},
+    {fecha:'2026-06-08',cuenta:'cb-chile',tipo:'egreso', monto:900000, glosa:'Iluminación LED',cat:'Materiales',com:'',autor:''},
+    {fecha:'2026-02-03',cuenta:'cb-bice',tipo:'egreso',monto:2100000,glosa:'Compra estructura carpa',cat:'Construcción / obras',com:'Anticipo 40%',autor:'Gabriel Toledo'},
+    {fecha:'2026-03-15',cuenta:'cb-bice',tipo:'egreso',monto:800000, glosa:'Materiales varios ferretería',cat:'Materiales',com:'',autor:''},
+    {fecha:'2026-04-18',cuenta:'cb-bice',tipo:'egreso',monto:650000, glosa:'Electricidad obra',cat:'Servicios básicos',com:'',autor:''},
+    {fecha:'2026-05-20',cuenta:'cb-bice',tipo:'egreso',monto:1100000,glosa:'Anticipo camarines',cat:'Construcción / obras',com:'',autor:''},
   ];
 
-  let sel = { empresa:'LCP', banco:'todos' };
-  const corto = b => b.replace('Banco de ','').replace('Banco ','');
-  const cuentasSel = () => CUENTAS.filter(c => c.empresa===sel.empresa && (sel.banco==='todos'||c.banco===sel.banco));
-  const signed = m => m.tipo==='ingreso' ? m.monto : -m.monto;
-  const saldoCuenta = c => c.saldoIni + MOV.filter(m=>m.cuenta===c.id).reduce((s,m)=>s+signed(m),0);
-  const bancoDe = id => corto((CUENTAS.find(c=>c.id===id)||{}).banco||'');
-  function movsSel(){ const ids=cuentasSel().map(c=>c.id); return MOV.map((m,i)=>({...m,_i:i})).filter(m=>ids.includes(m.cuenta)).sort((a,b)=> a.fecha<b.fecha?-1 : a.fecha>b.fecha?1 : 0); }
+  let sel = { empresa:'CB', banco:'todos' };
+  let catFilter = null;
 
-  function render(){ renderSel(); renderKpis(); renderSaldos(); renderTabla(); renderBar(); renderDonut(); }
+  const corto = b => b.replace('Banco de ','').replace('Banco ','');
+  const signed = m => m.tipo==='ingreso' ? m.monto : -m.monto;
+  const saldoCuenta = id => { const c=CUENTAS.find(x=>x.id===id); return c.saldoIni + MOV.filter(m=>m.cuenta===id).reduce((s,m)=>s+signed(m),0); };
+  const bancoDe = id => corto((CUENTAS.find(c=>c.id===id)||{}).banco||'');
+  const periodo = () => [...new Set(MOV.map(m=>m.fecha.slice(0,7)))].sort().pop();
+
+  // scope helpers para la tarjeta de totales (globales, no dependen del selector)
+  const idsScope = s => s==='ALL' ? CUENTAS.map(c=>c.id)
+    : s==='CB' ? ['cb-chile','cb-bice'] : s==='QQ' ? ['qq-chile'] : [s];
+  const saldoScope = s => idsScope(s).reduce((a,id)=>a+saldoCuenta(id),0);
+  const mesScope = (s,mes,tipo) => MOV.filter(m=>idsScope(s).includes(m.cuenta)&&m.fecha.slice(0,7)===mes&&m.tipo===tipo).reduce((a,m)=>a+m.monto,0);
+
+  function render(){ renderUpd(); renderTotales(); renderQuick(); renderSel(); renderBar(); renderDonut(); renderTabla(); }
+
+  function renderUpd(){
+    const d=ULTIMA_ACT; document.getElementById('updFecha').textContent = d.slice(8,10)+' '+MES[+d.slice(5,7)-1].toLowerCase()+' '+d.slice(0,4);
+  }
+
+  function renderTotales(){
+    const mes=periodo(), ml=MES[+mes.slice(5,7)-1];
+    const metrics=[
+      {lbl:'Saldo actual', f:s=>saldoScope(s), sign:true},
+      {lbl:'Ingresos '+ml, f:s=>mesScope(s,mes,'ingreso'), sign:false},
+      {lbl:'Egresos '+ml,  f:s=>mesScope(s,mes,'egreso'),  sign:false, neg:true},
+      {lbl:'Flujo neto '+ml, f:s=>mesScope(s,mes,'ingreso')-mesScope(s,mes,'egreso'), sign:true},
+    ];
+    document.getElementById('totales').innerHTML = metrics.map(mt=>{
+      const tot=mt.f('ALL');
+      const cls = mt.neg ? 'neg' : mt.sign ? (tot<0?'neg':'pos') : '';
+      return `<div class="metric">
+        <div class="mlbl">${mt.lbl}</div>
+        <div class="mbig ${cls}">${fmt(tot)}</div>
+        <div class="brk">
+          <div class="r cb"><span>Canchas Bosquemar</span><span class="v">${fmt(mt.f('CB'))}</span></div>
+          <div class="r sub"><span>Chile</span><span class="v">${fmt(mt.f('cb-chile'))}</span></div>
+          <div class="r sub"><span>BICE</span><span class="v">${fmt(mt.f('cb-bice'))}</span></div>
+          <div class="r cb" style="margin-top:3px"><span>Quinque</span><span class="v">${fmt(mt.f('QQ'))}</span></div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function renderQuick(){
+    const last=[...MOV].sort((a,b)=>a.fecha<b.fecha?1:-1).slice(0,7);
+    document.getElementById('quick').innerHTML = last.map(m=>`
+      <div class="qcard">
+        <div class="qd">${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]} · <span class="minitag">${EMP[CUENTAS.find(c=>c.id===m.cuenta).empresa]==='Canchas Bosquemar'?'CB':'QQ'} ${bancoDe(m.cuenta)}</span></div>
+        <div class="qg" title="${m.glosa}">${m.glosa}</div>
+        <div class="qm ${m.tipo==='ingreso'?'pos':'neg'}">${m.tipo==='ingreso'?'+':'−'}${fmt(m.monto).replace('−','')}</div>
+      </div>`).join('');
+  }
+
+  function cuentasSel(){ return CUENTAS.filter(c=>c.empresa===sel.empresa && (sel.banco==='todos'||c.banco===sel.banco)); }
+  function movsSel(){ const ids=cuentasSel().map(c=>c.id); return MOV.map((m,i)=>({...m,_i:i})).filter(m=>ids.includes(m.cuenta)).sort((a,b)=>a.fecha<b.fecha?-1:a.fecha>b.fecha?1:0); }
+  function movsFilt(){ return movsSel().filter(m=> !catFilter || m.cat===catFilter); }
 
   function renderSel(){
     document.getElementById('selEmpresa').innerHTML =
       Object.entries(EMP).map(([k,n])=>`<span class="chip2 ${sel.empresa===k?'on':''}" onclick="setEmp('${k}')">${n}</span>`).join('');
     const bancos=[...new Set(CUENTAS.filter(c=>c.empresa===sel.empresa).map(c=>c.banco))];
-    let chips='';
-    if(bancos.length>1) chips+=`<span class="chip2 ${sel.banco==='todos'?'on':''}" onclick="setBanco('todos')">Todos</span>`;
+    let chips=bancos.length>1 ? `<span class="chip2 ${sel.banco==='todos'?'on':''}" onclick="setBanco('todos')">Todos</span>` : '';
     chips+=bancos.map(b=>`<span class="chip2 ${sel.banco===b?'on':''}" onclick="setBanco('${b}')">${corto(b)}</span>`).join('');
     document.getElementById('selBanco').innerHTML=chips;
+    document.getElementById('clearWrap').innerHTML = catFilter ? `<button class="clearf" onclick="setCat(null)">✕ ${catFilter}</button>` : '';
   }
   function setEmp(k){ sel.empresa=k; sel.banco='todos'; render(); }
   function setBanco(b){ sel.banco=b; render(); }
-
-  function renderKpis(){
-    const ms=movsSel();
-    const saldo=cuentasSel().reduce((s,c)=>s+saldoCuenta(c),0);
-    const meses=[...new Set(ms.map(m=>m.fecha.slice(0,7)))].sort();
-    const ult=meses[meses.length-1]||'';
-    const enMes=ms.filter(m=>m.fecha.slice(0,7)===ult);
-    const ing=enMes.filter(m=>m.tipo==='ingreso').reduce((s,m)=>s+m.monto,0);
-    const egr=enMes.filter(m=>m.tipo==='egreso').reduce((s,m)=>s+m.monto,0);
-    const ml=ult?MES[+ult.slice(5,7)-1]:'';
-    const subSaldo = sel.empresa==='LCP' ? (sel.banco==='todos'?'Total La Capitanía':corto(sel.banco)) : 'Quinque';
-    const k=(val,lbl,sub,neg)=>`<div class="kpi"><div class="val">${val}</div><div class="lbl">${lbl}</div><div class="delta ${neg?'down':'up'}">${sub}</div></div>`;
-    document.getElementById('kpis').innerHTML =
-      k(fmt(saldo),'Saldo actual',subSaldo,saldo<0)
-      + k(fmt(ing),'Ingresos '+ml,'&nbsp;',false)
-      + k(fmt(egr),'Egresos '+ml,'&nbsp;',false)
-      + k(fmt(ing-egr),'Flujo neto '+ml,'&nbsp;',(ing-egr)<0);
-  }
-
-  function renderSaldos(){
-    const cs=CUENTAS.filter(c=>c.empresa===sel.empresa);
-    let h='<div class="saldos-row">';
-    cs.forEach(c=>{ h+=`<div class="saldo-chip"><div class="b">${c.banco}</div><div class="v">${fmt(saldoCuenta(c))}</div></div>`; });
-    if(cs.length>1){ const t=cs.reduce((s,c)=>s+saldoCuenta(c),0);
-      h+=`<div class="saldo-chip" style="background:var(--night)"><div class="b" style="color:#7fc7ba">Total ${EMP[sel.empresa]}</div><div class="v" style="color:#eafffb">${fmt(t)}</div></div>`; }
-    document.getElementById('saldos').innerHTML=h+'</div>';
-  }
-
-  function renderTabla(){
-    const ms=movsSel();
-    let saldo=cuentasSel().reduce((s,c)=>s+c.saldoIni,0);
-    let rows='';
-    ms.forEach(m=>{
-      saldo+=signed(m);
-      const f=m.fecha.slice(8,10)+' '+MES[+m.fecha.slice(5,7)-1];
-      rows+=`<tr>
-        <td>${f}</td>
-        <td>${m.glosa}</td>
-        <td><span class="tag" style="background:#eef3f1;color:var(--slate)">${m.cat}</span></td>
-        <td>${bancoDe(m.cuenta)}</td>
-        <td class="num pos">${m.tipo==='ingreso'?fmt(m.monto):''}</td>
-        <td class="num neg">${m.tipo==='egreso'?fmt(m.monto):''}</td>
-        <td class="num"><b>${fmt(saldo)}</b></td>
-        <td class="num"><button class="cbtn ${m.com?'has':''}" title="${m.com?'Ver/editar comentario':'Agregar comentario'}" onclick="abrirCom(${m._i})">💬</button></td>
-      </tr>`;
-    });
-    document.getElementById('movs').innerHTML = rows || '<tr><td colspan="8" style="text-align:center;color:var(--slate);padding:24px">Sin movimientos</td></tr>';
-  }
+  function setCat(c){ catFilter = (catFilter===c)?null:c; render(); }
 
   function renderBar(){
-    const ms=movsSel(), map={};
+    const ms=movsFilt(), map={};
     ms.forEach(m=>{ const k=m.fecha.slice(0,7); (map[k]=map[k]||{ing:0,egr:0})[m.tipo==='ingreso'?'ing':'egr']+=m.monto; });
     const data=Object.keys(map).sort().map(k=>({mes:MES[+k.slice(5,7)-1],ing:map[k].ing,egr:map[k].egr}));
-    const W=560,H=250,L=54,R=12,T=14,B=36,pw=W-L-R,ph=H-T-B;
-    const netos=data.map(d=>d.ing-d.egr);
-    const maxUp=Math.max(1,...data.map(d=>Math.max(d.ing,d.egr)),...netos.filter(n=>n>0));
-    const maxDown=Math.max(0,...netos.map(n=>-n));
-    const range=(maxUp+maxDown)||1, scale=ph/range, y0=T+maxUp*scale, gw=data.length?pw/data.length:pw;
+    const W=560,H=260,L=58,R=14,T=16,B=30,pw=W-L-R,ph=H-T-B;
+    const maxUp=Math.max(1,...data.map(d=>d.ing),...data.map(d=>d.ing-d.egr));
+    const maxDn=Math.max(1,...data.map(d=>d.egr),...data.map(d=>Math.max(0,d.egr-d.ing)));
+    const range=maxUp+maxDn, scale=ph/range, y0=T+maxUp*scale, gw=data.length?pw/data.length:pw;
     let s=`<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto">`;
-    for(let i=1;i<=3;i++){ const v=maxUp*i/3, y=y0-v*scale; if(y<T) continue;
-      s+=`<line x1="${L}" y1="${y.toFixed(1)}" x2="${W-R}" y2="${y.toFixed(1)}" stroke="#eef3f1"/><text x="${L-6}" y="${(y+4).toFixed(1)}" text-anchor="end" font-size="10" fill="#9fb0ad" font-family="Inter">$${Math.round(v/1000)}k</text>`; }
-    s+=`<line x1="${L}" y1="${y0.toFixed(1)}" x2="${W-R}" y2="${y0.toFixed(1)}" stroke="#c2d2ce" stroke-width="1.5"/><text x="${L-6}" y="${(y0+4).toFixed(1)}" text-anchor="end" font-size="10" fill="#5a6f6a" font-family="Inter">$0</text>`;
+    [maxUp, maxUp/2, -maxDn/2, -maxDn].forEach(v=>{ const y=y0-v*scale; if(y<T-1||y>H-B+1) return;
+      s+=`<line x1="${L}" y1="${y.toFixed(1)}" x2="${W-R}" y2="${y.toFixed(1)}" stroke="#f1f4f3"/><text x="${L-7}" y="${(y+3).toFixed(1)}" text-anchor="end" font-size="10" fill="#9aa8a5">${'$'+Math.round(v/1000).toLocaleString('es-CL')+'k'}</text>`; });
+    s+=`<line x1="${L}" y1="${y0.toFixed(1)}" x2="${W-R}" y2="${y0.toFixed(1)}" stroke="#cdd6d3" stroke-width="1.2"/>`;
     const pts=[];
-    data.forEach((d,i)=>{ const x0=L+i*gw, bw=Math.min(18,gw/3.4), x1=x0+gw/2-bw-2, x2=x0+gw/2+2;
-      s+=`<rect x="${x1.toFixed(1)}" y="${(y0-d.ing*scale).toFixed(1)}" width="${bw.toFixed(1)}" height="${(d.ing*scale).toFixed(1)}" rx="3" fill="#17d4ad"/>`;
-      s+=`<rect x="${x2.toFixed(1)}" y="${(y0-d.egr*scale).toFixed(1)}" width="${bw.toFixed(1)}" height="${(d.egr*scale).toFixed(1)}" rx="3" fill="#e0654f"/>`;
-      s+=`<text x="${(x0+gw/2).toFixed(1)}" y="${H-12}" text-anchor="middle" font-size="11" fill="#5a6f6a" font-family="Saira Condensed" font-style="italic" font-weight="700">${d.mes}</text>`;
-      pts.push([(x0+gw/2), (y0-(d.ing-d.egr)*scale)]);
+    data.forEach((d,i)=>{ const x0=L+i*gw, bw=Math.min(15,gw/3.4), xa=x0+gw/2-bw-2, xb=x0+gw/2+2;
+      s+=`<rect x="${xa.toFixed(1)}" y="${(y0-d.ing*scale).toFixed(1)}" width="${bw.toFixed(1)}" height="${(d.ing*scale).toFixed(1)}" rx="2.5" fill="${COL_BAR.ing}"><title>Ingresos ${d.mes}: ${fmt(d.ing)}</title></rect>`;
+      s+=`<rect x="${xb.toFixed(1)}" y="${y0.toFixed(1)}" width="${bw.toFixed(1)}" height="${(d.egr*scale).toFixed(1)}" rx="2.5" fill="${COL_BAR.egr}"><title>Egresos ${d.mes}: ${fmt(-d.egr)}</title></rect>`;
+      s+=`<text x="${(x0+gw/2).toFixed(1)}" y="${H-10}" text-anchor="middle" font-size="11" fill="#67767a" font-weight="600">${d.mes}</text>`;
+      pts.push([x0+gw/2, y0-(d.ing-d.egr)*scale, d.mes, d.ing-d.egr]);
     });
-    if(pts.length>1) s+=`<polyline points="${pts.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ')}" fill="none" stroke="#ff8b00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>`;
-    pts.forEach(p=> s+=`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.6" fill="#fff" stroke="#ff8b00" stroke-width="2.5"/>`);
+    if(pts.length>1) s+=`<polyline points="${pts.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ')}" fill="none" stroke="${COL_BAR.neto}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+    pts.forEach(p=> s+=`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.4" fill="#fff" stroke="${COL_BAR.neto}" stroke-width="2"><title>Flujo neto ${p[2]}: ${fmt(p[3])}</title></circle>`);
     document.getElementById('barChart').innerHTML = s+'</svg>';
+    document.getElementById('barSub').textContent = catFilter ? ('Categoría: '+catFilter+' · por mes') : 'Por mes · egresos en negativo';
   }
 
   function renderDonut(){
     const ms=movsSel().filter(m=>m.tipo==='egreso'), map={};
     ms.forEach(m=> map[m.cat]=(map[m.cat]||0)+m.monto);
     const arr=Object.entries(map).map(([k,v])=>({k,v})).sort((a,b)=>b.v-a.v);
-    const total=arr.reduce((s,a)=>s+a.v,0);
-    const COL=['#0c8f78','#ff8b00','#0c2f33','#17d4ad','#e0654f','#b5740a','#9fb0ad','#2cf0c9'];
-    const cx=95,cy=95,r=64,sw=26,C=2*Math.PI*r; let off=0,circ='';
-    arr.forEach((a,i)=>{ const seg=total? a.v/total*C : 0;
-      circ+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${COL[i%COL.length]}" stroke-width="${sw}" stroke-dasharray="${seg.toFixed(2)} ${(C-seg).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}"/>`;
+    const totalAll=arr.reduce((s,a)=>s+a.v,0);
+    const totalShow = catFilter ? (map[catFilter]||0) : totalAll;
+    const cx=86,cy=86,r=60,sw=24,C=2*Math.PI*r; let off=0,circ='';
+    arr.forEach((a,i)=>{ const seg=totalAll? a.v/totalAll*C : 0; const dim = catFilter && a.k!==catFilter;
+      circ+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${COL_CAT[i%COL_CAT.length]}" stroke-width="${sw}" stroke-dasharray="${seg.toFixed(2)} ${(C-seg).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}" opacity="${dim?0.18:1}" style="cursor:pointer" onclick="setCat('${a.k.replace(/'/g,"")}')"/>`;
       off+=seg; });
-    if(!arr.length) circ=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#e1ede9" stroke-width="${sw}"/>`;
+    if(!arr.length) circ=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#eef3f1" stroke-width="${sw}"/>`;
     document.getElementById('donut').innerHTML =
-      `<svg viewBox="0 0 190 190"><g transform="rotate(-90 ${cx} ${cy})">${circ}</g>`+
-      `<text x="${cx}" y="${cy-1}" text-anchor="middle" font-size="22" font-family="Saira Condensed" font-style="italic" font-weight="900" fill="#0c2f33">${fmtM(total)}</text>`+
-      `<text x="${cx}" y="${cy+16}" text-anchor="middle" font-size="9" fill="#5a6f6a" font-family="Inter" letter-spacing="1">EGRESOS</text></svg>`;
-    document.getElementById('donutLeg').innerHTML =
-      arr.map((a,i)=>`<div class="row"><i style="background:${COL[i%COL.length]}"></i><div><b>${total?Math.round(a.v/total*100):0}%</b><span>${a.k}</span></div></div>`).join('')
-      || '<span style="color:var(--slate);font-size:.85rem">Sin egresos en la selección</span>';
+      `<svg viewBox="0 0 172 172"><g transform="rotate(-90 ${cx} ${cy})">${circ}</g>`+
+      `<text x="${cx}" y="${cy-1}" text-anchor="middle" font-size="20" font-weight="800" fill="#0e1a18" letter-spacing="-1">${fmtM(totalShow)}</text>`+
+      `<text x="${cx}" y="${cy+15}" text-anchor="middle" font-size="8.5" fill="#67767a" letter-spacing=".5">${catFilter?'FILTRADO':'EGRESOS'}</text></svg>`;
+    document.getElementById('donutLeg').innerHTML = arr.map((a,i)=>{
+      const act = catFilter===a.k, dim = catFilter && !act;
+      return `<div class="row" style="opacity:${dim?0.4:1}" onclick="setCat('${a.k.replace(/'/g,"")}')"><i style="background:${COL_CAT[i%COL_CAT.length]}"></i><div><b>${totalAll?Math.round(a.v/totalAll*100):0}% ${act?'·✓':''}</b><span>${a.k}</span></div></div>`;
+    }).join('') || '<span style="color:var(--muted);font-size:.85rem">Sin egresos</span>';
   }
 
-  // comentarios
+  function renderTabla(){
+    const ms=movsFilt();
+    let saldo=cuentasSel().reduce((s,c)=>s+c.saldoIni,0);
+    // saldo acumulado considera TODOS los movimientos de la selección hasta la fecha (no solo los filtrados por categoría)
+    const base=movsSel(); const saldoHasta={};
+    let acc=cuentasSel().reduce((s,c)=>s+c.saldoIni,0);
+    base.forEach(m=>{ acc+=signed(m); saldoHasta[m._i]=acc; });
+    let rows='';
+    ms.forEach(m=>{
+      rows+=`<tr>
+        <td>${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]}</td>
+        <td>${m.glosa}</td>
+        <td><span class="tag" style="background:var(--panel-2);color:var(--muted);border:1px solid var(--line);cursor:pointer" onclick="setCat('${m.cat.replace(/'/g,"")}')">${m.cat}</span></td>
+        <td>${bancoDe(m.cuenta)}</td>
+        <td class="num pos">${m.tipo==='ingreso'?fmt(m.monto):''}</td>
+        <td class="num neg">${m.tipo==='egreso'?'−'+fmt(m.monto).replace('−',''):''}</td>
+        <td class="num"><b>${fmt(saldoHasta[m._i])}</b></td>
+        <td class="num"><button class="cbtn ${m.com?'has':''}" title="${m.com?'Ver comentario':'Agregar comentario'}" onclick="abrirCom(${m._i})"><svg class="ico" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.7 8.7 0 0 1-4-1L3 20l1.1-4.9A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg></button></td>
+      </tr>`;
+    });
+    document.getElementById('movs').innerHTML = rows || '<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:26px">Sin movimientos en la selección</td></tr>';
+    document.getElementById('movCount').textContent = '· '+ms.length+' movimiento'+(ms.length===1?'':'s');
+  }
+
+  // ---- comentarios (autor + ver/editar/guardar) ----
   let comAct=null;
-  function abrirCom(i){ comAct=i; const m=MOV[i]; document.getElementById('cmTitle').textContent=m.glosa+' · '+m.fecha; document.getElementById('cmText').value=m.com||''; document.getElementById('cmodalBg').classList.add('open'); document.getElementById('cmText').focus(); }
+  function abrirCom(i){ comAct=i; const m=MOV[i];
+    document.getElementById('cmTitle').textContent = m.glosa+' · '+m.fecha;
+    setComMode(false);
+    document.getElementById('cmodalBg').classList.add('open');
+  }
+  function setComMode(editar){
+    const m=MOV[comAct];
+    document.getElementById('cmMeta').innerHTML = m.com ? `Por <b>${m.autor||'—'}</b>` : 'Sin comentario aún';
+    const view=document.getElementById('cmView'), ta=document.getElementById('cmText'), acts=document.getElementById('cmActs');
+    if(editar){
+      document.getElementById('cmViewWrap').style.display='none'; ta.style.display='block'; ta.value=m.com||''; ta.focus();
+      acts.innerHTML = `<button class="btn-g" onclick="setComMode(false)">Cancelar</button><button class="btn-g primary" onclick="guardarCom()">Guardar</button>`;
+    } else {
+      document.getElementById('cmViewWrap').style.display='block'; ta.style.display='none';
+      view.className = 'cview'+(m.com?'':' empty'); view.textContent = m.com || 'Este movimiento no tiene comentario.';
+      acts.innerHTML = `<button class="btn-g" onclick="cerrarCom()">Cerrar</button><button class="btn-g primary" onclick="setComMode(true)">${m.com?'Editar':'Agregar'}</button>`;
+    }
+  }
+  function guardarCom(){ const m=MOV[comAct]; const t=document.getElementById('cmText').value.trim(); m.com=t; if(t) m.autor=USUARIO; setComMode(false); renderTabla(); toast('Comentario guardado (se persistirá en la base de datos)'); }
   function cerrarCom(){ document.getElementById('cmodalBg').classList.remove('open'); }
-  function guardarCom(){ if(comAct!=null) MOV[comAct].com=document.getElementById('cmText').value.trim(); cerrarCom(); renderTabla(); toast('Comentario guardado (se persistirá en la base de datos)'); }
   document.getElementById('cmodalBg').addEventListener('click', e=>{ if(e.target.id==='cmodalBg') cerrarCom(); });
 
-  // toast
   let tT; function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(tT); tT=setTimeout(()=>t.classList.remove('show'),2800); }
 
   render();
