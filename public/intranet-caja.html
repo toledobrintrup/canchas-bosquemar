@@ -67,6 +67,31 @@
   .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--ink);color:#fff;padding:12px 19px;border-radius:11px;font-weight:600;font-size:.88rem;z-index:200;transition:.3s}
   .toast.show{transform:translateX(-50%) translateY(0)}
   .bartip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:.78rem;font-weight:600;padding:6px 10px;border-radius:8px;opacity:0;transition:opacity .1s;z-index:150;white-space:nowrap}
+  /* héroe saldo */
+  .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:26px;padding:22px 22px 20px;align-items:center}
+  .hero-main .mlbl{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);font-weight:500}
+  .herobig{font-family:var(--mono);font-weight:600;font-size:2.8rem;letter-spacing:-.035em;line-height:1;margin-top:9px}
+  .herobig.neg{color:var(--red)}
+  .hero-brk{display:flex;flex-direction:column;gap:7px;border-left:1px solid var(--line);padding-left:26px}
+  .hero-brk .r{display:flex;align-items:center;justify-content:space-between;font-size:.85rem;gap:12px}
+  .hero-brk .r .nm{display:flex;align-items:center;gap:8px;color:var(--ink)}
+  .hero-brk .r.cb .nm{font-weight:600}
+  .hero-brk .r.sub{color:var(--muted);font-size:.8rem;padding-left:10px}
+  .hero-brk .r .v{font-family:var(--mono);font-weight:500}
+  .submetrics{display:flex;align-items:center;gap:20px;padding:15px 22px;border-top:1px solid var(--line);flex-wrap:wrap;background:var(--panel-2)}
+  .sm{display:flex;flex-direction:column;gap:3px}
+  .sm .smlbl{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+  .sm .smv{font-family:var(--mono);font-weight:600;font-size:1.18rem}
+  .op{font-family:var(--mono);font-size:1.1rem;color:var(--faint);font-weight:500}
+  .op.note{font-family:'Inter',sans-serif;font-size:.76rem;color:var(--muted);margin-left:auto}
+  /* logos */
+  .lg-cb{height:15px;width:auto;display:inline-block;vertical-align:middle}
+  .lg-qq{height:13px;width:auto;display:inline-block;vertical-align:middle}
+  .bkb{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+  .bkb .ico{width:13px;height:13px;color:var(--faint)}
+  .chip2 .lg-cb{height:13px;margin-right:6px}.chip2 .lg-qq{height:11px;margin-right:6px}
+  .minitag{display:inline-flex;align-items:center;gap:5px}
+  .minitag .lg-cb{height:11px}.minitag .lg-qq{height:10px}
 </style>
 </head>
 <body>
@@ -95,7 +120,7 @@
 
       <div class="totales">
         <div class="th"><h3>Totales</h3><span class="upd"><span class="dot"></span>Última actualización · <b id="updFecha" style="color:var(--ink);font-weight:600">&nbsp;</b></span></div>
-        <div class="totgrid" id="totales"></div>
+        <div id="totales"></div>
       </div>
 
       <div class="card" style="margin-bottom:18px"><div class="card-h"><h3>Últimos movimientos</h3><span style="font-size:.8rem;color:var(--muted)">todas las cuentas</span></div><div class="mini" style="padding:14px 16px"><div class="quick" id="quick"></div></div></div>
@@ -197,35 +222,46 @@
     const d=ULTIMA_ACT; document.getElementById('updFecha').textContent = d.slice(8,10)+' '+MES[+d.slice(5,7)-1].toLowerCase()+' '+d.slice(0,4);
   }
 
+  const BANKICON='<svg class="ico" viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5M4 10v8M9 10v8M15 10v8M20 10v8M3 19h18"/></svg>';
+  const logoEmp = e => e==='CB'
+    ? '<img class="lg-cb" src="assets/logo/cb-isotipo.png" alt="CB">'
+    : '<img class="lg-qq" src="assets/logo/qq.svg" alt="QQ">';
+  const empOf = id => (CUENTAS.find(c=>c.id===id)||{}).empresa;
+  const bankBadge = banco => `<span class="bkb">${BANKICON}${corto(banco)}</span>`;
+  const bankBadgeId = id => bankBadge((CUENTAS.find(c=>c.id===id)||{}).banco||'');
+
   function renderTotales(){
     const mes=periodo(), ml=MES[+mes.slice(5,7)-1];
-    const metrics=[
-      {lbl:'Saldo actual', f:s=>saldoScope(s), tone:'saldo'},
-      {lbl:'Ingresos '+ml, f:s=>mesScope(s,mes,'ingreso'), tone:'plain'},
-      {lbl:'Egresos '+ml,  f:s=>mesScope(s,mes,'egreso'),  tone:'plain'},
-      {lbl:'Flujo neto '+ml, f:s=>mesScope(s,mes,'ingreso')-mesScope(s,mes,'egreso'), tone:'neto'},
-    ];
-    document.getElementById('totales').innerHTML = metrics.map(mt=>{
-      const tot=mt.f('ALL');
-      const cls = mt.tone==='neto' ? (tot<0?'neg':'pos') : mt.tone==='saldo' ? (tot<0?'neg':'') : '';
-      return `<div class="metric">
-        <div class="mlbl">${mt.lbl}</div>
-        <div class="mbig ${cls}">${fmt(tot)}</div>
-        <div class="brk">
-          <div class="r cb"><span>Canchas Bosquemar</span><span class="v">${fmt(mt.f('CB'))}</span></div>
-          <div class="r sub"><span>Chile</span><span class="v">${fmt(mt.f('cb-chile'))}</span></div>
-          <div class="r sub"><span>BICE</span><span class="v">${fmt(mt.f('cb-bice'))}</span></div>
-          <div class="r cb" style="margin-top:3px"><span>Quinque</span><span class="v">${fmt(mt.f('QQ'))}</span></div>
+    const saldo=saldoScope('ALL');
+    const ing=mesScope('ALL',mes,'ingreso'), egr=mesScope('ALL',mes,'egreso'), neto=ing-egr;
+    document.getElementById('totales').innerHTML = `
+      <div class="hero">
+        <div class="hero-main">
+          <div class="mlbl">Saldo actual · total general</div>
+          <div class="herobig ${saldo<0?'neg':''}">${fmt(saldo)}</div>
         </div>
+        <div class="hero-brk">
+          <div class="r cb"><span class="nm">${logoEmp('CB')} Canchas Bosquemar</span><span class="v">${fmt(saldoScope('CB'))}</span></div>
+          <div class="r sub"><span class="nm">${bankBadge('Banco de Chile')}</span><span class="v">${fmt(saldoScope('cb-chile'))}</span></div>
+          <div class="r sub"><span class="nm">${bankBadge('Banco BICE')}</span><span class="v">${fmt(saldoScope('cb-bice'))}</span></div>
+          <div class="r cb"><span class="nm">${logoEmp('QQ')} Quinque</span><span class="v">${fmt(saldoScope('QQ'))}</span></div>
+        </div>
+      </div>
+      <div class="submetrics">
+        <div class="sm"><span class="smlbl">Ingresos ${ml}</span><span class="smv">${fmt(ing)}</span></div>
+        <div class="op">−</div>
+        <div class="sm"><span class="smlbl">Egresos ${ml}</span><span class="smv">${fmt(egr)}</span></div>
+        <div class="op">=</div>
+        <div class="sm"><span class="smlbl">Flujo neto ${ml}</span><span class="smv ${neto<0?'neg':'pos'}">${neto>=0?'+':''}${fmt(neto)}</span></div>
+        <div class="op note">↑ así se construye el saldo del periodo</div>
       </div>`;
-    }).join('');
   }
 
   function renderQuick(){
     const last=[...MOV].sort((a,b)=>a.fecha<b.fecha?1:-1).slice(0,7);
     document.getElementById('quick').innerHTML = last.map(m=>`
       <div class="qcard">
-        <div class="qd">${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]} · <span class="minitag">${EMP[CUENTAS.find(c=>c.id===m.cuenta).empresa]==='Canchas Bosquemar'?'CB':'QQ'} ${bancoDe(m.cuenta)}</span></div>
+        <div class="qd">${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]} · <span class="minitag">${logoEmp(empOf(m.cuenta))} ${bancoDe(m.cuenta)}</span></div>
         <div class="qg" title="${m.glosa}">${m.glosa}</div>
         <div class="qm ${m.tipo==='ingreso'?'pos':'neg'}">${m.tipo==='ingreso'?'+':'−'}${fmt(m.monto).replace('−','')}</div>
       </div>`).join('');
@@ -237,7 +273,7 @@
 
   function renderSel(){
     document.getElementById('selEmpresa').innerHTML =
-      Object.entries(EMP).map(([k,n])=>`<span class="chip2 ${sel.empresa===k?'on':''}" onclick="setEmp('${k}')">${n}</span>`).join('');
+      Object.entries(EMP).map(([k,n])=>`<span class="chip2 ${sel.empresa===k?'on':''}" onclick="setEmp('${k}')">${sel.empresa===k?'':logoEmp(k)}${n}</span>`).join('');
     const bancos=[...new Set(CUENTAS.filter(c=>c.empresa===sel.empresa).map(c=>c.banco))];
     let chips=bancos.length>1 ? `<span class="chip2 ${sel.banco==='todos'?'on':''}" onclick="setBanco('todos')">Todos</span>` : '';
     chips+=bancos.map(b=>`<span class="chip2 ${sel.banco===b?'on':''}" onclick="setBanco('${b}')">${corto(b)}</span>`).join('');
@@ -307,7 +343,7 @@
         <td>${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]}</td>
         <td>${m.glosa}</td>
         <td><span class="tag" style="background:var(--panel-2);color:var(--muted);border:1px solid var(--line);cursor:pointer" onclick="setCat('${m.cat.replace(/'/g,"")}')">${m.cat}</span></td>
-        <td>${bancoDe(m.cuenta)}</td>
+        <td>${bankBadgeId(m.cuenta)}</td>
         <td class="num pos">${m.tipo==='ingreso'?fmt(m.monto):''}</td>
         <td class="num neg">${m.tipo==='egreso'?'−'+fmt(m.monto).replace('−',''):''}</td>
         <td class="num"><b>${fmt(saldoHasta[m._i])}</b></td>
