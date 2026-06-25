@@ -109,7 +109,7 @@
 
       <div class="charts">
         <div class="chart-card"><h3>Ingresos vs. egresos</h3><div class="chart-sub" id="barSub">Por mes · egresos en negativo</div><div id="barChart"></div>
-          <div class="legend"><span><i style="background:#10b497"></i>Ingresos</span><span><i style="background:#d2624a"></i>Egresos</span><span><i style="background:#0e1a18"></i>Flujo neto</span></div></div>
+          <div class="legend"><span><i style="background:#16161a"></i>Ingresos</span><span><i style="background:#9a9a95"></i>Egresos</span><span><i style="background:#0a8f78"></i>Flujo neto</span></div></div>
         <div class="chart-card"><h3>Egresos por categoría</h3><div class="chart-sub">Clic en una categoría para filtrar todo</div><div class="donut-wrap"><div id="donut"></div><div class="donut-legend" id="donutLeg"></div></div></div>
       </div>
 
@@ -147,8 +147,8 @@
     { id:'qq-chile', empresa:'QQ', banco:'Banco de Chile', saldoIni:1500000 },
   ];
   const EMP = { CB:'Canchas Bosquemar', QQ:'Quinque' };
-  const COL_BAR = { ing:'#10b497', egr:'#d2624a', neto:'#0e1a18' };
-  const COL_CAT = ['#0a8f78','#d2624a','#3a5a54','#e0954f','#6b8f87','#b5740a','#9aa8a5','#10b497'];
+  const COL_BAR = { ing:'#16161a', egr:'#9a9a95', neto:'#0a8f78' };
+  const COL_CAT = ['#16161a','#0a8f78','#7a7a7e','#b4b4b0','#3f3f43','#d4d4cf','#9a9a96','#0a8f78'];
 
   const MOV = [
     {fecha:'2026-01-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios enero',cat:'Arriendo inmueble',com:'',autor:''},
@@ -200,14 +200,14 @@
   function renderTotales(){
     const mes=periodo(), ml=MES[+mes.slice(5,7)-1];
     const metrics=[
-      {lbl:'Saldo actual', f:s=>saldoScope(s), sign:true},
-      {lbl:'Ingresos '+ml, f:s=>mesScope(s,mes,'ingreso'), sign:false},
-      {lbl:'Egresos '+ml,  f:s=>mesScope(s,mes,'egreso'),  sign:false, neg:true},
-      {lbl:'Flujo neto '+ml, f:s=>mesScope(s,mes,'ingreso')-mesScope(s,mes,'egreso'), sign:true},
+      {lbl:'Saldo actual', f:s=>saldoScope(s), tone:'saldo'},
+      {lbl:'Ingresos '+ml, f:s=>mesScope(s,mes,'ingreso'), tone:'plain'},
+      {lbl:'Egresos '+ml,  f:s=>mesScope(s,mes,'egreso'),  tone:'plain'},
+      {lbl:'Flujo neto '+ml, f:s=>mesScope(s,mes,'ingreso')-mesScope(s,mes,'egreso'), tone:'neto'},
     ];
     document.getElementById('totales').innerHTML = metrics.map(mt=>{
       const tot=mt.f('ALL');
-      const cls = mt.neg ? 'neg' : mt.sign ? (tot<0?'neg':'pos') : '';
+      const cls = mt.tone==='neto' ? (tot<0?'neg':'pos') : mt.tone==='saldo' ? (tot<0?'neg':'') : '';
       return `<div class="metric">
         <div class="mlbl">${mt.lbl}</div>
         <div class="mbig ${cls}">${fmt(tot)}</div>
