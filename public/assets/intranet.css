@@ -76,7 +76,7 @@ svg{display:block}
 .side .foot a:hover{background:rgba(44,240,201,.10);color:#c8f0e8}
 
 /* ---------- MAIN ---------- */
-.main{flex:1;min-width:0;display:flex;flex-direction:column}
+.main{flex:1;min-width:0;display:flex;flex-direction:column;font-family:var(--mono)}
 .topbar{height:60px;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:20}
 .topbar h1{font-weight:700;font-size:1.22rem;letter-spacing:-.025em}
 .topbar .right{display:flex;align-items:center;gap:12px}
