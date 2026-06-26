@@ -28,10 +28,10 @@
 
   /* ---- SCOPE TABS (General / CB / QQ) ---- */
   .stabs{display:flex;gap:6px;align-items:center;margin-bottom:18px;flex-wrap:wrap}
-  .stab{display:inline-flex;align-items:center;gap:7px;font-family:inherit;font-weight:600;font-size:.84rem;padding:8px 16px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;transition:background .45s cubic-bezier(.4,0,.6,1),color .45s cubic-bezier(.4,0,.6,1),border-color .45s cubic-bezier(.4,0,.6,1)}
+  .stab{display:inline-flex;align-items:center;gap:7px;font-family:inherit;font-weight:600;font-size:.84rem;padding:8px 16px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;transition:background .9s cubic-bezier(.4,0,.6,1),color .9s cubic-bezier(.4,0,.6,1),border-color .9s cubic-bezier(.4,0,.6,1)}
   .stab:hover{color:var(--accent);border-color:var(--accent)}
   .stab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-  .stab img{height:14px;width:auto;vertical-align:middle;transition:filter .45s cubic-bezier(.4,0,.6,1)}
+  .stab img{height:14px;width:auto;vertical-align:middle;transition:filter .9s cubic-bezier(.4,0,.6,1)}
   .stab.on img{filter:brightness(0) invert(1)}
   [data-theme="dark"] .stab.on img{filter:brightness(0)}
   .stab-div{width:1px;height:20px;background:var(--line);margin:0 4px}
@@ -482,14 +482,26 @@
 
   /* ===== SCOPE TABS ===== */
   function renderScopeTabs() {
-    const tabs = [
-      ['ALL', 'General', null],
-      ['CB',  'Canchas Bosquemar', 'CB'],
-      ['QQ',  'Quinque', 'QQ'],
-    ];
-    let h = tabs.map(([k,n,e])=>`<button class="stab ${scope===k?'on':''}" onclick="setScope('${k}')">${e?logoEmp(e):''}${n}</button>`).join('');
-    if (catFilter) h += `<div class="stab-div"></div><button class="cat-clear" onclick="setCat(null)">✕ ${catFilter}</button>`;
-    document.getElementById('scopeTabs').innerHTML = h;
+    const tabs = [['ALL','General',null],['CB','Canchas Bosquemar','CB'],['QQ','Quinque','QQ']];
+    const c = document.getElementById('scopeTabs');
+    const existing = c.querySelectorAll('button[data-sc]');
+    if (existing.length === 3) {
+      existing.forEach(b => b.classList.toggle('on', b.dataset.sc === scope));
+    } else {
+      c.innerHTML = tabs.map(([k,n,e]) =>
+        `<button class="stab${scope===k?' on':''}" data-sc="${k}" onclick="setScope('${k}')">${e?logoEmp(e):''}${n}</button>`
+      ).join('');
+    }
+    const pill = c.querySelector('.cat-clear');
+    const sdiv = c.querySelector('.stab-div');
+    if (catFilter && !pill) {
+      c.insertAdjacentHTML('beforeend',`<div class="stab-div"></div><button class="cat-clear" onclick="setCat(null)">✕ ${catFilter}</button>`);
+    } else if (!catFilter) {
+      if (sdiv) sdiv.remove();
+      if (pill) pill.remove();
+    } else if (catFilter && pill) {
+      pill.textContent = '✕ ' + catFilter;
+    }
     document.getElementById('excelScope').textContent = scope==='ALL'?'General':EMP[scope]||'';
   }
 
