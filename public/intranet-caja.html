@@ -66,12 +66,21 @@
   .minitag .lg-cb{height:11px}.minitag .lg-qq{height:10px}
   .chip2{display:inline-flex;align-items:center;gap:6px}.chip2 .lg-cb{height:13px}.chip2 .lg-qq{height:11px}
 
-  /* ---- QUICK CARDS ---- */
-  .quick{display:flex;gap:10px;overflow-x:auto;padding:4px 0 2px}
-  .qcard{flex:none;width:210px;border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:var(--panel)}
-  .qcard .qd{font-size:.72rem;color:var(--muted);font-weight:600}
-  .qcard .qg{font-size:.86rem;font-weight:600;margin:3px 0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .qcard .qm{font-family:var(--mono);font-weight:600;font-size:1.05rem;font-variant-numeric:tabular-nums}
+  /* ---- ÚLTIMOS MOVIMIENTOS: layout 2+feed ---- */
+  .quick-b{display:grid;grid-template-columns:1fr 1fr}
+  .qb-feat{border-right:1px solid var(--line)}
+  .qb-feat-item{padding:14px 16px}
+  .qb-feat-item+.qb-feat-item{border-top:1px solid var(--line)}
+  .qb-feat-item .qd{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}
+  .qb-feat-item .qg{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .qb-feat-item .qm{font-family:var(--mono);font-size:1.18rem;font-weight:600;font-variant-numeric:tabular-nums}
+  .qb-row{display:flex;align-items:center;gap:10px;padding:9px 14px}
+  .qb-row+.qb-row{border-top:1px solid var(--line)}
+  .qb-bar{width:2px;height:28px;border-radius:1px;flex-shrink:0}
+  .qb-info{flex:1;min-width:0}
+  .qb-info .qg{font-size:.81rem;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .qb-info .qd{font-size:.67rem;color:var(--muted);margin-top:2px}
+  .qb-row .qm{font-family:var(--mono);font-size:.85rem;font-weight:600;font-variant-numeric:tabular-nums;flex-shrink:0}
 
   /* ---- CHARTS 3-col ---- */
   .charts3{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
@@ -180,7 +189,7 @@
     <!-- ÚLTIMOS MOVIMIENTOS -->
     <div class="card" style="margin-bottom:18px">
       <div class="card-h"><h3>Últimos movimientos</h3><span style="font-size:.8rem;color:var(--muted)">todas las cuentas</span></div>
-      <div class="mini" style="padding:14px 16px"><div class="quick" id="quick"></div></div>
+      <div id="quick"></div>
     </div>
 
     <!-- SCOPE TABS: controlan gráficos + tabla Excel -->
@@ -390,12 +399,31 @@
   /* ===== QUICK CARDS ===== */
   function renderQuick() {
     const last = [...MOV].sort((a,b)=>a.fecha<b.fecha?1:-1).slice(0,7);
-    document.getElementById('quick').innerHTML = last.map(m=>`
-      <div class="qcard">
-        <div class="qd">${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]} · <span class="minitag">${logoEmp(empOf(m.cuenta))} ${bancoDe(m.cuenta)}</span></div>
+    const d = m => `${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]}`;
+    const amt = m => (m.tipo==='ingreso'?'+':'−')+fmt(m.monto).replace('−','');
+    const cls = m => m.tipo==='ingreso'?'pos':'neg';
+    const bar = m => m.tipo==='ingreso'?'var(--accent)':'var(--red)';
+    const tag = m => `<span class="minitag">${logoEmp(empOf(m.cuenta))} ${bancoDe(m.cuenta)}</span>`;
+
+    const feat = last.slice(0,2).map(m=>`
+      <div class="qb-feat-item">
+        <div class="qd">${tag(m)}<span style="font-size:.7rem;color:var(--muted);font-family:var(--mono)">${d(m)}</span></div>
         <div class="qg" title="${m.glosa}">${m.glosa}</div>
-        <div class="qm ${m.tipo==='ingreso'?'pos':'neg'}">${m.tipo==='ingreso'?'+':'−'}${fmt(m.monto).replace('−','')}</div>
+        <div class="qm ${cls(m)}">${amt(m)}</div>
       </div>`).join('');
+
+    const feed = last.slice(2).map(m=>`
+      <div class="qb-row">
+        <div class="qb-bar" style="background:${bar(m)}"></div>
+        <div class="qb-info">
+          <div class="qg" title="${m.glosa}">${m.glosa}</div>
+          <div class="qd">${tag(m)} <span style="font-family:var(--mono)">${d(m)}</span></div>
+        </div>
+        <span class="qm ${cls(m)}">${amt(m)}</span>
+      </div>`).join('');
+
+    document.getElementById('quick').innerHTML =
+      `<div class="quick-b"><div class="qb-feat">${feat}</div><div>${feed}</div></div>`;
   }
 
   /* ===== SCOPE TABS ===== */
