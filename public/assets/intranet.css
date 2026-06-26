@@ -105,7 +105,7 @@ svg{display:block}
 /* ---------- CARDS / GRID ---------- */
 .grid2{display:grid;grid-template-columns:1.55fr 1fr;gap:14px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.card{background:var(--panel);border:1px solid var(--line);border-left:2.5px solid var(--accent);border-radius:var(--radius);overflow:hidden}
 .card-h{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line)}
 .card-h a{font-size:.8rem;font-weight:500;color:var(--accent)}
 
