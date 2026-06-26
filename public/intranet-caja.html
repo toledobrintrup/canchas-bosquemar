@@ -147,6 +147,10 @@
   /* ---- NUMBER FLASH ANIMATION ---- */
   @keyframes numFlash{0%{opacity:.35;transform:translateY(4px)}100%{opacity:1;transform:none}}
   .num-anim{animation:numFlash .45s ease forwards}
+
+  /* ---- SCROLL REVEAL (Apple-style) ---- */
+  .sr{opacity:0;transform:translateY(28px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
+  .sr.sr-in{opacity:1;transform:translateY(0)}
 </style>
 </head>
 <body>
@@ -347,29 +351,50 @@
     renderDonut('egreso','donutEgr','donutEgrLeg');
     renderDonut('ingreso','donutIng','donutIngLeg');
     renderExcel(); renderBankSel(); renderTabla();
-    init3D();
+    initReveal();
   }
 
-  function init3D() {
-    document.querySelectorAll('.card:not([data-3d]),.chart-card:not([data-3d])').forEach(function(card) {
-      card.setAttribute('data-3d','1');
-      var isChart = card.classList.contains('chart-card');
-      var ry = isChart ? 8 : 12, rx = isChart ? 6 : 8;
-      card.addEventListener('mousemove', function(e) {
-        var r = card.getBoundingClientRect();
-        var x = (e.clientX - r.left) / r.width - 0.5;
-        var y = (e.clientY - r.top) / r.height - 0.5;
-        card.style.transition = 'transform .07s ease';
-        card.style.transform = 'perspective(900px) rotateY('+x*ry+'deg) rotateX('+(-y*rx)+'deg) scale(1.006)';
-        card.style.zIndex = '2';
-        card.style.position = 'relative';
-      });
-      card.addEventListener('mouseleave', function() {
-        card.style.transition = 'transform .55s cubic-bezier(.25,.46,.45,.94)';
-        card.style.transform = '';
-        card.style.zIndex = '';
-      });
+  var _revObs = null;
+  function initReveal() {
+    if (_revObs) _revObs.disconnect();
+    var els = document.querySelectorAll('.totales,.stabs,.card,.chart-card');
+    var groups = new Map();
+    els.forEach(function(el) {
+      var p = el.parentElement;
+      if (!groups.has(p)) groups.set(p, []);
+      groups.get(p).push(el);
     });
+    els.forEach(function(el) {
+      if (!el.classList.contains('sr')) {
+        el.classList.add('sr');
+        var g = groups.get(el.parentElement) || [];
+        el.style.transitionDelay = (g.indexOf(el) * 95) + 'ms';
+      }
+    });
+
+    function check() {
+      var vh = window.innerHeight;
+      els.forEach(function(el) {
+        if (el.classList.contains('sr-in')) return;
+        var r = el.getBoundingClientRect();
+        if (r.top < vh - 24 && r.bottom > 0) el.classList.add('sr-in');
+      });
+    }
+
+    if (typeof IntersectionObserver !== 'undefined') {
+      _revObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) { e.target.classList.add('sr-in'); _revObs.unobserve(e.target); }
+        });
+      }, { threshold: 0.05 });
+      els.forEach(function(el) {
+        if (!el.classList.contains('sr-in')) _revObs.observe(el);
+      });
+    }
+
+    window.removeEventListener('scroll', check, true);
+    window.addEventListener('scroll', check, true);
+    requestAnimationFrame(check);
   }
 
   function renderUpd() {
