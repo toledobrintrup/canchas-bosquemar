@@ -16,7 +16,7 @@
   --c-ing:#0fb89c; --c-egr:#9a9a95; --c-neto:#ff7a1a; --c-axis:#9aa8a5;
   --shadow:0 1px 2px rgba(20,20,26,.05);
   --radius:13px; --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
-  --ff:'Space Grotesk','Inter',system-ui,-apple-system,sans-serif;
+  --ff:'Oxanium','Inter',system-ui,-apple-system,sans-serif;
   /* alias compat */
   --slate:var(--muted); --night:var(--ink); --white:#fff; --teal:var(--accent); --teal-d:var(--accent);
   --teal-bright:var(--accent); --teal-deep:var(--accent); --teal-soft:var(--accent-soft);
@@ -43,7 +43,7 @@ body{font-family:'Inter',system-ui,-apple-system,'SF Pro Text',sans-serif;backgr
 /* headings heredan font-family del body (mismo stack de fallback, nunca divergen) */
 h1{font-family:inherit;font-weight:700;font-size:1.22rem;letter-spacing:-.025em}
 h2{font-family:inherit;font-weight:700;font-size:1.05rem;letter-spacing:-.02em}
-h3{font-family:inherit;font-weight:600;font-size:.96rem;letter-spacing:-.015em}
+h3{font-family:var(--ff);font-weight:600;font-size:.96rem;letter-spacing:-.015em}
 svg{display:block}
 .num,.val{font-family:var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 .ico{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
@@ -77,7 +77,7 @@ svg{display:block}
 .side .foot a:hover{background:rgba(44,240,201,.10);color:#c8f0e8}
 
 /* ---------- MAIN ---------- */
-.main{flex:1;min-width:0;display:flex;flex-direction:column;font-family:var(--ff)}
+.main{flex:1;min-width:0;display:flex;flex-direction:column}
 .topbar{height:60px;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:20}
 .topbar h1{font-weight:700;font-size:1.22rem;letter-spacing:-.025em}
 .topbar .right{display:flex;align-items:center;gap:12px}
