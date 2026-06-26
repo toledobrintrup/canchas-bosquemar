@@ -51,6 +51,7 @@ svg{display:block}
 /* ---------- SIDEBAR (siempre oscuro — teal marca en claro, terminal en oscuro) ---------- */
 .side{width:236px;flex:none;background:linear-gradient(180deg,#063b34,#0a2b28);display:flex;flex-direction:column;padding:16px 12px;position:sticky;top:0;height:100vh;border-right:1px solid rgba(255,255,255,.06)}
 [data-theme="dark"] .side{background:#0c1413;border-right-color:#18211f}
+[data-theme="dark"] .lg-qq{filter:brightness(0) invert(1)}
 .side .brand{display:flex;align-items:center;gap:10px;padding:8px 8px 20px}
 .side .brand .mark{width:38px;height:38px;background:rgba(0,0,0,.25);border-radius:10px;display:grid;place-items:center}
 .side .brand .mark img{height:20px}
