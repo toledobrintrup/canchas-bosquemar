@@ -348,29 +348,44 @@
   function renderTotales() {
     const mes = periodo(), ml = MES[+mes.slice(5,7)-1];
     const saldo = saldoScope('ALL');
+    const cbTot = saldoScope('CB'), qqTot = saldoScope('QQ');
+    const cbChile = saldoScope('cb-chile'), cbBice = saldoScope('cb-bice');
     const ing = mesScope('ALL',mes,'ingreso'), egr = mesScope('ALL',mes,'egreso'), neto = ing - egr;
     document.getElementById('totales').innerHTML = `
       <div class="hero">
         <div class="hero-main">
           <div class="mlbl">Saldo actual · total general</div>
-          <div class="herobig ${saldo<0?'neg':''}" id="heroSaldo">${fmt(saldo)}</div>
+          <div class="herobig ${saldo<0?'neg':''}" id="heroSaldo">$0</div>
         </div>
         <div class="hero-brk">
-          <div class="r cb"><span class="nm">${logoEmp('CB')} Canchas Bosquemar</span><span class="v" id="hCB">${fmt(saldoScope('CB'))}</span></div>
-          <div class="r sub"><span class="nm">${bankBadge('Banco de Chile')}</span><span class="v">${fmt(saldoScope('cb-chile'))}</span></div>
-          <div class="r sub"><span class="nm">${bankBadge('Banco BICE')}</span><span class="v">${fmt(saldoScope('cb-bice'))}</span></div>
-          <div class="r cb"><span class="nm">${logoEmp('QQ')} Quinque</span><span class="v" id="hQQ">${fmt(saldoScope('QQ'))}</span></div>
+          <div class="r cb"><span class="nm">${logoEmp('CB')} Canchas Bosquemar</span><span class="v" id="hCB">$0</span></div>
+          <div class="r sub"><span class="nm">${bankBadge('Banco de Chile')}</span><span class="v" id="hCBChile">$0</span></div>
+          <div class="r sub"><span class="nm">${bankBadge('Banco BICE')}</span><span class="v" id="hCBBice">$0</span></div>
+          <div class="r cb"><span class="nm">${logoEmp('QQ')} Quinque</span><span class="v" id="hQQ">$0</span></div>
         </div>
       </div>
       <div class="submetrics">
-        <div class="sm"><span class="smlbl">Ingresos ${ml}</span><span class="smv" id="smIng">${fmt(ing)}</span></div>
+        <div class="sm"><span class="smlbl">Ingresos ${ml}</span><span class="smv" id="smIng">$0</span></div>
         <div class="op">−</div>
-        <div class="sm"><span class="smlbl">Egresos ${ml}</span><span class="smv" id="smEgr">${fmt(egr)}</span></div>
+        <div class="sm"><span class="smlbl">Egresos ${ml}</span><span class="smv" id="smEgr">$0</span></div>
         <div class="op">=</div>
-        <div class="sm"><span class="smlbl">Flujo neto ${ml}</span><span class="smv ${neto<0?'neg':'pos'}" id="smNeto">${neto>=0?'+':''}${fmt(neto)}</span></div>
+        <div class="sm"><span class="smlbl">Flujo neto ${ml}</span><span class="smv ${neto<0?'neg':'pos'}" id="smNeto">$0</span></div>
         <div class="op note">↑ así se construye el saldo del periodo</div>
       </div>`;
-    countUp(document.getElementById('heroSaldo'), saldo, v=>fmt(Math.round(v)));
+    // cascada: cada número arranca 80ms después del anterior
+    const cascade = [
+      ['heroSaldo', saldo,   v => fmt(Math.round(v)),                    750],
+      ['hCB',       cbTot,   v => fmt(Math.round(v)),                    680],
+      ['hCBChile',  cbChile, v => fmt(Math.round(v)),                    600],
+      ['hCBBice',   cbBice,  v => fmt(Math.round(v)),                    600],
+      ['hQQ',       qqTot,   v => fmt(Math.round(v)),                    680],
+      ['smIng',     ing,     v => fmt(Math.round(v)),                    580],
+      ['smEgr',     egr,     v => fmt(Math.round(v)),                    580],
+      ['smNeto',    neto,    v => (v>=0?'+':'')+fmt(Math.round(v)),      620],
+    ];
+    cascade.forEach(([id, val, fmtr, dur], i) => {
+      setTimeout(() => countUp(document.getElementById(id), val, fmtr, dur), i * 75);
+    });
   }
 
   /* ===== QUICK CARDS ===== */
