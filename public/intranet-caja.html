@@ -622,7 +622,7 @@
     function addLine() {
       if(i >= LD_MSGS.length) {
         barEl.style.width = '100%';
-        setTimeout(()=>{ document.getElementById('loader').classList.add('gone'); render(); }, 520);
+        setTimeout(()=>{ document.getElementById('loader').classList.add('gone'); render(); }, 360);
         return;
       }
       const m = LD_MSGS[i++];
@@ -632,9 +632,9 @@
       div.innerHTML = `<span class="badge ${m.badge_cls}">${m.badge}</span>${m.txt}`;
       linesEl.appendChild(div);
       barEl.style.width = Math.round((i / LD_MSGS.length) * 100) + '%';
-      setTimeout(addLine, 160);
+      setTimeout(addLine, 110);
     }
-    setTimeout(addLine, 700);
+    setTimeout(addLine, 490);
   })();
 </script>
 </body>
