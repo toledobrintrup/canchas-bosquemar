@@ -28,10 +28,11 @@
 
   /* ---- SCOPE TABS (General / CB / QQ) ---- */
   .stabs{display:flex;gap:6px;align-items:center;margin-bottom:18px;flex-wrap:wrap}
-  .stab{display:inline-flex;align-items:center;gap:7px;font-family:inherit;font-weight:600;font-size:.84rem;padding:8px 16px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;transition:.14s}
+  .stab{display:inline-flex;align-items:center;gap:7px;font-family:inherit;font-weight:600;font-size:.84rem;padding:8px 16px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;transition:background .45s cubic-bezier(.4,0,.6,1),color .45s cubic-bezier(.4,0,.6,1),border-color .45s cubic-bezier(.4,0,.6,1)}
   .stab:hover{color:var(--accent);border-color:var(--accent)}
   .stab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-  .stab img{height:14px;width:auto;vertical-align:middle}
+  .stab img{height:14px;width:auto;vertical-align:middle;transition:filter .45s cubic-bezier(.4,0,.6,1)}
+  .stab.on img{filter:brightness(0) invert(1)}
   .stab-div{width:1px;height:20px;background:var(--line);margin:0 4px}
   .cat-clear{display:inline-flex;align-items:center;gap:6px;background:var(--accent-soft);color:var(--accent);border:0;border-radius:8px;padding:7px 12px;font-weight:600;font-size:.82rem;cursor:pointer;font-family:inherit}
 
