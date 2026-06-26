@@ -59,10 +59,11 @@ svg{display:block}
 .side .brand small{display:block;font-family:var(--mono);font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:#5dab9c;margin-top:4px;font-weight:500}
 [data-theme="dark"] .side .brand b{color:#e7f0ed}
 [data-theme="dark"] .side .brand small{color:#5a7a74}
-.nav{display:flex;flex-direction:column;gap:1px;margin-top:2px}
-.nav a{position:relative;display:flex;align-items:center;gap:11px;padding:8px 11px;border-radius:9px;color:#7abdb3;font-weight:500;font-size:.88rem;cursor:pointer;transition:.14s}
+.nav{display:flex;flex-direction:column;gap:1px;margin-top:2px;position:relative}
+.nav-pill{position:absolute;left:0;right:0;border-radius:9px;background:rgba(44,240,201,.10);pointer-events:none;z-index:0;opacity:0;transition:top .32s cubic-bezier(.34,1.56,.64,1),height .32s cubic-bezier(.34,1.56,.64,1),opacity .18s}
+.nav a{position:relative;z-index:1;display:flex;align-items:center;gap:11px;padding:8px 11px;border-radius:9px;color:#7abdb3;font-weight:500;font-size:.88rem;cursor:pointer;transition:color .14s}
 [data-theme="dark"] .nav a{color:#869994}
-.nav a:hover{background:rgba(44,240,201,.10);color:#c8f0e8}
+.nav a:hover{color:#c8f0e8}
 .nav a:hover .ico{color:#2cf0c9}
 .nav a.on{background:rgba(255,122,26,.16);color:#ff9a4a;font-weight:600}
 .nav a.on .ico{color:#ff7a1a}
@@ -106,7 +107,9 @@ svg{display:block}
 .grid2{display:grid;grid-template-columns:1.55fr 1fr;gap:14px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}
 .card{background:var(--panel);border:1px solid var(--line);border-left:2.5px solid var(--accent);border-radius:var(--radius);overflow:hidden}
-.card-h{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line)}
+.card-h{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid rgba(15,184,156,.28);background:rgba(15,184,156,.07)}
+[data-theme="dark"] .card-h{background:rgba(44,240,201,.05);border-bottom-color:rgba(44,240,201,.13)}
+.card-h h3{color:var(--accent)}
 .card-h a{font-size:.8rem;font-weight:500;color:var(--accent)}
 
 /* ---------- TABLES ---------- */
@@ -139,7 +142,9 @@ tfoot td{font-weight:700;font-size:.9rem;background:var(--panel-2);border-top:1p
 
 /* ---------- CHARTS ---------- */
 .charts{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin-bottom:22px}
-.chart-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+.chart-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;overflow:hidden}
+.chart-card > h3{color:var(--accent);background:rgba(15,184,156,.07);border-bottom:1px solid rgba(15,184,156,.28);padding:12px 20px;margin:-18px -20px 16px;border-radius:var(--radius) var(--radius) 0 0}
+[data-theme="dark"] .chart-card > h3{background:rgba(44,240,201,.05);border-bottom-color:rgba(44,240,201,.13)}
 .chart-sub{color:var(--muted);font-size:.79rem;margin:3px 0 16px}
 .chart-card svg{width:100%;height:auto;overflow:visible}
 .chart-card svg text{font-family:var(--mono)}
