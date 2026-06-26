@@ -10,12 +10,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/intranet.css" />
+<script src="assets/intranet.js"></script>
 <style>
   .selbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
   .selbar .grp{display:flex;align-items:center;gap:7px}
   .selbar .slbl{font-size:.66rem;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);font-weight:700;margin-right:2px}
   .btn-g{font-weight:600;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:9px;padding:8px 14px;cursor:pointer;font-size:.85rem;font-family:inherit}
-  .btn-g.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .btn-g.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
   .clearf{display:inline-flex;align-items:center;gap:6px;background:var(--teal-soft);color:var(--teal-d);border:0;border-radius:8px;padding:7px 12px;font-weight:600;font-size:.82rem;cursor:pointer}
 
   /* tarjeta de totales */
@@ -46,7 +47,7 @@
   .qcard{flex:none;width:210px;border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:var(--panel)}
   .qcard .qd{font-size:.72rem;color:var(--muted);font-weight:600}
   .qcard .qg{font-size:.86rem;font-weight:600;margin:3px 0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .qcard .qm{font-weight:800;font-size:1.05rem;font-variant-numeric:tabular-nums}
+  .qcard .qm{font-family:var(--mono);font-weight:600;font-size:1.05rem;font-variant-numeric:tabular-nums}
   .minitag{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);background:var(--panel-2);border:1px solid var(--line);padding:2px 7px;border-radius:5px}
 
   .cmodal-bg{position:fixed;inset:0;background:rgba(10,20,18,.5);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
@@ -64,9 +65,9 @@
   .cmodal textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:11px;padding:11px 13px;font-family:inherit;font-size:.9rem;resize:vertical;color:var(--ink)}
   .cmodal textarea:focus{outline:none;border-color:var(--teal)}
   .cacts{display:flex;gap:9px;justify-content:flex-end;margin-top:14px}
-  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--ink);color:#fff;padding:12px 19px;border-radius:11px;font-weight:600;font-size:.88rem;z-index:200;transition:.3s}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--ink);color:var(--bg);padding:12px 19px;border-radius:11px;font-weight:600;font-size:.88rem;z-index:200;transition:.3s}
   .toast.show{transform:translateX(-50%) translateY(0)}
-  .bartip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:.78rem;font-weight:600;padding:6px 10px;border-radius:8px;opacity:0;transition:opacity .1s;z-index:150;white-space:nowrap}
+  .bartip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:.78rem;font-weight:600;padding:6px 10px;border-radius:8px;opacity:0;transition:opacity .1s;z-index:150;white-space:nowrap}
   /* héroe saldo */
   .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:26px;padding:22px 22px 20px;align-items:center}
   .hero-main .mlbl{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);font-weight:500}
@@ -172,8 +173,8 @@
     { id:'qq-chile', empresa:'QQ', banco:'Banco de Chile', saldoIni:1500000 },
   ];
   const EMP = { CB:'Canchas Bosquemar', QQ:'Quinque' };
-  const COL_BAR = { ing:'#16161a', egr:'#9a9a95', neto:'#0a8f78' };
-  const COL_CAT = ['#16161a','#0a8f78','#7a7a7e','#b4b4b0','#3f3f43','#d4d4cf','#9a9a96','#0a8f78'];
+  const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const COL_CAT = ['#0fb89c','#ff7a1a','#8a9591','#c2bfb8','#4f5f5b','#2cf0c9','#b5740a','#9aa8a5'];
 
   const MOV = [
     {fecha:'2026-01-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios enero',cat:'Arriendo inmueble',com:'',autor:''},
@@ -285,6 +286,7 @@
   function setCat(c){ catFilter = (catFilter===c)?null:c; render(); }
 
   function renderBar(){
+    const ING=cssv('--c-ing'),EGR=cssv('--c-egr'),NETO=cssv('--c-neto'),AXIS=cssv('--c-axis'),LINE=cssv('--line'),PANEL=cssv('--panel');
     const ms=movsFilt(), map={};
     ms.forEach(m=>{ const k=m.fecha.slice(0,7); (map[k]=map[k]||{ing:0,egr:0})[m.tipo==='ingreso'?'ing':'egr']+=m.monto; });
     const data=Object.keys(map).sort().map(k=>({mes:MES[+k.slice(5,7)-1],ing:map[k].ing,egr:map[k].egr}));
@@ -294,17 +296,17 @@
     const range=maxUp+maxDn, scale=ph/range, y0=T+maxUp*scale, gw=data.length?pw/data.length:pw;
     let s=`<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto">`;
     [maxUp, maxUp/2, -maxDn/2, -maxDn].forEach(v=>{ const y=y0-v*scale; if(y<T-1||y>H-B+1) return;
-      s+=`<line x1="${L}" y1="${y.toFixed(1)}" x2="${W-R}" y2="${y.toFixed(1)}" stroke="#f1f4f3"/><text x="${L-7}" y="${(y+3).toFixed(1)}" text-anchor="end" font-size="10" fill="#9aa8a5">${'$'+Math.round(v/1000).toLocaleString('es-CL')+'k'}</text>`; });
-    s+=`<line x1="${L}" y1="${y0.toFixed(1)}" x2="${W-R}" y2="${y0.toFixed(1)}" stroke="#cdd6d3" stroke-width="1.2"/>`;
+      s+=`<line x1="${L}" y1="${y.toFixed(1)}" x2="${W-R}" y2="${y.toFixed(1)}" stroke="${LINE}"/><text x="${L-7}" y="${(y+3).toFixed(1)}" text-anchor="end" font-size="10" fill="${AXIS}">${'$'+Math.round(v/1000).toLocaleString('es-CL')+'k'}</text>`; });
+    s+=`<line x1="${L}" y1="${y0.toFixed(1)}" x2="${W-R}" y2="${y0.toFixed(1)}" stroke="${AXIS}" stroke-width="1.2"/>`;
     const pts=[];
     data.forEach((d,i)=>{ const x0=L+i*gw, bw=Math.min(15,gw/3.4), xa=x0+gw/2-bw-2, xb=x0+gw/2+2;
-      s+=`<rect x="${xa.toFixed(1)}" y="${(y0-d.ing*scale).toFixed(1)}" width="${bw.toFixed(1)}" height="${(d.ing*scale).toFixed(1)}" rx="2.5" fill="${COL_BAR.ing}"><title>Ingresos ${d.mes}: ${fmt(d.ing)}</title></rect>`;
-      s+=`<rect x="${xb.toFixed(1)}" y="${y0.toFixed(1)}" width="${bw.toFixed(1)}" height="${(d.egr*scale).toFixed(1)}" rx="2.5" fill="${COL_BAR.egr}"><title>Egresos ${d.mes}: ${fmt(-d.egr)}</title></rect>`;
-      s+=`<text x="${(x0+gw/2).toFixed(1)}" y="${H-10}" text-anchor="middle" font-size="11" fill="#67767a" font-weight="600">${d.mes}</text>`;
+      s+=`<rect x="${xa.toFixed(1)}" y="${(y0-d.ing*scale).toFixed(1)}" width="${bw.toFixed(1)}" height="${(d.ing*scale).toFixed(1)}" rx="2.5" fill="${ING}"><title>Ingresos ${d.mes}: ${fmt(d.ing)}</title></rect>`;
+      s+=`<rect x="${xb.toFixed(1)}" y="${y0.toFixed(1)}" width="${bw.toFixed(1)}" height="${(d.egr*scale).toFixed(1)}" rx="2.5" fill="${EGR}"><title>Egresos ${d.mes}: ${fmt(-d.egr)}</title></rect>`;
+      s+=`<text x="${(x0+gw/2).toFixed(1)}" y="${H-10}" text-anchor="middle" font-size="11" fill="${AXIS}" font-weight="600">${d.mes}</text>`;
       pts.push([x0+gw/2, y0-(d.ing-d.egr)*scale, d.mes, d.ing-d.egr]);
     });
-    if(pts.length>1) s+=`<polyline points="${pts.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ')}" fill="none" stroke="${COL_BAR.neto}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
-    pts.forEach(p=> s+=`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.4" fill="#fff" stroke="${COL_BAR.neto}" stroke-width="2"><title>Flujo neto ${p[2]}: ${fmt(p[3])}</title></circle>`);
+    if(pts.length>1) s+=`<polyline points="${pts.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ')}" fill="none" stroke="${NETO}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+    pts.forEach(p=> s+=`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.4" fill="${PANEL}" stroke="${NETO}" stroke-width="2"><title>Flujo neto ${p[2]}: ${fmt(p[3])}</title></circle>`);
     document.getElementById('barChart').innerHTML = s+'</svg>';
     document.getElementById('barSub').textContent = catFilter ? ('Categoría: '+catFilter+' · por mes') : 'Por mes · egresos en negativo';
   }
@@ -319,11 +321,11 @@
     arr.forEach((a,i)=>{ const seg=totalAll? a.v/totalAll*C : 0; const dim = catFilter && a.k!==catFilter;
       circ+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${COL_CAT[i%COL_CAT.length]}" stroke-width="${sw}" stroke-dasharray="${seg.toFixed(2)} ${(C-seg).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}" opacity="${dim?0.18:1}" style="cursor:pointer" onclick="setCat('${a.k.replace(/'/g,"")}')"/>`;
       off+=seg; });
-    if(!arr.length) circ=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#eef3f1" stroke-width="${sw}"/>`;
+    if(!arr.length) circ=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${cssv('--line')}" stroke-width="${sw}"/>`;
     document.getElementById('donut').innerHTML =
       `<svg viewBox="0 0 172 172"><g transform="rotate(-90 ${cx} ${cy})">${circ}</g>`+
-      `<text x="${cx}" y="${cy-1}" text-anchor="middle" font-size="20" font-weight="800" fill="#0e1a18" letter-spacing="-1">${fmtM(totalShow)}</text>`+
-      `<text x="${cx}" y="${cy+15}" text-anchor="middle" font-size="8.5" fill="#67767a" letter-spacing=".5">${catFilter?'FILTRADO':'EGRESOS'}</text></svg>`;
+      `<text x="${cx}" y="${cy-1}" text-anchor="middle" font-size="20" font-weight="800" fill="${cssv('--ink')}" letter-spacing="-1" style="font-family:var(--mono)">${fmtM(totalShow)}</text>`+
+      `<text x="${cx}" y="${cy+15}" text-anchor="middle" font-size="8.5" fill="${cssv('--c-axis')}" letter-spacing=".5">${catFilter?'FILTRADO':'EGRESOS'}</text></svg>`;
     document.getElementById('donutLeg').innerHTML = arr.map((a,i)=>{
       const act = catFilter===a.k, dim = catFilter && !act;
       return `<div class="row" style="opacity:${dim?0.4:1}" onclick="setCat('${a.k.replace(/'/g,"")}')"><i style="background:${COL_CAT[i%COL_CAT.length]}"></i><div><b>${totalAll?Math.round(a.v/totalAll*100):0}% ${act?'·✓':''}</b><span>${a.k}</span></div></div>`;
@@ -379,6 +381,9 @@
   document.getElementById('cmodalBg').addEventListener('click', e=>{ if(e.target.id==='cmodalBg') cerrarCom(); });
 
   let tT; function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(tT); tT=setTimeout(()=>t.classList.remove('show'),2800); }
+
+  // re-renderizar al cambiar tema (los gráficos leen colores del CSS)
+  window.addEventListener('themechange', render);
 
   render();
 </script>
