@@ -28,10 +28,10 @@
 
   /* ---- SCOPE TABS (General / CB / QQ) ---- */
   .stabs{display:flex;gap:6px;align-items:center;margin-bottom:18px;flex-wrap:wrap}
-  .stab{display:inline-flex;align-items:center;gap:7px;font-family:inherit;font-weight:600;font-size:.84rem;padding:8px 16px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;transition:background .9s cubic-bezier(.4,0,.6,1),color .9s cubic-bezier(.4,0,.6,1),border-color .9s cubic-bezier(.4,0,.6,1)}
+  .stab{display:inline-flex;align-items:center;gap:7px;font-family:inherit;font-weight:600;font-size:.84rem;padding:8px 16px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;transition:background .3s ease,color .3s ease,border-color .3s ease}
   .stab:hover{color:var(--accent);border-color:var(--accent)}
   .stab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-  .stab img{height:14px;width:auto;vertical-align:middle;transition:filter .9s cubic-bezier(.4,0,.6,1)}
+  .stab img{height:14px;width:auto;vertical-align:middle;transition:filter .3s ease}
   .stab.on img{filter:brightness(0) invert(1)}
   [data-theme="dark"] .stab.on img{filter:brightness(0)}
   .stab-div{width:1px;height:20px;background:var(--line);margin:0 4px}
