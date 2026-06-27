@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/intranet.css" />
+<link rel="stylesheet" href="assets/intranet.css?v=2" />
 <script src="assets/intranet.js"></script>
 <style>
   /* ---- LOADING SCREEN ---- */
@@ -38,7 +38,7 @@
   .cat-clear{display:inline-flex;align-items:center;gap:6px;background:var(--accent-soft);color:var(--accent);border:0;border-radius:8px;padding:7px 12px;font-weight:600;font-size:.82rem;cursor:pointer;font-family:inherit}
 
   /* ---- TARJETA TOTALES HERO ---- */
-  .totales{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:18px;overflow:hidden;scale:1;transition:scale 1.1s cubic-bezier(.65,0,.35,1)}
+  .totales{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:18px;overflow:hidden;scale:1;transition:scale .6s cubic-bezier(.65,0,.35,1)}
   .totales:hover{scale:1.007;z-index:2}
   .totales .th{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;border-bottom:1px solid rgba(15,184,156,.28);background:rgba(15,184,156,.07)}
   .totales .th h3{color:var(--accent)}
@@ -152,7 +152,7 @@
   .num-anim{animation:numFlash .45s ease forwards}
 
   /* ---- SCROLL REVEAL (Apple-style) ---- */
-  .sr{opacity:0;transform:translateY(38px);transition:opacity 1.05s ease-in-out,transform 1.05s cubic-bezier(0.4,0,0.2,1),scale 1.1s cubic-bezier(.65,0,.35,1)}
+  .sr{opacity:0;transform:translateY(38px);transition:opacity 1.05s ease-in-out,transform 1.05s cubic-bezier(0.4,0,0.2,1),scale .6s cubic-bezier(.65,0,.35,1)}
   .sr.sr-in{opacity:1;transform:translateY(0)}
 </style>
 </head>
