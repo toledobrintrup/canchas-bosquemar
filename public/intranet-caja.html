@@ -38,9 +38,8 @@
   .cat-clear{display:inline-flex;align-items:center;gap:6px;background:var(--accent-soft);color:var(--accent);border:0;border-radius:8px;padding:7px 12px;font-weight:600;font-size:.82rem;cursor:pointer;font-family:inherit}
 
   /* ---- TARJETA TOTALES HERO ---- */
-  .totales{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:18px;overflow:hidden;scale:1;transition:scale .65s cubic-bezier(.4,0,.6,1),box-shadow .65s cubic-bezier(.4,0,.6,1)}
-  .totales:hover{scale:1.007;box-shadow:0 5px 22px rgba(0,0,0,.07);z-index:2}
-  [data-theme="dark"] .totales:hover{box-shadow:0 5px 22px rgba(0,0,0,.3)}
+  .totales{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:18px;overflow:hidden;transition:translate .35s cubic-bezier(.4,0,.6,1)}
+  .totales:hover{translate:0 -4px;z-index:2;transition:translate .8s cubic-bezier(.4,0,.6,1)}
   .totales .th{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;border-bottom:1px solid rgba(15,184,156,.28);background:rgba(15,184,156,.07)}
   .totales .th h3{color:var(--accent)}
   [data-theme="dark"] .totales .th{background:rgba(44,240,201,.05);border-bottom-color:rgba(44,240,201,.13)}
