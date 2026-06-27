@@ -1,6 +1,6 @@
 /* Tema claro/oscuro del ERP — sin parpadeo + botón en la topbar */
 (function () {
-  var t = localStorage.getItem('cb-theme') || 'light';
+  var t = localStorage.getItem('cb-theme') || 'dark';
   document.documentElement.setAttribute('data-theme', t);
 })();
 
