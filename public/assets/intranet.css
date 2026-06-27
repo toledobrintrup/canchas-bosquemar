@@ -96,7 +96,7 @@ svg{display:block}
 /* ---------- KPIs ---------- */
 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:22px}
 .kpi{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:17px 18px;position:relative;scale:1;transition:scale .8s cubic-bezier(.22,1,.36,1)}
-.kpi:hover{scale:1.014;z-index:2}
+.kpi:hover{scale:1.023;z-index:2}
 .kpi .k-ic{width:auto;height:auto;background:none;color:var(--faint);margin-bottom:13px}
 .kpi .k-ic .ico{width:17px;height:17px}
 .kpi .val{font-weight:600;font-size:1.55rem;line-height:1.05}
@@ -108,7 +108,7 @@ svg{display:block}
 .grid2{display:grid;grid-template-columns:1.55fr 1fr;gap:14px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}
 .card{background:var(--panel);border:1px solid var(--line);border-left:2.5px solid var(--accent);border-radius:var(--radius);overflow:hidden;position:relative;scale:1;transition:scale .8s cubic-bezier(.22,1,.36,1)}
-.card:hover{scale:1.009;z-index:2}
+.card:hover{scale:1.017;z-index:2}
 .card-h{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid rgba(15,184,156,.28);background:rgba(15,184,156,.07)}
 [data-theme="dark"] .card-h{background:rgba(44,240,201,.05);border-bottom-color:rgba(44,240,201,.13)}
 .card-h h3{color:var(--accent)}
@@ -145,7 +145,7 @@ tfoot td{font-weight:700;font-size:.9rem;background:var(--panel-2);border-top:1p
 /* ---------- CHARTS ---------- */
 .charts{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin-bottom:22px}
 .chart-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;overflow:hidden;position:relative;scale:1;transition:scale .8s cubic-bezier(.22,1,.36,1)}
-.chart-card:hover{scale:1.004;z-index:2}
+.chart-card:hover{scale:1.014;z-index:2}
 .chart-card > h3{color:var(--accent);background:rgba(15,184,156,.07);border-bottom:1px solid rgba(15,184,156,.28);padding:12px 20px;margin:-18px -20px 16px;border-radius:var(--radius) var(--radius) 0 0}
 [data-theme="dark"] .chart-card > h3{background:rgba(44,240,201,.05);border-bottom-color:rgba(44,240,201,.13)}
 .chart-sub{color:var(--muted);font-size:.79rem;margin:3px 0 16px}
