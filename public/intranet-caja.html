@@ -371,7 +371,7 @@
       if (!el.classList.contains('sr')) {
         el.classList.add('sr');
         var g = groups.get(el.parentElement) || [];
-        el.style.transitionDelay = (g.indexOf(el) * 95) + 'ms';
+        var _d = g.indexOf(el) * 95; el.style.transitionDelay = _d + 'ms,' + _d + 'ms,0ms';
       }
     });
 
