@@ -22,7 +22,7 @@
 var CB_SALT = 'cdbmar::v1::';
 var CB_USERS = [
   { name: 'Gabriel Toledo Brintrup', user: 'toledobrintrup@hotmail.com', hash: 'fbc4a9ddb36954975a3e3d1d63df41ee3b10978de5b87c2e37fc41250e0b791c', photo: '' },
-  { name: 'Mario Álvarez Sabra',     user: 'mario.alvarez@isiete.cl',    hash: '66b6251ea2399d303cc4996b2fcdb5634e4ebc0fcd812497c0d390315dbb92d4', photo: '' },
+  { name: 'Mario Álvarez Sabra',     user: 'mario.alvarez@isiete.cl',    hash: '66b6251ea2399d303cc4996b2fcdb5634e4ebc0fcd812497c0d390315dbb92d4', photo: 'assets/users/mario.jpg' },
   { name: 'Diego Muñoz Fuente Alba', user: 'yeyo',                       hash: 'faa35d944972b54c566536b5c7ea685e224c79531d42646c5af6c6cc30905d3f', photo: '' }
 ];
 async function cbSha256(s) {

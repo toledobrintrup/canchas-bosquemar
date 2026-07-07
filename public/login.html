@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Oxanium:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/intranet.css?v=11">
-<script src="assets/intranet.js?v=11"></script>
+<script src="assets/intranet.js?v=12"></script>
 <style>
   body{display:grid;place-items:center;min-height:100vh;padding:24px;background:
     radial-gradient(900px 500px at 20% -10%, color-mix(in srgb,var(--accent) 12%,transparent), transparent 60%),
@@ -42,6 +42,20 @@
   .lg-err.show{display:block;animation:lgrise .25s ease}
   .lg-foot{margin-top:20px;text-align:center;font-size:.74rem;color:var(--faint);line-height:1.5}
   .lg-foot a{color:var(--muted)}
+  /* Loading screen post-login (efecto general al entrar) */
+  #loader{position:fixed;inset:0;z-index:999;background:linear-gradient(160deg,#042820,#041c14 55%,#020e0a);display:none;align-items:center;justify-content:center;flex-direction:column;gap:18px}
+  #loader.show{display:flex;animation:ldfade .35s ease}
+  @keyframes ldfade{from{opacity:0}to{opacity:1}}
+  .ld-logo{width:56px;height:56px;object-fit:contain;opacity:0;animation:ldIn .4s .1s forwards}
+  .ld-tag{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:#2cf0c9;letter-spacing:.32em;text-transform:uppercase;opacity:0;animation:ldIn .3s .35s forwards}
+  .ld-lines{display:flex;flex-direction:column;gap:5px;min-width:280px;margin-top:4px}
+  .ld-line{font-family:'JetBrains Mono',monospace;font-size:.67rem;color:#3a7a6a;display:flex;align-items:center;gap:9px;opacity:0;animation:ldIn .25s forwards}
+  .ld-line .badge{font-size:.55rem;font-weight:700;padding:1px 6px;border-radius:3px;background:rgba(44,240,201,.12);color:#2cf0c9;letter-spacing:.1em;min-width:36px;text-align:center}
+  .ld-line .badge.run{background:rgba(255,122,26,.13);color:#ff8a3a}
+  .ld-line .badge.live{background:rgba(44,240,201,.25);color:#2cf0c9;box-shadow:0 0 8px rgba(44,240,201,.4)}
+  .ld-bar-wrap{width:200px;height:2px;background:rgba(44,240,201,.12);border-radius:1px}
+  .ld-bar{height:2px;background:linear-gradient(90deg,#0fb89c,#2cf0c9);width:0;border-radius:1px;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+  @keyframes ldIn{to{opacity:1}}
 </style>
 </head>
 <body>
@@ -78,6 +92,13 @@
     <div class="lg-foot">Acceso restringido · Canchas Bosquemar<br><a href="/">← Volver al sitio</a></div>
   </form>
 
+  <div id="loader">
+    <img src="assets/logo/cb-isotipo.png" class="ld-logo" alt="CB">
+    <div class="ld-tag">Canchas Bosquemar · Intranet</div>
+    <div class="ld-lines" id="ldLines"></div>
+    <div class="ld-bar-wrap"><div class="ld-bar" id="ldBar"></div></div>
+  </div>
+
 <script>
   (function () {
     // Si ya hay sesión, entrar directo
@@ -96,6 +117,30 @@
 
     function showErr(msg) { errEl.textContent = msg; errEl.classList.add('show'); }
 
+    function runLoader() {
+      var u = (typeof cbCurrentUser === 'function') ? cbCurrentUser() : null;
+      var first = (u && u.name ? u.name.split(/\s+/)[0] : '').toUpperCase();
+      document.getElementById('lgForm').style.display = 'none';
+      document.getElementById('loader').classList.add('show');
+      var msgs = [
+        { b: 'OK',   c: '',     t: 'ACCESO VERIFICADO' },
+        { b: 'OK',   c: '',     t: 'CARGANDO MÓDULOS' },
+        { b: 'RUN',  c: 'run',  t: 'SINCRONIZANDO DATOS...' },
+        { b: 'LIVE', c: 'live', t: 'BIENVENIDO' + (first ? ', ' + first : '') }
+      ];
+      var lines = document.getElementById('ldLines'), bar = document.getElementById('ldBar'), i = 0;
+      function step() {
+        if (i >= msgs.length) { bar.style.width = '100%'; setTimeout(function () { location.replace('intranet.html'); }, 560); return; }
+        var m = msgs[i++];
+        var d = document.createElement('div'); d.className = 'ld-line';
+        d.innerHTML = '<span class="badge ' + m.c + '">' + m.b + '</span>' + m.t;
+        lines.appendChild(d);
+        bar.style.width = Math.round((i / msgs.length) * 100) + '%';
+        setTimeout(step, 280);
+      }
+      setTimeout(step, 420);
+    }
+
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
       errEl.classList.remove('show');
@@ -103,7 +148,7 @@
       btn.disabled = true; btn.textContent = 'Verificando…';
       try {
         var r = await cbLogin(userEl.value, passEl.value);
-        if (r.ok) { location.replace('intranet.html'); return; }
+        if (r.ok) { runLoader(); return; }
         showErr(r.msg); passEl.value = ''; passEl.focus();
       } catch (err) {
         showErr('No se pudo verificar. Reintenta.');

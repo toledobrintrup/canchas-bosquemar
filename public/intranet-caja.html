@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/intranet.css?v=11" />
-<script src="assets/intranet.js?v=11"></script>
+<script src="assets/intranet.js?v=12"></script>
 <style>
   /* ---- LOADING SCREEN ---- */
   #loader{position:fixed;inset:0;z-index:999;background:linear-gradient(160deg,#042820,#041c14 55%,#020e0a);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:opacity .5s ease,visibility .5s ease}
@@ -219,13 +219,7 @@
 </head>
 <body>
 
-<!-- ====== LOADING SCREEN ====== -->
-<div id="loader">
-  <img src="assets/logo/cb-isotipo.png" class="ld-logo" alt="CB">
-  <div class="ld-tag">Canchas Bosquemar · Sistema Financiero</div>
-  <div class="ld-lines" id="ldLines"></div>
-  <div class="ld-bar-wrap"><div class="ld-bar" id="ldBar"></div></div>
-</div>
+<!-- Loading screen movido al login (post-autenticación) -->
 
 <aside class="side">
   <a class="brand" href="/"><span class="mark"><img src="assets/logo/cb-isotipo.png" alt="CB"></span><span><b>Canchas Bosquemar</b><small>Intranet</small></span></a>
@@ -340,7 +334,7 @@
   const fmtM = n => (n<0?'−$':'$') + (Math.abs(n)/1e6).toFixed(1) + 'M';
   const MES  = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
   const USUARIO  = 'Gabriel Toledo';
-  const ULTIMA_ACT = '2026-06-30';
+  const ULTIMA_ACT = '2026-07-06';
 
   const CUENTAS = [
     { id:'cb-chile', empresa:'CB', banco:'Banco de Chile', saldoIni:0 },        // CB pendiente de data real
@@ -855,40 +849,13 @@
   let tT; function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(tT); tT=setTimeout(()=>t.classList.remove('show'),2800); }
   window.addEventListener('themechange', render);
 
-  /* ===== LOADING SCREEN ===== */
-  const LD_MSGS = [
-    { badge:'OK',   badge_cls:'',    txt:'MÓDULO FINANCIERO · CB ERP' },
-    { badge:'OK',   badge_cls:'',    txt:'BANCO DE CHILE · CUENTA CB' },
-    { badge:'OK',   badge_cls:'',    txt:'BANCO BICE · CUENTA CB' },
-    { badge:'OK',   badge_cls:'',    txt:'BANCO DE CHILE · CUENTA QQ' },
-    { badge:'RUN',  badge_cls:'run', txt:'CALCULANDO SALDOS Y FLUJOS...' },
-    { badge:'OK',   badge_cls:'',    txt:'1.095 MOVIMIENTOS · QUINQUE 2020–2026' },
-    { badge:'LIVE', badge_cls:'live',txt:'SISTEMA CONECTADO' },
-  ];
-  (function initLoader(){
-    const linesEl = document.getElementById('ldLines');
-    const barEl   = document.getElementById('ldBar');
-    let i = 0;
-    function addLine() {
-      if(i >= LD_MSGS.length) {
-        barEl.style.width = '100%';
-        fetch('data/qq-movimientos.json')
-          .then(r=>r.json())
-          .then(data=>{ data.forEach(m=>MOV.push(m)); MOV.forEach((mm,ix)=>mm._i=ix); })
-          .catch(e=>console.error('No se pudo cargar movimientos QQ:', e))
-          .finally(()=>setTimeout(()=>{ document.getElementById('loader').classList.add('gone'); render(); }, 360));
-        return;
-      }
-      const m = LD_MSGS[i++];
-      const div = document.createElement('div');
-      div.className = 'ld-line';
-      div.style.animationDelay = '0s';
-      div.innerHTML = `<span class="badge ${m.badge_cls}">${m.badge}</span>${m.txt}`;
-      linesEl.appendChild(div);
-      barEl.style.width = Math.round((i / LD_MSGS.length) * 100) + '%';
-      setTimeout(addLine, 110);
-    }
-    setTimeout(addLine, 490);
+  /* ===== CARGA DE DATOS (el efecto de carga vive en el login) ===== */
+  (function boot(){
+    fetch('data/qq-movimientos.json')
+      .then(r=>r.json())
+      .then(data=>{ data.forEach(m=>MOV.push(m)); MOV.forEach((mm,ix)=>mm._i=ix); })
+      .catch(e=>console.error('No se pudo cargar movimientos QQ:', e))
+      .finally(render);
   })();
 </script>
 </body>
