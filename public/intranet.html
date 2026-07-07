@@ -8,8 +8,9 @@
 <meta name="theme-color" content="#0c2f33" />
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/intranet.css?v=12" />
+<link rel="stylesheet" href="assets/intranet.css?v=13" />
 <script src="assets/intranet.js?v=13"></script>
+<script src="assets/flujo-core.js?v=1"></script>
 </head>
 <body>
   <aside class="side">
@@ -20,7 +21,15 @@
   <div class="main">
     <header class="topbar"><h1>Resumen</h1><div class="right"><span class="pill">⚡ Vista previa</span><div class="user"><span class="av">GT</span><span>Gabriel T.</span></div></div></header>
     <div class="content">
-      <div class="demo">🔒 <b>Panel interno (mini-ERP) — maqueta.</b> Estructura del sistema de gestión. Datos de ejemplo; en la Fase 2 se conecta a la base de datos real con inicio de sesión seguro.</div>
+      <!-- ===== APARTADO FINANCIERO (data real) ===== -->
+      <div class="fin-bar"><h2>Finanzas · flujo interno</h2><div class="stabs" id="finTabs"></div></div>
+      <div class="totales">
+        <div class="th"><h3>Saldos · total general</h3><span class="upd"><span class="dot"></span>Al 06 jul 2026</span></div>
+        <div id="finTotales"></div>
+      </div>
+      <div class="kpis" id="finKpis" style="margin-bottom:26px"></div>
+
+      <div class="demo">🔒 <b>Operaciones — maqueta.</b> Reservas, ocupación y torneos son datos de ejemplo. Las finanzas de arriba usan data real de Quinque.</div>
       <div class="kpis"><div class="kpi"><div class="k-ic"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 14.5l2.3 2.3 4.7-4.6"/></svg></div><div class="val">18</div><div class="lbl">Reservas hoy</div><div class="delta up">▲ 12% vs. ayer</div></div><div class="kpi"><div class="k-ic"><svg class="ico" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M12 7v5l3 2"/></svg></div><div class="val">76%</div><div class="lbl">Ocupación hoy</div><div class="delta up">▲ 8% vs. promedio</div></div><div class="kpi"><div class="k-ic"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.3c0-1.1-1.1-1.8-2.5-1.8s-2.5.7-2.5 1.9 1.1 1.6 2.5 1.9 2.6.8 2.6 2-1.2 1.7-2.6 1.7-2.6-.6-2.6-1.8"/></svg></div><div class="val">$486.000</div><div class="lbl">Ingresos del día</div><div class="delta up">▲ 15% vs. ayer</div></div><div class="kpi"><div class="k-ic"><svg class="ico" viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div><div class="val">3</div><div class="lbl">Pagos pendientes</div><div class="delta down">Por confirmar</div></div></div><div class="grid2">
   <div class="card"><div class="card-h"><h3>Reservas de hoy</h3><a href="intranet-reservas.html">Ver todas →</a></div>
   <table><thead><tr><th>Hora</th><th>Cancha</th><th>Cliente</th><th class="num">Total</th><th>Estado</th></tr></thead><tbody><tr><td><b>18:00</b></td><td>Cancha 1</td><td>Matías Soto</td><td class="num">$34.000</td><td><span class="tag t-pag">Pagado</span></td></tr><tr><td><b>19:00</b></td><td>Cancha 2</td><td>Liga del Barrio</td><td class="num">$34.000</td><td><span class="tag t-pag">Pagado</span></td></tr><tr><td><b>19:00</b></td><td>Cancha 1</td><td>Camila Vera</td><td class="num">$34.000</td><td><span class="tag t-pend">Pendiente</span></td></tr><tr><td><b>20:00</b></td><td>Cancha 3</td><td>Los Pumas FC</td><td class="num">$34.000</td><td><span class="tag t-pag">Pagado</span></td></tr><tr><td><b>21:00</b></td><td>Cancha 2</td><td>Diego Fuentes</td><td class="num">$34.000</td><td><span class="tag t-pend">Pendiente</span></td></tr><tr><td><b>21:00</b></td><td>Cancha 1</td><td>Pichanga Jueves</td><td class="num">$34.000</td><td><span class="tag t-canc">Cancelada</span></td></tr></tbody></table></div>
@@ -34,5 +43,54 @@
 </div>
     </div>
   </div>
+<script>
+  /* ===== Apartado financiero de Resumen (usa FC = flujo-core.js) ===== */
+  var finScope = 'ALL';
+  function logoEmp(e){ return e==='CB' ? '<img class="lg-cb" src="assets/logo/cb-isotipo.png" alt="CB">' : '<img class="lg-qq" src="assets/logo/qq.svg" alt="QQ">'; }
+  var BANKICON='<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 4l9 5.5M4 10v8M9 10v8M15 10v8M20 10v8M3 19h18"/></svg>';
+  function bankBadge(b){ return '<span class="bkb">'+BANKICON+FC.corto(b)+'</span>'; }
+
+  function renderFinTabs(){
+    var tabs=[['ALL','General',null],['CB','Canchas Bosquemar','CB'],['QQ','Quinque','QQ']];
+    document.getElementById('finTabs').innerHTML = tabs.map(function(t){
+      return '<button class="stab'+(finScope===t[0]?' on':'')+'" onclick="setFinScope(\''+t[0]+'\')">'+(t[2]?logoEmp(t[2]):'')+t[1]+'</button>';
+    }).join('');
+  }
+  function setFinScope(s){ finScope=s; renderFinTabs(); renderFinKpis(); }
+
+  function renderFinTotales(){
+    var saldo=FC.saldoScope('ALL'), cbTot=FC.saldoScope('CB'), qqTot=FC.saldoScope('QQ');
+    var cbChile=FC.saldoCuenta('cb-chile'), cbBice=FC.saldoCuenta('cb-bice');
+    document.getElementById('finTotales').innerHTML =
+      '<div class="hero"><div class="hero-main"><div class="mlbl">Saldo actual · total general</div>'
+      +'<div class="herobig '+(saldo<0?'neg':'')+'">'+FC.fmt(saldo)+'</div></div>'
+      +'<div class="hero-brk">'
+      +'<div class="r cb"><span class="nm">'+logoEmp('CB')+' Canchas Bosquemar</span><span class="v">'+FC.fmt(cbTot)+'</span></div>'
+      +'<div class="r sub"><span class="nm">'+bankBadge('Banco de Chile')+'</span><span class="v">'+FC.fmt(cbChile)+'</span></div>'
+      +'<div class="r sub"><span class="nm">'+bankBadge('Banco BICE')+'</span><span class="v">'+FC.fmt(cbBice)+'</span></div>'
+      +'<div class="r cb"><span class="nm">'+logoEmp('QQ')+' Quinque</span><span class="v">'+FC.fmt(qqTot)+'</span></div>'
+      +'</div></div>';
+  }
+
+  function renderFinKpis(){
+    var s=finScope, mes=FC.periodo(), ml=FC.MES[+mes.slice(5,7)-1];
+    var ing=FC.mesScope(s,mes,'ingreso'), egr=FC.mesScope(s,mes,'egreso'), neto=ing-egr;
+    var prest=FC.sumGlosa(s,'Préstamo a Canchas Bosquemar');
+    var arrMes=FC.sumCat(s,'Ingreso arriendo',mes), arrTot=FC.sumCat(s,'Ingreso arriendo');
+    var retiros=FC.sumCat(s,'Retiros socios');
+    function kpi(ic,val,lbl,delta,dcls){ return '<div class="kpi"><div class="k-ic">'+ic+'</div><div class="val">'+val+'</div><div class="lbl">'+lbl+'</div><div class="delta '+(dcls||'')+'">'+delta+'</div></div>'; }
+    var I_FLOW='<svg class="ico" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg>';
+    var I_LOAN='<svg class="ico" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M17 6.5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>';
+    var I_RENT='<svg class="ico" viewBox="0 0 24 24"><path d="M4 21V6l8-3 8 3v15"/><path d="M4 21h16M9 21v-5h6v5"/></svg>';
+    var I_OUT='<svg class="ico" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M8 11l4 4 4-4M4 21h16"/></svg>';
+    document.getElementById('finKpis').innerHTML =
+      kpi(I_FLOW,(neto>=0?'+':'')+FC.fmt(neto),'Flujo neto '+ml,'Ing '+FC.fmtM(ing)+' · Egr '+FC.fmtM(egr),neto<0?'down':'up')
+      +kpi(I_LOAN,FC.fmt(prest),'Préstamos a CB (acum.)','Financiamiento obra','')
+      +kpi(I_RENT,FC.fmt(arrMes),'Arriendo cobrado '+ml,'Acum. '+FC.fmtM(arrTot),'up')
+      +kpi(I_OUT,FC.fmt(retiros),'Retiros socios (acum.)','Gabriel + Mario','');
+  }
+
+  FC.load(function(){ renderFinTabs(); renderFinTotales(); renderFinKpis(); });
+</script>
 </body>
 </html>

@@ -102,6 +102,46 @@ svg{display:block}
 .soon h2{font-size:1.5rem;font-weight:700;letter-spacing:-.02em}
 .soon p{color:var(--muted);font-size:.92rem;line-height:1.6}
 .soon-tag{font-family:var(--mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);background:var(--accent-soft);padding:5px 12px;border-radius:20px;font-weight:600}
+
+/* ---- Tarjeta financiera compartida (Flujo + Resumen) ---- */
+.stabs{display:flex;gap:6px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+.stab{display:inline-flex;align-items:center;gap:7px;font-family:inherit;font-weight:600;font-size:.84rem;padding:8px 16px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;transition:background .3s ease,color .3s ease,border-color .3s ease}
+.stab:hover{color:var(--accent);border-color:var(--accent)}
+.stab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.stab img{height:14px;width:auto;vertical-align:middle;transition:filter .3s ease}
+.stab.on img{filter:brightness(0) invert(1)}
+[data-theme="dark"] .stab.on img{filter:brightness(0)}
+.totales{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:18px;overflow:hidden}
+.totales .th{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;border-bottom:1px solid rgba(15,184,156,.28);background:rgba(15,184,156,.07)}
+.totales .th h3{color:var(--accent)}
+[data-theme="dark"] .totales .th{background:rgba(44,240,201,.05);border-bottom-color:rgba(44,240,201,.13)}
+.upd{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;color:var(--muted);background:var(--panel-2);border:1px solid var(--line);padding:5px 11px;border-radius:8px}
+.upd .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:26px;padding:22px 22px 20px;align-items:center}
+.hero-main .mlbl{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);font-weight:500}
+.herobig{font-family:var(--mono);font-weight:600;font-size:2.8rem;letter-spacing:-.035em;line-height:1;margin-top:9px}
+.herobig.neg{color:var(--red)}
+.hero-brk{display:flex;flex-direction:column;gap:7px;border-left:1px solid var(--line);padding-left:26px}
+.hero-brk .r{display:flex;align-items:center;justify-content:space-between;font-size:.85rem;gap:12px}
+.hero-brk .r .nm{display:flex;align-items:center;gap:8px;color:var(--ink)}
+.hero-brk .r.cb .nm{font-weight:600}
+.hero-brk .r.sub{color:var(--muted);font-size:.8rem;padding-left:10px}
+.hero-brk .r .v{font-family:var(--mono);font-weight:500}
+.submetrics{display:flex;align-items:center;gap:20px;padding:15px 22px;border-top:1px solid var(--line);flex-wrap:wrap;background:var(--panel-2)}
+.sm{display:flex;flex-direction:column;gap:3px}
+.sm .smlbl{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+.sm .smv{font-family:var(--mono);font-weight:600;font-size:1.18rem}
+.op{font-family:var(--mono);font-size:1.1rem;color:var(--faint);font-weight:500}
+.op.note{font-size:.76rem;color:var(--muted);margin-left:auto;letter-spacing:.02em}
+.lg-cb{height:15px;width:auto;display:inline-block;vertical-align:middle}
+.lg-qq{height:13px;width:auto;display:inline-block;vertical-align:middle}
+.bkb{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.bkb .ico{width:13px;height:13px;color:var(--faint)}
+.fin-bar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.fin-bar h2{font-size:1.05rem;font-weight:700;letter-spacing:-.02em}
+.fin-bar .stabs{margin-bottom:0}
+@media(max-width:720px){.hero{grid-template-columns:1fr;gap:16px}.hero-brk{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:14px}}
+
 .content{padding:24px 28px 56px;max-width:1300px;width:100%}
 .demo{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:11px 15px;font-size:.86rem;color:var(--muted);margin-bottom:22px}
 .demo b{color:var(--ink);font-weight:600}
