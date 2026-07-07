@@ -169,7 +169,7 @@
   .mov-pager .pg-num{font-family:var(--mono);font-size:.8rem;color:var(--muted);min-width:96px;text-align:center}
 
   /* ---- CALENDARIO DE RANGO · embebido, siempre visible, adaptado al tema ---- */
-  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:14px 16px 12px;margin:-4px 0 20px;width:100%;max-width:572px}
+  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:14px 16px 12px;margin:-4px auto 20px;width:100%;max-width:572px}
   /* cabecera CENTRADA: año arriba, atajos debajo */
   .cal-head{display:flex;flex-direction:column;align-items:center;gap:9px;margin-bottom:11px;padding-bottom:11px;border-bottom:1px solid var(--line)}
   .cal-step{display:flex;align-items:center;gap:5px}
@@ -601,16 +601,25 @@
     calHover=null; calRefresh();                               // NO re-render completo → no se mueve el slider
   }
   function footInner(){ return `<div class="rlbl">${rlblHtml()}</div><div class="cbtns"><button class="apply" ${selStart?'':'disabled'} onclick="calApply()">Aplicar</button></div>`; }
-  function calRefresh(){ stripReRender(); const f=document.getElementById('calFoot'); if(f) f.innerHTML=footInner(); }
+  function calRefresh(){ paintCells(); const f=document.getElementById('calFoot'); if(f) f.innerHTML=footInner(); }
   function calDayNav(n){ const s=document.getElementById('calStrip'); if(!s)return; s.style.scrollBehavior='auto'; s.scrollLeft += n*7*DAYW; s.style.scrollBehavior=''; }  // botones ‹ › → ±1 semana
   function calPickMonth(ym){                                    // mes completo
     const y=+ym.slice(0,4), mo=+ym.slice(5,7), last=new Date(y,mo,0).getDate();
     selStart=ym+'-01'; selEnd=ym+'-'+String(last).padStart(2,'0'); calHover=null; renderCal();
   }
   function calPickMonthCur(){ if(calCurYm) calPickMonth(calCurYm); }   // clic en el nombre del mes visible
-  function stripReRender(){ const el=document.getElementById('calStrip'); if(el){ const sl=el.scrollLeft; el.innerHTML=stripCells(); el.scrollLeft=sl; } }
-  function calHov(ds){ if(selStart && !selEnd){ calHover=ds; stripReRender(); } }
-  function calLeave(){ if(calHover!==null){ calHover=null; stripReRender(); } }
+  function paintCells(){                                        // repinta clases SIN reemplazar el DOM (no rompe el clic ni entra en bucle de hover)
+    let lo=selStart, hi=selEnd;
+    if(selStart && !selEnd && calHover){ lo=calHover<selStart?calHover:selStart; hi=calHover<selStart?selStart:calHover; }
+    const strip=document.getElementById('calStrip'); if(!strip) return;
+    strip.querySelectorAll('.cal-rd').forEach(function(c){
+      const ds=c.dataset.d; c.classList.remove('sel','in');
+      if(lo&&hi){ if(ds===lo||ds===hi) c.classList.add('sel'); else if(ds>lo&&ds<hi) c.classList.add('in'); }
+      else if(lo&&ds===lo) c.classList.add('sel');
+    });
+  }
+  function calHov(ds){ if(selStart && !selEnd){ calHover=ds; paintCells(); } }
+  function calLeave(){ if(calHover!==null){ calHover=null; paintCells(); } }
   function calApply(){ if(!selStart) return; dFrom=selStart; dTo=selEnd||selStart; movPage=0; render(); }
   function calClear(){ dFrom=dTo=selStart=selEnd=calHover=null; movPage=0; render(); renderCal(); }
   function calPreset(from,to){ selStart=from; selEnd=to; dFrom=from; dTo=to; calYear=+to.slice(0,4); movPage=0; render(); renderCal(); }
@@ -626,7 +635,7 @@
       if(d===1){ cls+=' mstart'; tag='<b class="mtag">'+MES[+ds.slice(5,7)-1]+'</b>'; }
       if(lo&&hi){ if(ds===lo||ds===hi) cls+=' sel'; else if(ds>lo&&ds<hi) cls+=' in'; }
       else if(lo&&ds===lo) cls+=' sel';
-      cells+=`<div class="${cls}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')">${tag}<span>${d}</span></div>`;
+      cells+=`<div class="${cls}" data-d="${ds}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')">${tag}<span>${d}</span></div>`;
     }
     return cells;
   }
