@@ -170,7 +170,7 @@
 
   /* ---- CALENDARIO DE RANGO · embebido, siempre visible, adaptado al tema ---- */
   /* Editorial monocromo: blanco, línea fina, acento verde-pino (adaptado al tema). El acento pino se aplica redefiniendo --accent SOLO dentro del calendario. */
-  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:17px 22px 15px;margin:-4px auto 20px;width:100%;max-width:660px;box-shadow:0 5px 22px -14px rgba(0,0,0,.16);--accent:#12564b;--accent-soft:#eaf1ef}
+  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:17px 22px 15px;margin:-4px auto 20px;width:100%;max-width:600px;box-shadow:0 5px 22px -14px rgba(0,0,0,.16);--accent:#12564b;--accent-soft:#eaf1ef}
   [data-theme="dark"] .periodcal{box-shadow:none;--accent:#4fc0a8;--accent-soft:rgba(79,192,168,.16)}
   /* cabecera CENTRADA: año arriba, atajos debajo */
   .cal-head{display:flex;flex-direction:column;align-items:center;gap:9px;margin-bottom:11px;padding-bottom:11px;border-bottom:1px solid var(--line)}
@@ -194,19 +194,20 @@
   .cal-mlabel:hover,.cal-mlabel.on{background:var(--accent-soft);color:var(--accent)}
   /* SLIDER de días: botones ‹ › + tira deslizable, todo centrado */
   .cal-slider{display:flex;align-items:center;justify-content:center;gap:8px}
-  .rib-nav{flex:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1.2rem;line-height:1;transition:.14s}
+  .rib-nav{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1.15rem;line-height:1;transition:.14s}
   .rib-nav:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
-  .cal-strip{display:flex;width:504px;max-width:100%;min-width:0;overflow-x:auto;scroll-behavior:smooth;cursor:grab;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding-bottom:8px}
+  .cal-strip{display:flex;width:392px;max-width:100%;min-width:0;overflow-x:auto;scroll-behavior:smooth;cursor:grab;scrollbar-width:none}
   .cal-strip.grabbing{cursor:grabbing;scroll-behavior:auto}
-  .cal-strip::-webkit-scrollbar{height:5px}
-  .cal-strip::-webkit-scrollbar-track{background:transparent}
-  .cal-strip::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
-  .cal-strip::-webkit-scrollbar-thumb:hover{background:var(--muted)}
-  .cal-rd{position:relative;flex:0 0 72px;height:70px;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
-  .cal-rd>span{position:relative;z-index:2;font-family:var(--mono);font-weight:500;font-size:.95rem;font-variant-numeric:tabular-nums;transition:transform .14s cubic-bezier(.34,1.56,.64,1)}
-  .cal-rd .mtag{position:absolute;top:4px;left:0;right:0;text-align:center;font-size:.5rem;font-family:var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:.04em;z-index:2}
+  .cal-strip::-webkit-scrollbar{display:none}
+  /* slider moderno y minimalista (indica y permite mover los días) */
+  .cal-track{position:relative;height:5px;border-radius:5px;background:var(--line);width:60%;margin:16px auto 3px;cursor:pointer}
+  .cal-thumb{position:absolute;top:50%;left:0;height:5px;min-width:34px;border-radius:5px;background:var(--accent);transform:translateY(-50%);opacity:.75;transition:opacity .14s,height .14s}
+  .cal-track:hover .cal-thumb{opacity:1;height:7px}
+  .cal-rd{position:relative;flex:0 0 56px;height:60px;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+  .cal-rd>span{position:relative;z-index:2;font-family:var(--mono);font-weight:500;font-size:.82rem;font-variant-numeric:tabular-nums;transition:transform .14s cubic-bezier(.34,1.56,.64,1)}
+  .cal-rd.mstart::after{content:"";position:absolute;left:0;top:24%;bottom:24%;width:1px;background:var(--line);z-index:0}   /* separador suave donde cambia de mes */
   /* forma: cuadrado redondeado (rango, separados) · círculo (extremos) */
-  .cal-rd::before{content:"";position:absolute;top:50%;left:50%;width:52px;height:52px;transform:translate(-50%,-50%) scale(.55);border-radius:13px;z-index:0;opacity:0;transition:transform .17s cubic-bezier(.34,1.56,.64,1),opacity .14s,background .12s,border-radius .15s}
+  .cal-rd::before{content:"";position:absolute;top:50%;left:50%;width:44px;height:44px;transform:translate(-50%,-50%) scale(.55);border-radius:12px;z-index:0;opacity:0;transition:transform .17s cubic-bezier(.34,1.56,.64,1),opacity .14s,background .12s,border-radius .15s}
   .cal-rd.in::before{background:var(--accent-soft);transform:translate(-50%,-50%) scale(1);opacity:1}
   .cal-rd:not(.sel):hover::before{background:var(--accent-soft);transform:translate(-50%,-50%) scale(1);opacity:1}
   .cal-rd:active>span{transform:scale(.9)}
@@ -590,7 +591,7 @@
   const clampWin  = ds => { const lo=dataMin(); let hi=addDays(dataMax(),-(RIB_N-3)); if(hi<lo)hi=lo; return ds<lo?lo:(ds>hi?hi:ds); };
 
   let calHover = null, calYear = 2026, calCurYm = '', calActive = null, calScrollTo = null;
-  const DAYW = 72;                                              // ancho de cada día (coincide con CSS .cal-rd)
+  const DAYW = 56;                                              // ancho de cada día (coincide con CSS .cal-rd)
   const daysInYear = y => ((y%4===0&&y%100!==0)||y%400===0)?366:365;
   const def6m = () => ({ from: ymAdd(dataMax().slice(0,7),-5)+'-01', to: dataMax() });   // estado natural = últimos 6 meses
 
@@ -602,12 +603,9 @@
   }
   function calPick(ds){
     if(window.__calDrag) return;                               // fue arrastre del slider, no clic
-    if(!selStart || (selStart&&selEnd)){ selStart=ds; selEnd=null; }
-    else if(ds<selStart){ selEnd=selStart; selStart=ds; }
-    else selEnd=ds;
-    calHover=null; calActive='range';
-    dFrom=selStart; dTo=selEnd||selStart; movPage=0; render();  // aplica al instante (1 día o rango)
-    calRefresh();
+    if(!selStart || (selStart&&selEnd)){ selStart=ds; selEnd=null; calActive='range'; calRefresh(); return; }  // 1er día: solo marca, no aplica todavía
+    if(ds<selStart){ selEnd=selStart; selStart=ds; } else selEnd=ds;                                            // 2do día: completa el rango…
+    calHover=null; calActive='range'; dFrom=selStart; dTo=selEnd; movPage=0; render(); calRefresh();            // …y recién ahí aplica
   }
   function footInner(){ const x = calActive ? `<button class="cal-x" onclick="calReset()" title="Volver a los últimos 6 meses"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>Limpiar</button>` : ''; return `<div class="rlbl">${filterLbl()}</div>${x}`; }
   function calRefresh(){ paintCells(); const f=document.getElementById('calFoot'); if(f) f.innerHTML=footInner(); }
@@ -651,7 +649,7 @@
     if(calActive==='12m') return '<b>Últimos 12 meses</b>';
     if(calActive && calActive.indexOf('year:')===0) return '<b>Año '+calActive.slice(5)+'</b>';
     if(calActive && calActive.indexOf('month:')===0){ const ym=calActive.slice(6); return '<b>'+MESLARGO[+ym.slice(5,7)-1]+' '+ym.slice(0,4)+'</b>'; }
-    if(calActive==='range' && selStart) return '<b>'+fFecha(selStart)+'</b>'+(selEnd&&selEnd!==selStart?' <span class="ph">→</span> <b>'+fFecha(selEnd)+'</b>':'');
+    if(calActive==='range' && selStart) return '<b>'+fFecha(selStart)+'</b>'+(selEnd?(selEnd!==selStart?' <span class="ph">→</span> <b>'+fFecha(selEnd)+'</b>':''):' <span class="ph">→ elige el fin</span>');
     return '<span class="ph">Últimos 6 meses</span>';
   }
   function updPeriodLbl(){}                                     // calendario embebido: no hay etiqueta externa
@@ -662,11 +660,11 @@
     let cells='';
     for(let i=0;i<nd;i++){
       const ds=addDays(start,i), d=+ds.slice(8,10);
-      let cls='cal-rd', tag='';
-      if(d===1){ cls+=' mstart'; tag='<b class="mtag">'+MES[+ds.slice(5,7)-1]+'</b>'; }
+      let cls='cal-rd';
+      if(d===1) cls+=' mstart';
       if(lo&&hi){ if(ds===lo||ds===hi) cls+=' sel'; else if(ds>lo&&ds<hi) cls+=' in'; }
       else if(lo&&ds===lo) cls+=' sel';
-      cells+=`<div class="${cls}" data-d="${ds}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')">${tag}<span>${d}</span></div>`;
+      cells+=`<div class="${cls}" data-d="${ds}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')"><span>${d}</span></div>`;
     }
     return cells;
   }
@@ -698,7 +696,8 @@
       +`<button class="rib-nav" onclick="calDayNav(-1)" title="Días anteriores">‹</button>`
       +`<div class="cal-strip" id="calStrip" onmouseleave="calLeave()">${stripCells()}</div>`
       +`<button class="rib-nav" onclick="calDayNav(1)" title="Días siguientes">›</button>`
-    +`</div>`;
+    +`</div>`
+    +`<div class="cal-track" id="calTrack"><div class="cal-thumb" id="calThumb"></div></div>`;
     const foot=`<div class="cal-foot" id="calFoot">${footInner()}</div>`;
     document.getElementById('calPop').innerHTML=`${head}${monthLbl}${slider}${foot}`;
     calSetupSlider();
@@ -718,18 +717,38 @@
                 : (calYear===+dataMax().slice(0,4) ? dataMax() : calYear+'-01-01');
     calScrollTo=null;
     const fi = Math.round((new Date(focus+'T12:00:00') - new Date(calYear+'-01-01T12:00:00'))/86400000);
-    strip.addEventListener('scroll', calScrollMonth, {passive:true});
+    strip.addEventListener('scroll', function(){ calScrollMonth(); calUpdThumb(); }, {passive:true});
+    strip.addEventListener('wheel', function(e){ const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(d){ e.preventDefault(); strip.style.scrollBehavior='auto'; strip.scrollLeft+=d; strip.style.scrollBehavior=''; } }, {passive:false});   // rueda/trackpad = mover días
     strip.style.scrollBehavior='auto';
     void strip.scrollWidth;                                    // forzar layout para que el scroll pegue
     strip.scrollLeft = Math.max(0, fi*DAYW - (strip.clientWidth - DAYW)/2);
     strip.style.scrollBehavior='';
-    calScrollMonth();
+    calScrollMonth(); calUpdThumb();
+  }
+  function calUpdThumb(){                                       // posiciona/tamaña el thumb del slider según el scroll
+    const strip=document.getElementById('calStrip'), thumb=document.getElementById('calThumb'); if(!strip||!thumb) return;
+    const track=thumb.parentElement, tw=track.clientWidth;
+    const thumbW=Math.max(34, tw*Math.min(1, strip.clientWidth/strip.scrollWidth));
+    const maxS=strip.scrollWidth-strip.clientWidth, p=maxS>0?strip.scrollLeft/maxS:0;
+    thumb.style.width=thumbW+'px'; thumb.style.left=(p*(tw-thumbW))+'px';
   }
   (function calDragInit(){                                      // arrastrar para deslizar el slider
     let down=false, sx=0, ssl=0, strip=null;
     document.addEventListener('pointerdown', e=>{ const s=e.target.closest&&e.target.closest('#calStrip'); if(!s)return; strip=s; down=true; sx=e.clientX; ssl=s.scrollLeft; window.__calDrag=false; s.classList.add('grabbing'); });
     document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>8) window.__calDrag=true; strip.scrollLeft=ssl-dx; });
     document.addEventListener('pointerup',   ()=>{ if(!down)return; down=false; if(strip)strip.classList.remove('grabbing'); strip=null; setTimeout(()=>{ window.__calDrag=false; },40); });
+  })();
+  (function calTrackInit(){                                     // clic/arrastre en el slider moderno mueve los días
+    let drag=false;
+    function toScroll(cx){
+      const strip=document.getElementById('calStrip'), track=document.getElementById('calTrack'); if(!strip||!track)return;
+      const r=track.getBoundingClientRect(), maxS=strip.scrollWidth-strip.clientWidth;
+      const p=Math.max(0,Math.min(1,(cx-r.left)/r.width));
+      strip.style.scrollBehavior='auto'; strip.scrollLeft=p*maxS; strip.style.scrollBehavior='';
+    }
+    document.addEventListener('pointerdown', e=>{ if(!(e.target.closest&&e.target.closest('#calTrack')))return; drag=true; toScroll(e.clientX); e.preventDefault(); });
+    document.addEventListener('pointermove', e=>{ if(drag) toScroll(e.clientX); });
+    document.addEventListener('pointerup',   ()=>{ drag=false; });
   })();
 
   /* ===== BAR CHART: Ingresos vs egresos ===== */
