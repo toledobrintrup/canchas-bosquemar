@@ -181,10 +181,15 @@
   .cal-chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
   .cal-chips button{background:var(--panel-2);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-family:inherit;font-size:.79rem;color:var(--muted);cursor:pointer;transition:.14s}
   .cal-chips button:hover{border-color:var(--accent);color:var(--accent)}
+  .cal-chips button.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+  [data-theme="dark"] .cal-chips button.on{color:#04231d}
+  .cal-step .yrsel.on{background:var(--accent-soft);color:var(--accent)}
   /* mes (solo nombre, sin año, centrado) */
-  .cal-mrow{text-align:center;margin-bottom:6px}
+  .cal-mrow{display:flex;align-items:center;justify-content:center;gap:5px;margin-bottom:6px}
+  .cal-mrow .mnav{background:none;border:none;color:var(--faint);cursor:pointer;font-size:1.1rem;line-height:1;padding:2px 8px;border-radius:7px;transition:.14s}
+  .cal-mrow .mnav:hover{color:var(--accent);background:var(--accent-soft)}
   .cal-mlabel{display:inline-block;font-weight:700;font-size:.95rem;letter-spacing:-.01em;color:var(--ink);text-transform:capitalize;cursor:pointer;border-radius:9px;padding:3px 12px;transition:.14s}
-  .cal-mlabel:hover{background:var(--accent-soft);color:var(--accent)}
+  .cal-mlabel:hover,.cal-mlabel.on{background:var(--accent-soft);color:var(--accent)}
   /* SLIDER de días: botones ‹ › + tira deslizable, todo centrado */
   .cal-slider{display:flex;align-items:center;justify-content:center;gap:8px}
   .rib-nav{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1.1rem;line-height:1;transition:.14s}
@@ -211,6 +216,8 @@
   .cal-foot .rlbl{font-size:.85rem;color:var(--ink)}
   .cal-foot .rlbl b{font-family:var(--mono);font-weight:600}
   .cal-foot .rlbl .ph{color:var(--faint);font-weight:400}
+  .cal-x{flex:none;width:28px;height:28px;border-radius:8px;border:1px solid var(--line);background:var(--panel-2);color:var(--muted);cursor:pointer;font-size:.72rem;display:grid;place-items:center;transition:.14s}
+  .cal-x:hover{border-color:var(--red);color:var(--red)}
   .cal-foot .cbtns{display:flex;gap:8px}
   .cal-foot button{border-radius:9px;padding:7px 16px;font-family:inherit;font-size:.84rem;cursor:pointer;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);font-weight:500;transition:.14s}
   .cal-foot button:hover{border-color:var(--accent)}
@@ -586,26 +593,33 @@
   const addMonthsD= (ds,n) => { const d=new Date(ds+'T12:00:00'); d.setMonth(d.getMonth()+n); return ymd(d); };
   const clampWin  = ds => { const lo=dataMin(); let hi=addDays(dataMax(),-(RIB_N-3)); if(hi<lo)hi=lo; return ds<lo?lo:(ds>hi?hi:ds); };
 
-  let calHover = null, calYear = 2026, calCurYm = '';
+  let calHover = null, calYear = 2026, calCurYm = '', calActive = null, calScrollTo = null;
   const DAYW = 30;                                              // ancho de cada día (coincide con CSS .cal-rd)
   const daysInYear = y => ((y%4===0&&y%100!==0)||y%400===0)?366:365;
+  const def6m = () => ({ from: ymAdd(dataMax().slice(0,7),-5)+'-01', to: dataMax() });   // estado natural = últimos 6 meses
 
-  function calInit(){ calYear = dFrom ? +dFrom.slice(0,4) : +dataMax().slice(0,4); selStart=dFrom; selEnd=dTo; renderCal(); }
+  function calInit(){ selStart=selEnd=calHover=null; calActive=null; calYear=+dataMax().slice(0,4); renderCal(); }
   function calYearStep(n){ let y=calYear+n, lo=+dataMin().slice(0,4), hi=+dataMax().slice(0,4); if(y<lo)y=lo; if(y>hi)y=hi; calYear=y; renderCal(); }
-  function calPickYear(y){ selStart=y+'-01-01'; selEnd=y+'-12-31'; calHover=null; renderCal(); }   // año completo
+  function calPickYear(y){                                       // año completo · toggle + sticky
+    const key='year:'+y; if(calActive===key){ calReset(); return; }
+    dFrom=y+'-01-01'; dTo=y+'-12-31'; selStart=selEnd=null; calActive=key; calHover=null; movPage=0; render(); renderCal();
+  }
   function calPick(ds){
     if(window.__calDrag) return;                               // fue arrastre del slider, no clic
     if(!selStart || (selStart&&selEnd)){ selStart=ds; selEnd=null; }
     else if(ds<selStart){ selEnd=selStart; selStart=ds; }
     else selEnd=ds;
-    calHover=null; calRefresh();                               // NO re-render completo → no se mueve el slider
+    calHover=null; calActive='range';
+    dFrom=selStart; dTo=selEnd||selStart; movPage=0; render();  // aplica al instante (1 día o rango)
+    calRefresh();
   }
-  function footInner(){ return `<div class="rlbl">${rlblHtml()}</div><div class="cbtns"><button class="apply" ${selStart?'':'disabled'} onclick="calApply()">Aplicar</button></div>`; }
+  function footInner(){ const x = calActive ? `<button class="cal-x" onclick="calReset()" title="Quitar filtro · volver a 6 meses">✕</button>` : ''; return `<div class="rlbl">${filterLbl()}</div>${x}`; }
   function calRefresh(){ paintCells(); const f=document.getElementById('calFoot'); if(f) f.innerHTML=footInner(); }
   function calDayNav(n){ const s=document.getElementById('calStrip'); if(!s)return; s.style.scrollBehavior='auto'; s.scrollLeft += n*7*DAYW; s.style.scrollBehavior=''; }  // botones ‹ › → ±1 semana
-  function calPickMonth(ym){                                    // mes completo
+  function calPickMonth(ym){                                    // mes completo · toggle + sticky
+    const key='month:'+ym; if(calActive===key){ calReset(); return; }
     const y=+ym.slice(0,4), mo=+ym.slice(5,7), last=new Date(y,mo,0).getDate();
-    selStart=ym+'-01'; selEnd=ym+'-'+String(last).padStart(2,'0'); calHover=null; renderCal();
+    selStart=ym+'-01'; selEnd=ym+'-'+String(last).padStart(2,'0'); dFrom=selStart; dTo=selEnd; calActive=key; calHover=null; movPage=0; render(); renderCal();
   }
   function calPickMonthCur(){ if(calCurYm) calPickMonth(calCurYm); }   // clic en el nombre del mes visible
   function paintCells(){                                        // repinta clases SIN reemplazar el DOM (no rompe el clic ni entra en bucle de hover)
@@ -620,9 +634,30 @@
   }
   function calHov(ds){ if(selStart && !selEnd){ calHover=ds; paintCells(); } }
   function calLeave(){ if(calHover!==null){ calHover=null; paintCells(); } }
-  function calApply(){ if(!selStart) return; dFrom=selStart; dTo=selEnd||selStart; movPage=0; render(); }
-  function calClear(){ dFrom=dTo=selStart=selEnd=calHover=null; movPage=0; render(); renderCal(); }
-  function calPreset(from,to){ selStart=from; selEnd=to; dFrom=from; dTo=to; calYear=+to.slice(0,4); movPage=0; render(); renderCal(); }
+  function calReset(){ const d=def6m(); dFrom=d.from; dTo=d.to; selStart=selEnd=calHover=null; calActive=null; movPage=0; render(); renderCal(); }
+  function calPreset(key){                                       // píldoras · toggle + sticky (natural = 6m)
+    if(calActive===key){ calReset(); return; }
+    if(key==='todo'){ dFrom=dTo=null; }
+    else { const n=key==='6m'?-5:-11; dFrom=ymAdd(dataMax().slice(0,7),n)+'-01'; dTo=dataMax(); calYear=+dTo.slice(0,4); }
+    selStart=selEnd=null; calActive=key; calHover=null; movPage=0; render(); renderCal();
+  }
+  function calMonthNav(n){                                       // slider de mes ‹ ›
+    const t=addMonthsD((calCurYm||calYear+'-01')+'-15', n), ty=+t.slice(0,4), tm=t.slice(0,7);
+    const minY=+dataMin().slice(0,4), maxY=+dataMax().slice(0,4); if(ty<minY||ty>maxY) return;
+    if(ty!==calYear){ calYear=ty; calScrollTo=tm+'-01'; renderCal(); return; }
+    const s=document.getElementById('calStrip'); if(!s) return;
+    const idx=Math.round((new Date(tm+'-01T12:00:00')-new Date(calYear+'-01-01T12:00:00'))/86400000);
+    s.style.scrollBehavior='auto'; s.scrollLeft=Math.max(0,idx*DAYW); s.style.scrollBehavior=''; calScrollMonth();
+  }
+  function filterLbl(){                                          // etiqueta del filtro activo (footer)
+    if(calActive==='todo') return '<span class="ph">Todo el período</span>';
+    if(calActive==='6m') return '<b>Últimos 6 meses</b>';
+    if(calActive==='12m') return '<b>Últimos 12 meses</b>';
+    if(calActive && calActive.indexOf('year:')===0) return '<b>Año '+calActive.slice(5)+'</b>';
+    if(calActive && calActive.indexOf('month:')===0){ const ym=calActive.slice(6); return '<b>'+MESLARGO[+ym.slice(5,7)-1]+' '+ym.slice(0,4)+'</b>'; }
+    if(calActive==='range' && selStart) return '<b>'+fFecha(selStart)+'</b>'+(selEnd&&selEnd!==selStart?' <span class="ph">→</span> <b>'+fFecha(selEnd)+'</b>':'');
+    return '<span class="ph">Últimos 6 meses</span>';
+  }
   function updPeriodLbl(){}                                     // calendario embebido: no hay etiqueta externa
   function stripCells(){
     let lo=selStart, hi=selEnd;
@@ -645,19 +680,24 @@
   }
   function renderCal(){
     const vy=calYear, minY=+dataMin().slice(0,4), maxY=+dataMax().slice(0,4);
+    const yon = calActive==='year:'+vy ? ' on' : '';
     const head=`<div class="cal-head">`
       +`<div class="cal-step">`
         +`<button class="yrnav" ${vy<=minY?'disabled':''} onclick="calYearStep(-1)" title="Año anterior">‹</button>`
-        +`<button class="yrsel" onclick="calPickYear(${vy})" title="Seleccionar todo ${vy}">${vy}</button>`
+        +`<button class="yrsel${yon}" onclick="calPickYear(${vy})" title="Seleccionar todo ${vy}">${vy}</button>`
         +`<button class="yrnav" ${vy>=maxY?'disabled':''} onclick="calYearStep(1)" title="Año siguiente">›</button>`
       +`</div>`
       +`<div class="cal-chips">`
-        +`<button onclick="calClear()">Todo</button>`
-        +`<button onclick="calPreset('${ymAdd(dataMax().slice(0,7),-5)}-01','${dataMax()}')">Últimos 6m</button>`
-        +`<button onclick="calPreset('${ymAdd(dataMax().slice(0,7),-11)}-01','${dataMax()}')">Últimos 12m</button>`
+        +`<button class="${calActive==='todo'?'on':''}" onclick="calPreset('todo')">Todo</button>`
+        +`<button class="${calActive==='6m'?'on':''}" onclick="calPreset('6m')">Últimos 6m</button>`
+        +`<button class="${calActive==='12m'?'on':''}" onclick="calPreset('12m')">Últimos 12m</button>`
       +`</div>`
     +`</div>`;
-    const monthLbl=`<div class="cal-mrow"><span class="cal-mlabel" id="calMlbl" onclick="calPickMonthCur()" title="Seleccionar el mes">·</span></div>`;
+    const monthLbl=`<div class="cal-mrow">`
+      +`<button class="mnav" onclick="calMonthNav(-1)" title="Mes anterior">‹</button>`
+      +`<span class="cal-mlabel" id="calMlbl" onclick="calPickMonthCur()" title="Seleccionar el mes">·</span>`
+      +`<button class="mnav" onclick="calMonthNav(1)" title="Mes siguiente">›</button>`
+    +`</div>`;
     const slider=`<div class="cal-slider">`
       +`<button class="rib-nav" onclick="calDayNav(-1)" title="Días anteriores">‹</button>`
       +`<div class="cal-strip" id="calStrip" onmouseleave="calLeave()">${stripCells()}</div>`
@@ -672,12 +712,15 @@
     let idx=Math.round((strip.scrollLeft + strip.clientWidth/2)/DAYW - 0.5);
     if(idx<0)idx=0; const mx=daysInYear(calYear)-1; if(idx>mx)idx=mx;
     const ym=addDays(calYear+'-01-01', idx).slice(0,7);
-    calCurYm=ym; const lbl=document.getElementById('calMlbl'); if(lbl) lbl.textContent=MESLARGO[+ym.slice(5,7)-1];
+    calCurYm=ym; const lbl=document.getElementById('calMlbl');
+    if(lbl){ lbl.textContent=MESLARGO[+ym.slice(5,7)-1]; lbl.classList.toggle('on', calActive==='month:'+ym); }
   }
   function calSetupSlider(){
     const strip=document.getElementById('calStrip'); if(!strip) return;
-    const focus = (selStart && +selStart.slice(0,4)===calYear) ? selStart
+    const focus = (calScrollTo && +calScrollTo.slice(0,4)===calYear) ? calScrollTo
+                : (selStart && +selStart.slice(0,4)===calYear) ? selStart
                 : (calYear===+dataMax().slice(0,4) ? dataMax() : calYear+'-01-01');
+    calScrollTo=null;
     const fi = Math.round((new Date(focus+'T12:00:00') - new Date(calYear+'-01-01T12:00:00'))/86400000);
     strip.addEventListener('scroll', calScrollMonth, {passive:true});
     strip.style.scrollBehavior='auto';
@@ -916,7 +959,7 @@
       .then(r=>r.json())
       .then(data=>{ if(scope==='QQ'){ data.forEach(m=>MOV.push(m)); MOV.forEach((mm,ix)=>mm._i=ix); } })
       .catch(e=>console.error('No se pudo cargar movimientos:', e))
-      .finally(()=>{ render(); calInit(); });
+      .finally(()=>{ const d=def6m(); dFrom=d.from; dTo=d.to; render(); calInit(); });   // por defecto: últimos 6 meses
   })();
 </script>
 </body>
