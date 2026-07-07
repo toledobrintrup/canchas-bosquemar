@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ingreso · Intranet Canchas Bosquemar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Oxanium:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/intranet.css?v=11">
+<script src="assets/intranet.js?v=11"></script>
+<style>
+  body{display:grid;place-items:center;min-height:100vh;padding:24px;background:
+    radial-gradient(900px 500px at 20% -10%, color-mix(in srgb,var(--accent) 12%,transparent), transparent 60%),
+    var(--bg)}
+  .lg-card{width:100%;max-width:390px;background:var(--panel);border:1px solid var(--line);border-radius:18px;
+    box-shadow:0 30px 70px -22px rgba(0,0,0,.5);padding:34px 30px 30px;animation:lgrise .5s cubic-bezier(.22,1,.36,1)}
+  @keyframes lgrise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .lg-brand{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+  .lg-brand .mk{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;overflow:hidden;background:var(--panel-2);border:1px solid var(--line)}
+  .lg-brand .mk img{width:30px;height:30px;object-fit:contain}
+  .lg-brand b{font-size:1.02rem;letter-spacing:-.02em;display:block}
+  .lg-brand small{color:var(--muted);font-size:.74rem;font-family:var(--mono);letter-spacing:.04em}
+  .lg-h{font-size:1.28rem;font-weight:700;letter-spacing:-.02em;margin:2px 0 4px}
+  .lg-sub{color:var(--muted);font-size:.85rem;margin-bottom:22px}
+  .lg-f{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
+  .lg-f label{font-size:.76rem;font-weight:500;color:var(--muted);font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em}
+  .lg-in{display:flex;align-items:center;gap:8px;background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:11px 13px;transition:border-color .18s}
+  .lg-in:focus-within{border-color:var(--accent)}
+  .lg-in svg{width:16px;height:16px;fill:none;stroke:var(--faint);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .lg-in input{border:0;background:none;outline:none;color:var(--ink);font-family:inherit;font-size:.92rem;width:100%}
+  .lg-in input::placeholder{color:var(--faint)}
+  .lg-eye{background:none;border:0;color:var(--faint);cursor:pointer;padding:0;display:grid;place-items:center}
+  .lg-eye:hover{color:var(--muted)}
+  .lg-btn{width:100%;margin-top:8px;background:var(--accent);color:#fff;border:0;border-radius:10px;padding:12px;
+    font-family:inherit;font-size:.92rem;font-weight:600;cursor:pointer;transition:filter .18s,transform .5s cubic-bezier(.22,1,.36,1)}
+  .lg-btn:hover{filter:brightness(1.06)}
+  .lg-btn:active{transform:scale(.99)}
+  .lg-btn:disabled{opacity:.6;cursor:default}
+  .lg-err{background:var(--red-soft);color:var(--red);border-radius:9px;padding:9px 12px;font-size:.82rem;margin-bottom:14px;display:none}
+  .lg-err.show{display:block;animation:lgrise .25s ease}
+  .lg-foot{margin-top:20px;text-align:center;font-size:.74rem;color:var(--faint);line-height:1.5}
+  .lg-foot a{color:var(--muted)}
+</style>
+</head>
+<body>
+  <form class="lg-card" id="lgForm" autocomplete="on">
+    <div class="lg-brand">
+      <span class="mk"><img src="assets/logo/cb-isotipo.png" alt="CB"></span>
+      <span><b>Canchas Bosquemar</b><small>INTRANET</small></span>
+    </div>
+    <div class="lg-h">Ingreso</div>
+    <div class="lg-sub">Accede con tu cuenta del equipo.</div>
+
+    <div class="lg-err" id="lgErr"></div>
+
+    <div class="lg-f">
+      <label for="lgUser">Usuario</label>
+      <div class="lg-in">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+        <input id="lgUser" name="username" type="text" placeholder="correo o usuario" autocomplete="username" autofocus>
+      </div>
+    </div>
+
+    <div class="lg-f">
+      <label for="lgPass">Clave</label>
+      <div class="lg-in">
+        <svg viewBox="0 0 24 24"><rect x="4" y="10.5" width="16" height="10" rx="2.2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg>
+        <input id="lgPass" name="password" type="password" placeholder="••••••••" autocomplete="current-password">
+        <button type="button" class="lg-eye" id="lgEye" title="Mostrar/ocultar" aria-label="Mostrar u ocultar clave">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <button class="lg-btn" id="lgBtn" type="submit">Entrar</button>
+    <div class="lg-foot">Acceso restringido · Canchas Bosquemar<br><a href="/">← Volver al sitio</a></div>
+  </form>
+
+<script>
+  (function () {
+    // Si ya hay sesión, entrar directo
+    if (localStorage.getItem('cb-user')) location.replace('intranet.html');
+
+    var form = document.getElementById('lgForm'),
+        errEl = document.getElementById('lgErr'),
+        btn = document.getElementById('lgBtn'),
+        userEl = document.getElementById('lgUser'),
+        passEl = document.getElementById('lgPass'),
+        eye = document.getElementById('lgEye');
+
+    eye.addEventListener('click', function () {
+      passEl.type = passEl.type === 'password' ? 'text' : 'password';
+    });
+
+    function showErr(msg) { errEl.textContent = msg; errEl.classList.add('show'); }
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      errEl.classList.remove('show');
+      if (!userEl.value.trim() || !passEl.value) { showErr('Completa usuario y clave.'); return; }
+      btn.disabled = true; btn.textContent = 'Verificando…';
+      try {
+        var r = await cbLogin(userEl.value, passEl.value);
+        if (r.ok) { location.replace('intranet.html'); return; }
+        showErr(r.msg); passEl.value = ''; passEl.focus();
+      } catch (err) {
+        showErr('No se pudo verificar. Reintenta.');
+      }
+      btn.disabled = false; btn.textContent = 'Entrar';
+    });
+  }());
+</script>
+</body>
+</html>
