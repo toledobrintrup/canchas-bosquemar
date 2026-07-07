@@ -169,7 +169,9 @@
   .mov-pager .pg-num{font-family:var(--mono);font-size:.8rem;color:var(--muted);min-width:96px;text-align:center}
 
   /* ---- CALENDARIO DE RANGO · embebido, siempre visible, adaptado al tema ---- */
-  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:14px 16px 12px;margin:-4px auto 20px;width:100%;max-width:572px}
+  /* Editorial monocromo: blanco, línea fina, acento verde-pino (adaptado al tema). El acento pino se aplica redefiniendo --accent SOLO dentro del calendario. */
+  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:15px 18px 13px;margin:-4px auto 20px;width:100%;max-width:440px;box-shadow:0 5px 22px -14px rgba(0,0,0,.16);--accent:#12564b;--accent-soft:#eaf1ef}
+  [data-theme="dark"] .periodcal{box-shadow:none;--accent:#4fc0a8;--accent-soft:rgba(79,192,168,.16)}
   /* cabecera CENTRADA: año arriba, atajos debajo */
   .cal-head{display:flex;flex-direction:column;align-items:center;gap:9px;margin-bottom:11px;padding-bottom:11px;border-bottom:1px solid var(--line)}
   .cal-step{display:flex;align-items:center;gap:5px}
@@ -194,17 +196,17 @@
   .cal-slider{display:flex;align-items:center;justify-content:center;gap:8px}
   .rib-nav{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1.1rem;line-height:1;transition:.14s}
   .rib-nav:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
-  .cal-strip{display:flex;width:450px;max-width:100%;min-width:0;overflow-x:auto;scroll-behavior:smooth;cursor:grab;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding-bottom:7px}
+  .cal-strip{display:flex;width:294px;max-width:100%;min-width:0;overflow-x:auto;scroll-behavior:smooth;cursor:grab;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding-bottom:7px}
   .cal-strip.grabbing{cursor:grabbing;scroll-behavior:auto}
   .cal-strip::-webkit-scrollbar{height:5px}
   .cal-strip::-webkit-scrollbar-track{background:transparent}
   .cal-strip::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
   .cal-strip::-webkit-scrollbar-thumb:hover{background:var(--muted)}
-  .cal-rd{position:relative;flex:0 0 30px;height:46px;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
-  .cal-rd>span{position:relative;z-index:2;font-size:.86rem;font-variant-numeric:tabular-nums;transition:transform .14s cubic-bezier(.34,1.56,.64,1)}
-  .cal-rd .mtag{position:absolute;top:2px;left:0;right:0;text-align:center;font-size:.44rem;font-family:var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:.04em;z-index:2}
+  .cal-rd{position:relative;flex:0 0 42px;height:50px;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+  .cal-rd>span{position:relative;z-index:2;font-family:var(--mono);font-weight:500;font-size:.82rem;font-variant-numeric:tabular-nums;transition:transform .14s cubic-bezier(.34,1.56,.64,1)}
+  .cal-rd .mtag{position:absolute;top:3px;left:0;right:0;text-align:center;font-size:.46rem;font-family:var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:.04em;z-index:2}
   /* forma: cuadrado redondeado (rango, separados) · círculo (extremos) */
-  .cal-rd::before{content:"";position:absolute;top:50%;left:50%;width:26px;height:26px;transform:translate(-50%,-50%) scale(.55);border-radius:8px;z-index:0;opacity:0;transition:transform .17s cubic-bezier(.34,1.56,.64,1),opacity .14s,background .12s,border-radius .15s}
+  .cal-rd::before{content:"";position:absolute;top:50%;left:50%;width:34px;height:34px;transform:translate(-50%,-50%) scale(.55);border-radius:9px;z-index:0;opacity:0;transition:transform .17s cubic-bezier(.34,1.56,.64,1),opacity .14s,background .12s,border-radius .15s}
   .cal-rd.in::before{background:var(--accent-soft);transform:translate(-50%,-50%) scale(1);opacity:1}
   .cal-rd:not(.sel):hover::before{background:var(--accent-soft);transform:translate(-50%,-50%) scale(1);opacity:1}
   .cal-rd:active>span{transform:scale(.9)}
@@ -594,7 +596,7 @@
   const clampWin  = ds => { const lo=dataMin(); let hi=addDays(dataMax(),-(RIB_N-3)); if(hi<lo)hi=lo; return ds<lo?lo:(ds>hi?hi:ds); };
 
   let calHover = null, calYear = 2026, calCurYm = '', calActive = null, calScrollTo = null;
-  const DAYW = 30;                                              // ancho de cada día (coincide con CSS .cal-rd)
+  const DAYW = 42;                                              // ancho de cada día (coincide con CSS .cal-rd)
   const daysInYear = y => ((y%4===0&&y%100!==0)||y%400===0)?366:365;
   const def6m = () => ({ from: ymAdd(dataMax().slice(0,7),-5)+'-01', to: dataMax() });   // estado natural = últimos 6 meses
 
