@@ -242,7 +242,7 @@
 </style>
 </head>
 <body>
-<div class="cb-ver">V5</div>
+<div class="cb-ver">V6</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
@@ -765,7 +765,7 @@
     let sx=0, ssl=0, sTL=0; const F=2;                          // F = px de scroll por px de arrastre (menor = más lento)
     const TH=()=>document.getElementById('calThumb');
     document.addEventListener('pointerdown', e=>{ if(!(e.target.closest&&e.target.closest('#calTrack')))return; const s=document.getElementById('calStrip'), t=TH(); if(!s||!t)return; calJogging=true; sx=e.clientX; ssl=s.scrollLeft; sTL=parseFloat(t.style.left)||0; t.style.transition='none'; e.preventDefault(); });
-    document.addEventListener('pointermove', e=>{ if(!calJogging)return; const s=document.getElementById('calStrip'), t=TH(); if(!s||!t)return; const dx=e.clientX-sx, tr=t.parentElement, mx=tr.clientWidth-t.offsetWidth; let tl=sTL+dx; if(tl<0)tl=0; if(tl>mx)tl=mx; t.style.left=tl+'px'; s.style.scrollBehavior='auto'; s.scrollLeft=ssl-dx*F; s.style.scrollBehavior=''; });
+    document.addEventListener('pointermove', e=>{ if(!calJogging)return; const s=document.getElementById('calStrip'), t=TH(); if(!s||!t)return; const dx=e.clientX-sx, tr=t.parentElement, mx=tr.clientWidth-t.offsetWidth; let tl=sTL+dx; if(tl<0)tl=0; if(tl>mx)tl=mx; t.style.left=tl+'px'; s.style.scrollBehavior='auto'; s.scrollLeft=ssl+dx*F; s.style.scrollBehavior=''; });   // días invertidos (thumb sigue el dedo, días al otro lado)
     document.addEventListener('pointerup',   ()=>{ if(!calJogging)return; calJogging=false; const t=TH(); if(t){ const tr=t.parentElement; t.style.transition='left .22s cubic-bezier(.22,1,.36,1)'; t.style.left=((tr.clientWidth-t.offsetWidth)/2)+'px'; setTimeout(()=>{ const x=TH(); if(x)x.style.transition=''; },240); } });
   })();
 
