@@ -735,7 +735,7 @@
     calScrollTo=null; calThumbCenter=centerThumb;                                     // en reposo natural, thumb al centro (simetría)
     const fi = Math.round((new Date(focus+'T12:00:00') - new Date(calYear+'-01-01T12:00:00'))/86400000);
     strip.addEventListener('scroll', function(){ calScrollMonth(); calUpdThumb(); }, {passive:true});
-    strip.addEventListener('wheel', function(e){ const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(d){ e.preventDefault(); calThumbCenter=false; strip.style.scrollBehavior='auto'; strip.scrollLeft+=d*0.125; strip.style.scrollBehavior=''; } }, {passive:false});   // rueda/trackpad = mover días (muy lento)
+    strip.addEventListener('wheel', function(e){ const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(d){ e.preventDefault(); calThumbCenter=false; strip.style.scrollBehavior='auto'; strip.scrollLeft-=d*0.0625; strip.style.scrollBehavior=''; } }, {passive:false});   // rueda/trackpad = mover días (invertido + muy lento)
     strip.style.scrollBehavior='auto';
     void strip.scrollWidth;                                    // forzar layout para que el scroll pegue
     strip.scrollLeft = Math.max(0, atRight ? fi*DAYW - (strip.clientWidth - DAYW) : fi*DAYW - (strip.clientWidth - DAYW)/2);
