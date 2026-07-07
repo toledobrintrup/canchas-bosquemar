@@ -169,48 +169,43 @@
   .mov-pager .pg-num{font-family:var(--mono);font-size:.8rem;color:var(--muted);min-width:96px;text-align:center}
 
   /* ---- CALENDARIO DE RANGO · embebido, siempre visible, adaptado al tema ---- */
-  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:13px 16px 12px;margin:-4px 0 20px;width:100%;max-width:546px}
-  /* fila 1: stepper de año + atajos */
-  .cal-quick{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px;padding-bottom:11px;border-bottom:1px solid var(--line)}
+  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:14px 16px 12px;margin:-4px 0 20px;width:100%;max-width:572px}
+  /* cabecera CENTRADA: año arriba, atajos debajo */
+  .cal-head{display:flex;flex-direction:column;align-items:center;gap:9px;margin-bottom:11px;padding-bottom:11px;border-bottom:1px solid var(--line)}
   .cal-step{display:flex;align-items:center;gap:5px}
   .cal-step .yrnav{width:30px;height:30px;border-radius:9px;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1.05rem;line-height:1;transition:.14s}
   .cal-step .yrnav:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
   .cal-step .yrnav:disabled{opacity:.3;cursor:default}
-  .cal-step .yrsel{min-width:62px;padding:5px 10px;border-radius:9px;border:1px solid transparent;background:none;color:var(--ink);font-family:inherit;font-weight:700;font-size:.98rem;font-variant-numeric:tabular-nums;letter-spacing:.01em;cursor:pointer;transition:.14s;text-align:center}
+  .cal-step .yrsel{min-width:62px;padding:4px 10px;border-radius:9px;border:1px solid transparent;background:none;color:var(--ink);font-family:inherit;font-weight:700;font-size:1.02rem;font-variant-numeric:tabular-nums;letter-spacing:.01em;cursor:pointer;transition:.14s;text-align:center}
   .cal-step .yrsel:hover{background:var(--accent-soft);color:var(--accent)}
-  .cal-chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+  .cal-chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
   .cal-chips button{background:var(--panel-2);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-family:inherit;font-size:.79rem;color:var(--muted);cursor:pointer;transition:.14s}
   .cal-chips button:hover{border-color:var(--accent);color:var(--accent)}
-  /* fila 2: mes (solo nombre, sin año) */
-  .cal-mrow{text-align:center;margin-bottom:5px}
+  /* mes (solo nombre, sin año, centrado) */
+  .cal-mrow{text-align:center;margin-bottom:6px}
   .cal-mlabel{display:inline-block;font-weight:700;font-size:.95rem;letter-spacing:-.01em;color:var(--ink);text-transform:capitalize;cursor:pointer;border-radius:9px;padding:3px 12px;transition:.14s}
   .cal-mlabel:hover{background:var(--accent-soft);color:var(--accent)}
-  /* fila 3: SLIDER de días (deslizable con drag / scroll) */
-  .cal-slider{position:relative}
-  .cal-strip{display:flex;overflow-x:auto;scroll-behavior:smooth;cursor:grab;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding-bottom:7px}
+  /* SLIDER de días: botones ‹ › + tira deslizable, todo centrado */
+  .cal-slider{display:flex;align-items:center;justify-content:center;gap:8px}
+  .rib-nav{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1.1rem;line-height:1;transition:.14s}
+  .rib-nav:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+  .cal-strip{display:flex;width:450px;max-width:100%;min-width:0;overflow-x:auto;scroll-behavior:smooth;cursor:grab;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding-bottom:7px}
   .cal-strip.grabbing{cursor:grabbing;scroll-behavior:auto}
   .cal-strip::-webkit-scrollbar{height:5px}
   .cal-strip::-webkit-scrollbar-track{background:transparent}
   .cal-strip::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
   .cal-strip::-webkit-scrollbar-thumb:hover{background:var(--muted)}
-  .cal-rd{position:relative;flex:0 0 34px;height:48px;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
-  .cal-rd>span{position:relative;z-index:2;font-size:.88rem;font-variant-numeric:tabular-nums;transition:transform .14s cubic-bezier(.34,1.56,.64,1)}
-  .cal-rd .mtag{position:absolute;top:2px;left:0;right:0;text-align:center;font-size:.46rem;font-family:var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:.04em;z-index:2}
-  .cal-rd.mstart{box-shadow:inset 1px 0 0 var(--line)}
-  .cal-rd::after{content:"";position:absolute;top:50%;left:0;right:0;height:30px;transform:translateY(-50%);z-index:0}
-  .cal-rd.in::after{background:var(--accent-soft)}
-  .cal-rd.sel.s0::after{background:linear-gradient(to right,transparent 50%,var(--accent-soft) 50%)}
-  .cal-rd.sel.s1::after{background:linear-gradient(to left,transparent 50%,var(--accent-soft) 50%)}
-  .cal-rd::before{content:"";position:absolute;top:50%;left:50%;width:30px;height:30px;transform:translate(-50%,-50%) scale(.6);border-radius:50%;z-index:1;opacity:0;transition:transform .17s cubic-bezier(.34,1.56,.64,1),opacity .14s,background .12s}
+  .cal-rd{position:relative;flex:0 0 30px;height:46px;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+  .cal-rd>span{position:relative;z-index:2;font-size:.86rem;font-variant-numeric:tabular-nums;transition:transform .14s cubic-bezier(.34,1.56,.64,1)}
+  .cal-rd .mtag{position:absolute;top:2px;left:0;right:0;text-align:center;font-size:.44rem;font-family:var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:.04em;z-index:2}
+  /* forma: cuadrado redondeado (rango, separados) · círculo (extremos) */
+  .cal-rd::before{content:"";position:absolute;top:50%;left:50%;width:26px;height:26px;transform:translate(-50%,-50%) scale(.55);border-radius:8px;z-index:0;opacity:0;transition:transform .17s cubic-bezier(.34,1.56,.64,1),opacity .14s,background .12s,border-radius .15s}
+  .cal-rd.in::before{background:var(--accent-soft);transform:translate(-50%,-50%) scale(1);opacity:1}
   .cal-rd:not(.sel):hover::before{background:var(--accent-soft);transform:translate(-50%,-50%) scale(1);opacity:1}
   .cal-rd:active>span{transform:scale(.9)}
   .cal-rd.sel>span{color:#fff;font-weight:700}
-  .cal-rd.sel::before{background:var(--accent);transform:translate(-50%,-50%) scale(1);opacity:1;box-shadow:0 3px 12px -2px color-mix(in srgb,var(--accent) 50%,transparent)}
+  .cal-rd.sel::before{background:var(--accent);border-radius:50%;transform:translate(-50%,-50%) scale(1);opacity:1;box-shadow:0 3px 12px -2px color-mix(in srgb,var(--accent) 50%,transparent)}
   [data-theme="dark"] .cal-rd.sel>span{color:#04231d}
-  /* difuminado en los bordes (indica que se puede deslizar) */
-  .cal-slider::before,.cal-slider::after{content:"";position:absolute;top:0;bottom:7px;width:22px;z-index:3;pointer-events:none}
-  .cal-slider::before{left:0;background:linear-gradient(to right,var(--panel),transparent)}
-  .cal-slider::after{right:0;background:linear-gradient(to left,var(--panel),transparent)}
   /* fila 4: footer (rango + aplicar) */
   .cal-foot{margin-top:11px;padding-top:11px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px}
   .cal-foot .rlbl{font-size:.85rem;color:var(--ink)}
@@ -592,7 +587,7 @@
   const clampWin  = ds => { const lo=dataMin(); let hi=addDays(dataMax(),-(RIB_N-3)); if(hi<lo)hi=lo; return ds<lo?lo:(ds>hi?hi:ds); };
 
   let calHover = null, calYear = 2026, calCurYm = '';
-  const DAYW = 34;                                              // ancho de cada día (coincide con CSS .cal-rd)
+  const DAYW = 30;                                              // ancho de cada día (coincide con CSS .cal-rd)
   const daysInYear = y => ((y%4===0&&y%100!==0)||y%400===0)?366:365;
 
   function calInit(){ calYear = dFrom ? +dFrom.slice(0,4) : +dataMax().slice(0,4); selStart=dFrom; selEnd=dTo; renderCal(); }
@@ -603,8 +598,11 @@
     if(!selStart || (selStart&&selEnd)){ selStart=ds; selEnd=null; }
     else if(ds<selStart){ selEnd=selStart; selStart=ds; }
     else selEnd=ds;
-    calHover=null; renderCal();
+    calHover=null; calRefresh();                               // NO re-render completo → no se mueve el slider
   }
+  function footInner(){ return `<div class="rlbl">${rlblHtml()}</div><div class="cbtns"><button class="apply" ${selStart?'':'disabled'} onclick="calApply()">Aplicar</button></div>`; }
+  function calRefresh(){ stripReRender(); const f=document.getElementById('calFoot'); if(f) f.innerHTML=footInner(); }
+  function calDayNav(n){ const s=document.getElementById('calStrip'); if(!s)return; s.style.scrollBehavior='auto'; s.scrollLeft += n*7*DAYW; s.style.scrollBehavior=''; }  // botones ‹ › → ±1 semana
   function calPickMonth(ym){                                    // mes completo
     const y=+ym.slice(0,4), mo=+ym.slice(5,7), last=new Date(y,mo,0).getDate();
     selStart=ym+'-01'; selEnd=ym+'-'+String(last).padStart(2,'0'); calHover=null; renderCal();
@@ -626,8 +624,8 @@
       const ds=addDays(start,i), d=+ds.slice(8,10);
       let cls='cal-rd', tag='';
       if(d===1){ cls+=' mstart'; tag='<b class="mtag">'+MES[+ds.slice(5,7)-1]+'</b>'; }
-      if(lo&&hi){ if(ds===lo&&ds===hi) cls+=' sel solo'; else if(ds===lo) cls+=' sel s0'; else if(ds===hi) cls+=' sel s1'; else if(ds>lo&&ds<hi) cls+=' in'; }
-      else if(lo&&ds===lo) cls+=' sel solo';
+      if(lo&&hi){ if(ds===lo||ds===hi) cls+=' sel'; else if(ds>lo&&ds<hi) cls+=' in'; }
+      else if(lo&&ds===lo) cls+=' sel';
       cells+=`<div class="${cls}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')">${tag}<span>${d}</span></div>`;
     }
     return cells;
@@ -638,7 +636,7 @@
   }
   function renderCal(){
     const vy=calYear, minY=+dataMin().slice(0,4), maxY=+dataMax().slice(0,4);
-    const quick=`<div class="cal-quick">`
+    const head=`<div class="cal-head">`
       +`<div class="cal-step">`
         +`<button class="yrnav" ${vy<=minY?'disabled':''} onclick="calYearStep(-1)" title="Año anterior">‹</button>`
         +`<button class="yrsel" onclick="calPickYear(${vy})" title="Seleccionar todo ${vy}">${vy}</button>`
@@ -651,9 +649,13 @@
       +`</div>`
     +`</div>`;
     const monthLbl=`<div class="cal-mrow"><span class="cal-mlabel" id="calMlbl" onclick="calPickMonthCur()" title="Seleccionar el mes">·</span></div>`;
-    const slider=`<div class="cal-slider"><div class="cal-strip" id="calStrip" onmouseleave="calLeave()">${stripCells()}</div></div>`;
-    const foot=`<div class="cal-foot"><div class="rlbl">${rlblHtml()}</div><div class="cbtns"><button class="apply" ${selStart?'':'disabled'} onclick="calApply()">Aplicar</button></div></div>`;
-    document.getElementById('calPop').innerHTML=`${quick}${monthLbl}${slider}${foot}`;
+    const slider=`<div class="cal-slider">`
+      +`<button class="rib-nav" onclick="calDayNav(-1)" title="Días anteriores">‹</button>`
+      +`<div class="cal-strip" id="calStrip" onmouseleave="calLeave()">${stripCells()}</div>`
+      +`<button class="rib-nav" onclick="calDayNav(1)" title="Días siguientes">›</button>`
+    +`</div>`;
+    const foot=`<div class="cal-foot" id="calFoot">${footInner()}</div>`;
+    document.getElementById('calPop').innerHTML=`${head}${monthLbl}${slider}${foot}`;
     calSetupSlider();
   }
   function calScrollMonth(){                                    // el nombre del mes sigue al slider
@@ -678,7 +680,7 @@
   (function calDragInit(){                                      // arrastrar para deslizar el slider
     let down=false, sx=0, ssl=0, strip=null;
     document.addEventListener('pointerdown', e=>{ const s=e.target.closest&&e.target.closest('#calStrip'); if(!s)return; strip=s; down=true; sx=e.clientX; ssl=s.scrollLeft; window.__calDrag=false; s.classList.add('grabbing'); });
-    document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>4) window.__calDrag=true; strip.scrollLeft=ssl-dx; });
+    document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>8) window.__calDrag=true; strip.scrollLeft=ssl-dx; });
     document.addEventListener('pointerup',   ()=>{ if(!down)return; down=false; if(strip)strip.classList.remove('grabbing'); strip=null; setTimeout(()=>{ window.__calDrag=false; },40); });
   })();
 
