@@ -215,6 +215,9 @@
   .cal-rd.sel>span{color:#fff;font-weight:700}
   .cal-rd.sel::before{background:var(--accent);border-radius:50%;transform:translate(-50%,-50%) scale(1);opacity:1;box-shadow:0 3px 12px -2px color-mix(in srgb,var(--accent) 50%,transparent)}
   [data-theme="dark"] .cal-rd.sel>span{color:#04231d}
+  /* marca de HOY: círculo verde muy suave + "hoy" debajo (si no está seleccionado) */
+  .cal-rd.today:not(.sel):not(.in):not(:hover)::before{background:color-mix(in srgb,var(--accent) 15%,transparent);border-radius:50%;opacity:1;transform:translate(-50%,-50%) scale(1)}
+  .cal-rd .mtag.hoy{color:var(--accent);opacity:.9;text-transform:none;letter-spacing:.02em}
   /* fila 4: footer (rango + aplicar) */
   .cal-foot{margin-top:11px;padding-top:11px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px}
   .cal-foot .rlbl{font-size:.85rem;color:var(--faint);font-weight:400}
@@ -666,7 +669,9 @@
     for(let i=0;i<nd;i++){
       const ds=addDays(start,i), d=+ds.slice(8,10);
       let cls='cal-rd', tag='';
-      if(d===1){ cls+=' mstart'; tag='<b class="mtag">'+MES[+ds.slice(5,7)-1]+'</b>'; }   // separador + mes (3 letras) debajo
+      if(d===1) cls+=' mstart';                                  // separador donde cambia de mes
+      if(ds===today()){ cls+=' today'; tag='<b class="mtag hoy">hoy</b>'; }         // marca de HOY
+      else if(d===1){ tag='<b class="mtag">'+MES[+ds.slice(5,7)-1]+'</b>'; }        // mes (3 letras) debajo
       if(lo&&hi){ if(ds===lo||ds===hi) cls+=' sel'; else if(ds>lo&&ds<hi) cls+=' in'; }
       else if(lo&&ds===lo) cls+=' sel';
       cells+=`<div class="${cls}" data-d="${ds}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')"><span>${d}</span>${tag}</div>`;
