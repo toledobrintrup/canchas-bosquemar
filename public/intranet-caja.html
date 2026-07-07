@@ -636,10 +636,11 @@
   }
   function calHov(ds){ if(selStart && !selEnd){ calHover=ds; paintCells(); } }
   function calLeave(){ if(calHover!==null){ calHover=null; paintCells(); } }
-  function calReset(){ const d=def6m(); dFrom=d.from; dTo=d.to; selStart=selEnd=calHover=null; calActive=null; movPage=0; applyRender(); renderCal(); }
+  function calReset(){ const d=def6m(); dFrom=d.from; dTo=d.to; selStart=selEnd=calHover=null; calActive=null; calYear=Math.min(+dataMax().slice(0,4), Math.max(+dataMin().slice(0,4), +today().slice(0,4))); movPage=0; applyRender(); renderCal(); }   // vuelve a hoy
   function calPreset(key){                                       // píldoras · toggle + sticky (natural = 6m)
     if(calActive===key){ calReset(); return; }
     if(key==='todo'){ dFrom=dTo=null; selStart=dataMin(); selEnd=dataMax(); }
+    else if(key==='semana'){ dTo=today(); dFrom=addDays(dTo,-6); selStart=dFrom; selEnd=dTo; calYear=+dTo.slice(0,4); }   // últimos 7 días desde hoy
     else { const n=key==='6m'?-5:-11; dFrom=ymAdd(dataMax().slice(0,7),n)+'-01'; dTo=dataMax(); selStart=dFrom; selEnd=dTo; calYear=+dTo.slice(0,4); }
     calActive=key; calHover=null; movPage=0; applyRender(); renderCal();
   }
@@ -653,6 +654,7 @@
   }
   function filterLbl(){                                          // etiqueta del filtro (footer) — SIEMPRE el mismo estilo suave, sin negrita ni cambios
     if(calActive==='todo') return 'Todo el período';
+    if(calActive==='semana') return 'Última semana';
     if(calActive==='6m') return 'Últimos 6 meses';
     if(calActive==='12m') return 'Últimos 12 meses';
     if(calActive && calActive.indexOf('year:')===0) return 'Año '+calActive.slice(5);
@@ -693,6 +695,7 @@
       +`</div>`
       +`<div class="cal-chips">`
         +`<button class="${calActive==='todo'?'on':''}" onclick="calPreset('todo')">Todo</button>`
+        +`<button class="${calActive==='semana'?'on':''}" onclick="calPreset('semana')">Última semana</button>`
         +`<button class="${calActive==='6m'?'on':''}" onclick="calPreset('6m')">Últimos 6m</button>`
         +`<button class="${calActive==='12m'?'on':''}" onclick="calPreset('12m')">Últimos 12m</button>`
       +`</div>`
@@ -722,11 +725,12 @@
   }
   function calSetupSlider(){
     const strip=document.getElementById('calStrip'); if(!strip) return;
-    let focus, atRight=false;
+    let focus, atRight=false; const t=today();
     if(calScrollTo && +calScrollTo.slice(0,4)===calYear){ focus=calScrollTo; }
+    else if(selEnd===t && +t.slice(0,4)===calYear){ focus=t; atRight=true; }         // rango que termina hoy (última semana) → mostrar hasta hoy
     else if(selStart && +selStart.slice(0,4)===calYear){ focus=selStart; }
-    else { const t=today(); if(+t.slice(0,4)===calYear){ focus=t; atRight=true; }   // natural: hoy como ÚLTIMO día visible
-           else focus=(calYear===+dataMax().slice(0,4)?dataMax():calYear+'-01-01'); }
+    else if(+t.slice(0,4)===calYear){ focus=t; atRight=true; }                       // natural: hoy como ÚLTIMO día visible
+    else focus=(calYear===+dataMax().slice(0,4)?dataMax():calYear+'-01-01');
     calScrollTo=null;
     const fi = Math.round((new Date(focus+'T12:00:00') - new Date(calYear+'-01-01T12:00:00'))/86400000);
     strip.addEventListener('scroll', function(){ calScrollMonth(); calUpdThumb(); }, {passive:true});
