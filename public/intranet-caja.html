@@ -153,6 +153,21 @@
   @keyframes numFlash{0%{opacity:.35;transform:translateY(4px)}100%{opacity:1;transform:none}}
   .num-anim{animation:numFlash .45s ease forwards}
 
+  /* ---- BUSCADOR + PAGINADOR MOVIMIENTOS ---- */
+  .mov-search{display:flex;align-items:center;gap:7px;background:var(--panel-2);border:1px solid var(--line);border-radius:9px;padding:6px 11px;min-width:250px;transition:border-color .2s}
+  .mov-search:focus-within{border-color:var(--accent)}
+  .mov-search svg{width:14px;height:14px;fill:none;stroke:var(--faint);stroke-width:2;stroke-linecap:round;flex:none}
+  .mov-search input{border:0;background:none;outline:none;color:var(--ink);font-family:inherit;font-size:.84rem;width:100%}
+  .mov-search input::placeholder{color:var(--faint)}
+  .mov-pager{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 18px;border-top:1px solid var(--line);flex-wrap:wrap}
+  .mov-pager:empty{display:none}
+  .mov-pager .pg-info{font-size:.79rem;color:var(--muted);font-family:var(--mono)}
+  .mov-pager .pg-ctrl{display:flex;align-items:center;gap:6px}
+  .mov-pager button{background:var(--panel-2);border:1px solid var(--line);color:var(--ink);border-radius:7px;padding:6px 12px;font-size:.82rem;cursor:pointer;font-family:inherit;transition:.15s}
+  .mov-pager button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+  .mov-pager button:disabled{opacity:.35;cursor:default}
+  .mov-pager .pg-num{font-family:var(--mono);font-size:.8rem;color:var(--muted);min-width:96px;text-align:center}
+
   /* ---- SCROLL REVEAL (Apple-style) ---- */
   .sr{opacity:0;transform:translateY(38px);transition:opacity 1.05s ease-in-out,transform 1.05s cubic-bezier(0.4,0,0.2,1),scale 1.1s cubic-bezier(.22,1,.36,1)}
   .sr.sr-in{opacity:1;transform:translateY(0)}
@@ -233,10 +248,19 @@
           <div class="bank-chips" id="bankSel"></div>
           <span id="catClear"></span>
         </div>
-        <button class="btn-g primary" onclick="toast('Formulario de movimiento — se activa con la base de datos')">+ Movimiento</button>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <div class="mov-search">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input id="movSearch" type="text" placeholder="Buscar fecha, glosa, categoría, monto…" oninput="setMovQuery(this.value)" autocomplete="off">
+          </div>
+          <button class="btn-g primary" onclick="toast('Formulario de movimiento — se activa con la base de datos')">+ Movimiento</button>
+        </div>
       </div>
-      <table><thead><tr><th>Fecha</th><th>Glosa</th><th>Categoría</th><th>Cuenta</th><th class="num">Ingreso</th><th class="num">Egreso</th><th class="num">Saldo</th><th></th></tr></thead>
-      <tbody id="movs"></tbody></table>
+      <div style="overflow-x:auto">
+        <table style="min-width:640px"><thead><tr><th>Fecha</th><th>Glosa</th><th>Categoría</th><th>Cuenta</th><th class="num">Ingreso</th><th class="num">Egreso</th><th class="num">Saldo</th><th></th></tr></thead>
+        <tbody id="movs"></tbody></table>
+      </div>
+      <div class="mov-pager" id="movPager"></div>
     </div>
 
   </div>
@@ -282,6 +306,10 @@
   let scope = 'ALL';   // 'ALL' | 'CB' | 'QQ'
   let bancoFil = 'todos'; // solo para tabla movimientos dentro de CB
   let catFilter = null;
+  let movQuery = '';      // buscador de la tabla de movimientos
+  let movPage = 0;        // página actual de la tabla
+  const MOV_PP = 50;      // movimientos por página
+  const _norm = s => (s||'').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
 
   /* ===== HELPERS ===== */
   const corto  = b => b.replace('Banco de ','').replace('Banco ','');
@@ -483,9 +511,9 @@
     document.getElementById('excelScope').textContent = scope==='ALL'?'General':EMP[scope]||'';
   }
 
-  function setScope(s) { scope = s; if(scope!=='CB') bancoFil='todos'; render(); }
-  function setBanco(b)  { bancoFil = b; renderBankSel(); renderTabla(); }
-  function setCat(c)    { catFilter = (catFilter===c)?null:c; render(); }
+  function setScope(s) { scope = s; if(scope!=='CB') bancoFil='todos'; movPage=0; render(); }
+  function setBanco(b)  { bancoFil = b; movPage=0; renderBankSel(); renderTabla(); }
+  function setCat(c)    { catFilter = (catFilter===c)?null:c; movPage=0; render(); }
 
   /* ===== BAR CHART: Ingresos vs egresos ===== */
   function renderBar() {
@@ -631,17 +659,33 @@
     const movBase = movsForScope(scope).filter(m=>
       scope!=='CB' || bancoFil==='todos' || (CUENTAS.find(c=>c.id===m.cuenta)||{}).banco===bancoFil
     );
-    const movShow = movBase.filter(m=>!catFilter||m.cat===catFilter);
     const iniIds = scope==='ALL' ? CUENTAS.map(c=>c.id)
       : scope==='CB' ? (bancoFil==='todos'?['cb-chile','cb-bice']:CUENTAS.filter(c=>c.empresa==='CB'&&c.banco===bancoFil).map(c=>c.id))
       : ['qq-chile'];
     let acc = iniIds.reduce((s,id)=>s+CUENTAS.find(c=>c.id===id).saldoIni,0);
     const saldoHasta = {};
     movBase.forEach(m=>{ acc+=signed(m); saldoHasta[m._i]=acc; });
+    // filtro por categoría + buscador de texto (toda la data del scope)
+    let movShow = movBase.filter(m=>!catFilter||m.cat===catFilter);
+    const nq = _norm(movQuery.trim());
+    if(nq){
+      const terms = nq.split(/\s+/);
+      movShow = movShow.filter(m=>{
+        const hay = _norm([m.fecha, m.fecha.slice(8,10)+' '+MES[+m.fecha.slice(5,7)-1], m.glosa, m.cat,
+          empOf(m.cuenta), bancoDe(m.cuenta), m.com, m.monto, fmt(m.monto)].join(' '));
+        return terms.every(t=>hay.indexOf(t)>=0);
+      });
+    }
+    // más reciente primero
+    movShow = movShow.slice().sort((a,b)=> a.fecha<b.fecha?1 : a.fecha>b.fecha?-1 : b._i-a._i);
+    const total = movShow.length;
+    const pages = Math.max(1, Math.ceil(total/MOV_PP));
+    movPage = Math.min(Math.max(0,movPage), pages-1);
+    const slice = movShow.slice(movPage*MOV_PP, movPage*MOV_PP+MOV_PP);
     let rows='';
-    movShow.forEach(m=>{
+    slice.forEach(m=>{
       rows+=`<tr>
-        <td>${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]}</td>
+        <td>${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]} <span style="color:var(--faint);font-size:.9em">${m.fecha.slice(0,4)}</span></td>
         <td>${m.glosa}</td>
         <td><span class="tag" style="background:var(--panel-2);color:var(--muted);border:1px solid var(--line);cursor:pointer" onclick="setCat('${m.cat.replace(/'/g,'')}')">${m.cat}</span></td>
         <td><span class="minitag">${logoEmp(empOf(m.cuenta))} ${bancoDe(m.cuenta)}</span></td>
@@ -651,9 +695,19 @@
         <td class="num"><button class="cbtn ${m.com?'has':''}" title="${m.com?'Ver comentario':'Agregar comentario'}" onclick="abrirCom(${m._i})"><svg class="ico" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.7 8.7 0 0 1-4-1L3 20l1.1-4.9A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg></button></td>
       </tr>`;
     });
-    document.getElementById('movs').innerHTML = rows || '<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:26px">Sin movimientos en la selección</td></tr>';
-    document.getElementById('movCount').textContent = '· '+movShow.length+' movimiento'+(movShow.length===1?'':'s');
+    document.getElementById('movs').innerHTML = rows || `<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:26px">${nq?'Sin resultados para «'+movQuery+'»':'Sin movimientos en la selección'}</td></tr>`;
+    document.getElementById('movCount').textContent = '· '+total+' movimiento'+(total===1?'':'s')+(nq?' (filtrados)':'');
+    const from = total?movPage*MOV_PP+1:0, to = Math.min(total, movPage*MOV_PP+MOV_PP);
+    document.getElementById('movPager').innerHTML = total>MOV_PP ? `
+      <span class="pg-info">Mostrando ${from}–${to} de ${total}</span>
+      <div class="pg-ctrl">
+        <button ${movPage===0?'disabled':''} onclick="movNav(-1)">← Anterior</button>
+        <span class="pg-num">Página ${movPage+1} / ${pages}</span>
+        <button ${movPage>=pages-1?'disabled':''} onclick="movNav(1)">Siguiente →</button>
+      </div>` : '';
   }
+  function setMovQuery(q){ movQuery=q; movPage=0; renderTabla(); }
+  function movNav(d){ movPage+=d; renderTabla(); }
 
   /* ===== COMENTARIOS ===== */
   let comAct=null;
