@@ -208,6 +208,13 @@
   /* ---- SCROLL REVEAL (Apple-style) ---- */
   .sr{opacity:0;transform:translateY(38px);transition:opacity 1.05s ease-in-out,transform 1.05s cubic-bezier(0.4,0,0.2,1),scale 1.1s cubic-bezier(.22,1,.36,1)}
   .sr.sr-in{opacity:1;transform:translateY(0)}
+
+  /* ==== ANIMACIONES DEL DASHBOARD APAGADAS (2026-07) ====
+     Para REACTIVAR el reveal (aparecer) + el hover (moverse al frente),
+     borra este bloque completo. El código original queda intacto arriba. */
+  .sr{opacity:1 !important;transform:none !important;transition:none !important}
+  .card:hover,.kpi:hover,.chart-card:hover,.totales:hover{scale:1 !important}
+  /* ==== fin animaciones apagadas ==== */
 </style>
 </head>
 <body>
