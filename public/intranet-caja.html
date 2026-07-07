@@ -181,11 +181,16 @@
   .calpop{position:absolute;top:calc(100% + 10px);left:0;z-index:40;background:#0f2420;border:1px solid #23413a;border-radius:18px;box-shadow:0 26px 68px -16px rgba(0,0,0,.62);padding:16px 18px 14px;display:none;color:#dff3ee;width:540px;max-width:calc(100vw - 28px)}
   .periodbar.open .calpop{display:block;animation:calin .2s cubic-bezier(.22,1,.36,1)}
   @keyframes calin{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-  .cal-quick{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #23413a}
-  .cal-quick button{background:#14302a;border:1px solid #24433b;border-radius:8px;padding:6px 12px;font-family:inherit;font-size:.8rem;color:#9dc9bf;cursor:pointer;transition:.14s}
-  .cal-quick button:hover{border-color:#2cf0c9;color:#2cf0c9}
-  .cal-quick button.on{background:#2cf0c9;border-color:#2cf0c9;color:#04231d;font-weight:700}
-  .cal-quick .qsep{width:1px;height:20px;background:#24433b;margin:0 3px}
+  .cal-quick{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #23413a}
+  .cal-step{display:flex;align-items:center;gap:5px}
+  .cal-step .yrnav{width:30px;height:30px;border-radius:9px;border:1px solid #24433b;background:#14302a;color:#dff3ee;cursor:pointer;display:grid;place-items:center;font-size:1.05rem;line-height:1;transition:.14s}
+  .cal-step .yrnav:hover:not(:disabled){border-color:#2cf0c9;color:#2cf0c9}
+  .cal-step .yrnav:disabled{opacity:.25;cursor:default}
+  .cal-step .yrsel{min-width:64px;padding:5px 10px;border-radius:9px;border:1px solid transparent;background:none;color:#eafff9;font-family:inherit;font-weight:700;font-size:.98rem;font-variant-numeric:tabular-nums;letter-spacing:.01em;cursor:pointer;transition:.14s;text-align:center}
+  .cal-step .yrsel:hover{background:rgba(44,240,201,.12);color:#2cf0c9}
+  .cal-chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+  .cal-chips button{background:#14302a;border:1px solid #24433b;border-radius:8px;padding:6px 12px;font-family:inherit;font-size:.8rem;color:#9dc9bf;cursor:pointer;transition:.14s}
+  .cal-chips button:hover{border-color:#2cf0c9;color:#2cf0c9}
   .cal-months{display:flex;gap:24px;position:relative;justify-content:center}
   .cal-nav-abs{position:absolute;top:-2px;width:32px;height:32px;border-radius:10px;border:1px solid #24433b;background:#14302a;color:#dff3ee;cursor:pointer;display:grid;place-items:center;font-size:1.05rem;line-height:1;z-index:3;transition:.14s}
   .cal-nav-abs.prev{left:0}.cal-nav-abs.next{right:0}
@@ -602,6 +607,13 @@
   }
   function calClose(){ document.querySelector('.periodbar').classList.remove('open'); }
   function calNav(n){ calView=ymAdd(calView,n); renderCal(); }
+  function calYearStep(n){                           // ‹ › del stepper → salta 1 año de vista
+    const lo=dataMin().slice(0,7), hi=ymAdd(dataMax().slice(0,7),-1);
+    let nv=ymAdd(calView,n*12); if(nv<lo)nv=lo; if(nv>hi)nv=hi; calView=nv; renderCal();
+  }
+  function calPickYear(y){                            // clic en el número → año completo
+    selStart=y+'-01-01'; selEnd=y+'-12-31'; calHover=null; renderCal();
+  }
   function calPick(ds){
     if(!selStart || (selStart&&selEnd)){ selStart=ds; selEnd=null; }
     else if(ds<selStart){ selEnd=selStart; selStart=ds; }
@@ -663,13 +675,20 @@
     return `<b>${fFecha(selStart)}</b>` + (selEnd?` <span class="ph">→</span> <b>${fFecha(selEnd)}</b>`:` <span class="ph">→ elige el fin</span>`);
   }
   function renderCal(){
-    const yrs=[2026,2025,2024,2023,2022,2021,2020];
+    const vy=+calView.slice(0,4);
+    const minY=+dataMin().slice(0,4), maxY=+ymAdd(dataMax().slice(0,7),-1).slice(0,4);
     const quick=`<div class="cal-quick">`
-      +`<button onclick="calClear()">Todo</button>`
-      +`<button onclick="calPreset('${ymAdd(dataMax().slice(0,7),-5)}-01','${dataMax()}')">Últimos 6m</button>`
-      +`<button onclick="calPreset('${ymAdd(dataMax().slice(0,7),-11)}-01','${dataMax()}')">Últimos 12m</button>`
-      +`<span class="qsep"></span>`
-      +yrs.map(y=>`<button onclick="calPreset('${y}-01-01','${y}-12-31')">${y}</button>`).join('')+`</div>`;
+      +`<div class="cal-step">`
+        +`<button class="yrnav" ${vy<=minY?'disabled':''} onclick="calYearStep(-1)" title="Año anterior">‹</button>`
+        +`<button class="yrsel" onclick="calPickYear(${vy})" title="Seleccionar todo ${vy}">${vy}</button>`
+        +`<button class="yrnav" ${vy>=maxY?'disabled':''} onclick="calYearStep(1)" title="Año siguiente">›</button>`
+      +`</div>`
+      +`<div class="cal-chips">`
+        +`<button onclick="calClear()">Todo</button>`
+        +`<button onclick="calPreset('${ymAdd(dataMax().slice(0,7),-5)}-01','${dataMax()}')">Últimos 6m</button>`
+        +`<button onclick="calPreset('${ymAdd(dataMax().slice(0,7),-11)}-01','${dataMax()}')">Últimos 12m</button>`
+      +`</div>`
+    +`</div>`;
     const foot=`<div class="cal-foot"><div class="rlbl">${rlblHtml()}</div><div class="cbtns"><button onclick="calClose()">Cancelar</button><button class="apply" ${selStart?'':'disabled'} onclick="calApply()">Aplicar</button></div></div>`;
     document.getElementById('calPop').innerHTML=`${quick}<div class="cal-months" id="calMonths" onmouseleave="calLeave()">${monthsInner()}</div>${foot}`;
   }
