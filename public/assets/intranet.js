@@ -44,7 +44,8 @@ function cbCurrentUser() { try { return JSON.parse(localStorage.getItem('cb-user
 /* 4) Menú lateral (data-driven → se pinta igual en todas las páginas) */
 var CB_NAV = [
   { href: 'intranet.html', label: 'Resumen', icon: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>' },
-  { href: 'intranet-caja.html', label: 'Flujo', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.3c0-1.1-1.1-1.8-2.5-1.8s-2.5.7-2.5 1.9 1.1 1.6 2.5 1.9 2.6.8 2.6 2-1.2 1.7-2.6 1.7-2.6-.6-2.6-1.8"/>' },
+  { href: 'intranet-caja.html?e=qq', label: 'Flujo QQ', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.3c0-1.1-1.1-1.8-2.5-1.8s-2.5.7-2.5 1.9 1.1 1.6 2.5 1.9 2.6.8 2.6 2-1.2 1.7-2.6 1.7-2.6-.6-2.6-1.8"/>' },
+  { href: 'intranet-caja.html?e=cb', label: 'Flujo CB', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.3c0-1.1-1.1-1.8-2.5-1.8s-2.5.7-2.5 1.9 1.1 1.6 2.5 1.9 2.6.8 2.6 2-1.2 1.7-2.6 1.7-2.6-.6-2.6-1.8"/>' },
   { href: 'intranet-creditos.html', label: 'Créditos', icon: '<rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/>' },
   { href: 'intranet-socovesa.html', label: 'Socovesa', icon: '<rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 21v-4h6v4"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2"/>' },
   { sep: 'Operación' },
@@ -59,7 +60,9 @@ var CB_NAV = [
 function cbBuildNav() {
   var nav = document.querySelector('nav.nav');
   if (!nav) return;
-  var cur = (location.pathname.split('/').pop() || 'intranet.html').toLowerCase();
+  var page = (location.pathname.split('/').pop() || 'intranet.html');
+  var cur = (page + location.search).toLowerCase();
+  if (page === 'intranet-caja.html' && !location.search) cur = 'intranet-caja.html?e=qq';
   nav.innerHTML = CB_NAV.map(function (it) {
     if (it.sep) return '<div class="sep">' + it.sep + '</div>';
     var on = it.href.toLowerCase() === cur ? ' class="on"' : '';

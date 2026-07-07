@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/intranet.css?v=12" />
-<script src="assets/intranet.js?v=12"></script>
+<script src="assets/intranet.js?v=13"></script>
 <style>
   /* ---- LOADING SCREEN ---- */
   #loader{position:fixed;inset:0;z-index:999;background:linear-gradient(160deg,#042820,#041c14 55%,#020e0a);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:opacity .5s ease,visibility .5s ease}
@@ -253,20 +253,18 @@
   </header>
   <div class="content">
 
-    <!-- TOTALES (siempre total general) -->
+    <!-- HEADER EMPRESA (saldo de la empresa de esta pantalla) -->
     <div class="totales">
-      <div class="th"><h3>Totales</h3><span class="upd"><span class="dot"></span>Última actualización · <b id="updFecha" style="color:var(--ink);font-weight:600">&nbsp;</b></span></div>
+      <div class="th"><h3 id="totTitle"><span class="emp-logo" id="totLogo"></span> Flujo</h3><span class="upd"><span class="dot"></span>Última actualización · <b id="updFecha" style="color:var(--ink);font-weight:600">&nbsp;</b></span></div>
       <div id="totales"></div>
     </div>
 
     <!-- ÚLTIMOS MOVIMIENTOS -->
     <div class="card" style="margin-bottom:18px">
-      <div class="card-h"><h3>Últimos movimientos</h3><span style="font-size:.8rem;color:var(--muted)">todas las cuentas</span></div>
+      <div class="card-h"><h3>Últimos movimientos</h3><span id="quickSub" style="font-size:.8rem;color:var(--muted)"></span></div>
       <div id="quick"></div>
     </div>
 
-    <!-- SCOPE TABS: controlan gráficos + tabla Excel -->
-    <div class="stabs" id="scopeTabs"></div>
     <div class="periodbar">
       <button class="pbtn" id="pBtn" onclick="calToggle()">
         <svg viewBox="0 0 24 24" class="pico"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
@@ -359,7 +357,8 @@
   const MOV = [];
 
   /* ===== ESTADO ===== */
-  let scope = 'ALL';   // 'ALL' | 'CB' | 'QQ'
+  const EMPRESA = (new URLSearchParams(location.search).get('e')==='cb') ? 'CB' : 'QQ';  // Flujo QQ / Flujo CB
+  let scope = EMPRESA;   // fijo por empresa (sin selector)
   let bancoFil = 'todos'; // solo para tabla movimientos dentro de CB
   let catFilter = null;
   let movQuery = '';      // buscador de la tabla de movimientos
@@ -416,10 +415,19 @@
     requestAnimationFrame(step);
   }
 
+  /* ===== SETUP EMPRESA (título, logo — una vez) ===== */
+  function setupEmpresa() {
+    const h1=document.querySelector('.topbar h1'); if(h1) h1.textContent='Flujo '+scope;
+    document.title = 'Flujo '+scope+' · Intranet Canchas Bosquemar';
+    const tl=document.getElementById('totLogo'); if(tl) tl.innerHTML=logoEmp(scope);
+    const tt=document.getElementById('totTitle'); if(tt) tt.innerHTML=logoEmp(scope)+' '+EMP[scope];
+    const qs=document.getElementById('quickSub'); if(qs) qs.textContent=idsForScope(scope).map(id=>bancoDe(id)).join(' · ')||'—';
+  }
+
   /* ===== RENDER PRINCIPAL ===== */
   function render() {
     renderUpd(); renderTotales(); renderQuick();
-    renderScopeTabs(); renderBar(); renderNetoChart();
+    renderBar(); renderNetoChart();
     renderDonut('egreso','donutEgr','donutEgrLeg');
     renderDonut('ingreso','donutIng','donutIngLeg');
     renderExcel(); renderBankSel(); renderTabla();
@@ -477,23 +485,20 @@
 
   /* ===== TOTALES HERO (siempre ALL) ===== */
   function renderTotales() {
-    const mes = periodo(), ml = MES[+mes.slice(5,7)-1];
-    const saldo = saldoScope('ALL');
-    const cbTot = saldoScope('CB'), qqTot = saldoScope('QQ');
-    const cbChile = saldoCuenta('cb-chile'), cbBice = saldoCuenta('cb-bice');
-    const ing = mesScope('ALL',mes,'ingreso'), egr = mesScope('ALL',mes,'egreso'), neto = ing - egr;
+    const mes = periodo()||'2026-01', ml = MES[+mes.slice(5,7)-1];
+    const saldo = saldoScope(scope);
+    const ing = mesScope(scope,mes,'ingreso'), egr = mesScope(scope,mes,'egreso'), neto = ing - egr;
+    const ids = idsForScope(scope);
+    const brk = ids.length>1
+      ? `<div class="hero-brk">${ids.map((id,i)=>`<div class="r sub"><span class="nm">${bankBadgeId(id)}</span><span class="v" id="hBk${i}">$0</span></div>`).join('')}</div>`
+      : '';
     document.getElementById('totales').innerHTML = `
       <div class="hero">
         <div class="hero-main">
-          <div class="mlbl">Saldo actual · total general</div>
+          <div class="mlbl">Saldo actual · ${EMP[scope]}</div>
           <div class="herobig ${saldo<0?'neg':''}" id="heroSaldo">$0</div>
         </div>
-        <div class="hero-brk">
-          <div class="r cb"><span class="nm">${logoEmp('CB')} Canchas Bosquemar</span><span class="v" id="hCB">$0</span></div>
-          <div class="r sub"><span class="nm">${bankBadge('Banco de Chile')}</span><span class="v" id="hCBChile">$0</span></div>
-          <div class="r sub"><span class="nm">${bankBadge('Banco BICE')}</span><span class="v" id="hCBBice">$0</span></div>
-          <div class="r cb"><span class="nm">${logoEmp('QQ')} Quinque</span><span class="v" id="hQQ">$0</span></div>
-        </div>
+        ${brk}
       </div>
       <div class="submetrics">
         <div class="sm"><span class="smlbl">Ingresos ${ml}</span><span class="smv" id="smIng">$0</span></div>
@@ -503,19 +508,15 @@
         <div class="sm"><span class="smlbl">Flujo neto ${ml}</span><span class="smv ${neto<0?'neg':'pos'}" id="smNeto">$0</span></div>
         <div class="op note">↑ así se construye el saldo del periodo</div>
       </div>`;
-    // cascada: cada número arranca 80ms después del anterior
     const cascade = [
-      ['heroSaldo', saldo,   v => fmt(Math.round(v)),                    750],
-      ['hCB',       cbTot,   v => fmt(Math.round(v)),                    680],
-      ['hCBChile',  cbChile, v => fmt(Math.round(v)),                    600],
-      ['hCBBice',   cbBice,  v => fmt(Math.round(v)),                    600],
-      ['hQQ',       qqTot,   v => fmt(Math.round(v)),                    680],
-      ['smIng',     ing,     v => fmt(Math.round(v)),                    580],
-      ['smEgr',     egr,     v => fmt(Math.round(v)),                    580],
-      ['smNeto',    neto,    v => (v>=0?'+':'')+fmt(Math.round(v)),      620],
+      ['heroSaldo', saldo, v => fmt(Math.round(v)), 750],
+      ...ids.map((id,i)=>['hBk'+i, saldoCuenta(id), v=>fmt(Math.round(v)), 600]),
+      ['smIng', ing, v => fmt(Math.round(v)), 580],
+      ['smEgr', egr, v => fmt(Math.round(v)), 580],
+      ['smNeto', neto, v => (v>=0?'+':'')+fmt(Math.round(v)), 620],
     ];
     cascade.forEach(([id, val, fmtr, dur], i) => {
-      setTimeout(() => countUp(document.getElementById(id), val, fmtr, dur), i * 75);
+      const el=document.getElementById(id); if(el) setTimeout(() => countUp(el, val, fmtr, dur), i * 75);
     });
   }
 
@@ -867,10 +868,11 @@
 
   /* ===== CARGA DE DATOS (el efecto de carga vive en el login) ===== */
   (function boot(){
+    setupEmpresa();
     fetch('data/qq-movimientos.json')
       .then(r=>r.json())
-      .then(data=>{ data.forEach(m=>MOV.push(m)); MOV.forEach((mm,ix)=>mm._i=ix); })
-      .catch(e=>console.error('No se pudo cargar movimientos QQ:', e))
+      .then(data=>{ if(scope==='QQ'){ data.forEach(m=>MOV.push(m)); MOV.forEach((mm,ix)=>mm._i=ix); } })
+      .catch(e=>console.error('No se pudo cargar movimientos:', e))
       .finally(render);
   })();
 </script>
