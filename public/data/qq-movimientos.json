@@ -9758,5 +9758,1195 @@
 "cat": "Créditos",
 "com": "",
 "autor": ""
+},
+{
+"fecha": "2026-03-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 348145.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 400000.0,
+"glosa": "Servicios: Revisor arquitectura",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 120000.0,
+"glosa": "Servicios: Notario",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-24",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2000.0,
+"glosa": "Gastos notariales",
+"cat": "Otros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 278892.0,
+"glosa": "Servicios: Abogados",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-03-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9532369.0,
+"glosa": "Crédito construcción Canchas Bosquemar",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 80000000.0,
+"glosa": "Rescate inversión",
+"cat": "Tesorería",
+"com": "Retorno inversión $260M (ene-2026)",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 348260.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 181790880.0,
+"glosa": "Rescate inversión",
+"cat": "Tesorería",
+"com": "Retorno inversión $260M (ene-2026)",
+"autor": ""
+},
+{
+"fecha": "2026-04-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 90000.0,
+"glosa": "Servicios: Notario",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 140000.0,
+"glosa": "Servicios: Notario",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9532369.0,
+"glosa": "Crédito construcción Canchas Bosquemar",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 107573.0,
+"glosa": "Línea/abono de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 80001.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 79491.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 79683.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-04-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-05-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3390157.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-05-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 150000.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-05-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9532369.0,
+"glosa": "Crédito construcción Canchas Bosquemar",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-05-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-05-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-05-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-05-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-05-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-05-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2200000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 740000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 80374.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 356221.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2300000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 81532.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2887498.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2026-06-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9532369.0,
+"glosa": "Crédito construcción Canchas Bosquemar",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 800000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-06-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
 }
 ]
