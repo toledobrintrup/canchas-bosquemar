@@ -178,7 +178,7 @@
   .pclear{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--panel-2);color:var(--muted);cursor:pointer;font-size:.85rem}
   .pclear:hover{border-color:var(--red);color:var(--red)}
   /* ===== CALENDARIO · Tarjeta oscura (fija en ambos temas) ===== */
-  .calpop{position:absolute;top:calc(100% + 10px);left:0;z-index:40;background:#0f2420;border:1px solid #23413a;border-radius:18px;box-shadow:0 26px 68px -16px rgba(0,0,0,.62);padding:16px 18px 14px;display:none;color:#dff3ee;width:540px;max-width:calc(100vw - 28px)}
+  .calpop{position:absolute;top:calc(100% + 10px);left:0;z-index:40;background:#0f2420;border:1px solid #23413a;border-radius:18px;box-shadow:0 26px 68px -16px rgba(0,0,0,.62);padding:16px 18px 14px;display:none;color:#dff3ee;width:570px;max-width:calc(100vw - 28px)}
   .periodbar.open .calpop{display:block;animation:calin .2s cubic-bezier(.22,1,.36,1)}
   @keyframes calin{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
   .cal-quick{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #23413a}
@@ -191,30 +191,30 @@
   .cal-chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
   .cal-chips button{background:#14302a;border:1px solid #24433b;border-radius:8px;padding:6px 12px;font-family:inherit;font-size:.8rem;color:#9dc9bf;cursor:pointer;transition:.14s}
   .cal-chips button:hover{border-color:#2cf0c9;color:#2cf0c9}
-  .cal-months{display:flex;gap:24px;position:relative;justify-content:center}
-  .cal-nav-abs{position:absolute;top:-2px;width:32px;height:32px;border-radius:10px;border:1px solid #24433b;background:#14302a;color:#dff3ee;cursor:pointer;display:grid;place-items:center;font-size:1.05rem;line-height:1;z-index:3;transition:.14s}
-  .cal-nav-abs.prev{left:0}.cal-nav-abs.next{right:0}
-  .cal-nav-abs:hover:not(:disabled){border-color:#2cf0c9;color:#2cf0c9;background:rgba(44,240,201,.12)}
-  .cal-nav-abs:disabled{opacity:.25;cursor:default}
-  .cal-month{width:236px}
-  .cal-mh{text-align:center;font-weight:700;font-size:.92rem;letter-spacing:-.01em;height:32px;display:flex;align-items:center;justify-content:center;text-transform:capitalize;color:#eafff9;cursor:pointer;border-radius:9px;transition:.14s;margin:0 30px}
-  .cal-mh:hover{background:rgba(44,240,201,.12);color:#2cf0c9}
-  .cal-grid8{display:grid;grid-template-columns:26px repeat(7,30px);justify-content:center}
-  .cal-grid8 .cwk-h{height:22px}
-  .cal-grid8 .cdow{text-align:center;font-family:var(--mono);font-size:.58rem;color:#5e857c;text-transform:uppercase;height:22px;display:grid;place-items:center}
-  .cal-wk{display:grid;place-items:center;height:36px;font-family:var(--mono);font-size:.6rem;font-weight:600;color:#5e857c;cursor:pointer;border-radius:7px;transition:.12s}
-  .cal-wk:hover{background:rgba(44,240,201,.14);color:#2cf0c9}
-  .cal-d{position:relative;height:36px;display:grid;place-items:center;font-size:.85rem;cursor:pointer;color:#dff3ee}
-  .cal-d>span{position:relative;z-index:1;font-variant-numeric:tabular-nums;transition:transform .14s cubic-bezier(.34,1.56,.64,1)}
-  .cal-d.empty{cursor:default}
-  .cal-d::before{content:"";position:absolute;inset:3px;border-radius:50%;transform:scale(.5);opacity:0;transition:transform .17s cubic-bezier(.34,1.56,.64,1),opacity .14s,background .12s}
-  .cal-d:not(.empty):not(.sel):hover::before{background:rgba(44,240,201,.16);transform:scale(1);opacity:1}
-  .cal-d:not(.empty):active>span{transform:scale(.88)}
-  .cal-d.in{background:rgba(44,240,201,.13)}
-  .cal-d.sel.s0{background:linear-gradient(to right,transparent 50%,rgba(44,240,201,.13) 50%)}
-  .cal-d.sel.s1{background:linear-gradient(to left,transparent 50%,rgba(44,240,201,.13) 50%)}
-  .cal-d.sel>span{color:#04231d;font-weight:700}
-  .cal-d.sel::before{background:#2cf0c9;transform:scale(1);opacity:1;box-shadow:0 3px 12px -2px rgba(44,240,201,.55)}
+  /* mes: ‹ Junio › — flechas saltan mes, el nombre selecciona el mes (el año va arriba) */
+  .cal-mrow{display:flex;align-items:center;justify-content:center;gap:4px;margin-bottom:9px}
+  .cal-mrow .mnav{background:none;border:none;color:#5e857c;cursor:pointer;font-size:1.15rem;line-height:1;padding:2px 8px;border-radius:7px;transition:.14s}
+  .cal-mrow .mnav:hover:not(:disabled){color:#2cf0c9;background:rgba(44,240,201,.1)}
+  .cal-mrow .mnav:disabled{opacity:.25;cursor:default}
+  .cal-mlabel{display:inline-block;font-weight:700;font-size:.98rem;letter-spacing:-.01em;color:#eafff9;text-transform:capitalize;cursor:pointer;border-radius:9px;padding:4px 12px;transition:.14s}
+  .cal-mlabel:hover{background:rgba(44,240,201,.12);color:#2cf0c9}
+  /* tira horizontal de días */
+  .cal-ribbon{display:flex;align-items:center;justify-content:center;gap:9px;padding:2px 0 4px}
+  .rib-nav{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid #24433b;background:#14302a;color:#dff3ee;cursor:pointer;display:grid;place-items:center;font-size:1.1rem;line-height:1;transition:.14s}
+  .rib-nav:hover:not(:disabled){border-color:#2cf0c9;color:#2cf0c9;background:rgba(44,240,201,.1)}
+  .rib-nav:disabled{opacity:.22;cursor:default}
+  .cal-strip{display:flex;justify-content:center}
+  .cal-rd{position:relative;width:26px;height:44px;display:grid;place-items:center;cursor:pointer;color:#dff3ee}
+  .cal-rd>span{position:relative;z-index:2;font-size:.85rem;font-variant-numeric:tabular-nums;transition:transform .14s cubic-bezier(.34,1.56,.64,1)}
+  .cal-rd::after{content:"";position:absolute;top:50%;left:0;right:0;height:26px;transform:translateY(-50%);z-index:0}
+  .cal-rd.in::after{background:rgba(44,240,201,.13)}
+  .cal-rd.sel.s0::after{background:linear-gradient(to right,transparent 50%,rgba(44,240,201,.13) 50%)}
+  .cal-rd.sel.s1::after{background:linear-gradient(to left,transparent 50%,rgba(44,240,201,.13) 50%)}
+  .cal-rd::before{content:"";position:absolute;top:50%;left:50%;width:24px;height:24px;transform:translate(-50%,-50%) scale(.6);border-radius:50%;z-index:1;opacity:0;transition:transform .17s cubic-bezier(.34,1.56,.64,1),opacity .14s,background .12s}
+  .cal-rd:not(.sel):hover::before{background:rgba(44,240,201,.16);transform:translate(-50%,-50%) scale(1);opacity:1}
+  .cal-rd:active>span{transform:scale(.88)}
+  .cal-rd.sel>span{color:#04231d;font-weight:700}
+  .cal-rd.sel::before{background:#2cf0c9;transform:translate(-50%,-50%) scale(1);opacity:1;box-shadow:0 3px 12px -2px rgba(44,240,201,.55)}
   .cal-foot{margin-top:14px;padding-top:14px;border-top:1px solid #23413a;display:flex;align-items:center;justify-content:space-between;gap:14px}
   .cal-foot .rlbl{font-size:.85rem;color:#eafff9}
   .cal-foot .rlbl b{font-family:var(--mono);font-weight:600}
@@ -598,19 +598,20 @@
   const ymAdd = (ym,n) => { let [y,mo]=ym.split('-').map(Number); mo+=n; y+=Math.floor((mo-1)/12); mo=((mo-1)%12+12)%12+1; return y+'-'+String(mo).padStart(2,'0'); };
   const fFecha = ds => { const p=ds.split('-'); return +p[2]+' '+MES[+p[1]-1]+' '+p[0]; };
   const ymd = dt => dt.getFullYear()+'-'+String(dt.getMonth()+1).padStart(2,'0')+'-'+String(dt.getDate()).padStart(2,'0');
-  const isoWeek = dt => { const d=new Date(Date.UTC(dt.getFullYear(),dt.getMonth(),dt.getDate())); const dn=d.getUTCDay()||7; d.setUTCDate(d.getUTCDate()+4-dn); const ys=new Date(Date.UTC(d.getUTCFullYear(),0,1)); return Math.ceil((((d-ys)/86400000)+1)/7); };
+  const RIB_N = 17;                                            // días visibles en la tira horizontal
+  const addDays   = (ds,n) => { const d=new Date(ds+'T12:00:00'); d.setDate(d.getDate()+n);   return ymd(d); };
+  const addMonthsD= (ds,n) => { const d=new Date(ds+'T12:00:00'); d.setMonth(d.getMonth()+n); return ymd(d); };
+  const clampWin  = ds => { const lo=dataMin(); let hi=addDays(dataMax(),-(RIB_N-3)); if(hi<lo)hi=lo; return ds<lo?lo:(ds>hi?hi:ds); };
 
   let calHover = null;
   function calToggle(){
     const bar=document.querySelector('.periodbar');
-    if(bar.classList.toggle('open')){ selStart=dFrom; selEnd=dTo; calHover=null; calView = dFrom ? dFrom.slice(0,7) : ymAdd(dataMax().slice(0,7),-1); renderCal(); }
+    if(bar.classList.toggle('open')){ selStart=dFrom; selEnd=dTo; calHover=null; calView = clampWin(dFrom ? addDays(dFrom,-2) : addDays(dataMax(),-(RIB_N-3))); renderCal(); }
   }
   function calClose(){ document.querySelector('.periodbar').classList.remove('open'); }
-  function calNav(n){ calView=ymAdd(calView,n); renderCal(); }
-  function calYearStep(n){                           // ‹ › del stepper → salta 1 año de vista
-    const lo=dataMin().slice(0,7), hi=ymAdd(dataMax().slice(0,7),-1);
-    let nv=ymAdd(calView,n*12); if(nv<lo)nv=lo; if(nv>hi)nv=hi; calView=nv; renderCal();
-  }
+  function calRibNav(n){ calView=clampWin(addDays(calView,n*7)); renderCal(); }   // ‹ › tira → ±1 semana
+  function calMonthStep(n){ calView=clampWin(addMonthsD(calMid(),n).slice(0,7)+'-01'); renderCal(); } // ‹ › mes → día 1 del mes ±1
+  function calYearStep(n){ calView=clampWin(addMonthsD(calView,n*12)); renderCal(); } // ‹ › stepper → ±1 año
   function calPickYear(y){                            // clic en el número → año completo
     selStart=y+'-01-01'; selEnd=y+'-12-31'; calHover=null; renderCal();
   }
@@ -624,59 +625,45 @@
     const y=+ym.slice(0,4), mo=+ym.slice(5,7), last=new Date(y,mo,0).getDate();
     selStart=ym+'-01'; selEnd=ym+'-'+String(last).padStart(2,'0'); calHover=null; renderCal();
   }
-  function calPickWeek(monStr){                     // clic en el nº de semana → semana completa (lu→do)
-    const m=new Date(monStr+'T12:00:00'), sun=new Date(m); sun.setDate(m.getDate()+6);
-    selStart=monStr; selEnd=ymd(sun); calHover=null; renderCal();
-  }
-  function calHov(ds){ if(selStart && !selEnd){ calHover=ds; const el=document.getElementById('calMonths'); if(el) el.innerHTML=monthsInner(); } }
-  function calLeave(){ if(calHover!==null){ calHover=null; const el=document.getElementById('calMonths'); if(el) el.innerHTML=monthsInner(); } }
+  function calHov(ds){ if(selStart && !selEnd){ calHover=ds; const el=document.getElementById('calStrip'); if(el) el.innerHTML=stripCells(); } }
+  function calLeave(){ if(calHover!==null){ calHover=null; const el=document.getElementById('calStrip'); if(el) el.innerHTML=stripCells(); } }
   function calApply(){ if(!selStart) return; dFrom=selStart; dTo=selEnd||selStart; updPeriodLbl(); calClose(); movPage=0; render(); }
   function calClear(){ dFrom=dTo=selStart=selEnd=calHover=null; updPeriodLbl(); calClose(); movPage=0; render(); }
-  function calPreset(from,to){ selStart=from; selEnd=to; dFrom=from; dTo=to; calView=ymAdd(to.slice(0,7),-1); updPeriodLbl(); calClose(); movPage=0; render(); }
+  function calPreset(from,to){ selStart=from; selEnd=to; dFrom=from; dTo=to; calView=clampWin(addDays(to,-(RIB_N-3))); updPeriodLbl(); calClose(); movPage=0; render(); }
   function updPeriodLbl(){
     const lbl=document.getElementById('pLbl'), clr=document.getElementById('pClear');
     if(!lbl) return;
     if(!dFrom&&!dTo){ lbl.textContent='Todo el período'; clr.style.display='none'; }
     else { lbl.textContent=fFecha(dFrom)+'  →  '+fFecha(dTo); clr.style.display=''; }
   }
-  function monthGrid(ym){
-    const y=+ym.slice(0,4), mo=+ym.slice(5,7);
-    const startDow=(new Date(y,mo-1,1).getDay()+6)%7, ndays=new Date(y,mo,0).getDate();
+  const calMid = () => addDays(calView, Math.floor(RIB_N/2));   // día central de la ventana (mes/año que se muestran)
+  function stripCells(){
     let lo=selStart, hi=selEnd;
     if(selStart && !selEnd && calHover){ lo = calHover<selStart?calHover:selStart; hi = calHover<selStart?selStart:calHover; }
-    const firstMon=new Date(y,mo-1,1-startDow), weeks=Math.ceil((startDow+ndays)/7);
-    let cells='<span class="cwk-h"></span>'
-      +'<span class="cdow">lu</span><span class="cdow">ma</span><span class="cdow">mi</span><span class="cdow">ju</span><span class="cdow">vi</span><span class="cdow">sá</span><span class="cdow">do</span>';
-    for(let w=0;w<weeks;w++){
-      const mon=new Date(firstMon); mon.setDate(firstMon.getDate()+w*7); const wn=isoWeek(mon);
-      cells+=`<b class="cal-wk" onclick="calPickWeek('${ymd(mon)}')" title="Seleccionar semana ${wn}">${wn}</b>`;
-      for(let dow=0;dow<7;dow++){
-        const d=w*7+dow-startDow+1;
-        if(d<1||d>ndays){ cells+='<div class="cal-d empty"></div>'; continue; }
-        const ds=ym+'-'+String(d).padStart(2,'0');
-        let cls='';
-        if(lo&&hi){ if(ds===lo&&ds===hi) cls='sel solo'; else if(ds===lo) cls='sel s0'; else if(ds===hi) cls='sel s1'; else if(ds>lo&&ds<hi) cls='in'; }
-        else if(lo&&ds===lo) cls='sel solo';
-        cells+=`<div class="cal-d ${cls}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')"><span>${d}</span></div>`;
-      }
+    let cells='';
+    for(let i=0;i<RIB_N;i++){
+      const ds=addDays(calView,i), d=+ds.slice(8,10);
+      let cls='';
+      if(lo&&hi){ if(ds===lo&&ds===hi) cls='sel solo'; else if(ds===lo) cls='sel s0'; else if(ds===hi) cls='sel s1'; else if(ds>lo&&ds<hi) cls='in'; }
+      else if(lo&&ds===lo) cls='sel solo';
+      cells+=`<div class="cal-rd ${cls}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')"><span>${d}</span></div>`;
     }
-    return `<div class="cal-grid8">${cells}</div>`;
+    return cells;
   }
-  function monthsInner(){
-    const m0=calView, m1=ymAdd(calView,1);
-    const prevDis=m0<=dataMin().slice(0,7)?'disabled':'', nextDis=m1>=dataMax().slice(0,7)?'disabled':'';
-    return `<button class="cal-nav-abs prev" ${prevDis} onclick="calNav(-1)">‹</button>`
-      +`<button class="cal-nav-abs next" ${nextDis} onclick="calNav(1)">›</button>`
-      +`<div class="cal-month"><div class="cal-mh" onclick="calPickMonth('${m0}')" title="Seleccionar todo el mes">${MESLARGO[+m0.slice(5,7)-1]} ${m0.slice(0,4)}</div>${monthGrid(m0)}</div>`
-      +`<div class="cal-month"><div class="cal-mh" onclick="calPickMonth('${m1}')" title="Seleccionar todo el mes">${MESLARGO[+m1.slice(5,7)-1]} ${m1.slice(0,4)}</div>${monthGrid(m1)}</div>`;
+  function dayRibbon(){
+    const prevDis = calView<=dataMin() ? 'disabled':'';
+    const nextDis = calView>=clampWin('9999-12-31') ? 'disabled':'';
+    return `<button class="rib-nav prev" ${prevDis} onclick="calRibNav(-1)" title="Días anteriores">‹</button>`
+      +`<div class="cal-strip" id="calStrip">${stripCells()}</div>`
+      +`<button class="rib-nav next" ${nextDis} onclick="calRibNav(1)" title="Días siguientes">›</button>`;
   }
   function rlblHtml(){
     if(!selStart) return '<span class="ph">Elige la fecha de inicio</span>';
     return `<b>${fFecha(selStart)}</b>` + (selEnd?` <span class="ph">→</span> <b>${fFecha(selEnd)}</b>`:` <span class="ph">→ elige el fin</span>`);
   }
   function renderCal(){
-    const vy=+calView.slice(0,4);
-    const minY=+dataMin().slice(0,4), maxY=+ymAdd(dataMax().slice(0,7),-1).slice(0,4);
+    const mid=calMid(), vy=+mid.slice(0,4), midYm=mid.slice(0,7);
+    const minY=+dataMin().slice(0,4), maxY=+dataMax().slice(0,4);
     const quick=`<div class="cal-quick">`
       +`<div class="cal-step">`
         +`<button class="yrnav" ${vy<=minY?'disabled':''} onclick="calYearStep(-1)" title="Año anterior">‹</button>`
@@ -689,8 +676,15 @@
         +`<button onclick="calPreset('${ymAdd(dataMax().slice(0,7),-11)}-01','${dataMax()}')">Últimos 12m</button>`
       +`</div>`
     +`</div>`;
+    const mPrev = midYm<=dataMin().slice(0,7)?'disabled':'', mNext = midYm>=dataMax().slice(0,7)?'disabled':'';
+    const mNom = MESLARGO[+midYm.slice(5,7)-1];
+    const monthLbl=`<div class="cal-mrow">`
+      +`<button class="mnav" ${mPrev} onclick="calMonthStep(-1)" title="Mes anterior">‹</button>`
+      +`<span class="cal-mlabel" onclick="calPickMonth('${midYm}')" title="Seleccionar todo ${mNom}">${mNom}</span>`
+      +`<button class="mnav" ${mNext} onclick="calMonthStep(1)" title="Mes siguiente">›</button>`
+    +`</div>`;
     const foot=`<div class="cal-foot"><div class="rlbl">${rlblHtml()}</div><div class="cbtns"><button onclick="calClose()">Cancelar</button><button class="apply" ${selStart?'':'disabled'} onclick="calApply()">Aplicar</button></div></div>`;
-    document.getElementById('calPop').innerHTML=`${quick}<div class="cal-months" id="calMonths" onmouseleave="calLeave()">${monthsInner()}</div>${foot}`;
+    document.getElementById('calPop').innerHTML=`${quick}<div id="calBody" onmouseleave="calLeave()">${monthLbl}<div class="cal-ribbon">${dayRibbon()}</div></div>${foot}`;
   }
   document.addEventListener('click', e=>{
     var path = e.composedPath ? e.composedPath() : [];
