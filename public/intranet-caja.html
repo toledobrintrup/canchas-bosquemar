@@ -652,7 +652,11 @@
     const foot=`<div class="cal-foot"><div class="rlbl">${rlblHtml()}</div><div class="cbtns"><button onclick="calClose()">Cancelar</button><button class="apply" ${selStart?'':'disabled'} onclick="calApply()">Aplicar</button></div></div>`;
     document.getElementById('calPop').innerHTML=`${quick}<div class="cal-months" id="calMonths" onmouseleave="calLeave()">${monthsInner()}</div>${foot}`;
   }
-  document.addEventListener('click', e=>{ if(!e.target.closest('.periodbar')) calClose(); });
+  document.addEventListener('click', e=>{
+    var path = e.composedPath ? e.composedPath() : [];
+    var dentro = path.some(function(el){ return el && el.classList && el.classList.contains('periodbar'); });
+    if(!dentro) calClose();
+  });
 
   /* ===== BAR CHART: Ingresos vs egresos ===== */
   function renderBar() {
