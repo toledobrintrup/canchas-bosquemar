@@ -241,7 +241,7 @@
 </style>
 </head>
 <body>
-<div class="cb-ver">V3</div>
+<div class="cb-ver">V4</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
@@ -739,7 +739,7 @@
     calScrollTo=null; calThumbCenter=centerThumb;                                     // en reposo natural, thumb al centro (simetría)
     const fi = Math.round((new Date(focus+'T12:00:00') - new Date(calYear+'-01-01T12:00:00'))/86400000);
     strip.addEventListener('scroll', function(){ calScrollMonth(); calUpdThumb(); }, {passive:true});
-    strip.addEventListener('wheel', function(e){ const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(d){ e.preventDefault(); calThumbCenter=false; strip.style.scrollBehavior='auto'; strip.scrollLeft-=d*0.0625; strip.style.scrollBehavior=''; } }, {passive:false});   // rueda/trackpad = mover días (invertido + muy lento)
+    strip.addEventListener('wheel', function(e){ const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(d){ e.preventDefault(); calThumbCenter=false; strip.style.scrollBehavior='auto'; strip.scrollLeft-=d*0.15; strip.style.scrollBehavior=''; } }, {passive:false});   // rueda/trackpad = mover días
     strip.style.scrollBehavior='auto';
     void strip.scrollWidth;                                    // forzar layout para que el scroll pegue
     strip.scrollLeft = Math.max(0, atRight ? fi*DAYW - (strip.clientWidth - DAYW) : fi*DAYW - (strip.clientWidth - DAYW)/2);
@@ -762,7 +762,7 @@
     document.addEventListener('pointerup',   ()=>{ if(!down)return; down=false; if(strip)strip.classList.remove('grabbing'); strip=null; setTimeout(()=>{ window.__calDrag=false; },40); });
   })();
   (function calTrackInit(){                                     // arrastrar el slider de abajo mueve los días (relativo, suave, SIGUE al cursor)
-    let drag=false, sx=0, ssl=0; const F=4;                     // px de scroll por px de arrastre (menor = más lento)
+    let drag=false, sx=0, ssl=0; const F=2;                     // px de scroll por px de arrastre (menor = más lento)
     document.addEventListener('pointerdown', e=>{ if(!(e.target.closest&&e.target.closest('#calTrack')))return; const s=document.getElementById('calStrip'); if(!s)return; drag=true; sx=e.clientX; ssl=s.scrollLeft; calThumbCenter=false; e.preventDefault(); });
     document.addEventListener('pointermove', e=>{ if(!drag)return; const s=document.getElementById('calStrip'); if(!s)return; s.style.scrollBehavior='auto'; s.scrollLeft=ssl-(e.clientX-sx)*F; s.style.scrollBehavior=''; });
     document.addEventListener('pointerup',   ()=>{ drag=false; });
