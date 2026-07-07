@@ -593,7 +593,7 @@
   const addMonthsD= (ds,n) => { const d=new Date(ds+'T12:00:00'); d.setMonth(d.getMonth()+n); return ymd(d); };
   const clampWin  = ds => { const lo=dataMin(); let hi=addDays(dataMax(),-(RIB_N-3)); if(hi<lo)hi=lo; return ds<lo?lo:(ds>hi?hi:ds); };
 
-  let calHover = null, calYear = 2026, calCurYm = '', calActive = null, calScrollTo = null;
+  let calHover = null, calYear = 2026, calCurYm = '', calActive = null, calScrollTo = null, calThumbCenter = false;
   const DAYW = 56;                                              // ancho de cada día (coincide con CSS .cal-rd)
   const daysInYear = y => ((y%4===0&&y%100!==0)||y%400===0)?366:365;
   const def6m = () => ({ from: ymAdd(dataMax().slice(0,7),-5)+'-01', to: dataMax() });   // estado natural = últimos 6 meses
@@ -617,7 +617,7 @@
   }
   function footInner(){ const x = calActive ? `<button class="cal-x" onclick="calReset()" title="Volver a los últimos 6 meses"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>Limpiar</button>` : ''; return `<div class="rlbl">${filterLbl()}</div>${x}`; }
   function calRefresh(){ paintCells(); const f=document.getElementById('calFoot'); if(f) f.innerHTML=footInner(); }
-  function calDayNav(n){ const s=document.getElementById('calStrip'); if(!s)return; s.style.scrollBehavior='auto'; s.scrollLeft += n*7*DAYW; s.style.scrollBehavior=''; }  // botones ‹ › → ±1 semana
+  function calDayNav(n){ const s=document.getElementById('calStrip'); if(!s)return; calThumbCenter=false; s.style.scrollBehavior='auto'; s.scrollLeft += n*7*DAYW; s.style.scrollBehavior=''; }  // botones ‹ › → ±1 semana
   function calPickMonth(ym){                                    // mes completo · toggle + sticky
     const key='month:'+ym; if(calActive===key){ calReset(); return; }
     const y=+ym.slice(0,4), mo=+ym.slice(5,7), last=new Date(y,mo,0).getDate();
@@ -645,6 +645,7 @@
     calActive=key; calHover=null; movPage=0; applyRender(); renderCal();
   }
   function calMonthNav(n){                                       // slider de mes ‹ ›
+    calThumbCenter=false;
     const t=addMonthsD((calCurYm||calYear+'-01')+'-15', n), ty=+t.slice(0,4), tm=t.slice(0,7);
     const minY=+dataMin().slice(0,4), maxY=+dataMax().slice(0,4); if(ty<minY||ty>maxY) return;
     if(ty!==calYear){ calYear=ty; calScrollTo=tm+'-01'; renderCal(); return; }
@@ -725,16 +726,16 @@
   }
   function calSetupSlider(){
     const strip=document.getElementById('calStrip'); if(!strip) return;
-    let focus, atRight=false; const t=today();
+    let focus, atRight=false, centerThumb=false; const t=today();
     if(calScrollTo && +calScrollTo.slice(0,4)===calYear){ focus=calScrollTo; }
     else if(selEnd===t && +t.slice(0,4)===calYear){ focus=t; atRight=true; }         // rango que termina hoy (última semana) → mostrar hasta hoy
     else if(selStart && +selStart.slice(0,4)===calYear){ focus=selStart; }
-    else if(+t.slice(0,4)===calYear){ focus=t; }                                     // natural: hoy CENTRADO (simetría: 3 días antes / 3 después)
+    else if(+t.slice(0,4)===calYear){ focus=t; centerThumb=true; }                    // natural: hoy CENTRADO (simetría: 3 días antes / 3 después)
     else focus=(calYear===+dataMax().slice(0,4)?dataMax():calYear+'-01-01');
-    calScrollTo=null;
+    calScrollTo=null; calThumbCenter=centerThumb;                                     // en reposo natural, thumb al centro (simetría)
     const fi = Math.round((new Date(focus+'T12:00:00') - new Date(calYear+'-01-01T12:00:00'))/86400000);
     strip.addEventListener('scroll', function(){ calScrollMonth(); calUpdThumb(); }, {passive:true});
-    strip.addEventListener('wheel', function(e){ const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(d){ e.preventDefault(); strip.style.scrollBehavior='auto'; strip.scrollLeft+=d*0.25; strip.style.scrollBehavior=''; } }, {passive:false});   // rueda/trackpad = mover días (lento)
+    strip.addEventListener('wheel', function(e){ const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(d){ e.preventDefault(); calThumbCenter=false; strip.style.scrollBehavior='auto'; strip.scrollLeft+=d*0.25; strip.style.scrollBehavior=''; } }, {passive:false});   // rueda/trackpad = mover días (lento)
     strip.style.scrollBehavior='auto';
     void strip.scrollWidth;                                    // forzar layout para que el scroll pegue
     strip.scrollLeft = Math.max(0, atRight ? fi*DAYW - (strip.clientWidth - DAYW) : fi*DAYW - (strip.clientWidth - DAYW)/2);
@@ -745,19 +746,22 @@
     const strip=document.getElementById('calStrip'), thumb=document.getElementById('calThumb'); if(!strip||!thumb) return;
     const track=thumb.parentElement, tw=track.clientWidth;
     const thumbW=Math.max(34, tw*Math.min(1, strip.clientWidth/strip.scrollWidth));
+    thumb.style.width=thumbW+'px';
+    if(calThumbCenter){ thumb.style.left=((tw-thumbW)/2)+'px'; return; }              // reposo natural: thumb al centro (simetría)
     const maxS=strip.scrollWidth-strip.clientWidth, p=maxS>0?strip.scrollLeft/maxS:0;
-    thumb.style.width=thumbW+'px'; thumb.style.left=(p*(tw-thumbW))+'px';
+    thumb.style.left=(p*(tw-thumbW))+'px';
   }
   (function calDragInit(){                                      // arrastrar para deslizar el slider
     let down=false, sx=0, ssl=0, strip=null;
     document.addEventListener('pointerdown', e=>{ const s=e.target.closest&&e.target.closest('#calStrip'); if(!s)return; strip=s; down=true; sx=e.clientX; ssl=s.scrollLeft; window.__calDrag=false; s.classList.add('grabbing'); });
-    document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>8) window.__calDrag=true; strip.scrollLeft=ssl-dx; });
+    document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>8){ window.__calDrag=true; calThumbCenter=false; } strip.scrollLeft=ssl-dx; });
     document.addEventListener('pointerup',   ()=>{ if(!down)return; down=false; if(strip)strip.classList.remove('grabbing'); strip=null; setTimeout(()=>{ window.__calDrag=false; },40); });
   })();
   (function calTrackInit(){                                     // clic/arrastre en el slider moderno mueve los días
     let drag=false;
     function toScroll(cx){
       const strip=document.getElementById('calStrip'), track=document.getElementById('calTrack'); if(!strip||!track)return;
+      calThumbCenter=false;
       const r=track.getBoundingClientRect(), maxS=strip.scrollWidth-strip.clientWidth;
       const p=Math.max(0,Math.min(1,(cx-r.left)/r.width));
       strip.style.scrollBehavior='auto'; strip.scrollLeft=p*maxS; strip.style.scrollBehavior='';
