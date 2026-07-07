@@ -238,10 +238,11 @@
   /* marcador de versión — oculto (color del sidebar); selecciónalo con el mouse para verlo */
   .cb-ver{position:fixed;top:4px;left:6px;z-index:99999;font:600 10px/1 var(--mono,monospace);letter-spacing:.06em;color:#063b34;user-select:text;-webkit-user-select:text}
   [data-theme="dark"] .cb-ver{color:#0c1413}
+  .cb-ver:hover{color:#ff7a1a}   /* al pasar el mouse, se ve (naranjo de marca) */
 </style>
 </head>
 <body>
-<div class="cb-ver">V4</div>
+<div class="cb-ver">V5</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
@@ -597,7 +598,7 @@
   const addMonthsD= (ds,n) => { const d=new Date(ds+'T12:00:00'); d.setMonth(d.getMonth()+n); return ymd(d); };
   const clampWin  = ds => { const lo=dataMin(); let hi=addDays(dataMax(),-(RIB_N-3)); if(hi<lo)hi=lo; return ds<lo?lo:(ds>hi?hi:ds); };
 
-  let calHover = null, calYear = 2026, calCurYm = '', calActive = null, calScrollTo = null, calThumbCenter = false;
+  let calHover = null, calYear = 2026, calCurYm = '', calActive = null, calScrollTo = null, calThumbCenter = false, calJogging = false;
   const DAYW = 56;                                              // ancho de cada día (coincide con CSS .cal-rd)
   const daysInYear = y => ((y%4===0&&y%100!==0)||y%400===0)?366:365;
   const def6m = () => ({ from: ymAdd(dataMax().slice(0,7),-5)+'-01', to: dataMax() });   // estado natural = últimos 6 meses
@@ -751,9 +752,8 @@
     const track=thumb.parentElement, tw=track.clientWidth;
     const thumbW=Math.max(34, tw*Math.min(1, strip.clientWidth/strip.scrollWidth));
     thumb.style.width=thumbW+'px';
-    if(calThumbCenter){ thumb.style.left=((tw-thumbW)/2)+'px'; return; }              // reposo natural: thumb al centro (simetría)
-    const maxS=strip.scrollWidth-strip.clientWidth, p=maxS>0?strip.scrollLeft/maxS:0;
-    thumb.style.left=(p*(tw-thumbW))+'px';
+    if(calJogging) return;                                                            // durante el jog lo posiciono a mano
+    thumb.style.left=((tw-thumbW)/2)+'px';                                            // en reposo, SIEMPRE centrado (simetría)
   }
   (function calDragInit(){                                      // arrastrar para deslizar el slider
     let down=false, sx=0, ssl=0, strip=null;
@@ -761,11 +761,12 @@
     document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>8){ window.__calDrag=true; calThumbCenter=false; } strip.scrollLeft=ssl-dx; });   // arrastre de días natural (sigue al cursor)
     document.addEventListener('pointerup',   ()=>{ if(!down)return; down=false; if(strip)strip.classList.remove('grabbing'); strip=null; setTimeout(()=>{ window.__calDrag=false; },40); });
   })();
-  (function calTrackInit(){                                     // arrastrar el slider de abajo mueve los días (relativo, suave, SIGUE al cursor)
-    let drag=false, sx=0, ssl=0; const F=2;                     // px de scroll por px de arrastre (menor = más lento)
-    document.addEventListener('pointerdown', e=>{ if(!(e.target.closest&&e.target.closest('#calTrack')))return; const s=document.getElementById('calStrip'); if(!s)return; drag=true; sx=e.clientX; ssl=s.scrollLeft; calThumbCenter=false; e.preventDefault(); });
-    document.addEventListener('pointermove', e=>{ if(!drag)return; const s=document.getElementById('calStrip'); if(!s)return; s.style.scrollBehavior='auto'; s.scrollLeft=ssl-(e.clientX-sx)*F; s.style.scrollBehavior=''; });
-    document.addEventListener('pointerup',   ()=>{ drag=false; });
+  (function calTrackInit(){                                     // slider "jog": el thumb SIGUE al dedo, los días se mueven suave, y al soltar vuelve al centro
+    let sx=0, ssl=0, sTL=0; const F=2;                          // F = px de scroll por px de arrastre (menor = más lento)
+    const TH=()=>document.getElementById('calThumb');
+    document.addEventListener('pointerdown', e=>{ if(!(e.target.closest&&e.target.closest('#calTrack')))return; const s=document.getElementById('calStrip'), t=TH(); if(!s||!t)return; calJogging=true; sx=e.clientX; ssl=s.scrollLeft; sTL=parseFloat(t.style.left)||0; t.style.transition='none'; e.preventDefault(); });
+    document.addEventListener('pointermove', e=>{ if(!calJogging)return; const s=document.getElementById('calStrip'), t=TH(); if(!s||!t)return; const dx=e.clientX-sx, tr=t.parentElement, mx=tr.clientWidth-t.offsetWidth; let tl=sTL+dx; if(tl<0)tl=0; if(tl>mx)tl=mx; t.style.left=tl+'px'; s.style.scrollBehavior='auto'; s.scrollLeft=ssl-dx*F; s.style.scrollBehavior=''; });
+    document.addEventListener('pointerup',   ()=>{ if(!calJogging)return; calJogging=false; const t=TH(); if(t){ const tr=t.parentElement; t.style.transition='left .22s cubic-bezier(.22,1,.36,1)'; t.style.left=((tr.clientWidth-t.offsetWidth)/2)+'px'; setTimeout(()=>{ const x=TH(); if(x)x.style.transition=''; },240); } });
   })();
 
   /* ===== BAR CHART: Ingresos vs egresos ===== */
