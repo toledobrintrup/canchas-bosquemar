@@ -169,9 +169,9 @@
   .mov-pager .pg-num{font-family:var(--mono);font-size:.8rem;color:var(--muted);min-width:96px;text-align:center}
 
   /* ---- CALENDARIO DE RANGO · embebido, siempre visible, adaptado al tema ---- */
-  /* Editorial monocromo: blanco, línea fina, acento verde-pino (adaptado al tema). El acento pino se aplica redefiniendo --accent SOLO dentro del calendario. */
-  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:17px 22px 15px;margin:-4px auto 20px;width:100%;max-width:600px;box-shadow:0 5px 22px -14px rgba(0,0,0,.16);--accent:#12564b;--accent-soft:#eaf1ef}
-  [data-theme="dark"] .periodcal{box-shadow:none;--accent:#4fc0a8;--accent-soft:rgba(79,192,168,.16)}
+  /* Editorial monocromo con el TEAL de la página: usa el --accent del sistema (#0fb89c claro / #2cf0c9 oscuro), no un acento propio. */
+  .periodcal{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:17px 22px 15px;margin:-4px auto 20px;width:100%;max-width:600px;box-shadow:0 5px 22px -14px rgba(0,0,0,.16)}
+  [data-theme="dark"] .periodcal{box-shadow:none}
   /* cabecera CENTRADA: año arriba, atajos debajo */
   .cal-head{display:flex;flex-direction:column;align-items:center;gap:9px;margin-bottom:11px;padding-bottom:11px;border-bottom:1px solid var(--line)}
   .cal-step{display:flex;align-items:center;gap:5px}
