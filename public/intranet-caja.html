@@ -203,9 +203,10 @@
   .cal-track{position:relative;height:5px;border-radius:5px;background:var(--line);width:60%;margin:16px auto 3px;cursor:pointer}
   .cal-thumb{position:absolute;top:50%;left:0;height:5px;min-width:34px;border-radius:5px;background:var(--accent);transform:translateY(-50%);opacity:.75;transition:opacity .14s,height .14s}
   .cal-track:hover .cal-thumb{opacity:1;height:7px}
-  .cal-rd{position:relative;flex:0 0 56px;height:60px;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+  .cal-rd{position:relative;flex:0 0 56px;height:64px;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
   .cal-rd>span{position:relative;z-index:2;font-family:var(--mono);font-weight:500;font-size:.82rem;font-variant-numeric:tabular-nums;transition:transform .14s cubic-bezier(.34,1.56,.64,1)}
-  .cal-rd.mstart::after{content:"";position:absolute;left:0;top:24%;bottom:24%;width:1px;background:var(--line);z-index:0}   /* separador suave donde cambia de mes */
+  .cal-rd .mtag{position:absolute;bottom:3px;left:0;right:0;text-align:center;font-family:var(--mono);font-size:.43rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);opacity:.75;z-index:2}   /* mes (3 letras) suave, debajo */
+  .cal-rd.mstart::after{content:"";position:absolute;left:0;top:20%;bottom:32%;width:1px;background:var(--line);z-index:0}   /* separador suave donde cambia de mes */
   /* forma: cuadrado redondeado (rango, separados) · círculo (extremos) */
   .cal-rd::before{content:"";position:absolute;top:50%;left:50%;width:44px;height:44px;transform:translate(-50%,-50%) scale(.55);border-radius:12px;z-index:0;opacity:0;transition:transform .17s cubic-bezier(.34,1.56,.64,1),opacity .14s,background .12s,border-radius .15s}
   .cal-rd.in::before{background:var(--accent-soft);transform:translate(-50%,-50%) scale(1);opacity:1}
@@ -216,9 +217,7 @@
   [data-theme="dark"] .cal-rd.sel>span{color:#04231d}
   /* fila 4: footer (rango + aplicar) */
   .cal-foot{margin-top:11px;padding-top:11px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px}
-  .cal-foot .rlbl{font-size:.85rem;color:var(--ink)}
-  .cal-foot .rlbl b{font-family:var(--mono);font-weight:600}
-  .cal-foot .rlbl .ph{color:var(--faint);font-weight:400}
+  .cal-foot .rlbl{font-size:.85rem;color:var(--faint);font-weight:400}
   .cal-x{flex:none;background:none;border:none;color:var(--muted);font-family:inherit;font-size:.8rem;cursor:pointer;display:inline-flex;align-items:center;gap:5px;padding:4px 2px;transition:.14s}
   .cal-x svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
   .cal-x:hover{color:var(--red)}
@@ -594,18 +593,23 @@
   const DAYW = 56;                                              // ancho de cada día (coincide con CSS .cal-rd)
   const daysInYear = y => ((y%4===0&&y%100!==0)||y%400===0)?366:365;
   const def6m = () => ({ from: ymAdd(dataMax().slice(0,7),-5)+'-01', to: dataMax() });   // estado natural = últimos 6 meses
+  function applyRender(){                                       // aplica el filtro SIN que la página salte (mantiene el calendario en su posición en pantalla)
+    const cp=document.getElementById('calPop'), before=cp?cp.getBoundingClientRect().top:null;
+    render();
+    if(cp&&before!=null){ const after=cp.getBoundingClientRect().top; if(Math.abs(after-before)>0.5) window.scrollBy(0, after-before); }
+  }
 
   function calInit(){ selStart=selEnd=calHover=null; calActive=null; calYear=+dataMax().slice(0,4); renderCal(); }
   function calYearStep(n){ let y=calYear+n, lo=+dataMin().slice(0,4), hi=+dataMax().slice(0,4); if(y<lo)y=lo; if(y>hi)y=hi; calYear=y; renderCal(); }
   function calPickYear(y){                                       // año completo · toggle + sticky
     const key='year:'+y; if(calActive===key){ calReset(); return; }
-    dFrom=y+'-01-01'; dTo=y+'-12-31'; selStart=selEnd=null; calActive=key; calHover=null; movPage=0; render(); renderCal();
+    dFrom=y+'-01-01'; dTo=y+'-12-31'; selStart=selEnd=null; calActive=key; calHover=null; movPage=0; applyRender(); renderCal();
   }
   function calPick(ds){
     if(window.__calDrag) return;                               // fue arrastre del slider, no clic
     if(!selStart || (selStart&&selEnd)){ selStart=ds; selEnd=null; calActive='range'; calRefresh(); return; }  // 1er día: solo marca, no aplica todavía
     if(ds<selStart){ selEnd=selStart; selStart=ds; } else selEnd=ds;                                            // 2do día: completa el rango…
-    calHover=null; calActive='range'; dFrom=selStart; dTo=selEnd; movPage=0; render(); calRefresh();            // …y recién ahí aplica
+    calHover=null; calActive='range'; dFrom=selStart; dTo=selEnd; movPage=0; applyRender(); calRefresh();       // …y recién ahí aplica
   }
   function footInner(){ const x = calActive ? `<button class="cal-x" onclick="calReset()" title="Volver a los últimos 6 meses"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>Limpiar</button>` : ''; return `<div class="rlbl">${filterLbl()}</div>${x}`; }
   function calRefresh(){ paintCells(); const f=document.getElementById('calFoot'); if(f) f.innerHTML=footInner(); }
@@ -613,7 +617,7 @@
   function calPickMonth(ym){                                    // mes completo · toggle + sticky
     const key='month:'+ym; if(calActive===key){ calReset(); return; }
     const y=+ym.slice(0,4), mo=+ym.slice(5,7), last=new Date(y,mo,0).getDate();
-    selStart=ym+'-01'; selEnd=ym+'-'+String(last).padStart(2,'0'); dFrom=selStart; dTo=selEnd; calActive=key; calHover=null; movPage=0; render(); renderCal();
+    selStart=ym+'-01'; selEnd=ym+'-'+String(last).padStart(2,'0'); dFrom=selStart; dTo=selEnd; calActive=key; calHover=null; movPage=0; applyRender(); renderCal();
   }
   function calPickMonthCur(){ if(calCurYm) calPickMonth(calCurYm); }   // clic en el nombre del mes visible
   function paintCells(){                                        // repinta clases SIN reemplazar el DOM (no rompe el clic ni entra en bucle de hover)
@@ -628,12 +632,12 @@
   }
   function calHov(ds){ if(selStart && !selEnd){ calHover=ds; paintCells(); } }
   function calLeave(){ if(calHover!==null){ calHover=null; paintCells(); } }
-  function calReset(){ const d=def6m(); dFrom=d.from; dTo=d.to; selStart=selEnd=calHover=null; calActive=null; movPage=0; render(); renderCal(); }
+  function calReset(){ const d=def6m(); dFrom=d.from; dTo=d.to; selStart=selEnd=calHover=null; calActive=null; movPage=0; applyRender(); renderCal(); }
   function calPreset(key){                                       // píldoras · toggle + sticky (natural = 6m)
     if(calActive===key){ calReset(); return; }
     if(key==='todo'){ dFrom=dTo=null; }
     else { const n=key==='6m'?-5:-11; dFrom=ymAdd(dataMax().slice(0,7),n)+'-01'; dTo=dataMax(); calYear=+dTo.slice(0,4); }
-    selStart=selEnd=null; calActive=key; calHover=null; movPage=0; render(); renderCal();
+    selStart=selEnd=null; calActive=key; calHover=null; movPage=0; applyRender(); renderCal();
   }
   function calMonthNav(n){                                       // slider de mes ‹ ›
     const t=addMonthsD((calCurYm||calYear+'-01')+'-15', n), ty=+t.slice(0,4), tm=t.slice(0,7);
@@ -643,14 +647,14 @@
     const idx=Math.round((new Date(tm+'-01T12:00:00')-new Date(calYear+'-01-01T12:00:00'))/86400000);
     s.style.scrollBehavior='auto'; s.scrollLeft=Math.max(0,idx*DAYW); s.style.scrollBehavior=''; calScrollMonth();
   }
-  function filterLbl(){                                          // etiqueta del filtro activo (footer)
-    if(calActive==='todo') return '<span class="ph">Todo el período</span>';
-    if(calActive==='6m') return '<b>Últimos 6 meses</b>';
-    if(calActive==='12m') return '<b>Últimos 12 meses</b>';
-    if(calActive && calActive.indexOf('year:')===0) return '<b>Año '+calActive.slice(5)+'</b>';
-    if(calActive && calActive.indexOf('month:')===0){ const ym=calActive.slice(6); return '<b>'+MESLARGO[+ym.slice(5,7)-1]+' '+ym.slice(0,4)+'</b>'; }
-    if(calActive==='range' && selStart) return '<b>'+fFecha(selStart)+'</b>'+(selEnd?(selEnd!==selStart?' <span class="ph">→</span> <b>'+fFecha(selEnd)+'</b>':''):' <span class="ph">→ elige el fin</span>');
-    return '<span class="ph">Últimos 6 meses</span>';
+  function filterLbl(){                                          // etiqueta del filtro (footer) — SIEMPRE el mismo estilo suave, sin negrita ni cambios
+    if(calActive==='todo') return 'Todo el período';
+    if(calActive==='6m') return 'Últimos 6 meses';
+    if(calActive==='12m') return 'Últimos 12 meses';
+    if(calActive && calActive.indexOf('year:')===0) return 'Año '+calActive.slice(5);
+    if(calActive && calActive.indexOf('month:')===0){ const ym=calActive.slice(6); return MESLARGO[+ym.slice(5,7)-1]+' '+ym.slice(0,4); }
+    if(calActive==='range' && selStart) return fFecha(selStart)+(selEnd?(selEnd!==selStart?' → '+fFecha(selEnd):''):' → elige el fin');
+    return 'Últimos 6 meses';
   }
   function updPeriodLbl(){}                                     // calendario embebido: no hay etiqueta externa
   function stripCells(){
@@ -660,11 +664,11 @@
     let cells='';
     for(let i=0;i<nd;i++){
       const ds=addDays(start,i), d=+ds.slice(8,10);
-      let cls='cal-rd';
-      if(d===1) cls+=' mstart';
+      let cls='cal-rd', tag='';
+      if(d===1){ cls+=' mstart'; tag='<b class="mtag">'+MES[+ds.slice(5,7)-1]+'</b>'; }   // separador + mes (3 letras) debajo
       if(lo&&hi){ if(ds===lo||ds===hi) cls+=' sel'; else if(ds>lo&&ds<hi) cls+=' in'; }
       else if(lo&&ds===lo) cls+=' sel';
-      cells+=`<div class="${cls}" data-d="${ds}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')"><span>${d}</span></div>`;
+      cells+=`<div class="${cls}" data-d="${ds}" onclick="calPick('${ds}')" onmouseenter="calHov('${ds}')"><span>${d}</span>${tag}</div>`;
     }
     return cells;
   }
@@ -718,7 +722,7 @@
     calScrollTo=null;
     const fi = Math.round((new Date(focus+'T12:00:00') - new Date(calYear+'-01-01T12:00:00'))/86400000);
     strip.addEventListener('scroll', function(){ calScrollMonth(); calUpdThumb(); }, {passive:true});
-    strip.addEventListener('wheel', function(e){ const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(d){ e.preventDefault(); strip.style.scrollBehavior='auto'; strip.scrollLeft+=d; strip.style.scrollBehavior=''; } }, {passive:false});   // rueda/trackpad = mover días
+    strip.addEventListener('wheel', function(e){ const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(d){ e.preventDefault(); strip.style.scrollBehavior='auto'; strip.scrollLeft+=d*0.4; strip.style.scrollBehavior=''; } }, {passive:false});   // rueda/trackpad = mover días (suave)
     strip.style.scrollBehavior='auto';
     void strip.scrollWidth;                                    // forzar layout para que el scroll pegue
     strip.scrollLeft = Math.max(0, fi*DAYW - (strip.clientWidth - DAYW)/2);
