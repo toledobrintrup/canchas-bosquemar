@@ -263,43 +263,20 @@
   const fmtM = n => (n<0?'−$':'$') + (Math.abs(n)/1e6).toFixed(1) + 'M';
   const MES  = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
   const USUARIO  = 'Gabriel Toledo';
-  const ULTIMA_ACT = '2026-06-14';
+  const ULTIMA_ACT = '2026-02-26';
 
   const CUENTAS = [
-    { id:'cb-chile', empresa:'CB', banco:'Banco de Chile', saldoIni:2000000 },
-    { id:'cb-bice',  empresa:'CB', banco:'Banco BICE',     saldoIni:6000000 },
-    { id:'qq-chile', empresa:'QQ', banco:'Banco de Chile', saldoIni:1500000 },
+    { id:'cb-chile', empresa:'CB', banco:'Banco de Chile', saldoIni:0 },        // CB pendiente de data real
+    { id:'cb-bice',  empresa:'CB', banco:'Banco BICE',     saldoIni:0 },        // CB pendiente de data real
+    { id:'qq-chile', empresa:'QQ', banco:'Banco de Chile', saldoIni:21593053 }, // saldo al 03-jun-2020 (antes del 1er movimiento)
   ];
   const EMP = { CB:'Canchas Bosquemar', QQ:'Quinque' };
   const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
   const COL_CAT = ['#0fb89c','#ff7a1a','#7a8e8a','#b5a87a','#4a6e68','#d4a017','#9b5de5','#e06c75','#c2bfb8','#5b88a4'];
 
-  const MOV = [
-    {fecha:'2026-01-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios enero',cat:'Arriendo inmueble',com:'',autor:''},
-    {fecha:'2026-01-12',cuenta:'qq-chile',tipo:'egreso', monto:5000000,glosa:'Transferencia a Canchas Bosquemar',cat:'Aporte a CB',com:'Financiamiento obra canchas',autor:'Gabriel Toledo'},
-    {fecha:'2026-02-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios febrero',cat:'Arriendo inmueble',com:'',autor:''},
-    {fecha:'2026-02-16',cuenta:'qq-chile',tipo:'egreso', monto:4000000,glosa:'Transferencia a Canchas Bosquemar',cat:'Aporte a CB',com:'',autor:''},
-    {fecha:'2026-02-26',cuenta:'qq-chile',tipo:'egreso', monto:90000,  glosa:'Comisiones y mantención cuenta',cat:'Gastos bancarios',com:'',autor:''},
-    {fecha:'2026-03-05',cuenta:'qq-chile',tipo:'ingreso',monto:4200000,glosa:'Arriendo colegios marzo',cat:'Arriendo inmueble',com:'',autor:''},
-    {fecha:'2026-03-20',cuenta:'qq-chile',tipo:'egreso', monto:3000000,glosa:'Transferencia a Canchas Bosquemar',cat:'Aporte a CB',com:'',autor:''},
-    {fecha:'2026-04-05',cuenta:'qq-chile',tipo:'ingreso',monto:4300000,glosa:'Arriendo colegios abril',cat:'Arriendo inmueble',com:'',autor:''},
-    {fecha:'2026-05-05',cuenta:'qq-chile',tipo:'ingreso',monto:4300000,glosa:'Arriendo colegios mayo',cat:'Arriendo inmueble',com:'',autor:''},
-    {fecha:'2026-06-05',cuenta:'qq-chile',tipo:'ingreso',monto:4300000,glosa:'Arriendo colegios junio',cat:'Arriendo inmueble',com:'',autor:''},
-    {fecha:'2026-01-13',cuenta:'cb-chile',tipo:'ingreso',monto:5000000,glosa:'Aporte Quinque',cat:'Aporte / financiamiento',com:'',autor:''},
-    {fecha:'2026-01-22',cuenta:'cb-chile',tipo:'egreso', monto:3500000,glosa:'Maestro obra gruesa',cat:'Construcción / obras',com:'Fundaciones canchas 1 y 2',autor:'Gabriel Toledo'},
-    {fecha:'2026-02-17',cuenta:'cb-chile',tipo:'ingreso',monto:4000000,glosa:'Aporte Quinque',cat:'Aporte / financiamiento',com:'',autor:''},
-    {fecha:'2026-02-21',cuenta:'cb-chile',tipo:'egreso', monto:2800000,glosa:'Estructura techo (anticipo)',cat:'Construcción / obras',com:'',autor:''},
-    {fecha:'2026-03-21',cuenta:'cb-chile',tipo:'ingreso',monto:3000000,glosa:'Aporte Quinque',cat:'Aporte / financiamiento',com:'',autor:''},
-    {fecha:'2026-03-25',cuenta:'cb-chile',tipo:'egreso', monto:1900000,glosa:'Mano de obra marzo',cat:'Sueldos y honorarios',com:'',autor:''},
-    {fecha:'2026-04-10',cuenta:'cb-chile',tipo:'egreso', monto:2400000,glosa:'Pasto sintético (anticipo)',cat:'Materiales',com:'Proveedor Santiago',autor:'Gabriel Toledo'},
-    {fecha:'2026-05-12',cuenta:'cb-chile',tipo:'egreso', monto:1500000,glosa:'Cierre perimetral',cat:'Construcción / obras',com:'',autor:''},
-    {fecha:'2026-06-08',cuenta:'cb-chile',tipo:'egreso', monto:900000, glosa:'Iluminación LED',cat:'Materiales',com:'',autor:''},
-    {fecha:'2026-02-03',cuenta:'cb-bice', tipo:'egreso', monto:2100000,glosa:'Compra estructura carpa',cat:'Construcción / obras',com:'Anticipo 40%',autor:'Gabriel Toledo'},
-    {fecha:'2026-03-15',cuenta:'cb-bice', tipo:'egreso', monto:800000, glosa:'Materiales varios ferretería',cat:'Materiales',com:'',autor:''},
-    {fecha:'2026-04-18',cuenta:'cb-bice', tipo:'egreso', monto:650000, glosa:'Electricidad obra',cat:'Servicios básicos',com:'',autor:''},
-    {fecha:'2026-05-20',cuenta:'cb-bice', tipo:'egreso', monto:1100000,glosa:'Anticipo camarines',cat:'Construcción / obras',com:'',autor:''},
-  ];
-  MOV.forEach((m,i)=>m._i=i);
+  // Movimientos reales de QQ (976, 2020–2026) se cargan desde data/qq-movimientos.json en initLoader.
+  // CB queda vacío hasta cargar su data real.
+  const MOV = [];
 
   /* ===== ESTADO ===== */
   let scope = 'ALL';   // 'ALL' | 'CB' | 'QQ'
@@ -412,7 +389,7 @@
     const mes = periodo(), ml = MES[+mes.slice(5,7)-1];
     const saldo = saldoScope('ALL');
     const cbTot = saldoScope('CB'), qqTot = saldoScope('QQ');
-    const cbChile = saldoScope('cb-chile'), cbBice = saldoScope('cb-bice');
+    const cbChile = saldoCuenta('cb-chile'), cbBice = saldoCuenta('cb-bice');
     const ing = mesScope('ALL',mes,'ingreso'), egr = mesScope('ALL',mes,'egreso'), neto = ing - egr;
     document.getElementById('totales').innerHTML = `
       <div class="hero">
@@ -707,7 +684,7 @@
     { badge:'OK',   badge_cls:'',    txt:'BANCO BICE · CUENTA CB' },
     { badge:'OK',   badge_cls:'',    txt:'BANCO DE CHILE · CUENTA QQ' },
     { badge:'RUN',  badge_cls:'run', txt:'CALCULANDO SALDOS Y FLUJOS...' },
-    { badge:'OK',   badge_cls:'',    txt:'23 MOVIMIENTOS · ENE–JUN 2026' },
+    { badge:'OK',   badge_cls:'',    txt:'976 MOVIMIENTOS · QUINQUE 2020–2026' },
     { badge:'LIVE', badge_cls:'live',txt:'SISTEMA CONECTADO' },
   ];
   (function initLoader(){
@@ -717,7 +694,11 @@
     function addLine() {
       if(i >= LD_MSGS.length) {
         barEl.style.width = '100%';
-        setTimeout(()=>{ document.getElementById('loader').classList.add('gone'); render(); }, 360);
+        fetch('data/qq-movimientos.json')
+          .then(r=>r.json())
+          .then(data=>{ data.forEach(m=>MOV.push(m)); MOV.forEach((mm,ix)=>mm._i=ix); })
+          .catch(e=>console.error('No se pudo cargar movimientos QQ:', e))
+          .finally(()=>setTimeout(()=>{ document.getElementById('loader').classList.add('gone'); render(); }, 360));
         return;
       }
       const m = LD_MSGS[i++];

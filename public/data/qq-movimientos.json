@@ -1,0 +1,9762 @@
+[
+{
+"fecha": "2020-06-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 50000000.0,
+"glosa": "Aporte socios",
+"cat": "Aporte socios",
+"com": "Fondos de Mario pre-2021 para Socovesa",
+"autor": ""
+},
+{
+"fecha": "2020-06-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1575640.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-06-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-06-04",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 66000000.0,
+"glosa": "Aporte socios",
+"cat": "Aporte socios",
+"com": "Fondos de Mario pre-2021 para Socovesa",
+"autor": ""
+},
+{
+"fecha": "2020-06-04",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 10000000.0,
+"glosa": "Aporte socios",
+"cat": "Aporte socios",
+"com": "Fondos de Mario pre-2021 para Socovesa",
+"autor": ""
+},
+{
+"fecha": "2020-06-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 140026781.0,
+"glosa": "Cuota crédito",
+"cat": "Créditos",
+"com": "asignar por fecha",
+"autor": ""
+},
+{
+"fecha": "2020-06-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 250931.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-06-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 927327.0,
+"glosa": "Ventanas",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1139688.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 60000000.0,
+"glosa": "Abono de créditos",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Empresa de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 250688.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-07-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-07-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-07-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-07-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Familiar de Mario",
+"autor": ""
+},
+{
+"fecha": "2020-07-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-07-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1123046.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-07-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-07-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-08-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 250437.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-08-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 480000.0,
+"glosa": "Servicios: Ing. sanitario",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-08-31",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3502.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-08-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-08-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-08-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-08-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1128237.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 250671.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 31953.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-23",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 77491444.0,
+"glosa": "Abono de créditos",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 31953.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-09-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 122111.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-10-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 126.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-10-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 250922.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-10-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1728075.0,
+"glosa": "Mano de obra: Sanitarios",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-10-13",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-10-13",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-10-13",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-10-13",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1150076.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-10-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 91000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-10-20",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 35000000.0,
+"glosa": "Aporte socios",
+"cat": "Aporte socios",
+"com": "Fondos de Mario pre-2021 para Socovesa",
+"autor": ""
+},
+{
+"fecha": "2020-11-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-11-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-11-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1247520.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-11-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-11-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2384744.0,
+"glosa": "Mano de obra: Sanitarios",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-11-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 252436.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-11-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1114058.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-04",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-04",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-04",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1342339.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-04",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 254203.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4070990.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2195335.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1357125.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1357125.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2020-12-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 56618060.0,
+"glosa": "Pago Socovesa (cheque)",
+"cat": "Deuda inmueble",
+"com": "Pago inmueble vía cheque",
+"autor": ""
+},
+{
+"fecha": "2021-01-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 253957.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 800000.0,
+"glosa": "Servicios: Arquitecto",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3996948.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1375027.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1375027.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-02-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1155000.0,
+"glosa": "Servicios: Arquitecto",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-02-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 254686.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-02-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-02-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 43606905.0,
+"glosa": "Pago Socovesa (cheque)",
+"cat": "Deuda inmueble",
+"com": "Pago inmueble vía cheque",
+"autor": ""
+},
+{
+"fecha": "2021-02-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 150735.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-03-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 256430.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 360000.0,
+"glosa": "Servicios: Arquitecto",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-03-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-03-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 150085.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-03-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 729000.0,
+"glosa": "Servicios: Arquitecto",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-03-31",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2363335.0,
+"glosa": "Servicios: Ing. calculista",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-04-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 250339.0,
+"glosa": "Regularización seguro",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 256990.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-04-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-04-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 401829.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-04-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 79366.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1601339.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1625090.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1646513.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-05-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-06-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 259033.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-06-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-07-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 259818.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-07-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-08-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 260104.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-08-10",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-08-10",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1745454.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-08-10",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-08-10",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-08-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1206748.0,
+"glosa": "Servicios: Calicata terreno",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-08-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3504.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1840418.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1840418.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 262117.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-09-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 79143601.0,
+"glosa": "Cuota crédito",
+"cat": "Créditos",
+"com": "asignar por fecha",
+"autor": ""
+},
+{
+"fecha": "2021-09-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 263198.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1206747.0,
+"glosa": "Servicios: Calicata terreno",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-10-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 199999040.0,
+"glosa": "Abono de créditos",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 266290.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 2153276.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-11-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 2309066.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2543599.0,
+"glosa": "Paneles SIP",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 269855.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2076550.0,
+"glosa": "Movimiento de tierra / maquinaria",
+"cat": "Movimiento de tierra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-14",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-14",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-14",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-24",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 758191.0,
+"glosa": "Servicios: Ing. calculista",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-24",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-24",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-24",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2021-12-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1090114.0,
+"glosa": "Paneles SIP",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 43606905.0,
+"glosa": "Pago Socovesa (cheque)",
+"cat": "Deuda inmueble",
+"com": "Pago inmueble vía cheque",
+"autor": ""
+},
+{
+"fecha": "2022-01-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 279561.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1009120.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 271274.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Corp. Educacional",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Corp. Educacional",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Corp. Educacional",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Préstamo a Corp. Educacional",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3181770.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 98522.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-20",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 204038635.0,
+"glosa": "Abono de créditos",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-01-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 204038635.0,
+"glosa": "Cuota crédito",
+"cat": "Créditos",
+"com": "asignar por fecha",
+"autor": ""
+},
+{
+"fecha": "2022-02-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 273304.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2034045.0,
+"glosa": "Servicios: Ing. calculista",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3710599.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 400288.0,
+"glosa": "Devolución materiales obras",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 267750.0,
+"glosa": "Movimiento de tierra / maquinaria",
+"cat": "Movimiento de tierra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 840353.0,
+"glosa": "Devolución materiales obras",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-02-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-03-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 276537.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-03-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2611024.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-03-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-03-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1512490.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-03-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4760000.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-03-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-03-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 314855.0,
+"glosa": "Servicios: Abogados",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-03-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 355983.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-03-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-04-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-04-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 2851211.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-04-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 367549.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-04-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-04-07",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 277458.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-04-18",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-04-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-04-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 85665.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 3457722.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1532125.0,
+"glosa": "Movimiento de tierra / maquinaria",
+"cat": "Movimiento de tierra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 380800.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 400000.0,
+"glosa": "Devolución materiales obras",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4838082.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 72028.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-24",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 223125.0,
+"glosa": "Movimiento de tierra / maquinaria",
+"cat": "Movimiento de tierra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 813618.0,
+"glosa": "Servicios: Ing. calculista",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 10000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 3716039.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-05-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-06-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 823729.0,
+"glosa": "Servicios: Arquitecto",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-06-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-06-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-06-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 286587.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-06-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-06-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 552825.0,
+"glosa": "Mano de obra: Electricista",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-06-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 261805.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-06-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4500000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 3991840.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 290041.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 34800.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 77175.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 99751.0,
+"glosa": "Mano de obra: Maestro",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4170423.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-07-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3957646.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1166176.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 292683.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 134324.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-22",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 938582.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 938582.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4369963.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 307125.0,
+"glosa": "Mano de obra: Electricista",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Mano de obra: Pabellón nuevo",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Mano de obra: Pabellón nuevo",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 843680.0,
+"glosa": "Hormigón",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3507.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-31",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2000000.0,
+"glosa": "Ventanas",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-31",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 843560.0,
+"glosa": "Hormigón",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4422157.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-08-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 619.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1364.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2070928.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 843560.0,
+"glosa": "Hormigón",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 500000.0,
+"glosa": "Mano de obra: Carpintero",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 296733.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 58800.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-09-21",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 844525.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 844525.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4687689.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 557.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4286.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 300602.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3910085.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-21",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4831918.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1931370.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-10-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Ventanas",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-11-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 557.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-11-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 860.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-11-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 303045.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-11-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4760000.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-11-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 172725.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-11-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-11-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-11-23",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-11-23",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-05",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4988614.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-05",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-05",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-05",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1237275.0,
+"glosa": "Servicios: Revisora arquitectura",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 304648.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3962091.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2022-12-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2062271.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 572917.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 307694.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5314269.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 520625.0,
+"glosa": "Materiales",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 500000.0,
+"glosa": "Mano de obra: Mueblista",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2139923.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-20",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 2500000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-20",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-01-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 3145182.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 308588.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 647420.0,
+"glosa": "Pisos/alfombras",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 767254.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2468690.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-02-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-03-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 310998.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-03-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-03-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-05",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-05",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-05",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 310889.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 96054.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-04-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 927363.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-05-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2000000.0,
+"glosa": "Materiales ferretería (Weitzler)",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-05-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-05-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-05-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-05-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-05-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-05-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1067020.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-05-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-06-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 315106.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-06-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-06-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1111644.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1089480.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-05",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 10000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 315431.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-07-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 314841.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-08-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-08-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-08-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-08-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-08-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1079159.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-08-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-08-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3501.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-09-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 316039.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-09-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-09-15",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-09-15",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-09-15",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-09-15",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-09-15",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1164270.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-09-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-10-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 316467.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-10-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-10-23",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 318539.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-21",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9382793.0,
+"glosa": "Crédito ampliación pabellón nuevo",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-21",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 861039.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 861039.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1549280.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1381329.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1381329.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 3000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-11-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2348.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 568.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 320029.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9387203.0,
+"glosa": "Cuota crédito",
+"cat": "Créditos",
+"com": "asignar por fecha",
+"autor": ""
+},
+{
+"fecha": "2023-12-22",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2023-12-22",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 2000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 322052.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-15",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 770649.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 212058.0,
+"glosa": "Materiales construcción",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-16",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 212058.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9506148.0,
+"glosa": "Cuota crédito",
+"cat": "Créditos",
+"com": "asignar por fecha",
+"autor": ""
+},
+{
+"fecha": "2024-01-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 982707.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1509684.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1468460.0,
+"glosa": "Materiales eléctricos",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2150000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-01-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 60000000.0,
+"glosa": "Abono de créditos",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4111.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 635.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1897180.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2006720.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 922100.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2500000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 320566.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2500000.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Mano de obra: Fierros (multicanchas)",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3550000.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-02-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1856500.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 392700.0,
+"glosa": "Movimiento de tierra / maquinaria",
+"cat": "Movimiento de tierra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 480000.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 75000.0,
+"glosa": "Devolución materiales obras",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 307460.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 552793.0,
+"glosa": "Devolución materiales obras",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 37560.0,
+"glosa": "Mano de obra: Fierros (multicanchas)",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 322680.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 261800.0,
+"glosa": "Mano de obra: Mano de obra",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3700000.0,
+"glosa": "Mano de obra: Fierros (multicanchas)",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1706000.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-18",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 273700.0,
+"glosa": "Mano de obra: Mano de obra",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-18",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2890570.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-18",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 2100000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 119000.0,
+"glosa": "Mano de obra: Mano de obra",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 247401.0,
+"glosa": "Mano de obra: Maestro",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-03-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Mano de obra: Fierros (multicanchas)",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 324631.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 273700.0,
+"glosa": "Mano de obra: Mano de obra",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 83410.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 251790.0,
+"glosa": "Mano de obra: Fierros (multicanchas)",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3000000.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 379060.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 297091.0,
+"glosa": "Devolución materiales obras",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 500000.0,
+"glosa": "Devolución materiales obras",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1021050.0,
+"glosa": "Materiales ferretería",
+"cat": "Materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 63191.0,
+"glosa": "Devolución materiales obras",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 100095.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 751.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 751.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3023900.0,
+"glosa": "Mano de obra: Fierros (multicanchas)",
+"cat": "Mano de obra",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-04-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 10000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3379505.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-15",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 773773.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 773773.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 79710.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 709484.0,
+"glosa": "Devolución compras/materiales",
+"cat": "Devolución materiales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-27",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 414000.0,
+"glosa": "Servicios: Ing. calculista",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-05-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-06-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3495.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-06-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 511.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-06-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 327655.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-06-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1545394.0,
+"glosa": "Crédito Covid",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-07-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-07-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-07-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-07-08",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-07-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 328595.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-07-15",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-07-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 328499.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-12",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-12",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-12",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-12",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-27",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3503.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2737480.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-08-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-09-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 330608.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-09-16",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-09-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 331577.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2967750.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-10-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-11-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 75928.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-11-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 332118.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-11-13",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 76041.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-11-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 39977.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3235240.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2832318.0,
+"glosa": "Cuota crédito",
+"cat": "Créditos",
+"com": "asignar por fecha",
+"autor": ""
+},
+{
+"fecha": "2024-12-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 335239.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2024-12-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 578449.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3421650.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 578449.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 3100000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 401.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 382.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 335866.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-10",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 236748.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-31",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 236748.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-31",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2828477.0,
+"glosa": "Cuota crédito",
+"cat": "Créditos",
+"com": "asignar por fecha",
+"autor": ""
+},
+{
+"fecha": "2025-01-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-01-31",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-02-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-02-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 167.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-02-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1921.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-02-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 335347.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-02-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 76874.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-02-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 76873.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-02-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 76648.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-02-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 338947.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3768930.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-03-31",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-04-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-04-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-04-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-04-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-04-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 340315.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-04-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-04-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 105014.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-04-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3137400.0,
+"glosa": "Servicios: Arquitecto (Vallejos)",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 77891.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 78283.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 77598.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-05-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 342667.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-17",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 588300.0,
+"glosa": "Servicios: Abogados",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4235700.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-06-30",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 845210.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 290.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 558.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 845210.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-02",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 78477.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 532074.0,
+"glosa": "Préstamo a Corp. Educacional",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 343285.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-28",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-28",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-07-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1556.0,
+"glosa": "Gastos notariales",
+"cat": "Otros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-01",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 1556.0,
+"glosa": "Gastos notariales",
+"cat": "Otros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 558.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-04",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 290.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 78561.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Nehuentué",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Nehuentué",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Nehuentué",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Nehuentué",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Nehuentué",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2025-08-08",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Nehuentué",
+"autor": ""
+},
+{
+"fecha": "2025-08-11",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 342154.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-11",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 42567.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 78335.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 450000.0,
+"glosa": "Servicios: Topógrafo",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 42567.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-25",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-08-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3506.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 28.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 198.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Nehuentué",
+"autor": ""
+},
+{
+"fecha": "2025-09-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2025-09-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2025-09-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Nehuentué",
+"autor": ""
+},
+{
+"fecha": "2025-09-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "Empresa de Gabriel",
+"autor": ""
+},
+{
+"fecha": "2025-09-05",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 3000000.0,
+"glosa": "Retiro socio (Mario)",
+"cat": "Retiros socios",
+"com": "Nehuentué",
+"autor": ""
+},
+{
+"fecha": "2025-09-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 345034.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 78948.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1120000.0,
+"glosa": "Servicios: Ing. calculista",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-09-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2520000.0,
+"glosa": "Servicios: Arquitecto (Vallejos)",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-10-02",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2379285.0,
+"glosa": "Servicios: Arquitecto (Vallejos)",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-10-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 345078.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-10-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 79012.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-10-20",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 403504.0,
+"glosa": "Préstamo a Corp. Educacional",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-10-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 79226.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-06",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-07",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 346414.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-11-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 300000000.0,
+"glosa": "Abono de créditos",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-01",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-09",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-09",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 346447.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9532369.0,
+"glosa": "Crédito construcción Canchas Bosquemar",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824222.0,
+"glosa": "Crédito construcción multicanchas",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2025-12-30",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 79356.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 595170.0,
+"glosa": "Mano de obra: sanitarios",
+"cat": "Mano de obra",
+"com": "Anticipo, no ejecutó",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4620725.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-06",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-12",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 347386.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1710000.0,
+"glosa": "Aporte",
+"cat": "Aportes",
+"com": "Cosa del socio",
+"autor": ""
+},
+{
+"fecha": "2026-01-14",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 39801888.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "La Capitanía",
+"autor": ""
+},
+{
+"fecha": "2026-01-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 390935.0,
+"glosa": "Impuestos SII",
+"cat": "Impuestos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-19",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 79494.0,
+"glosa": "Servicios: Contador",
+"cat": "Servicios profesionales",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-22",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 260000000.0,
+"glosa": "Traspaso a inversión / cuenta propia",
+"cat": "Tesorería",
+"com": "Retirado con vale vista $170.662.660 a La Capitanía (CB); resto similar",
+"autor": ""
+},
+{
+"fecha": "2026-01-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9532369.0,
+"glosa": "Crédito construcción Canchas Bosquemar",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-26",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 428384.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 1000000.0,
+"glosa": "Préstamo a Canchas Bosquemar",
+"cat": "Préstamos otorgados",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 428384.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 2824224.0,
+"glosa": "Cuota crédito",
+"cat": "Créditos",
+"com": "asignar por fecha",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 5000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 426.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 283.0,
+"glosa": "Línea de crédito",
+"cat": "Financiamiento",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 5000000.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4000000.0,
+"glosa": "Retiro socio (Gabriel)",
+"cat": "Retiros socios",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-03",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 4987713.0,
+"glosa": "Pago deuda inmueble",
+"cat": "Deuda inmueble",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-03",
+"cuenta": "qq-chile",
+"tipo": "ingreso",
+"monto": 4000000.0,
+"glosa": "Arriendo colegio",
+"cat": "Ingreso arriendo",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-10",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 346807.0,
+"glosa": "Seguro incendio inmueble",
+"cat": "Seguros",
+"com": "",
+"autor": ""
+},
+{
+"fecha": "2026-02-26",
+"cuenta": "qq-chile",
+"tipo": "egreso",
+"monto": 9532369.0,
+"glosa": "Crédito construcción Canchas Bosquemar",
+"cat": "Créditos",
+"com": "",
+"autor": ""
+}
+]
