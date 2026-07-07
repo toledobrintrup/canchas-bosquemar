@@ -241,7 +241,7 @@
 </style>
 </head>
 <body>
-<div class="cb-ver">V2</div>
+<div class="cb-ver">V3</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
@@ -758,20 +758,13 @@
   (function calDragInit(){                                      // arrastrar para deslizar el slider
     let down=false, sx=0, ssl=0, strip=null;
     document.addEventListener('pointerdown', e=>{ const s=e.target.closest&&e.target.closest('#calStrip'); if(!s)return; strip=s; down=true; sx=e.clientX; ssl=s.scrollLeft; window.__calDrag=false; s.classList.add('grabbing'); });
-    document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>8){ window.__calDrag=true; calThumbCenter=false; } strip.scrollLeft=ssl+dx*0.5; });   // arrastre invertido + 50% más lento
+    document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>8){ window.__calDrag=true; calThumbCenter=false; } strip.scrollLeft=ssl-dx; });   // arrastre de días natural (sigue al cursor)
     document.addEventListener('pointerup',   ()=>{ if(!down)return; down=false; if(strip)strip.classList.remove('grabbing'); strip=null; setTimeout(()=>{ window.__calDrag=false; },40); });
   })();
-  (function calTrackInit(){                                     // clic/arrastre en el slider moderno mueve los días
-    let drag=false;
-    function toScroll(cx){
-      const strip=document.getElementById('calStrip'), track=document.getElementById('calTrack'); if(!strip||!track)return;
-      calThumbCenter=false;
-      const r=track.getBoundingClientRect(), maxS=strip.scrollWidth-strip.clientWidth;
-      const p=Math.max(0,Math.min(1,(cx-r.left)/r.width));
-      strip.style.scrollBehavior='auto'; strip.scrollLeft=p*maxS; strip.style.scrollBehavior='';
-    }
-    document.addEventListener('pointerdown', e=>{ if(!(e.target.closest&&e.target.closest('#calTrack')))return; drag=true; toScroll(e.clientX); e.preventDefault(); });
-    document.addEventListener('pointermove', e=>{ if(drag) toScroll(e.clientX); });
+  (function calTrackInit(){                                     // arrastrar el slider de abajo mueve los días (relativo, suave, SIGUE al cursor)
+    let drag=false, sx=0, ssl=0; const F=4;                     // px de scroll por px de arrastre (menor = más lento)
+    document.addEventListener('pointerdown', e=>{ if(!(e.target.closest&&e.target.closest('#calTrack')))return; const s=document.getElementById('calStrip'); if(!s)return; drag=true; sx=e.clientX; ssl=s.scrollLeft; calThumbCenter=false; e.preventDefault(); });
+    document.addEventListener('pointermove', e=>{ if(!drag)return; const s=document.getElementById('calStrip'); if(!s)return; s.style.scrollBehavior='auto'; s.scrollLeft=ssl-(e.clientX-sx)*F; s.style.scrollBehavior=''; });
     document.addEventListener('pointerup',   ()=>{ drag=false; });
   })();
 
