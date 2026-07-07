@@ -729,7 +729,7 @@
     if(calScrollTo && +calScrollTo.slice(0,4)===calYear){ focus=calScrollTo; }
     else if(selEnd===t && +t.slice(0,4)===calYear){ focus=t; atRight=true; }         // rango que termina hoy (última semana) → mostrar hasta hoy
     else if(selStart && +selStart.slice(0,4)===calYear){ focus=selStart; }
-    else if(+t.slice(0,4)===calYear){ focus=t; atRight=true; }                       // natural: hoy como ÚLTIMO día visible
+    else if(+t.slice(0,4)===calYear){ focus=t; }                                     // natural: hoy CENTRADO (simetría: 3 días antes / 3 después)
     else focus=(calYear===+dataMax().slice(0,4)?dataMax():calYear+'-01-01');
     calScrollTo=null;
     const fi = Math.round((new Date(focus+'T12:00:00') - new Date(calYear+'-01-01T12:00:00'))/86400000);
