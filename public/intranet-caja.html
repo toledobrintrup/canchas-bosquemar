@@ -241,7 +241,7 @@
 </style>
 </head>
 <body>
-<div class="cb-ver">V1</div>
+<div class="cb-ver">V2</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
@@ -758,7 +758,7 @@
   (function calDragInit(){                                      // arrastrar para deslizar el slider
     let down=false, sx=0, ssl=0, strip=null;
     document.addEventListener('pointerdown', e=>{ const s=e.target.closest&&e.target.closest('#calStrip'); if(!s)return; strip=s; down=true; sx=e.clientX; ssl=s.scrollLeft; window.__calDrag=false; s.classList.add('grabbing'); });
-    document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>8){ window.__calDrag=true; calThumbCenter=false; } strip.scrollLeft=ssl-dx; });
+    document.addEventListener('pointermove', e=>{ if(!down||!strip)return; const dx=e.clientX-sx; if(Math.abs(dx)>8){ window.__calDrag=true; calThumbCenter=false; } strip.scrollLeft=ssl+dx*0.5; });   // arrastre invertido + 50% más lento
     document.addEventListener('pointerup',   ()=>{ if(!down)return; down=false; if(strip)strip.classList.remove('grabbing'); strip=null; setTimeout(()=>{ window.__calDrag=false; },40); });
   })();
   (function calTrackInit(){                                     // clic/arrastre en el slider moderno mueve los días
