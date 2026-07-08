@@ -80,8 +80,10 @@ function cbBuildUser() {
   if (!box) return;
   var u = cbCurrentUser();
   if (!u) return;
-  var av = u.photo
-    ? '<span class="av"><img src="' + u.photo + '" alt=""></span>'
+  var rec = CB_USERS.find(function (x) { return x.user === u.user; });   // foto actual de CB_USERS (por si la sesión se guardó sin foto)
+  var photo = (rec && rec.photo) || u.photo || '';
+  var av = photo
+    ? '<span class="av"><img src="' + photo + '" alt=""></span>'
     : '<span class="av">' + cbInitials(u.name) + '</span>';
   var nom = u.name.split(/\s+/).slice(0, 2).join(' ');
   box.innerHTML = av + '<span class="uname">' + nom + '</span>' +
