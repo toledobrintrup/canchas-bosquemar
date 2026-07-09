@@ -10948,5 +10948,215 @@
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
+},
+{
+"fecha": "2026-04-08",
+"cuenta": "cb-chile",
+"tipo": "ingreso",
+"monto": 105000000.0,
+"glosa": "Aporte de Quinque",
+"cat": "Financiamiento",
+"com": "Financiamiento de Quinque para la obra",
+"autor": ""
+},
+{
+"fecha": "2026-04-14",
+"cuenta": "cb-chile",
+"tipo": "ingreso",
+"monto": 171000000.0,
+"glosa": "Aporte de Quinque",
+"cat": "Financiamiento",
+"com": "Financiamiento de Quinque para la obra",
+"autor": ""
+},
+{
+"fecha": "2026-04-15",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 170662660.0,
+"glosa": "Pago a Socovesa (terreno)",
+"cat": "Deuda inmueble",
+"com": "Pago del terreno a Socovesa (vale vista)",
+"autor": ""
+},
+{
+"fecha": "2026-04-17",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 129000.0,
+"glosa": "Notario",
+"cat": "Servicios profesionales",
+"com": "Notario",
+"autor": ""
+},
+{
+"fecha": "2026-04-17",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 6859475.0,
+"glosa": "Notario compra terreno",
+"cat": "Servicios profesionales",
+"com": "Notario de la compra de los terrenos",
+"autor": ""
+},
+{
+"fecha": "2026-04-20",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 97799457.0,
+"glosa": "Importación galpones",
+"cat": "Importación",
+"com": "Importación (galpones desde China)",
+"autor": ""
+},
+{
+"fecha": "2026-05-11",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 3390157.0,
+"glosa": "Abogado",
+"cat": "Servicios profesionales",
+"com": "Abogada",
+"autor": ""
+},
+{
+"fecha": "2026-05-11",
+"cuenta": "cb-chile",
+"tipo": "ingreso",
+"monto": 3390157.0,
+"glosa": "Aporte de Quinque",
+"cat": "Financiamiento",
+"com": "Financiamiento de Quinque para la obra",
+"autor": ""
+},
+{
+"fecha": "2026-06-08",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 730648.0,
+"glosa": "Contador",
+"cat": "Servicios profesionales",
+"com": "Contador",
+"autor": ""
+},
+{
+"fecha": "2026-06-08",
+"cuenta": "cb-chile",
+"tipo": "ingreso",
+"monto": 740000.0,
+"glosa": "Aporte de Quinque",
+"cat": "Financiamiento",
+"com": "Financiamiento de Quinque para la obra",
+"autor": ""
+},
+{
+"fecha": "2026-06-10",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 209230.0,
+"glosa": "Servicio técnico",
+"cat": "Otros",
+"com": "Servicio técnico (por confirmar)",
+"autor": ""
+},
+{
+"fecha": "2026-06-10",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 492280.0,
+"glosa": "Ferretería",
+"cat": "Materiales",
+"com": "Materiales / ferretería",
+"autor": ""
+},
+{
+"fecha": "2026-06-10",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 1500000.0,
+"glosa": "Traslado de escombros",
+"cat": "Movimiento de tierra",
+"com": "Traslado de escombros",
+"autor": ""
+},
+{
+"fecha": "2026-06-10",
+"cuenta": "cb-chile",
+"tipo": "ingreso",
+"monto": 2300000.0,
+"glosa": "Aporte de Quinque",
+"cat": "Financiamiento",
+"com": "Financiamiento de Quinque para la obra",
+"autor": ""
+},
+{
+"fecha": "2026-06-15",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 81532.0,
+"glosa": "Contador",
+"cat": "Servicios profesionales",
+"com": "Contador",
+"autor": ""
+},
+{
+"fecha": "2026-06-23",
+"cuenta": "cb-chile",
+"tipo": "ingreso",
+"monto": 32887498.0,
+"glosa": "Aporte de Quinque",
+"cat": "Financiamiento",
+"com": "Financiamiento de Quinque para la obra",
+"autor": ""
+},
+{
+"fecha": "2026-06-24",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 31351358.0,
+"glosa": "Agente de aduana",
+"cat": "Importación",
+"com": "Agente de aduana · galpones importados de China",
+"autor": ""
+},
+{
+"fecha": "2026-06-24",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 594400.0,
+"glosa": "Traslado de escombros",
+"cat": "Movimiento de tierra",
+"com": "Traslado de escombros",
+"autor": ""
+},
+{
+"fecha": "2026-06-24",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 300000.0,
+"glosa": "Sebastián Aillapán",
+"cat": "Mano de obra",
+"com": "Por confirmar (¿mano de obra?)",
+"autor": ""
+},
+{
+"fecha": "2026-06-26",
+"cuenta": "cb-chile",
+"tipo": "ingreso",
+"monto": 800000.0,
+"glosa": "Aporte de Quinque",
+"cat": "Financiamiento",
+"com": "Financiamiento de Quinque para la obra",
+"autor": ""
+},
+{
+"fecha": "2026-06-30",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 1950000.0,
+"glosa": "Arriendo maquinaria",
+"cat": "Movimiento de tierra",
+"com": "Arriendo de maquinaria para mover tierra",
+"autor": ""
 }
 ]
