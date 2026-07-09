@@ -88,6 +88,11 @@
   .qb-info .qg{font-size:.81rem;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .qb-info .qd{font-size:.67rem;color:var(--muted);margin-top:2px}
   .qb-row .qm{font-family:var(--mono);font-size:.85rem;font-weight:600;font-variant-numeric:tabular-nums;flex-shrink:0}
+  .qprep{color:var(--faint);margin-right:4px}
+  .qsep{color:var(--faint);margin:0 4px}
+  .qb-feat-item .qdest{font-size:.76rem;color:var(--muted);margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .qb-feat-item .qdest .qname{color:var(--ink);opacity:.82}
+  .qb-info .qd .qname{color:var(--ink);opacity:.75}
 
   /* ---- CHARTS 3-col ---- */
   .charts3{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
@@ -242,7 +247,7 @@
 </style>
 </head>
 <body>
-<div class="cb-ver">V9</div>
+<div class="cb-ver">V10</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
@@ -535,11 +540,17 @@
     const cls = m => m.tipo==='ingreso'?'pos':'neg';
     const bar = m => m.tipo==='ingreso'?'var(--accent)':'var(--red)';
     const tag = m => `<span class="minitag">${logoEmp(empOf(m.cuenta))} ${bancoDe(m.cuenta)}</span>`;
+    const prep = m => m.tipo==='ingreso'?'de':'a';                     // ingreso = viene DE; egreso = va A
+    const destFeat = m => m.dest ? `<div class="qdest" title="${prep(m)} ${m.dest}"><span class="qprep">${prep(m)}</span><span class="qname">${m.dest}</span></div>` : '';
+    const feedSub  = m => m.dest
+      ? `<span class="qprep">${prep(m)}</span><span class="qname">${m.dest}</span><span class="qsep">·</span><span style="font-family:var(--mono)">${d(m)}</span>`
+      : `${tag(m)} <span style="font-family:var(--mono)">${d(m)}</span>`;
 
     const feat = last.slice(0,2).map(m=>`
       <div class="qb-feat-item">
         <div class="qd">${tag(m)}<span style="font-size:.7rem;color:var(--muted);font-family:var(--mono)">${d(m)}</span></div>
         <div class="qg" title="${m.glosa}">${m.glosa}</div>
+        ${destFeat(m)}
         <div class="qm ${cls(m)}">${amt(m)}</div>
       </div>`).join('');
 
@@ -548,7 +559,7 @@
         <div class="qb-bar" style="background:${bar(m)}"></div>
         <div class="qb-info">
           <div class="qg" title="${m.glosa}">${m.glosa}</div>
-          <div class="qd">${tag(m)} <span style="font-family:var(--mono)">${d(m)}</span></div>
+          <div class="qd">${feedSub(m)}</div>
         </div>
         <span class="qm ${cls(m)}">${amt(m)}</span>
       </div>`).join('');

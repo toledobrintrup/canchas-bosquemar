@@ -10957,6 +10957,7 @@
 "tipo": "ingreso",
 "monto": 105000000.0,
 "glosa": "Aporte de Quinque",
+"dest": "Inversiones Quinque",
 "cat": "Financiamiento",
 "com": "Financiamiento de Quinque para la obra",
 "autor": ""
@@ -10967,6 +10968,7 @@
 "tipo": "ingreso",
 "monto": 171000000.0,
 "glosa": "Aporte de Quinque",
+"dest": "Inversiones Quinque",
 "cat": "Financiamiento",
 "com": "Financiamiento de Quinque para la obra",
 "autor": ""
@@ -10977,6 +10979,7 @@
 "tipo": "egreso",
 "monto": 170662660.0,
 "glosa": "Pago a Socovesa (terreno)",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "Pago del terreno a Socovesa (vale vista)",
 "autor": ""
@@ -10987,6 +10990,7 @@
 "tipo": "egreso",
 "monto": 129000.0,
 "glosa": "Notario",
+"dest": "Notaría Manquehual",
 "cat": "Servicios profesionales",
 "com": "Notario",
 "autor": ""
@@ -10997,6 +11001,7 @@
 "tipo": "egreso",
 "monto": 6859475.0,
 "glosa": "Notario compra terreno",
+"dest": "Francisco Leiva",
 "cat": "Servicios profesionales",
 "com": "Notario de la compra de los terrenos",
 "autor": ""
@@ -11007,6 +11012,7 @@
 "tipo": "egreso",
 "monto": 97799457.0,
 "glosa": "Importación galpones",
+"dest": "Cambios y Comercio Exterior",
 "cat": "Importación",
 "com": "Importación (galpones desde China)",
 "autor": ""
@@ -11017,6 +11023,7 @@
 "tipo": "egreso",
 "monto": 3390157.0,
 "glosa": "Abogado",
+"dest": "M. Gutiérrez",
 "cat": "Servicios profesionales",
 "com": "Abogada",
 "autor": ""
@@ -11027,6 +11034,7 @@
 "tipo": "ingreso",
 "monto": 3390157.0,
 "glosa": "Aporte de Quinque",
+"dest": "Inversiones Quinque",
 "cat": "Financiamiento",
 "com": "Financiamiento de Quinque para la obra",
 "autor": ""
@@ -11037,6 +11045,7 @@
 "tipo": "egreso",
 "monto": 730648.0,
 "glosa": "Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "Contador",
 "autor": ""
@@ -11047,6 +11056,7 @@
 "tipo": "ingreso",
 "monto": 740000.0,
 "glosa": "Aporte de Quinque",
+"dest": "Inversiones Quinque",
 "cat": "Financiamiento",
 "com": "Financiamiento de Quinque para la obra",
 "autor": ""
@@ -11057,6 +11067,7 @@
 "tipo": "egreso",
 "monto": 209230.0,
 "glosa": "Servicio técnico",
+"dest": "Servicio Técnico Momo",
 "cat": "Otros",
 "com": "Servicio técnico (por confirmar)",
 "autor": ""
@@ -11067,6 +11078,7 @@
 "tipo": "egreso",
 "monto": 492280.0,
 "glosa": "Ferretería",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "Materiales / ferretería",
 "autor": ""
@@ -11077,6 +11089,7 @@
 "tipo": "egreso",
 "monto": 1500000.0,
 "glosa": "Traslado de escombros",
+"dest": "César Poffald",
 "cat": "Movimiento de tierra",
 "com": "Traslado de escombros",
 "autor": ""
@@ -11087,6 +11100,7 @@
 "tipo": "ingreso",
 "monto": 2300000.0,
 "glosa": "Aporte de Quinque",
+"dest": "Inversiones Quinque",
 "cat": "Financiamiento",
 "com": "Financiamiento de Quinque para la obra",
 "autor": ""
@@ -11097,6 +11111,7 @@
 "tipo": "egreso",
 "monto": 81532.0,
 "glosa": "Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "Contador",
 "autor": ""
@@ -11107,6 +11122,7 @@
 "tipo": "ingreso",
 "monto": 32887498.0,
 "glosa": "Aporte de Quinque",
+"dest": "Inversiones Quinque",
 "cat": "Financiamiento",
 "com": "Financiamiento de Quinque para la obra",
 "autor": ""
@@ -11117,6 +11133,7 @@
 "tipo": "egreso",
 "monto": 31351358.0,
 "glosa": "Agente de aduana",
+"dest": "Aquiles Pérez",
 "cat": "Importación",
 "com": "Agente de aduana · galpones importados de China",
 "autor": ""
@@ -11127,6 +11144,7 @@
 "tipo": "egreso",
 "monto": 594400.0,
 "glosa": "Traslado de escombros",
+"dest": "César Poffald",
 "cat": "Movimiento de tierra",
 "com": "Traslado de escombros",
 "autor": ""
@@ -11137,6 +11155,7 @@
 "tipo": "egreso",
 "monto": 300000.0,
 "glosa": "Sebastián Aillapán",
+"dest": "",
 "cat": "Mano de obra",
 "com": "Por confirmar (¿mano de obra?)",
 "autor": ""
@@ -11147,6 +11166,7 @@
 "tipo": "ingreso",
 "monto": 800000.0,
 "glosa": "Aporte de Quinque",
+"dest": "Inversiones Quinque",
 "cat": "Financiamiento",
 "com": "Financiamiento de Quinque para la obra",
 "autor": ""
@@ -11157,6 +11177,7 @@
 "tipo": "egreso",
 "monto": 1950000.0,
 "glosa": "Arriendo maquinaria",
+"dest": "Miguel Flores",
 "cat": "Movimiento de tierra",
 "com": "Arriendo de maquinaria para mover tierra",
 "autor": ""
@@ -11167,6 +11188,7 @@
 "tipo": "ingreso",
 "monto": 2992357.0,
 "glosa": "Aporte de Quinque",
+"dest": "Inversiones Quinque",
 "cat": "Financiamiento",
 "com": "Financiamiento de Quinque para la obra",
 "autor": ""
@@ -11177,6 +11199,7 @@
 "tipo": "egreso",
 "monto": 2400000.0,
 "glosa": "Arriendo maquinaria",
+"dest": "Miguel Flores",
 "cat": "Movimiento de tierra",
 "com": "Arriendo de maquinaria para mover tierra (M. Flores)",
 "autor": ""
@@ -11187,6 +11210,7 @@
 "tipo": "egreso",
 "monto": 437657.0,
 "glosa": "Devolución a Gabriel",
+"dest": "Gabriel Toledo Brintrup",
 "cat": "Devolución materiales",
 "com": "Reembolso a Gabriel (por confirmar: reembolso o retiro)",
 "autor": ""
@@ -11197,6 +11221,7 @@
 "tipo": "egreso",
 "monto": 154700.0,
 "glosa": "Traslado de escombros",
+"dest": "César Poffald",
 "cat": "Movimiento de tierra",
 "com": "Traslado de escombros (C. Poffald)",
 "autor": ""
