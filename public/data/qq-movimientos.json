@@ -7,6 +7,7 @@
 "tipo": "ingreso",
 "monto": 50000000.0,
 "glosa": "Aporte socios",
+"dest": "Mario Álvarez",
 "cat": "Aporte socios",
 "com": "Fondos de Mario pre-2021 para Socovesa",
 "autor": ""
@@ -17,6 +18,7 @@
 "tipo": "egreso",
 "monto": 1575640.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -27,6 +29,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -37,6 +40,7 @@
 "tipo": "ingreso",
 "monto": 66000000.0,
 "glosa": "Aporte socios",
+"dest": "Mario Álvarez",
 "cat": "Aporte socios",
 "com": "Fondos de Mario pre-2021 para Socovesa",
 "autor": ""
@@ -47,6 +51,7 @@
 "tipo": "ingreso",
 "monto": 10000000.0,
 "glosa": "Aporte socios",
+"dest": "Mario Álvarez",
 "cat": "Aporte socios",
 "com": "Fondos de Mario pre-2021 para Socovesa",
 "autor": ""
@@ -77,6 +82,7 @@
 "tipo": "egreso",
 "monto": 927327.0,
 "glosa": "Ventanas",
+"dest": "Vat Plass",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -87,6 +93,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -97,6 +104,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -107,6 +115,7 @@
 "tipo": "ingreso",
 "monto": 1139688.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -117,6 +126,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -137,6 +147,7 @@
 "tipo": "egreso",
 "monto": 2000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Empresa de Mario",
 "autor": ""
@@ -157,6 +168,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -167,6 +179,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -177,6 +190,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -187,6 +201,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -197,6 +212,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -207,6 +223,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -217,6 +234,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -227,6 +245,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -237,6 +256,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -247,6 +267,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -257,6 +278,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -267,6 +289,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -277,6 +300,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -287,6 +311,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Familiar de Mario",
 "autor": ""
@@ -297,6 +322,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -307,6 +333,7 @@
 "tipo": "ingreso",
 "monto": 1123046.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -317,6 +344,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -327,6 +355,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -347,6 +376,7 @@
 "tipo": "egreso",
 "monto": 480000.0,
 "glosa": "Servicios: Ing. sanitario",
+"dest": "Miguel Ruiz",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -367,6 +397,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -377,6 +408,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -387,6 +419,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -397,6 +430,7 @@
 "tipo": "ingreso",
 "monto": 1128237.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -517,6 +551,7 @@
 "tipo": "egreso",
 "monto": 122111.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -547,6 +582,7 @@
 "tipo": "egreso",
 "monto": 1728075.0,
 "glosa": "Mano de obra: Sanitarios",
+"dest": "Pablo Vergara",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -557,6 +593,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -567,6 +604,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -577,6 +615,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -587,6 +626,7 @@
 "tipo": "ingreso",
 "monto": 1150076.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -597,6 +637,7 @@
 "tipo": "egreso",
 "monto": 91000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -607,6 +648,7 @@
 "tipo": "ingreso",
 "monto": 35000000.0,
 "glosa": "Aporte socios",
+"dest": "Mario Álvarez",
 "cat": "Aporte socios",
 "com": "Fondos de Mario pre-2021 para Socovesa",
 "autor": ""
@@ -617,6 +659,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -627,6 +670,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -637,6 +681,7 @@
 "tipo": "ingreso",
 "monto": 1247520.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -647,6 +692,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -657,6 +703,7 @@
 "tipo": "egreso",
 "monto": 2384744.0,
 "glosa": "Mano de obra: Sanitarios",
+"dest": "Pablo Vergara",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -677,6 +724,7 @@
 "tipo": "egreso",
 "monto": 1114058.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -687,6 +735,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -697,6 +746,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -707,6 +757,7 @@
 "tipo": "ingreso",
 "monto": 1342339.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -717,6 +768,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -737,6 +789,7 @@
 "tipo": "egreso",
 "monto": 4070990.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -747,6 +800,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -757,6 +811,7 @@
 "tipo": "egreso",
 "monto": 2195335.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -767,6 +822,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -777,6 +833,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -787,6 +844,7 @@
 "tipo": "ingreso",
 "monto": 1357125.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -797,6 +855,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -807,6 +866,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -817,6 +877,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -827,6 +888,7 @@
 "tipo": "ingreso",
 "monto": 1357125.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -837,6 +899,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -847,6 +910,7 @@
 "tipo": "egreso",
 "monto": 56618060.0,
 "glosa": "Pago Socovesa (cheque)",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "Pago inmueble vía cheque",
 "autor": ""
@@ -877,6 +941,7 @@
 "tipo": "egreso",
 "monto": 800000.0,
 "glosa": "Servicios: Arquitecto",
+"dest": "Nelson Barría",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -887,6 +952,7 @@
 "tipo": "egreso",
 "monto": 3996948.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -897,6 +963,7 @@
 "tipo": "ingreso",
 "monto": 1375027.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -907,6 +974,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -917,6 +985,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -927,6 +996,7 @@
 "tipo": "ingreso",
 "monto": 1375027.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -937,6 +1007,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -947,6 +1018,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -957,6 +1029,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -967,6 +1040,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -977,6 +1051,7 @@
 "tipo": "egreso",
 "monto": 1155000.0,
 "glosa": "Servicios: Arquitecto",
+"dest": "Nelson Barría",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -1007,6 +1082,7 @@
 "tipo": "egreso",
 "monto": 43606905.0,
 "glosa": "Pago Socovesa (cheque)",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "Pago inmueble vía cheque",
 "autor": ""
@@ -1017,6 +1093,7 @@
 "tipo": "egreso",
 "monto": 150735.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -1037,6 +1114,7 @@
 "tipo": "egreso",
 "monto": 360000.0,
 "glosa": "Servicios: Arquitecto",
+"dest": "Nelson Barría",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -1057,6 +1135,7 @@
 "tipo": "egreso",
 "monto": 150085.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -1067,6 +1146,7 @@
 "tipo": "egreso",
 "monto": 729000.0,
 "glosa": "Servicios: Arquitecto",
+"dest": "Nelson Barría",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -1077,6 +1157,7 @@
 "tipo": "egreso",
 "monto": 2363335.0,
 "glosa": "Servicios: Ing. calculista",
+"dest": "José Torres",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -1117,6 +1198,7 @@
 "tipo": "egreso",
 "monto": 401829.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -1137,6 +1219,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1147,6 +1230,7 @@
 "tipo": "ingreso",
 "monto": 1601339.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1157,6 +1241,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1167,6 +1252,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1187,6 +1273,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1197,6 +1284,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1207,6 +1295,7 @@
 "tipo": "ingreso",
 "monto": 1625090.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1217,6 +1306,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1227,6 +1317,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1237,6 +1328,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1247,6 +1339,7 @@
 "tipo": "ingreso",
 "monto": 1646513.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1257,6 +1350,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1317,6 +1411,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1327,6 +1422,7 @@
 "tipo": "ingreso",
 "monto": 1745454.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1337,6 +1433,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1347,6 +1444,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1357,6 +1455,7 @@
 "tipo": "egreso",
 "monto": 1206748.0,
 "glosa": "Servicios: Calicata terreno",
+"dest": "Laboratorio Técnico",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -1387,6 +1486,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1397,6 +1497,7 @@
 "tipo": "ingreso",
 "monto": 1840418.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1407,6 +1508,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1417,6 +1519,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1427,6 +1530,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1437,6 +1541,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1447,6 +1552,7 @@
 "tipo": "ingreso",
 "monto": 1840418.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1457,6 +1563,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1507,6 +1614,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1517,6 +1625,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1527,6 +1636,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1537,6 +1647,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1547,6 +1658,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1557,6 +1669,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1567,6 +1680,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1577,6 +1691,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1587,6 +1702,7 @@
 "tipo": "egreso",
 "monto": 1206747.0,
 "glosa": "Servicios: Calicata terreno",
+"dest": "Laboratorio Técnico",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -1627,6 +1743,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1637,6 +1754,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1647,6 +1765,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1657,6 +1776,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1667,6 +1787,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1677,6 +1798,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1687,6 +1809,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1697,6 +1820,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1707,6 +1831,7 @@
 "tipo": "ingreso",
 "monto": 2153276.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1717,6 +1842,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1727,6 +1853,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1747,6 +1874,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1757,6 +1885,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1767,6 +1896,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1777,6 +1907,7 @@
 "tipo": "ingreso",
 "monto": 2309066.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1787,6 +1918,7 @@
 "tipo": "egreso",
 "monto": 2543599.0,
 "glosa": "Paneles SIP",
+"dest": "Poli Sip",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -1797,6 +1929,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1807,6 +1940,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1817,6 +1951,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1827,6 +1962,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1837,6 +1973,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1847,6 +1984,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1857,6 +1995,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1867,6 +2006,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1877,6 +2017,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1907,6 +2048,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1917,6 +2059,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1927,6 +2070,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1947,6 +2091,7 @@
 "tipo": "egreso",
 "monto": 758191.0,
 "glosa": "Servicios: Ing. calculista",
+"dest": "José Torres",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -1957,6 +2102,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1967,6 +2113,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1977,6 +2124,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -1987,6 +2135,7 @@
 "tipo": "egreso",
 "monto": 1090114.0,
 "glosa": "Paneles SIP",
+"dest": "Poli Sip",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -1997,6 +2146,7 @@
 "tipo": "egreso",
 "monto": 43606905.0,
 "glosa": "Pago Socovesa (cheque)",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "Pago inmueble vía cheque",
 "autor": ""
@@ -2007,6 +2157,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2017,6 +2168,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2027,6 +2179,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2037,6 +2190,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2047,6 +2201,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2057,6 +2212,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2097,6 +2253,7 @@
 "tipo": "egreso",
 "monto": 1009120.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -2117,6 +2274,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Corp. Educacional",
+"dest": "Corp. Educacional Futuro",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -2127,6 +2285,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Corp. Educacional",
+"dest": "Corp. Educacional Futuro",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -2137,6 +2296,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Corp. Educacional",
+"dest": "Corp. Educacional Futuro",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -2147,6 +2307,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Corp. Educacional",
+"dest": "Corp. Educacional Futuro",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -2157,6 +2318,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2167,6 +2329,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2177,6 +2340,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2187,6 +2351,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2197,6 +2362,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2207,6 +2373,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2217,6 +2384,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2227,6 +2395,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2237,6 +2406,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2247,6 +2417,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2257,6 +2428,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2267,6 +2439,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2277,6 +2450,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2287,6 +2461,7 @@
 "tipo": "egreso",
 "monto": 3181770.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2297,6 +2472,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2307,6 +2483,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2317,6 +2494,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2327,6 +2505,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2337,6 +2516,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -2357,6 +2537,7 @@
 "tipo": "egreso",
 "monto": 98522.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -2397,6 +2578,7 @@
 "tipo": "egreso",
 "monto": 2034045.0,
 "glosa": "Servicios: Ing. calculista",
+"dest": "José Torres",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -2487,6 +2669,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2497,6 +2680,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2507,6 +2691,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2517,6 +2702,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2537,6 +2723,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2547,6 +2734,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2557,6 +2745,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2567,6 +2756,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2577,6 +2767,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2587,6 +2778,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2597,6 +2789,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2607,6 +2800,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2617,6 +2811,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2627,6 +2822,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2637,6 +2833,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2647,6 +2844,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2657,6 +2855,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2667,6 +2866,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2677,6 +2877,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2687,6 +2888,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2697,6 +2899,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2707,6 +2910,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2717,6 +2921,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2727,6 +2932,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2737,6 +2943,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2747,6 +2954,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2757,6 +2965,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2767,6 +2976,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2777,6 +2987,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2787,6 +2998,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2797,6 +3009,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2807,6 +3020,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2817,6 +3031,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2827,6 +3042,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2837,6 +3053,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2847,6 +3064,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -2887,6 +3105,7 @@
 "tipo": "egreso",
 "monto": 1512490.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -2927,6 +3146,7 @@
 "tipo": "egreso",
 "monto": 355983.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -2947,6 +3167,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2957,6 +3178,7 @@
 "tipo": "ingreso",
 "monto": 2851211.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2967,6 +3189,7 @@
 "tipo": "ingreso",
 "monto": 367549.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2977,6 +3200,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -2987,6 +3211,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3037,6 +3262,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3047,6 +3273,7 @@
 "tipo": "ingreso",
 "monto": 3457722.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3057,6 +3284,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3067,6 +3295,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3087,6 +3316,7 @@
 "tipo": "egreso",
 "monto": 380800.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3097,6 +3327,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3117,6 +3348,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3147,6 +3379,7 @@
 "tipo": "egreso",
 "monto": 72028.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -3177,6 +3410,7 @@
 "tipo": "egreso",
 "monto": 813618.0,
 "glosa": "Servicios: Ing. calculista",
+"dest": "José Torres",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -3187,6 +3421,7 @@
 "tipo": "ingreso",
 "monto": 10000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3197,6 +3432,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3207,6 +3443,7 @@
 "tipo": "ingreso",
 "monto": 3716039.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3217,6 +3454,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3227,6 +3465,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3237,6 +3476,7 @@
 "tipo": "egreso",
 "monto": 823729.0,
 "glosa": "Servicios: Arquitecto",
+"dest": "Nelson Barría",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -3247,6 +3487,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3257,6 +3498,7 @@
 "tipo": "egreso",
 "monto": 3000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3287,6 +3529,7 @@
 "tipo": "egreso",
 "monto": 552825.0,
 "glosa": "Mano de obra: Electricista",
+"dest": "Sebastián Aillapán",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -3297,6 +3540,7 @@
 "tipo": "egreso",
 "monto": 261805.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -3317,6 +3561,7 @@
 "tipo": "egreso",
 "monto": 4500000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3327,6 +3572,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3337,6 +3583,7 @@
 "tipo": "ingreso",
 "monto": 3991840.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3347,6 +3594,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3357,6 +3605,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3397,6 +3646,7 @@
 "tipo": "egreso",
 "monto": 77175.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -3447,6 +3697,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3457,6 +3708,7 @@
 "tipo": "ingreso",
 "monto": 4170423.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3467,6 +3719,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3477,6 +3730,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3537,6 +3791,7 @@
 "tipo": "egreso",
 "monto": 134324.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -3577,6 +3832,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3587,6 +3843,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3597,6 +3854,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3607,6 +3865,7 @@
 "tipo": "ingreso",
 "monto": 4369963.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3617,6 +3876,7 @@
 "tipo": "egreso",
 "monto": 307125.0,
 "glosa": "Mano de obra: Electricista",
+"dest": "Sebastián Aillapán",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -3627,6 +3887,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Mano de obra: Pabellón nuevo",
+"dest": "Juan Esteban Toledo",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -3637,6 +3898,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Mano de obra: Pabellón nuevo",
+"dest": "Juan Esteban Toledo",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -3647,6 +3909,7 @@
 "tipo": "egreso",
 "monto": 843680.0,
 "glosa": "Hormigón",
+"dest": "Melón Hormigones",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3667,6 +3930,7 @@
 "tipo": "egreso",
 "monto": 2000000.0,
 "glosa": "Ventanas",
+"dest": "Vat Plass",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3677,6 +3941,7 @@
 "tipo": "egreso",
 "monto": 843560.0,
 "glosa": "Hormigón",
+"dest": "Melón Hormigones",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3687,6 +3952,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3697,6 +3963,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3707,6 +3974,7 @@
 "tipo": "ingreso",
 "monto": 4422157.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3717,6 +3985,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3777,6 +4046,7 @@
 "tipo": "egreso",
 "monto": 843560.0,
 "glosa": "Hormigón",
+"dest": "Melón Hormigones",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -3787,6 +4057,7 @@
 "tipo": "egreso",
 "monto": 500000.0,
 "glosa": "Mano de obra: Carpintero",
+"dest": "Daniel Ortega",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -3827,6 +4098,7 @@
 "tipo": "egreso",
 "monto": 58800.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -3857,6 +4129,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3867,6 +4140,7 @@
 "tipo": "ingreso",
 "monto": 4687689.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3877,6 +4151,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3887,6 +4162,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3897,6 +4173,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3907,6 +4184,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -3997,6 +4275,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4007,6 +4286,7 @@
 "tipo": "ingreso",
 "monto": 4831918.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4017,6 +4297,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4027,6 +4308,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4037,6 +4319,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4047,6 +4330,7 @@
 "tipo": "egreso",
 "monto": 1931370.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -4057,6 +4341,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Ventanas",
+"dest": "Vat Plass",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -4107,6 +4392,7 @@
 "tipo": "egreso",
 "monto": 172725.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -4137,6 +4423,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4147,6 +4434,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4157,6 +4445,7 @@
 "tipo": "ingreso",
 "monto": 4988614.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4167,6 +4456,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4177,6 +4467,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4187,6 +4478,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4197,6 +4489,7 @@
 "tipo": "egreso",
 "monto": 1237275.0,
 "glosa": "Servicios: Revisora arquitectura",
+"dest": "Cecilia Fonseca",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -4237,6 +4530,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -4277,6 +4571,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4287,6 +4582,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4297,6 +4593,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4307,6 +4604,7 @@
 "tipo": "ingreso",
 "monto": 572917.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4317,6 +4615,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4337,6 +4636,7 @@
 "tipo": "egreso",
 "monto": 5314269.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -4357,6 +4657,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -4367,6 +4668,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -4387,6 +4689,7 @@
 "tipo": "egreso",
 "monto": 500000.0,
 "glosa": "Mano de obra: Mueblista",
+"dest": "Ariel Mondaca",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -4417,6 +4720,7 @@
 "tipo": "ingreso",
 "monto": 2500000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4427,6 +4731,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4447,6 +4752,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4457,6 +4763,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4467,6 +4774,7 @@
 "tipo": "ingreso",
 "monto": 3145182.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4507,6 +4815,7 @@
 "tipo": "egreso",
 "monto": 647420.0,
 "glosa": "Pisos/alfombras",
+"dest": "Alfombras Dupré",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -4517,6 +4826,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4527,6 +4837,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4537,6 +4848,7 @@
 "tipo": "ingreso",
 "monto": 767254.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4547,6 +4859,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4557,6 +4870,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4617,6 +4931,7 @@
 "tipo": "egreso",
 "monto": 2000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -4627,6 +4942,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -4637,6 +4953,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4647,6 +4964,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4657,6 +4975,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4707,6 +5026,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4717,6 +5037,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4727,6 +5048,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4737,6 +5059,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4747,6 +5070,7 @@
 "tipo": "ingreso",
 "monto": 927363.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4757,6 +5081,7 @@
 "tipo": "egreso",
 "monto": 2000000.0,
 "glosa": "Materiales ferretería (Weitzler)",
+"dest": "Weitzler",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -4787,6 +5112,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4797,6 +5123,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4807,6 +5134,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4817,6 +5145,7 @@
 "tipo": "ingreso",
 "monto": 1067020.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4827,6 +5156,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4867,6 +5197,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4877,6 +5208,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4887,6 +5219,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4897,6 +5230,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4907,6 +5241,7 @@
 "tipo": "ingreso",
 "monto": 1111644.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -4917,6 +5252,7 @@
 "tipo": "egreso",
 "monto": 1089480.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -4927,6 +5263,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -4937,6 +5274,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -4947,6 +5285,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -4957,6 +5296,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -4967,6 +5307,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -4977,6 +5318,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -4987,6 +5329,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -4997,6 +5340,7 @@
 "tipo": "ingreso",
 "monto": 10000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5047,6 +5391,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5057,6 +5402,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5067,6 +5413,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5077,6 +5424,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5087,6 +5435,7 @@
 "tipo": "ingreso",
 "monto": 1079159.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5147,6 +5496,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5157,6 +5507,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5167,6 +5518,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5177,6 +5529,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5187,6 +5540,7 @@
 "tipo": "ingreso",
 "monto": 1164270.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5277,6 +5631,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -5287,6 +5642,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -5297,6 +5653,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -5307,6 +5664,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -5327,6 +5685,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -5337,6 +5696,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -5347,6 +5707,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -5357,6 +5718,7 @@
 "tipo": "egreso",
 "monto": 1549280.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -5367,6 +5729,7 @@
 "tipo": "ingreso",
 "monto": 1381329.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5377,6 +5740,7 @@
 "tipo": "ingreso",
 "monto": 1381329.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5387,6 +5751,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5397,6 +5762,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5407,6 +5773,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5417,6 +5784,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5427,6 +5795,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5437,6 +5806,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5447,6 +5817,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5457,6 +5828,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5467,6 +5839,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5477,6 +5850,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5487,6 +5861,7 @@
 "tipo": "ingreso",
 "monto": 3000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5497,6 +5872,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5507,6 +5883,7 @@
 "tipo": "egreso",
 "monto": 3000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -5517,6 +5894,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -5527,6 +5905,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -5537,6 +5916,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -5597,6 +5977,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5607,6 +5988,7 @@
 "tipo": "ingreso",
 "monto": 2000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5647,6 +6029,7 @@
 "tipo": "egreso",
 "monto": 212058.0,
 "glosa": "Materiales construcción",
+"dest": "Preffer",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -5687,6 +6070,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5697,6 +6081,7 @@
 "tipo": "ingreso",
 "monto": 1509684.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5707,6 +6092,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5717,6 +6103,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5727,6 +6114,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5737,6 +6125,7 @@
 "tipo": "egreso",
 "monto": 1468460.0,
 "glosa": "Materiales eléctricos",
+"dest": "Comercial R y M",
 "cat": "Materiales",
 "com": "",
 "autor": ""
@@ -5897,6 +6286,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Mano de obra: Fierros (multicanchas)",
+"dest": "Héctor Oyarzo",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -5947,6 +6337,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5957,6 +6348,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5967,6 +6359,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5977,6 +6370,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5987,6 +6381,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -5997,6 +6392,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6007,6 +6403,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6017,6 +6414,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6027,6 +6425,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6037,6 +6436,7 @@
 "tipo": "egreso",
 "monto": 1856500.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6047,6 +6447,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6067,6 +6468,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6077,6 +6479,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6087,6 +6490,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6147,6 +6551,7 @@
 "tipo": "egreso",
 "monto": 37560.0,
 "glosa": "Mano de obra: Fierros (multicanchas)",
+"dest": "Héctor Oyarzo",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -6177,6 +6582,7 @@
 "tipo": "egreso",
 "monto": 3700000.0,
 "glosa": "Mano de obra: Fierros (multicanchas)",
+"dest": "Héctor Oyarzo",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -6227,6 +6633,7 @@
 "tipo": "ingreso",
 "monto": 2100000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6257,6 +6664,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6267,6 +6675,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6277,6 +6686,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6297,6 +6707,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Mano de obra: Fierros (multicanchas)",
+"dest": "Héctor Oyarzo",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -6337,6 +6748,7 @@
 "tipo": "egreso",
 "monto": 251790.0,
 "glosa": "Mano de obra: Fierros (multicanchas)",
+"dest": "Héctor Oyarzo",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -6457,6 +6869,7 @@
 "tipo": "egreso",
 "monto": 3023900.0,
 "glosa": "Mano de obra: Fierros (multicanchas)",
+"dest": "Héctor Oyarzo",
 "cat": "Mano de obra",
 "com": "",
 "autor": ""
@@ -6467,6 +6880,7 @@
 "tipo": "ingreso",
 "monto": 10000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6547,6 +6961,7 @@
 "tipo": "egreso",
 "monto": 414000.0,
 "glosa": "Servicios: Ing. calculista",
+"dest": "José Torres",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -6557,6 +6972,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6567,6 +6983,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6637,6 +7054,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6647,6 +7065,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6657,6 +7076,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6677,6 +7097,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -6697,6 +7118,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -6717,6 +7139,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6727,6 +7150,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6737,6 +7161,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6747,6 +7172,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6757,6 +7183,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6767,6 +7194,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6777,6 +7205,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6787,6 +7216,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6797,6 +7227,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6817,6 +7248,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6827,6 +7259,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6847,6 +7280,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6857,6 +7291,7 @@
 "tipo": "egreso",
 "monto": 2737480.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6867,6 +7302,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6877,6 +7313,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6887,6 +7324,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6897,6 +7335,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -6917,6 +7356,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -6937,6 +7377,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -6947,6 +7388,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6957,6 +7399,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6967,6 +7410,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6977,6 +7421,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6987,6 +7432,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -6997,6 +7443,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7017,6 +7464,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7027,6 +7475,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7037,6 +7486,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7047,6 +7497,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7057,6 +7508,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7067,6 +7519,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7087,6 +7540,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7097,6 +7551,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7107,6 +7562,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7117,6 +7573,7 @@
 "tipo": "egreso",
 "monto": 2967750.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7127,6 +7584,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7137,6 +7595,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7147,6 +7606,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -7157,6 +7617,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7167,6 +7628,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7177,6 +7639,7 @@
 "tipo": "egreso",
 "monto": 75928.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -7197,6 +7660,7 @@
 "tipo": "egreso",
 "monto": 76041.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -7207,6 +7671,7 @@
 "tipo": "egreso",
 "monto": 39977.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -7217,6 +7682,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -7227,6 +7693,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7237,6 +7704,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7247,6 +7715,7 @@
 "tipo": "egreso",
 "monto": 3235240.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7257,6 +7726,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7267,6 +7737,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7277,6 +7748,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7287,6 +7759,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7297,6 +7770,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7307,6 +7781,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7317,6 +7792,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7327,6 +7803,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7337,6 +7814,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7347,6 +7825,7 @@
 "tipo": "ingreso",
 "monto": 1000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7357,6 +7836,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7367,6 +7847,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7387,6 +7868,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7427,6 +7909,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7437,6 +7920,7 @@
 "tipo": "egreso",
 "monto": 3421650.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7447,6 +7931,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7457,6 +7942,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7477,6 +7963,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7487,6 +7974,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7497,6 +7985,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -7507,6 +7996,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7517,6 +8007,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7527,6 +8018,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7537,6 +8029,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7547,6 +8040,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7557,6 +8051,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7567,6 +8062,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7577,6 +8073,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7587,6 +8084,7 @@
 "tipo": "ingreso",
 "monto": 3100000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7597,6 +8095,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7607,6 +8106,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7677,6 +8177,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7687,6 +8188,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7697,6 +8199,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7707,6 +8210,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7717,6 +8221,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7727,6 +8232,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7737,6 +8243,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -7777,6 +8284,7 @@
 "tipo": "egreso",
 "monto": 76874.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -7787,6 +8295,7 @@
 "tipo": "egreso",
 "monto": 76873.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -7797,6 +8306,7 @@
 "tipo": "egreso",
 "monto": 76648.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -7817,6 +8327,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7827,6 +8338,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7837,6 +8349,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7847,6 +8360,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7857,6 +8371,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7867,6 +8382,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7877,6 +8393,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -7897,6 +8414,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7907,6 +8425,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7917,6 +8436,7 @@
 "tipo": "egreso",
 "monto": 3768930.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7927,6 +8447,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7937,6 +8458,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7947,6 +8469,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7957,6 +8480,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7967,6 +8491,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -7987,6 +8512,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -7997,6 +8523,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8007,6 +8534,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8017,6 +8545,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8037,6 +8566,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -8067,6 +8597,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -8077,6 +8608,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8087,6 +8619,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8097,6 +8630,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8107,6 +8641,7 @@
 "tipo": "egreso",
 "monto": 3137400.0,
 "glosa": "Servicios: Arquitecto (Vallejos)",
+"dest": "Gabriel Vallejos",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8117,6 +8652,7 @@
 "tipo": "egreso",
 "monto": 77891.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8127,6 +8663,7 @@
 "tipo": "egreso",
 "monto": 78283.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8137,6 +8674,7 @@
 "tipo": "egreso",
 "monto": 77598.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8157,6 +8695,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -8167,6 +8706,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8177,6 +8717,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8187,6 +8728,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8197,6 +8739,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8207,6 +8750,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8237,6 +8781,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -8247,6 +8792,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -8257,6 +8803,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -8267,6 +8814,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -8277,6 +8825,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -8287,6 +8836,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -8297,6 +8847,7 @@
 "tipo": "egreso",
 "monto": 4235700.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -8307,6 +8858,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -8367,6 +8919,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8377,6 +8930,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8387,6 +8941,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8397,6 +8952,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8407,6 +8963,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8417,6 +8974,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8427,6 +8985,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -8437,6 +8996,7 @@
 "tipo": "egreso",
 "monto": 78477.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8447,6 +9007,7 @@
 "tipo": "egreso",
 "monto": 532074.0,
 "glosa": "Préstamo a Corp. Educacional",
+"dest": "Corp. Educacional Futuro",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -8467,6 +9028,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -8477,6 +9039,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8487,6 +9050,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8497,6 +9061,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8507,6 +9072,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8517,6 +9083,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8527,6 +9094,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8537,6 +9105,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8597,6 +9166,7 @@
 "tipo": "egreso",
 "monto": 78561.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8607,6 +9177,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Nehuentué",
 "autor": ""
@@ -8617,6 +9188,7 @@
 "tipo": "egreso",
 "monto": 1000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -8627,6 +9199,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Nehuentué",
 "autor": ""
@@ -8637,6 +9210,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Nehuentué",
 "autor": ""
@@ -8647,6 +9221,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -8657,6 +9232,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Nehuentué",
 "autor": ""
@@ -8667,6 +9243,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -8677,6 +9254,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -8687,6 +9265,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Nehuentué",
 "autor": ""
@@ -8697,6 +9276,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -8707,6 +9287,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -8717,6 +9298,7 @@
 "tipo": "egreso",
 "monto": 1000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Nehuentué",
 "autor": ""
@@ -8747,6 +9329,7 @@
 "tipo": "egreso",
 "monto": 78335.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8757,6 +9340,7 @@
 "tipo": "egreso",
 "monto": 450000.0,
 "glosa": "Servicios: Topógrafo",
+"dest": "Héctor Paichil",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8767,6 +9351,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -8787,6 +9372,7 @@
 "tipo": "ingreso",
 "monto": 4000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8797,6 +9383,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8807,6 +9394,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8817,6 +9405,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8827,6 +9416,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8837,6 +9427,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8847,6 +9438,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -8897,6 +9489,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Nehuentué",
 "autor": ""
@@ -8907,6 +9500,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -8917,6 +9511,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -8927,6 +9522,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Nehuentué",
 "autor": ""
@@ -8937,6 +9533,7 @@
 "tipo": "egreso",
 "monto": 3000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -8947,6 +9544,7 @@
 "tipo": "egreso",
 "monto": 3000000.0,
 "glosa": "Retiro socio (Mario)",
+"dest": "Mario Álvarez",
 "cat": "Retiros socios",
 "com": "Nehuentué",
 "autor": ""
@@ -8967,6 +9565,7 @@
 "tipo": "egreso",
 "monto": 78948.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8977,6 +9576,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -8987,6 +9587,7 @@
 "tipo": "egreso",
 "monto": 1120000.0,
 "glosa": "Servicios: Ing. calculista",
+"dest": "José Torres",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -8997,6 +9598,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9007,6 +9609,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9017,6 +9620,7 @@
 "tipo": "ingreso",
 "monto": 4000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9027,6 +9631,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9037,6 +9642,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9047,6 +9653,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9057,6 +9664,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9077,6 +9685,7 @@
 "tipo": "egreso",
 "monto": 2520000.0,
 "glosa": "Servicios: Arquitecto (Vallejos)",
+"dest": "Gabriel Vallejos",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -9087,6 +9696,7 @@
 "tipo": "egreso",
 "monto": 2379285.0,
 "glosa": "Servicios: Arquitecto (Vallejos)",
+"dest": "Gabriel Vallejos",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -9107,6 +9717,7 @@
 "tipo": "egreso",
 "monto": 79012.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -9117,6 +9728,7 @@
 "tipo": "egreso",
 "monto": 403504.0,
 "glosa": "Préstamo a Corp. Educacional",
+"dest": "Corp. Educacional Futuro",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9137,6 +9749,7 @@
 "tipo": "egreso",
 "monto": 79226.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -9147,6 +9760,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9157,6 +9771,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9167,6 +9782,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9177,6 +9793,7 @@
 "tipo": "ingreso",
 "monto": 4000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9187,6 +9804,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9197,6 +9815,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9207,6 +9826,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9217,6 +9837,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -9257,6 +9878,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -9267,6 +9889,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9277,6 +9900,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9287,6 +9911,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9297,6 +9922,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9307,6 +9933,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9317,6 +9944,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9327,6 +9955,7 @@
 "tipo": "ingreso",
 "monto": 4000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9367,6 +9996,7 @@
 "tipo": "egreso",
 "monto": 79356.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -9377,6 +10007,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9387,6 +10018,7 @@
 "tipo": "egreso",
 "monto": 595170.0,
 "glosa": "Mano de obra: sanitarios",
+"dest": "Pablo Latorre",
 "cat": "Mano de obra",
 "com": "Anticipo, no ejecutó",
 "autor": ""
@@ -9397,6 +10029,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9407,6 +10040,7 @@
 "tipo": "egreso",
 "monto": 4620725.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9417,6 +10051,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9427,6 +10062,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9437,6 +10073,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9447,6 +10084,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9457,6 +10095,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9467,6 +10106,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9477,6 +10117,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9497,6 +10138,7 @@
 "tipo": "egreso",
 "monto": 1710000.0,
 "glosa": "Aporte",
+"dest": "Samuel Chávez",
 "cat": "Aportes",
 "com": "Cosa del socio",
 "autor": ""
@@ -9507,6 +10149,7 @@
 "tipo": "egreso",
 "monto": 39801888.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "La Capitanía",
 "autor": ""
@@ -9517,6 +10160,7 @@
 "tipo": "egreso",
 "monto": 390935.0,
 "glosa": "Impuestos SII",
+"dest": "SII",
 "cat": "Impuestos",
 "com": "",
 "autor": ""
@@ -9527,6 +10171,7 @@
 "tipo": "egreso",
 "monto": 79494.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -9567,6 +10212,7 @@
 "tipo": "egreso",
 "monto": 1000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9597,6 +10243,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9607,6 +10254,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9617,6 +10265,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9627,6 +10276,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9637,6 +10287,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9647,6 +10298,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9657,6 +10309,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9687,6 +10340,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -9697,6 +10351,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9707,6 +10362,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -9717,6 +10373,7 @@
 "tipo": "egreso",
 "monto": 4987713.0,
 "glosa": "Pago deuda inmueble",
+"dest": "Socovesa",
 "cat": "Deuda inmueble",
 "com": "",
 "autor": ""
@@ -9727,6 +10384,7 @@
 "tipo": "ingreso",
 "monto": 4000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9737,6 +10395,7 @@
 "tipo": "ingreso",
 "monto": 4000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9767,6 +10426,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -9777,6 +10437,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9787,6 +10448,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9797,6 +10459,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9807,6 +10470,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9817,6 +10481,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9827,6 +10492,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -9847,6 +10513,7 @@
 "tipo": "egreso",
 "monto": 400000.0,
 "glosa": "Servicios: Revisor arquitectura",
+"dest": "Andrés Angulo",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -9857,6 +10524,7 @@
 "tipo": "egreso",
 "monto": 120000.0,
 "glosa": "Servicios: Notario",
+"dest": "Notaría Manquehual",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -9907,6 +10575,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9917,6 +10586,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9927,6 +10597,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -9937,6 +10608,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9947,6 +10619,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9957,6 +10630,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9967,6 +10641,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9977,6 +10652,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9987,6 +10663,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -9997,6 +10674,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10007,6 +10685,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10017,6 +10696,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10027,6 +10707,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10037,6 +10718,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10047,6 +10729,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10057,6 +10740,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10067,6 +10751,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10077,6 +10762,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10087,6 +10773,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10097,6 +10784,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10107,6 +10795,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10117,6 +10806,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10127,6 +10817,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10137,6 +10828,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10147,6 +10839,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10157,6 +10850,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10167,6 +10861,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10177,6 +10872,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10197,6 +10893,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10207,6 +10904,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10217,6 +10915,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10227,6 +10926,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10237,6 +10937,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10247,6 +10948,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10257,6 +10959,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10267,6 +10970,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10277,6 +10981,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10287,6 +10992,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10297,6 +11003,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10307,6 +11014,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10317,6 +11025,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10327,6 +11036,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10337,6 +11047,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10347,6 +11058,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10357,6 +11069,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10367,6 +11080,7 @@
 "tipo": "egreso",
 "monto": 1000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10377,6 +11091,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10387,6 +11102,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10397,6 +11113,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10407,6 +11124,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10417,6 +11135,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10427,6 +11146,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10437,6 +11157,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10447,6 +11168,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10457,6 +11179,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10467,6 +11190,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10477,6 +11201,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10487,6 +11212,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10497,6 +11223,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10507,6 +11234,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10517,6 +11245,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10527,6 +11256,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10537,6 +11267,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10557,6 +11288,7 @@
 "tipo": "egreso",
 "monto": 90000.0,
 "glosa": "Servicios: Notario",
+"dest": "Notaría Manquehual",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -10567,6 +11299,7 @@
 "tipo": "egreso",
 "monto": 140000.0,
 "glosa": "Servicios: Notario",
+"dest": "Notaría Manquehual",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -10597,6 +11330,7 @@
 "tipo": "egreso",
 "monto": 80001.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -10607,6 +11341,7 @@
 "tipo": "egreso",
 "monto": 79491.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -10617,6 +11352,7 @@
 "tipo": "egreso",
 "monto": 79683.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -10627,6 +11363,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -10637,6 +11374,7 @@
 "tipo": "egreso",
 "monto": 3390157.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10647,6 +11385,7 @@
 "tipo": "egreso",
 "monto": 150000.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -10667,6 +11406,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10677,6 +11417,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10687,6 +11428,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10697,6 +11439,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10707,6 +11450,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10717,6 +11461,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10727,6 +11472,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "",
 "autor": ""
@@ -10737,6 +11483,7 @@
 "tipo": "egreso",
 "monto": 2200000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10747,6 +11494,7 @@
 "tipo": "egreso",
 "monto": 740000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10757,6 +11505,7 @@
 "tipo": "egreso",
 "monto": 80374.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -10767,6 +11516,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10777,6 +11527,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10797,6 +11548,7 @@
 "tipo": "egreso",
 "monto": 2300000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10807,6 +11559,7 @@
 "tipo": "egreso",
 "monto": 81532.0,
 "glosa": "Servicios: Contador",
+"dest": "Vásquez y Fica",
 "cat": "Servicios profesionales",
 "com": "",
 "autor": ""
@@ -10817,6 +11570,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10827,6 +11581,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10837,6 +11592,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10847,6 +11603,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10857,6 +11614,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10867,6 +11625,7 @@
 "tipo": "egreso",
 "monto": 2887498.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10877,6 +11636,7 @@
 "tipo": "egreso",
 "monto": 5000000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10887,6 +11647,7 @@
 "tipo": "egreso",
 "monto": 4000000.0,
 "glosa": "Retiro socio (Gabriel)",
+"dest": "Gabriel Toledo",
 "cat": "Retiros socios",
 "com": "Empresa de Gabriel",
 "autor": ""
@@ -10907,6 +11668,7 @@
 "tipo": "egreso",
 "monto": 800000.0,
 "glosa": "Préstamo a Canchas Bosquemar",
+"dest": "Canchas Bosquemar",
 "cat": "Préstamos otorgados",
 "com": "",
 "autor": ""
@@ -10917,6 +11679,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10927,6 +11690,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10937,6 +11701,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
@@ -10947,6 +11712,7 @@
 "tipo": "ingreso",
 "monto": 5000000.0,
 "glosa": "Arriendo colegio",
+"dest": "Corp. Educacional Futuro",
 "cat": "Ingreso arriendo",
 "com": "",
 "autor": ""
