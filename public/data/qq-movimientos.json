@@ -11158,5 +11158,45 @@
 "cat": "Movimiento de tierra",
 "com": "Arriendo de maquinaria para mover tierra",
 "autor": ""
+},
+{
+"fecha": "2026-07-06",
+"cuenta": "cb-chile",
+"tipo": "ingreso",
+"monto": 2992357.0,
+"glosa": "Aporte de Quinque",
+"cat": "Financiamiento",
+"com": "Financiamiento de Quinque para la obra",
+"autor": ""
+},
+{
+"fecha": "2026-07-06",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 2400000.0,
+"glosa": "Arriendo maquinaria",
+"cat": "Movimiento de tierra",
+"com": "Arriendo de maquinaria para mover tierra (M. Flores)",
+"autor": ""
+},
+{
+"fecha": "2026-07-06",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 437657.0,
+"glosa": "Devolución a Gabriel",
+"cat": "Devolución materiales",
+"com": "Reembolso a Gabriel (por confirmar: reembolso o retiro)",
+"autor": ""
+},
+{
+"fecha": "2026-07-06",
+"cuenta": "cb-chile",
+"tipo": "egreso",
+"monto": 154700.0,
+"glosa": "Traslado de escombros",
+"cat": "Movimiento de tierra",
+"com": "Traslado de escombros (C. Poffald)",
+"autor": ""
 }
 ]
