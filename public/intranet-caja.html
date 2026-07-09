@@ -76,23 +76,25 @@
   /* ---- ÚLTIMOS MOVIMIENTOS: layout 2+feed ---- */
   .quick-b{display:grid;grid-template-columns:1fr 1fr}
   .qb-feat{border-right:1px solid var(--line)}
-  .qb-feat-item{padding:14px 16px}
+  .qb-feat-item{padding:18px 18px;display:flex;flex-direction:column;justify-content:center}
   .qb-feat-item+.qb-feat-item{border-top:1px solid var(--line)}
-  .qb-feat-item .qd{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}
-  .qb-feat-item .qg{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .qb-feat-item .qm{font-family:var(--mono);font-size:1.18rem;font-weight:600;font-variant-numeric:tabular-nums}
-  .qb-row{display:flex;align-items:center;gap:10px;padding:9px 14px}
+  .qb-feat-item .qd{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}
+  .qb-feat-item .qg{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .qb-feat-item .qm{font-family:var(--mono);font-size:1.18rem;font-weight:600;font-variant-numeric:tabular-nums;margin-top:3px}
+  .qb-row{display:flex;align-items:center;gap:11px;padding:12px 14px}
   .qb-row+.qb-row{border-top:1px solid var(--line)}
-  .qb-bar{width:2px;height:28px;border-radius:1px;flex-shrink:0}
+  .qb-bar{width:2px;height:32px;border-radius:1px;flex-shrink:0}
   .qb-info{flex:1;min-width:0}
   .qb-info .qg{font-size:.81rem;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .qb-info .qd{font-size:.67rem;color:var(--muted);margin-top:2px}
+  .qb-info .qd{font-size:.67rem;color:var(--muted);margin-top:4px}
   .qb-row .qm{font-family:var(--mono);font-size:.85rem;font-weight:600;font-variant-numeric:tabular-nums;flex-shrink:0}
   .qprep{color:var(--faint);margin-right:4px}
   .qsep{color:var(--faint);margin:0 4px}
-  .qb-feat-item .qdest{font-size:.76rem;color:var(--muted);margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .qb-feat-item .qdest{font-size:.76rem;color:var(--muted);margin-bottom:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .qb-feat-item .qdest .qname{color:var(--ink);opacity:.82}
   .qb-info .qd .qname{color:var(--ink);opacity:.75}
+  .td-dest{font-size:.72rem;color:var(--muted);margin-top:3px;line-height:1.3}
+  .td-dest .qname{color:var(--ink);opacity:.72}
 
   /* ---- CHARTS 3-col ---- */
   .charts3{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
@@ -247,7 +249,7 @@
 </style>
 </head>
 <body>
-<div class="cb-ver">V10</div>
+<div class="cb-ver">V11</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
@@ -936,7 +938,7 @@
     if(nq){
       const terms = nq.split(/\s+/);
       movShow = movShow.filter(m=>{
-        const hay = _norm([m.fecha, m.fecha.slice(8,10)+' '+MES[+m.fecha.slice(5,7)-1], m.glosa, m.cat,
+        const hay = _norm([m.fecha, m.fecha.slice(8,10)+' '+MES[+m.fecha.slice(5,7)-1], m.glosa, m.dest||'', m.cat,
           empOf(m.cuenta), bancoDe(m.cuenta), m.com, m.monto, fmt(m.monto)].join(' '));
         return terms.every(t=>hay.indexOf(t)>=0);
       });
@@ -951,7 +953,7 @@
     slice.forEach(m=>{
       rows+=`<tr>
         <td>${m.fecha.slice(8,10)} ${MES[+m.fecha.slice(5,7)-1]} <span style="color:var(--faint);font-size:.9em">${m.fecha.slice(0,4)}</span></td>
-        <td>${m.glosa}</td>
+        <td>${m.glosa}${m.dest?`<div class="td-dest"><span class="qprep">${m.tipo==='ingreso'?'de':'a'}</span><span class="qname">${m.dest}</span></div>`:''}</td>
         <td><span class="tag" style="background:var(--panel-2);color:var(--muted);border:1px solid var(--line);cursor:pointer" onclick="setCat('${m.cat.replace(/'/g,'')}')">${m.cat}</span></td>
         <td><span class="minitag">${logoEmp(empOf(m.cuenta))} ${bancoDe(m.cuenta)}</span></td>
         <td class="num pos">${m.tipo==='ingreso'?fmt(m.monto):''}</td>
