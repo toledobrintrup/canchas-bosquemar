@@ -1,0 +1,36 @@
+#!/bin/sh
+# ---------------------------------------------------------------------------
+# Auto-sella la fecha de "Última actualización" de la intranet.
+# Cada vez que 'public/data/qq-movimientos.json' entra en un commit, reescribe
+# su campo "updated" con la fecha de HOY. Así la etiqueta "Última actualización"
+# (Flujo QQ/CB) refleja SIEMPRE el día real en que tocamos las cartolas/datos,
+# sin que nadie tenga que acordarse de cambiar la fecha a mano.
+#
+# Es defensivo: si el archivo no está en el commit, o no hay python3, no hace
+# nada y deja pasar el commit (nunca lo bloquea).
+# ---------------------------------------------------------------------------
+f="public/data/qq-movimientos.json"
+
+# ¿está ese archivo en el commit?
+git diff --cached --name-only 2>/dev/null | grep -qx "$f" || exit 0
+
+# necesitamos python3 para reescribir sólo la línea de la fecha
+command -v python3 >/dev/null 2>&1 || exit 0
+
+today=$(date +%F)
+
+python3 - "$f" "$today" <<'PY' || exit 0
+import sys, re
+f, today = sys.argv[1], sys.argv[2]
+s = open(f, encoding='utf-8').read()
+# reemplaza SOLO el valor de "updated" (sin reflujo del resto del archivo)
+s2, n = re.subn(r'("updated"\s*:\s*")\d{4}-\d{2}-\d{2}(")',
+                r'\g<1>' + today + r'\g<2>', s, count=1)
+if n and s2 != s:
+    open(f, 'w', encoding='utf-8').write(s2)
+    print("pre-commit: 'updated' sellado a " + today)
+PY
+
+# re-agrega el archivo por si la fecha cambió
+git add "$f"
+exit 0

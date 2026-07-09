@@ -11,6 +11,7 @@ var FC = (function () {
   var EMP = { CB: 'Canchas Bosquemar', QQ: 'Quinque' };
   var MES = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
   var MOV = [];
+  var FC_UPDATED = '';   // día de la última actualización de datos (campo "updated" del JSON)
 
   var fmt = function (n) { return (n < 0 ? '−$' : '$') + Math.abs(Math.round(n)).toLocaleString('es-CL'); };
   var fmtM = function (n) { return (n < 0 ? '−$' : '$') + (Math.abs(n) / 1e6).toFixed(1) + 'M'; };
@@ -45,7 +46,7 @@ var FC = (function () {
   };
   var load = function (cb) {
     fetch('data/qq-movimientos.json').then(function (r) { return r.json(); })
-      .then(function (d) { MOV = d; if (cb) cb(); })
+      .then(function (raw) { MOV = Array.isArray(raw) ? raw : (raw.movimientos || []); FC_UPDATED = (raw && raw.updated) || FC_UPDATED; if (cb) cb(); })
       .catch(function (e) { console.error('FC load:', e); if (cb) cb(); });
   };
 
@@ -54,6 +55,7 @@ var FC = (function () {
     fmt: fmt, fmtM: fmtM, corto: corto, signed: signed,
     idsForScope: idsForScope, cuenta: cuenta, saldoCuenta: saldoCuenta, saldoScope: saldoScope,
     periodo: periodo, mesScope: mesScope, sumCat: sumCat, sumGlosa: sumGlosa, load: load,
-    movs: function () { return MOV; }
+    movs: function () { return MOV; },
+    updated: function () { return FC_UPDATED; }
   };
 })();

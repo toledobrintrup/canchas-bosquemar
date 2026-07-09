@@ -242,7 +242,7 @@
 </style>
 </head>
 <body>
-<div class="cb-ver">V8</div>
+<div class="cb-ver">V9</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
@@ -349,7 +349,7 @@
   const fmtM = n => (n<0?'−$':'$') + (Math.abs(n)/1e6).toFixed(1) + 'M';
   const MES  = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
   const USUARIO  = 'Gabriel Toledo';
-  const ULTIMA_ACT = '2026-07-06';
+  let   ULTIMA_ACT = '2026-07-09';   // fallback; el valor real llega del JSON (campo "updated"), sellado en cada actualización de datos
 
   const CUENTAS = [
     { id:'cb-chile', empresa:'CB', banco:'Banco de Chile', saldoIni:0 },        // CB pendiente de data real
@@ -990,7 +990,8 @@
     setupEmpresa();
     fetch('data/qq-movimientos.json')
       .then(r=>r.json())
-      .then(data=>{ data.forEach(m=>MOV.push(m)); MOV.forEach((mm,ix)=>mm._i=ix); })   // carga TODA la data (QQ + CB); el scope filtra
+      .then(raw=>{ const data=Array.isArray(raw)?raw:(raw.movimientos||[]); if(raw&&raw.updated) ULTIMA_ACT=raw.updated;   // "Última actualización" = día en que tocamos los datos (campo "updated" del JSON)
+        data.forEach(m=>MOV.push(m)); MOV.forEach((mm,ix)=>mm._i=ix); })   // carga TODA la data (QQ + CB); el scope filtra
       .catch(e=>console.error('No se pudo cargar movimientos:', e))
       .finally(()=>{ const d=def6m(); dFrom=d.from; dTo=d.to; render(); calInit(); });   // por defecto: últimos 6 meses
   })();
