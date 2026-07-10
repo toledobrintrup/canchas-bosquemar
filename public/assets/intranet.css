@@ -111,8 +111,8 @@ svg{display:block}
 .stab img{height:14px;width:auto;vertical-align:middle;transition:filter .3s ease}
 .stab.on img{filter:brightness(0) invert(1)}
 [data-theme="dark"] .stab.on img{filter:brightness(0)}
-.totales{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:18px;overflow:hidden}
-.totales .th{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;border-bottom:1px solid var(--line);background:transparent}
+.totales{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:18px;overflow:hidden;position:relative}
+.totales .th{display:flex;align-items:center;justify-content:space-between;padding:17px 20px;border-bottom:1px solid var(--line);background:transparent}
 .totales .th h3{color:var(--accent)}
 [data-theme="dark"] .totales .th{background:transparent;border-bottom-color:var(--line)}
 .upd{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;color:var(--muted);background:var(--panel-2);border:1px solid var(--line);padding:5px 11px;border-radius:8px}
@@ -162,7 +162,7 @@ svg{display:block}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;position:relative;scale:1;transition:scale 1.1s cubic-bezier(.22,1,.36,1)}
 .card:hover{scale:1.014;z-index:2}
-.card-h{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line);background:transparent}
+.card-h{display:flex;align-items:center;justify-content:space-between;padding:17px 18px;border-bottom:1px solid var(--line);background:transparent}
 [data-theme="dark"] .card-h{background:transparent;border-bottom-color:var(--line)}
 .card-h h3{color:var(--accent)}
 .card-h a{font-size:.8rem;font-weight:500;color:var(--accent)}
@@ -199,7 +199,7 @@ tfoot td{font-weight:700;font-size:.9rem;background:var(--panel-2);border-top:1p
 .charts{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin-bottom:22px}
 .chart-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;overflow:hidden;position:relative;scale:1;transition:scale 1.1s cubic-bezier(.22,1,.36,1)}
 .chart-card:hover{scale:1.011;z-index:2}
-.chart-card > h3{color:var(--accent);background:transparent;border-bottom:1px solid var(--line);padding:12px 20px;margin:-18px -20px 16px;border-radius:var(--radius) var(--radius) 0 0}
+.chart-card > h3{color:var(--accent);background:transparent;border-bottom:1px solid var(--line);padding:16px 20px;margin:-18px -20px 16px;border-radius:var(--radius) var(--radius) 0 0;display:flex;align-items:center;min-height:22px}
 [data-theme="dark"] .chart-card > h3{background:transparent;border-bottom-color:var(--line)}
 .chart-sub{color:var(--muted);font-size:.79rem;margin:3px 0 16px}
 .chart-card svg{width:100%;height:auto;overflow:visible}
