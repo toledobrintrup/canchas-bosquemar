@@ -263,3 +263,5 @@ tfoot td{font-weight:700;font-size:.9rem;background:var(--panel-2);border-top:1p
 .donut-legend .lg-nm{color:var(--ink);font-size:.82rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .donut-legend .lg-amt{font-family:var(--mono);font-size:.82rem;color:var(--ink);text-align:right}
 .donut-legend .lg-pct{font-family:var(--mono);font-size:.72rem;color:var(--muted);text-align:right}
+/* Sin efecto de agrandar al pasar el mouse (parejo en toda la intranet) */
+.card:hover,.kpi:hover,.chart-card:hover,.totales:hover{scale:1}
