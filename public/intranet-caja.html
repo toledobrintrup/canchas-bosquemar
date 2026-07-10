@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/intranet.css?v=14" />
-<script src="assets/intranet.js?v=14"></script>
+<link rel="stylesheet" href="assets/intranet.css?v=15" />
+<script src="assets/intranet.js?v=15"></script>
 <style>
   /* ---- LOADING SCREEN ---- */
   #loader{position:fixed;inset:0;z-index:999;background:linear-gradient(160deg,#042820,#041c14 55%,#020e0a);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:opacity .5s ease,visibility .5s ease}
@@ -249,7 +249,7 @@
 </style>
 </head>
 <body>
-<div class="cb-ver">V13</div>
+<div class="cb-ver">V14</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
@@ -838,26 +838,46 @@
 
   /* ===== DONUT (egresos o ingresos) ===== */
   function renderDonut(tipo, elId, legId) {
-    const INK=cssv('--ink'),AXIS=cssv('--c-axis'),LINE=cssv('--line');
+    const dark = document.documentElement.getAttribute('data-theme')==='dark';
+    const RAMP  = dark ? ['#2cf0c9','#1cc7a2','#159e7f','#0f7563','#0c5348'] : ['#063b34','#0f6e56','#1d9e75','#5dcaa5','#9fe1cb'];
+    const OTROS = dark ? '#0a3f38' : '#cfe8e0';
+    const TICK  = dark ? '#2b3d38' : '#c3cec9';
+    const INK=cssv('--ink'), MUT=cssv('--muted'), ACC=cssv('--accent');
     const ms = movsInRange(scope).filter(m=>m.tipo===tipo), map = {};
     ms.forEach(m=>map[m.cat]=(map[m.cat]||0)+m.monto);
     const arr = Object.entries(map).map(([k,v])=>({k,v})).sort((a,b)=>b.v-a.v);
     const totalAll = arr.reduce((s,a)=>s+a.v,0);
-    const totalShow = catFilter&&arr.find(a=>a.k===catFilter) ? (map[catFilter]||0) : totalAll;
-    const cx=80,cy=80,r=56,sw=22,C=2*Math.PI*r; let off=0,circ='';
-    arr.forEach((a,i)=>{
-      const seg=totalAll?a.v/totalAll*C:0, dim=catFilter&&a.k!==catFilter;
-      circ+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${COL_CAT[i%COL_CAT.length]}" stroke-width="${sw}" stroke-dasharray="${seg.toFixed(2)} ${(C-seg).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}" opacity="${dim?.17:1}" style="cursor:pointer;transition:opacity .2s" onclick="setCat('${a.k.replace(/'/g,'')}')"/>`;
+    const TOPN=5, shown=[], otros={k:'__otros',v:0,n:0,isOtros:true};   // top 5 + resto agrupado (sin ruido de "0%")
+    arr.forEach((a,i)=>{ if(i<TOPN||a.k===catFilter) shown.push(a); else { otros.v+=a.v; otros.n++; } });
+    const segs = otros.v>0 ? shown.concat([otros]) : shown;
+    const colOf = (s,i)=> s.isOtros ? OTROS : RAMP[Math.min(i,RAMP.length-1)];
+    const cx=80,cy=80,r=56,sw=17,C=2*Math.PI*r; let off=0,circ='';
+    segs.forEach((s,i)=>{
+      const seg=totalAll?s.v/totalAll*C:0, dim=catFilter&&!s.isOtros&&s.k!==catFilter;
+      const clk = s.isOtros ? '' : ` style="cursor:pointer;transition:opacity .2s" onclick="setCat('${s.k.replace(/'/g,'')}')"`;
+      circ+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${colOf(s,i)}" stroke-width="${sw}" stroke-dasharray="${seg.toFixed(2)} ${(C-seg).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}" opacity="${dim?.2:1}"${clk}/>`;
       off+=seg;
     });
-    if(!arr.length) circ=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${LINE}" stroke-width="${sw}"/>`;
+    if(!segs.length) circ=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${TICK}" stroke-width="${sw}"/>`;
+    const totalShow = catFilter&&map[catFilter]!=null ? map[catFilter] : totalAll;
+    const top1 = arr[0], pctTop = totalAll&&top1 ? Math.round(top1.v/totalAll*100) : 0;
+    const shortNm = top1 ? top1.k.split(/[\s/]+/)[0].toLowerCase() : '';
     document.getElementById(elId).innerHTML =
-      `<svg viewBox="0 0 160 160"><g transform="rotate(-90 ${cx} ${cy})">${circ}</g>`+
-      `<text x="${cx}" y="${cy-1}" text-anchor="middle" font-size="18" font-weight="700" fill="${INK}" style="font-family:var(--mono)">${fmtM(totalShow)}</text>`+
-      `<text x="${cx}" y="${cy+14}" text-anchor="middle" font-size="8" fill="${AXIS}" letter-spacing=".5">${catFilter?'FILTRADO':tipo==='egreso'?'EGRESOS':'INGRESOS'}</text></svg>`;
-    document.getElementById(legId).innerHTML = arr.map((a,i)=>{
-      const act=catFilter===a.k, dim=catFilter&&!act;
-      return `<div class="row" style="opacity:${dim?.38:1}" onclick="setCat('${a.k.replace(/'/g,'')}')"><i style="background:${COL_CAT[i%COL_CAT.length]}"></i><div><b>${totalAll?Math.round(a.v/totalAll*100):0}%${act?' ✓':''}</b><span>${a.k}</span></div></div>`;
+      `<svg viewBox="0 0 160 160">`+
+      `<circle cx="${cx}" cy="${cy}" r="71" fill="none" stroke="${TICK}" stroke-width="6" stroke-dasharray="1.5 7.2"/>`+
+      `<g transform="rotate(-90 ${cx} ${cy})">${circ}</g>`+
+      `<text x="${cx}" y="75" text-anchor="middle" font-size="18" font-weight="700" fill="${INK}" style="font-family:var(--mono)">${fmtM(totalShow)}</text>`+
+      `<text x="${cx}" y="89" text-anchor="middle" font-size="7.5" letter-spacing="1.2" fill="${MUT}">${catFilter?'FILTRADO':tipo==='egreso'?'EGRESOS':'INGRESOS'}</text>`+
+      (catFilter||!top1?'':`<text x="${cx}" y="100" text-anchor="middle" font-size="8.5" fill="${ACC}" style="font-family:var(--mono)">${pctTop}% ${shortNm}</text>`)+
+      `</svg>`;
+    const pctFmt = v => { const p=totalAll?v/totalAll*100:0; return (p>0&&p<1?p.toFixed(1):Math.round(p))+'%'; };
+    document.getElementById(legId).innerHTML = segs.map((s,i)=>{
+      const act=catFilter===s.k, dim=catFilter&&!act&&!s.isOtros;
+      const nm = s.isOtros ? `Otros · ${s.n} cat.` : s.k;
+      const attrs = s.isOtros
+        ? `style="opacity:${dim?.4:1};cursor:default"`
+        : `style="opacity:${dim?.4:1};cursor:pointer" onclick="setCat('${s.k.replace(/'/g,'')}')"`;
+      return `<div class="row" ${attrs}><i style="background:${colOf(s,i)}"></i><div class="lg-in"><span class="lg-nm">${nm}${act?' ✓':''}</span><span class="lg-amt">${fmtM(s.v)}</span><span class="lg-pct">${pctFmt(s.v)}</span></div></div>`;
     }).join('') || `<span style="color:var(--muted);font-size:.82rem">Sin ${tipo==='egreso'?'egresos':'ingresos'}</span>`;
   }
 
