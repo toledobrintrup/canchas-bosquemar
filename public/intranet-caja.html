@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/intranet.css?v=15" />
-<script src="assets/intranet.js?v=15"></script>
+<link rel="stylesheet" href="assets/intranet.css?v=16" />
+<script src="assets/intranet.js?v=16"></script>
 <style>
   /* ---- LOADING SCREEN ---- */
   #loader{position:fixed;inset:0;z-index:999;background:linear-gradient(160deg,#042820,#041c14 55%,#020e0a);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:opacity .5s ease,visibility .5s ease}
@@ -42,9 +42,9 @@
   .totales:hover{scale:1.007;z-index:2}
   /* En esta página las .card son full-width como totales → mismo zoom sutil (override solo aquí, no global) */
   .card:hover{scale:1.007}
-  .totales .th{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;border-bottom:1px solid rgba(15,184,156,.28);background:rgba(15,184,156,.07)}
+  .totales .th{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;border-bottom:1px solid var(--line);background:transparent}
   .totales .th h3{color:var(--accent)}
-  [data-theme="dark"] .totales .th{background:rgba(44,240,201,.05);border-bottom-color:rgba(44,240,201,.13)}
+  [data-theme="dark"] .totales .th{background:transparent;border-bottom-color:var(--line)}
   .upd{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;color:var(--muted);background:var(--panel-2);border:1px solid var(--line);padding:5px 11px;border-radius:8px}
   .upd .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
   .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:26px;padding:22px 22px 20px;align-items:center}
@@ -249,7 +249,7 @@
 </style>
 </head>
 <body>
-<div class="cb-ver">V14</div>
+<div class="cb-ver">V15</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 
