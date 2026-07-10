@@ -1,5 +1,5 @@
 {
-"updated": "2026-07-09",
+"updated": "2026-07-10",
 "movimientos": [
 {
 "fecha": "2020-06-03",
@@ -11990,6 +11990,61 @@
 "dest": "César Poffald",
 "cat": "Movimiento de tierra",
 "com": "Traslado de escombros (C. Poffald)",
+"autor": ""
+},
+{
+"fecha": "2026-01-29",
+"cuenta": "cb-bice",
+"tipo": "ingreso",
+"monto": 1000000.0,
+"glosa": "Préstamo de Quinque",
+"dest": "Inversiones Quinque",
+"cat": "Financiamiento",
+"com": "Abono por transferencia de Inversiones Quinque (BICE)",
+"autor": ""
+},
+{
+"fecha": "2026-02-04",
+"cuenta": "cb-bice",
+"tipo": "egreso",
+"monto": 783120.0,
+"glosa": "Pago de crédito",
+"dest": "Banco BICE",
+"cat": "Créditos",
+"com": "Pago de crédito N.Ref 001 — BICE (por confirmar)",
+"autor": ""
+},
+{
+"fecha": "2026-04-13",
+"cuenta": "cb-bice",
+"tipo": "egreso",
+"monto": 70763.0,
+"glosa": "Tasación",
+"dest": "",
+"cat": "Servicios profesionales",
+"com": "Cargo por tasaciones — crédito BICE (por confirmar)",
+"autor": ""
+},
+{
+"fecha": "2026-06-01",
+"cuenta": "cb-bice",
+"tipo": "ingreso",
+"monto": 2200000.0,
+"glosa": "Préstamo de Quinque",
+"dest": "Inversiones Quinque",
+"cat": "Financiamiento",
+"com": "Abono por transferencia de Inversiones Quinque desde B.Chile (BICE)",
+"autor": ""
+},
+{
+"fecha": "2026-06-17",
+"cuenta": "cb-bice",
+"tipo": "egreso",
+"monto": 1824000.0,
+"glosa": "Pago CBR (registro terreno)",
+"dest": "CBR Puerto Montt",
+"cat": "Servicios profesionales",
+"com": "Pago Conservador de Bienes Raíces Puerto Montt — inscripción terreno (por confirmar)",
 "autor": ""
 }
 ]
