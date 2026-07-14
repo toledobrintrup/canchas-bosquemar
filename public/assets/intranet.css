@@ -89,8 +89,8 @@ svg{display:block}
 .topbar .pill{display:none}
 /* Chip de usuario: foto grande redonda + nombre + logout sutil */
 .user{display:flex;align-items:center;gap:12px}
-.av-ring{background:var(--accent);padding:5px;border-radius:50%;flex:none;display:block}
-.user .av{width:53px;height:53px;border-radius:50%;background:#0c2f33;display:grid;place-items:center;color:#eafff9;font-weight:600;font-size:1.02rem;font-family:var(--mono);overflow:hidden;flex:none;box-shadow:0 0 0 2px var(--panel)}
+.av-ring{background:var(--accent);padding:4px;border-radius:50%;flex:none;display:block}
+.user .av{width:48px;height:48px;border-radius:50%;background:#0c2f33;display:grid;place-items:center;color:#eafff9;font-weight:600;font-size:.95rem;font-family:var(--mono);overflow:hidden;flex:none;box-shadow:0 0 0 2px var(--panel)}
 .u-div{width:1px;height:31px;background:var(--line);flex:none;margin:0 2px}
 .theme-seg{display:flex;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:4px;position:relative}
 .ts-thumb{position:absolute;top:4px;left:4px;width:40px;height:34px;border-radius:16px;background:var(--accent);z-index:0;transition:transform .34s cubic-bezier(.34,1.12,.5,1),background-color .42s ease}
