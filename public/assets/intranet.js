@@ -117,16 +117,11 @@ function cbBuildUser() {
       }
     }
     paint();
-    var themeTimer;
     for (var i = 0; i < opts.length; i++) {
       opts[i].addEventListener('click', function () {
         var t = this.getAttribute('data-t');
-        var root = document.documentElement;
-        root.classList.add('theming');   // activa el fundido suave de toda la página
-        root.setAttribute('data-theme', t);
+        document.documentElement.setAttribute('data-theme', t);
         try { localStorage.setItem('cb-theme', t); } catch (e) {}
-        window.clearTimeout(themeTimer);
-        themeTimer = window.setTimeout(function () { root.classList.remove('theming'); }, 480);
         paint();
         window.dispatchEvent(new Event('themechange'));
       });
