@@ -10,6 +10,45 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/intranet.css?v=23">
 <script src="assets/intranet.js?v=23"></script>
+<style>
+  .cred-sum{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0 2px 20px}
+  .cred-sum .cs-lbl{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:500}
+  .cred-sum .cs-v{font-family:var(--mono);font-weight:700;font-size:1.55rem;letter-spacing:-.02em;color:var(--ink)}
+  .cred-sum .cs-sub{font-size:.82rem;color:var(--muted)}
+  .cred{margin-bottom:14px}
+  .cred-estado{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:600;padding:5px 12px;border-radius:20px}
+  .cred-estado .dot{width:7px;height:7px;border-radius:50%}
+  .cred-estado.vig{color:#15824c;background:var(--green-soft);border:1px solid rgba(21,130,76,.22)}
+  .cred-estado.vig .dot{background:#15824c}
+  [data-theme="dark"] .cred-estado.vig{color:#3ad97f;border-color:rgba(58,217,127,.22)}
+  [data-theme="dark"] .cred-estado.vig .dot{background:#3ad97f}
+  .cred-estado.pag{color:var(--muted);background:var(--panel-2);border:1px solid var(--line)}
+  .cred-estado.pag .dot{background:var(--faint)}
+  .cred-body{padding:20px 22px}
+  .cred-hero{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line)}
+  .cred-lbl{font-family:var(--mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);font-weight:500;margin-bottom:9px}
+  .cred-big{font-family:var(--mono);font-weight:700;font-size:2.3rem;letter-spacing:-.03em;line-height:1;color:var(--ink)}
+  .cred-sub{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin-top:9px}
+  .cred-prox{text-align:right}
+  .cred-prox-v{font-family:var(--mono);font-weight:600;font-size:1.3rem;color:var(--accent);line-height:1}
+  .cred-progwrap{padding:16px 0;border-bottom:1px solid var(--line)}
+  .cred-progtop{display:flex;justify-content:space-between;font-size:.82rem;color:var(--muted);margin-bottom:9px;font-family:var(--mono)}
+  .cred-bar{height:8px;background:var(--panel-2);border:1px solid var(--line);border-radius:5px;overflow:hidden}
+  .cred-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#ff7a1a);border-radius:5px}
+  .cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:17px 22px;padding-top:18px}
+  .cred-cell{display:flex;flex-direction:column;gap:4px;min-width:0}
+  .cred-cl{font-size:.72rem;color:var(--muted)}
+  .cred-cv{font-family:var(--mono);font-size:.9rem;color:var(--ink);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cred-cv.st{font-weight:700}
+  .cred-cal{margin-bottom:18px}
+  .cred-caltbl{max-height:440px;overflow:auto}
+  .cred-caltbl table{width:100%;border-collapse:collapse;font-size:.86rem}
+  .cred-caltbl th{text-align:left;padding:11px 22px;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:500;position:sticky;top:0;background:var(--panel);border-bottom:1px solid var(--line);z-index:1}
+  .cred-caltbl th.num,.cred-caltbl td.num{text-align:right}
+  .cred-caltbl td{padding:11px 22px;border-bottom:1px solid var(--line-2);color:var(--ink)}
+  .cred-caltbl td.num{font-family:var(--mono)}
+  .cred-caltbl tr:hover td{background:var(--panel-2)}
+</style>
 </head>
 <body>
 <aside class="side">
@@ -23,13 +62,64 @@
     <div class="right"><div class="user"></div></div>
   </header>
   <div class="content">
-    <div class="soon">
-      <div class="soon-ic"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/></svg></div>
-      <h2>Créditos</h2>
-      <p>Módulo en construcción. Acá llevaremos el detalle de los créditos —Covid, ampliación pabellón nuevo, construcción multicanchas y Canchas Bosquemar— con saldos, cuotas, avance y calendario de pagos.</p>
-      <span class="soon-tag">Próximamente</span>
-    </div>
+    <div class="cred-sum" id="credSum"></div>
+    <div id="creditos"></div>
   </div>
 </div>
+<script>
+(function(){
+  var MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  var fmt=function(n){return (n<0?'−$':'$')+Math.abs(Math.round(n)).toLocaleString('es-CL');};
+  var fdate=function(d){return d.slice(8,10)+' '+MES[+d.slice(5,7)-1]+' '+d.slice(0,4);};
+  var logoEmp=function(e){return e==='CB'?'<img class="lg-cb" src="assets/logo/cb-isotipo.png" alt="CB">':'<img class="lg-qq" src="assets/logo/qq.svg" alt="QQ">';};
+  function calc(c){
+    var capPend=c.cal.reduce(function(s,r){return s+r[1];},0);
+    var intPend=c.cal.reduce(function(s,r){return s+r[2];},0);
+    var pagadas=c.cuotasPagadas, restantes=c.nCuotas-pagadas;
+    var capPagado=c.monto-capPend, saldoPend=capPend+intPend;
+    var totalPagar=pagadas*c.valorCuota+saldoPend, intTotal=totalPagar-c.monto;
+    return {capPend:capPend,intPend:intPend,pagadas:pagadas,restantes:restantes,capPagado:capPagado,saldoPend:saldoPend,intTotal:intTotal,avance:pagadas/c.nCuotas};
+  }
+  function cell(lbl,val,st){return '<div class="cred-cell" title="'+String(val).replace(/"/g,'')+'"><span class="cred-cl">'+lbl+'</span><span class="cred-cv'+(st?' st':'')+'">'+val+'</span></div>';}
+  function renderCredito(c){
+    var k=calc(c);
+    var badge='<span class="cred-estado '+(c.estado==='vigente'?'vig':'pag')+'"><span class="dot"></span>'+(c.estado==='vigente'?'Vigente':'Pagado')+'</span>';
+    var rows=c.cal.map(function(r){return '<tr><td>'+fdate(r[0])+'</td><td class="num">'+fmt(r[1])+'</td><td class="num">'+fmt(r[2])+'</td><td class="num"><b>'+fmt(r[1]+r[2])+'</b></td></tr>';}).join('');
+    return '<div class="totales cred">'+
+      '<div class="th"><h3>'+logoEmp(c.empresa)+' '+c.destino+'</h3>'+badge+'</div>'+
+      '<div class="cred-body">'+
+        '<div class="cred-hero">'+
+          '<div><div class="cred-lbl">Saldo por pagar · '+k.restantes+' cuotas</div><div class="cred-big">'+fmt(k.saldoPend)+'</div>'+
+            '<div class="cred-sub">Capital '+fmt(k.capPend)+' &nbsp;·&nbsp; Interés '+fmt(k.intPend)+'</div></div>'+
+          '<div class="cred-prox"><div class="cred-lbl">Próxima cuota</div><div class="cred-prox-v">'+fmt(c.valorCuota)+'</div><div class="cred-sub">'+fdate(c.cal[0][0])+'</div></div>'+
+        '</div>'+
+        '<div class="cred-progwrap"><div class="cred-progtop"><span>'+k.pagadas+' de '+c.nCuotas+' cuotas pagadas</span><span>'+Math.round(k.avance*100)+'%</span></div>'+
+          '<div class="cred-bar"><i style="width:'+(k.avance*100).toFixed(1)+'%"></i></div></div>'+
+        '<div class="cred-grid">'+
+          cell('Monto original',fmt(c.monto),1)+
+          cell('Cuota mensual',fmt(c.valorCuota))+
+          cell('Tasa',c.tasaAnual.toFixed(2).replace('.',',')+'% anual '+c.tasaTipo)+
+          cell('Capital pagado',fmt(k.capPagado)+' · '+Math.round(k.capPagado/c.monto*100)+'%')+
+          cell('Interés total del crédito',fmt(k.intTotal))+
+          cell('Líquido recibido',fmt(c.liquido))+
+          cell('Gastos otorgamiento',fmt(c.impuesto+c.notario))+
+          cell('Otorgamiento',fdate(c.emision))+
+          cell('Término',fdate(c.termino))+
+          cell('Titular',c.titular)+
+          cell('Banco',c.banco)+
+          cell('N° operación',c.operacion)+
+        '</div>'+
+      '</div></div>'+
+      '<div class="card cred-cal"><div class="card-h"><h3>Calendario de pagos</h3><span style="font-size:.8rem;color:var(--muted)">'+k.restantes+' cuotas restantes</span></div>'+
+      '<div class="cred-caltbl"><table><thead><tr><th>Vencimiento</th><th class="num">Capital</th><th class="num">Interés</th><th class="num">Cuota</th></tr></thead><tbody>'+rows+'</tbody></table></div></div>';
+  }
+  fetch('data/creditos.json?v=1').then(function(r){return r.json();}).then(function(d){
+    document.getElementById('creditos').innerHTML=d.creditos.map(renderCredito).join('');
+    var vig=d.creditos.filter(function(c){return c.estado==='vigente';});
+    var totSaldo=vig.reduce(function(s,c){return s+calc(c).saldoPend;},0);
+    document.getElementById('credSum').innerHTML='<span class="cs-lbl">Deuda vigente</span><span class="cs-v">'+fmt(totSaldo)+'</span><span class="cs-sub">'+vig.length+' crédito'+(vig.length>1?'s':'')+' · al '+fdate(d.updated)+'</span>';
+  }).catch(function(e){console.error('creditos:',e);document.getElementById('creditos').innerHTML='<div class="card" style="padding:20px;color:var(--muted)">No se pudo cargar la información de créditos.</div>';});
+})();
+</script>
 </body>
 </html>
