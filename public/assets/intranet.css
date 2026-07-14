@@ -88,11 +88,19 @@ svg{display:block}
 .theme-btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .topbar .pill{display:none}
 /* Chip de usuario: foto grande redonda + nombre + logout sutil */
-.user{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:44px;padding:4px 8px 4px 4px}
-.user .av{width:40px;height:40px;border-radius:50%;background:#0c2f33;display:grid;place-items:center;color:#eafff9;font-weight:600;font-size:.82rem;font-family:var(--mono);overflow:hidden;flex:none}
+.user{display:flex;align-items:center;gap:10px}
+.av-ring{background:var(--accent);padding:4px;border-radius:50%;flex:none;display:block}
+.user .av{width:44px;height:44px;border-radius:50%;background:#0c2f33;display:grid;place-items:center;color:#eafff9;font-weight:600;font-size:.88rem;font-family:var(--mono);overflow:hidden;flex:none;box-shadow:0 0 0 2px var(--panel)}
+.u-div{width:1px;height:26px;background:var(--line);flex:none;margin:0 2px}
+.theme-seg{display:flex;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:3px}
+.theme-seg .ts-opt{width:33px;height:29px;border-radius:15px;border:0;background:transparent;color:var(--muted);display:grid;place-items:center;cursor:pointer;padding:0;transition:background .15s,color .15s}
+.theme-seg .ts-opt svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.theme-seg .ts-opt.on{background:var(--accent);color:#053d33}
+[data-theme="dark"] .theme-seg .ts-opt.on{color:#04241d}
+.theme-seg .ts-opt:not(.on):hover{color:var(--ink)}
 .user .av img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
 .user .uname{white-space:nowrap;font-weight:600;font-size:.9rem;letter-spacing:-.01em}
-.logout-btn{width:30px;height:30px;border-radius:50%;border:0;background:transparent;color:var(--faint);display:grid;place-items:center;cursor:pointer;transition:.15s;padding:0;margin-left:1px}
+.logout-btn{width:30px;height:30px;border-radius:50%;border:0;background:transparent;color:var(--muted);display:grid;place-items:center;cursor:pointer;transition:.15s;padding:0;margin-left:1px}
 .logout-btn:hover{background:var(--red-soft);color:var(--red)}
 .logout-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 /* Páginas placeholder (módulos en construcción) */

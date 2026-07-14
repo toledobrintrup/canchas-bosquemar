@@ -21,7 +21,7 @@
    client-side: es una puerta, no una caja fuerte. Migrar a Supabase Auth. */
 var CB_SALT = 'cdbmar::v1::';
 var CB_USERS = [
-  { name: 'Gabriel Toledo Brintrup', user: 'toledobrintrup@hotmail.com', hash: 'fbc4a9ddb36954975a3e3d1d63df41ee3b10978de5b87c2e37fc41250e0b791c', photo: 'assets/users/gabriel.jpg' },
+  { name: 'Gabriel Toledo Brintrup', user: 'toledobrintrup@hotmail.com', hash: 'fbc4a9ddb36954975a3e3d1d63df41ee3b10978de5b87c2e37fc41250e0b791c', photo: 'assets/users/gabriel.jpg?v=2' },
   { name: 'Mario Álvarez Sabra',     user: 'mario.alvarez@isiete.cl',    hash: '66b6251ea2399d303cc4996b2fcdb5634e4ebc0fcd812497c0d390315dbb92d4', photo: 'assets/users/mario.jpg' },
   { name: 'Diego Muñoz Fuente Alba', user: 'yeyo',                       hash: 'faa35d944972b54c566536b5c7ea685e224c79531d42646c5af6c6cc30905d3f', photo: 'assets/users/diego.jpg' }
 ];
@@ -86,7 +86,9 @@ function cbBuildUser() {
     ? '<span class="av"><img src="' + photo + '" alt=""></span>'
     : '<span class="av">' + cbInitials(u.name) + '</span>';
   var nom = u.name.split(/\s+/).slice(0, 2).join(' ');
-  box.innerHTML = av + '<span class="uname">' + nom + '</span>' +
+  box.innerHTML = '<span class="av-ring">' + av + '</span>' +
+    '<span class="uname">' + nom + '</span>' +
+    '<span class="u-div"></span>' +
     '<button class="logout-btn" title="Cerrar sesión" aria-label="Cerrar sesión" onclick="cbLogout()">' +
     '<svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l-5-5 5-5M4 12h11"/></svg></button>';
 }
@@ -97,26 +99,32 @@ function cbBuildUser() {
   var MOON = '<svg viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2z"/></svg>';
   function startTheme() {
     var right = document.querySelector('.topbar .right');
-    if (!right || right.querySelector('.theme-btn')) return;
-    var btn = document.createElement('button');
-    btn.className = 'theme-btn';
-    btn.type = 'button';
-    btn.setAttribute('aria-label', 'Cambiar tema claro/oscuro');
-    btn.title = 'Cambiar tema';
+    if (!right || right.querySelector('.theme-seg')) return;
+    var seg = document.createElement('div');
+    seg.className = 'theme-seg';
+    seg.setAttribute('role', 'group');
+    seg.setAttribute('aria-label', 'Tema claro u oscuro');
+    seg.innerHTML =
+      '<button class="ts-opt" type="button" data-t="light" title="Tema claro" aria-label="Tema claro">' + SUN + '</button>' +
+      '<button class="ts-opt" type="button" data-t="dark" title="Tema oscuro" aria-label="Tema oscuro">' + MOON + '</button>';
+    var opts = seg.querySelectorAll('.ts-opt');
     function paint() {
-      var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-      btn.innerHTML = dark ? SUN : MOON;
+      var cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      for (var i = 0; i < opts.length; i++) {
+        opts[i].classList.toggle('on', opts[i].getAttribute('data-t') === cur);
+      }
     }
     paint();
-    btn.addEventListener('click', function () {
-      var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-      var next = dark ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('cb-theme', next);
-      paint();
-      window.dispatchEvent(new Event('themechange'));
-    });
-    right.insertBefore(btn, right.firstChild);
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var t = this.getAttribute('data-t');
+        document.documentElement.setAttribute('data-theme', t);
+        localStorage.setItem('cb-theme', t);
+        paint();
+        window.dispatchEvent(new Event('themechange'));
+      });
+    }
+    right.insertBefore(seg, right.firstChild);
   }
   window.cbStartTheme = startTheme;
 })();
