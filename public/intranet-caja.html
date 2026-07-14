@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/intranet.css?v=24" />
-<script src="assets/intranet.js?v=24"></script>
+<link rel="stylesheet" href="assets/intranet.css?v=25" />
+<script src="assets/intranet.js?v=25"></script>
 <style>
   /* ---- LOADING SCREEN ---- */
   #loader{position:fixed;inset:0;z-index:999;background:linear-gradient(160deg,#042820,#041c14 55%,#020e0a);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:opacity .5s ease,visibility .5s ease}
@@ -242,14 +242,9 @@
   .sr{opacity:1 !important;transform:none !important;transition:none !important}
   .card:hover,.kpi:hover,.chart-card:hover,.totales:hover{scale:1 !important}
   /* ==== fin animaciones apagadas ==== */
-  /* marcador de versión — oculto (color del sidebar); selecciónalo con el mouse para verlo */
-  .cb-ver{position:fixed;top:4px;left:6px;z-index:99999;font:600 10px/1 var(--mono,monospace);letter-spacing:.06em;color:#063b34;user-select:text;-webkit-user-select:text}
-  [data-theme="dark"] .cb-ver{color:#0c1413}
-  .cb-ver:hover{color:#ff7a1a}   /* al pasar el mouse, se ve (naranjo de marca) */
 </style>
 </head>
 <body>
-<div class="cb-ver">V24</div>
 
 <!-- Loading screen movido al login (post-autenticación) -->
 

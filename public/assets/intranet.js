@@ -9,6 +9,17 @@
   document.documentElement.setAttribute('data-theme', t);
 })();
 
+/* 1.5) Marca de versión — visible (oculta) en TODAS las pestañas. Se inyecta al fondo del body.
+   Bumpear aquí junto con ?v=N de los assets. CSS de .cb-ver vive en intranet.css. */
+var CB_VER = 'V25';
+function cbBuildVer() {
+  if (!document.body || document.querySelector('.cb-ver')) return;
+  var d = document.createElement('div');
+  d.className = 'cb-ver';
+  d.textContent = CB_VER;
+  document.body.appendChild(d);
+}
+
 /* 2) Guardia de sesión: sin login → login.html (excepto en la propia login) */
 (function authGate() {
   var page = (location.pathname.split('/').pop() || 'intranet.html').toLowerCase();
@@ -164,6 +175,7 @@ function cbInitNavPill() {
     cbBuildUser();
     if (window.cbStartTheme) window.cbStartTheme();
     cbInitNavPill();
+    cbBuildVer();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();

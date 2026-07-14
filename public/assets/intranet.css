@@ -276,3 +276,9 @@ tfoot td{font-weight:700;font-size:.9rem;background:var(--panel-2);border-top:1p
 /* Sin efecto de agrandar al pasar el mouse (parejo en toda la intranet) */
 .card:hover,.kpi:hover,.chart-card:hover,.totales:hover{scale:1}
 @media (prefers-reduced-motion: reduce){.ts-thumb{transition:none}}
+
+/* ===== Marca de versión — oculta (color del sidebar); selecciónala o pásale el mouse para verla.
+   Se inyecta desde intranet.js (CB_VER) en TODAS las pestañas ===== */
+.cb-ver{position:fixed;top:4px;left:6px;z-index:99999;font:600 10px/1 var(--mono,monospace);letter-spacing:.06em;color:#063b34;user-select:text;-webkit-user-select:text}
+[data-theme="dark"] .cb-ver{color:#0c1413}
+.cb-ver:hover{color:#ff7a1a}   /* al pasar el mouse, se ve (naranjo de marca) */
