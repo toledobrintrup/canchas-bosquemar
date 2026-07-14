@@ -105,21 +105,28 @@ function cbBuildUser() {
     seg.setAttribute('role', 'group');
     seg.setAttribute('aria-label', 'Tema claro u oscuro');
     seg.innerHTML =
+      '<span class="ts-thumb" aria-hidden="true"></span>' +
       '<button class="ts-opt" type="button" data-t="light" title="Tema claro" aria-label="Tema claro">' + SUN + '</button>' +
       '<button class="ts-opt" type="button" data-t="dark" title="Tema oscuro" aria-label="Tema oscuro">' + MOON + '</button>';
     var opts = seg.querySelectorAll('.ts-opt');
     function paint() {
       var cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      seg.setAttribute('data-pos', cur);   // mueve el thumb deslizante
       for (var i = 0; i < opts.length; i++) {
         opts[i].classList.toggle('on', opts[i].getAttribute('data-t') === cur);
       }
     }
     paint();
+    var themeTimer;
     for (var i = 0; i < opts.length; i++) {
       opts[i].addEventListener('click', function () {
         var t = this.getAttribute('data-t');
-        document.documentElement.setAttribute('data-theme', t);
-        localStorage.setItem('cb-theme', t);
+        var root = document.documentElement;
+        root.classList.add('theming');   // activa el fundido suave de toda la página
+        root.setAttribute('data-theme', t);
+        try { localStorage.setItem('cb-theme', t); } catch (e) {}
+        window.clearTimeout(themeTimer);
+        themeTimer = window.setTimeout(function () { root.classList.remove('theming'); }, 480);
         paint();
         window.dispatchEvent(new Event('themechange'));
       });
