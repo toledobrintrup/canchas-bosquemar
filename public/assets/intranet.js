@@ -11,7 +11,7 @@
 
 /* 1.5) Marca de versión — visible (oculta) en TODAS las pestañas. Se inyecta al fondo del body.
    Bumpear aquí junto con ?v=N de los assets. CSS de .cb-ver vive en intranet.css. */
-var CB_VER = 'V29';
+var CB_VER = 'V30';
 function cbBuildVer() {
   if (!document.body || document.querySelector('.cb-ver')) return;
   var d = document.createElement('div');
@@ -57,7 +57,7 @@ var CB_NAV = [
   { href: 'intranet.html', label: 'Resumen', icon: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>' },
   { href: 'intranet-caja.html?e=qq', label: 'Flujo QQ', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.3c0-1.1-1.1-1.8-2.5-1.8s-2.5.7-2.5 1.9 1.1 1.6 2.5 1.9 2.6.8 2.6 2-1.2 1.7-2.6 1.7-2.6-.6-2.6-1.8"/>' },
   { href: 'intranet-caja.html?e=cb', label: 'Flujo CB', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.5 9.3c0-1.1-1.1-1.8-2.5-1.8s-2.5.7-2.5 1.9 1.1 1.6 2.5 1.9 2.6.8 2.6 2-1.2 1.7-2.6 1.7-2.6-.6-2.6-1.8"/>' },
-  { href: 'intranet-creditos.html', label: 'Créditos', icon: '<rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/>' },
+  { href: 'intranet-creditos.html', label: 'Créditos Bancarios', icon: '<rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/>' },
   { href: 'intranet-socovesa.html', label: 'Socovesa', icon: '<rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 21v-4h6v4"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2"/>' },
   { sep: 'Operación' },
   { href: 'intranet-proyecto-cb.html', label: 'Proyecto CB', icon: '<path d="M3 18a9 9 0 0 1 18 0"/><path d="M2 18.3h20v2.2H2z"/><path d="M9.5 9.5V6.5h5v3"/><path d="M12 9.5V4.8"/>' },

@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Créditos · Intranet Canchas Bosquemar</title>
+<title>Créditos Bancarios · Intranet Canchas Bosquemar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/intranet.css?v=29">
-<script src="assets/intranet.js?v=29"></script>
+<link rel="stylesheet" href="assets/intranet.css?v=30">
+<script src="assets/intranet.js?v=30"></script>
 <style>
   /* Paleta del módulo · teal = capital / lo tuyo · naranjo = interés / costo · pizarra = tasa — theme-aware */
   :root{
@@ -69,8 +69,8 @@
 
   .cred-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:14px}
   .cred-chip{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:10px;padding:9px 13px;background:var(--panel-2)}
-  .cred-chip .ci{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;flex:none}
-  .cred-chip .ci svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .cred-chip .ci{display:grid;place-items:center;flex:none;color:var(--muted)}
+  .cred-chip .ci svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
   .cred-chip .cl{font-size:.63rem;text-transform:uppercase;letter-spacing:.05em;color:var(--faint)}
   .cred-chip .cv{font-family:var(--mono);font-weight:700;font-size:.95rem;margin-top:1px;color:var(--ink)}
   .cred-chip .cv small{font-weight:400;color:var(--muted);font-size:.82em}
@@ -122,7 +122,7 @@
   /* Avance · contenido centrado en toda la altura + resumen */
   .cred-avwrap{width:100%;max-width:470px;margin:0 auto;display:flex;flex-direction:column;justify-content:center;gap:20px}
   .cred-avgrid{display:flex;justify-content:center}
-  .cred-avgrid svg{max-width:100%}
+  .cred-avgrid svg{max-width:100%;overflow:visible}
   .cred-avstats{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;border-top:1px solid var(--line);padding-top:16px}
   .cred-avstats>div{display:flex;flex-direction:column;align-items:center;text-align:center;gap:2px;min-width:0}
   .cred-avstats span{font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
@@ -138,7 +138,7 @@
 </aside>
 <div class="main">
   <header class="topbar">
-    <h1>Créditos</h1>
+    <h1>Créditos Bancarios</h1>
     <div class="right"><div class="user"></div></div>
   </header>
   <div class="content">
@@ -194,8 +194,8 @@
       '<circle class="rg-f" cx="39" cy="39" r="31" pathLength="100" stroke-dasharray="'+v.toFixed(1)+' '+(100-v).toFixed(1)+'" transform="rotate(-90 39 39)"></circle>'+
       '</svg><span class="rc">'+label+'</span></span>';
   }
-  function chip(bg,color,iconId,lbl,val){
-    return '<div class="cred-chip"><span class="ci" style="background:'+bg+';color:'+color+'">'+ico(iconId)+'</span>'+
+  function chip(iconId,lbl,val){
+    return '<div class="cred-chip"><span class="ci">'+ico(iconId)+'</span>'+
       '<div><div class="cl">'+lbl+'</div><div class="cv">'+val+'</div></div></div>';
   }
 
@@ -313,10 +313,10 @@
           '<div><div class="cred-fl">Interés total del crédito</div><div class="cred-fv">'+fmt(k.intTotal)+'</div><div class="cred-fs">sobre el capital · tasa '+pc2(c.tasaAnual)+'</div></div></div>'+
       '</div>'+
       '<div class="cred-chips">'+
-        chip('var(--cr-slate-soft)','var(--cr-slate)','pct','Tasa','<b>'+pc2(c.tasaAnual)+'</b> anual <small>· '+pc2(k.tasaMens)+' mensual · '+c.tasaTipo+'</small>')+
-        chip('var(--panel)','var(--muted)','cal','Cuota mensual',fmt(c.valorCuota))+
-        chip('var(--cr-teal-soft)','var(--accent)','cash','Líquido recibido',fmt(c.liquido))+
-        chip('var(--panel)','var(--muted)','doc','Gastos otorgamiento',fmt(c.impuesto+c.notario))+
+        chip('pct','Tasa','<b>'+pc2(c.tasaAnual)+'</b> anual <small>· '+pc2(k.tasaMens)+' mensual · '+c.tasaTipo+'</small>')+
+        chip('cal','Cuota mensual',fmt(c.valorCuota))+
+        chip('cash','Líquido recibido',fmt(c.liquido))+
+        chip('doc','Gastos otorgamiento',fmt(c.impuesto+c.notario))+
       '</div>'+
       '<div class="cred-foot">'+
         '<span>'+ico('cash')+'Monto original <b>'+fmt(c.monto)+'</b></span>'+
