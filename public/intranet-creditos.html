@@ -8,19 +8,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/intranet.css?v=26">
-<script src="assets/intranet.js?v=26"></script>
+<link rel="stylesheet" href="assets/intranet.css?v=27">
+<script src="assets/intranet.js?v=27"></script>
 <style>
   /* Paleta del módulo · teal = capital / lo tuyo · naranjo = interés / costo · pizarra = tasa — theme-aware */
   :root{
     --cr-org:#ff7a1a; --cr-org-ink:#d9640f; --cr-org-soft:rgba(255,122,26,.09); --cr-org-line:rgba(255,122,26,.24);
     --cr-teal-ink:#0a8f7a; --cr-teal-soft:var(--accent-soft); --cr-teal-line:rgba(15,184,156,.26);
-    --cr-slate:#4c6b80; --cr-slate-soft:#eef2f6;
+    --cr-slate:#4c6b80; --cr-slate-soft:#eef2f6; --cr-sq-pend:#e9edeb; --cr-grid:#eef2f0;
   }
   [data-theme="dark"]{
     --cr-org:#ff9a4d; --cr-org-ink:#ffb070; --cr-org-soft:rgba(255,154,77,.13); --cr-org-line:rgba(255,154,77,.26);
     --cr-teal-ink:var(--accent); --cr-teal-line:rgba(44,240,201,.24);
-    --cr-slate:#9fc0d6; --cr-slate-soft:rgba(159,192,214,.12);
+    --cr-slate:#9fc0d6; --cr-slate-soft:rgba(159,192,214,.12); --cr-sq-pend:rgba(255,255,255,.09); --cr-grid:rgba(255,255,255,.08);
   }
 
   .cred-sum{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0 2px 20px}
@@ -93,6 +93,31 @@
   .cred-caltbl tr:hover td{background:var(--panel-2)}
   .cred-cn{font-family:var(--mono);color:var(--cr-teal-ink);font-weight:600}
   .cred-ok{color:var(--green);font-weight:600}
+
+  /* ===== Gráficos (anatomía de la cuota + avance del crédito) ===== */
+  .cred-graf{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
+  @media(max-width:880px){.cred-graf{grid-template-columns:1fr}}
+  .cred-glg{display:inline-flex;gap:12px;font-family:var(--mono);font-size:.68rem;color:var(--muted);font-weight:500}
+  .cred-glg i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:5px}
+  .cred-glg i.teal{background:var(--accent)}
+  .cred-glg i.org{background:#ff7a1a}
+  .cred-glg i.pend{background:var(--cr-sq-pend)}
+  .cred-gbody{padding:16px 16px 14px;display:flex;align-items:center;justify-content:center;min-height:150px}
+  .cred-gbody svg{width:100%;display:block}
+  .cred-gbody svg text{font-family:var(--mono)}
+  .cred-gbody .ax{font-size:10px;fill:var(--faint)}
+  .cred-gbody .cl{font-size:9.5px;fill:var(--muted)}
+  .cred-gbody .cl2{font-size:10px;fill:var(--muted);opacity:.55}
+  .cred-gbody .clteal{font-size:9.5px;fill:var(--cr-teal-ink);font-weight:600}
+  .cred-gbody .clorg{font-size:9.5px;fill:var(--cr-org-ink);font-weight:600}
+  .cred-gbody .hoy{font-size:9.5px;fill:var(--ink);font-weight:600}
+  .cred-gbody .kpi{fill:var(--cr-teal-ink);font-weight:700}
+  .cred-gbody .ccpaid{font-size:10px;fill:var(--cr-teal-ink);font-weight:600}
+  .cgsq{transition:filter .12s}
+  .cgsq:hover{filter:brightness(1.09)}
+  .cgz{cursor:crosshair}
+  .cred-tip{position:fixed;z-index:9999;pointer-events:none;background:var(--ink);color:var(--panel);font-family:var(--mono);font-size:.72rem;line-height:1.55;padding:8px 11px;border-radius:9px;box-shadow:0 8px 22px rgba(0,0,0,.28);opacity:0;transition:opacity .12s;white-space:nowrap}
+  .cred-tip b{font-weight:700}
 </style>
 </head>
 <body>
@@ -126,6 +151,7 @@
 <script>
 (function(){
   var MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  var CREDITOS=[], MOVS=[];
   function fmt(n){return (n<0?'−$':'$')+Math.abs(Math.round(n)).toLocaleString('es-CL');}
   function fdate(d){return d.slice(8,10)+' '+MES[+d.slice(5,7)-1]+' '+d.slice(0,4);}
   function pct(x,dec){return (x*100).toLocaleString('es-CL',{minimumFractionDigits:dec||0,maximumFractionDigits:dec||0})+'%';}
@@ -162,6 +188,98 @@
     return '<div class="cred-chip"><span class="ci" style="background:'+bg+';color:'+color+'">'+ico(iconId)+'</span>'+
       '<div><div class="cl">'+lbl+'</div><div class="cv">'+val+'</div></div></div>';
   }
+
+  // ===== Gráficos · anatomía de la cuota (líneas) + avance del crédito (cuadritos por año) =====
+  // El calendario completo (36) = calPagadas (7 reconstruidas) + cal (29). El coloreado usa las
+  // cuotas pagadas REALES (k.paidN, derivadas de las cartolas), así que el avance sube solo.
+  var G={W:470,H:248,mL:40,mR:12,mT:16,mB:28,yMax:10000000};
+  G.x0=G.mL;G.x1=G.W-G.mR;G.y0=G.mT;G.y1=G.H-G.mB;
+  function GX(i){return G.x0+i/35*(G.x1-G.x0);}
+  function GY(v){return G.y1-v/G.yMax*(G.y1-G.y0);}
+  function gf(n){return (+n).toFixed(1);}
+  function gv(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
+  function pal(){return {teal:gv('--accent'),org:gv('--cr-org'),grid:gv('--cr-grid'),pend:gv('--cr-sq-pend')};}
+  function sched(c){return (c.calPagadas||[]).concat(c.cal);}
+
+  function anatSVG(c,paidN,P){
+    var S=sched(c);
+    var capP=S.map(function(d,i){return [GX(i),GY(d[1])];});
+    var intP=S.map(function(d,i){return [GX(i),GY(d[2])];});
+    var pl=function(pts){return pts.map(function(p,k){return (k?'L':'M')+gf(p[0])+' '+gf(p[1]);}).join(' ');};
+    var Lp=function(pts){return pts.map(function(p){return 'L'+gf(p[0])+' '+gf(p[1]);}).join('');};
+    var intFill='M'+gf(intP[0][0])+' '+gf(G.y1)+Lp(intP)+'L'+gf(intP[35][0])+' '+gf(G.y1)+'Z';
+    var g='';[0,5000000,10000000].forEach(function(t){var y=gf(GY(t));g+='<line x1="'+G.x0+'" y1="'+y+'" x2="'+G.x1+'" y2="'+y+'" stroke="'+P.grid+'"/><text x="'+(G.x0-7)+'" y="'+gf(GY(t)+3)+'" text-anchor="end" class="ax">$'+(t/1e6)+'M</text>';});
+    var xl='';[0,11,23,35].forEach(function(i){xl+='<text x="'+gf(GX(i))+'" y="'+(G.y1+15)+'" text-anchor="middle" class="ax">'+(i+1)+'</text>';});
+    var xh=gf(GX(Math.max(0,paidN)-0.5));
+    var hoy=paidN>0?'<line x1="'+xh+'" y1="'+G.y0+'" x2="'+xh+'" y2="'+G.y1+'" stroke="'+P.org+'" stroke-dasharray="3 3" opacity=".55"/><text x="'+xh+'" y="'+(G.y0-4)+'" text-anchor="middle" class="hoy">hoy</text>':'';
+    var step=(G.x1-G.x0)/35, hz='';
+    for(var i=0;i<36;i++){var est=i<paidN?'pagada':(i===paidN?'próxima':'pendiente');
+      hz+='<rect class="cgz" x="'+gf(GX(i)-step/2)+'" y="'+G.y0+'" width="'+gf(step)+'" height="'+gf(G.y1-G.y0)+'" fill="transparent" data-c="'+(i+1)+'" data-cap="'+S[i][1]+'" data-int="'+S[i][2]+'" data-est="'+est+'" data-fec="'+S[i][0]+'"/>';}
+    var ind='<g class="cgind" style="opacity:0" pointer-events="none"><line x1="0" y1="'+G.y0+'" x2="0" y2="'+G.y1+'" stroke="'+P.grid+'" stroke-width="1"/><circle class="d1" r="3.2" fill="'+P.teal+'"/><circle class="d2" r="3.2" fill="'+P.org+'"/></g>';
+    return '<svg viewBox="0 0 '+G.W+' '+G.H+'" width="100%">'+g+'<path d="'+intFill+'" fill="'+P.org+'" opacity=".12"/>'+
+      '<path d="'+pl(capP)+'" fill="none" stroke="'+P.teal+'" stroke-width="2.2" stroke-linejoin="round"/>'+
+      '<path d="'+pl(intP)+'" fill="none" stroke="'+P.org+'" stroke-width="2.2" stroke-linejoin="round"/>'+
+      '<text x="'+gf(GX(2))+'" y="'+gf(GY(S[2][1])-8)+'" class="clteal">Capital</text><text x="'+gf(GX(2))+'" y="'+gf(GY(S[2][2])+14)+'" class="clorg">Interés</text>'+
+      hoy+xl+ind+hz+'</svg>';
+  }
+
+  function avanceSVG(c,paidN,P){
+    var S=sched(c), YS=['2026','2027','2028'];
+    var cell=18,gap=5,sx=120,cols=12,rows=3,cntW=44,W=sx+cols*cell+(cols-1)*gap+cntW,H=rows*cell+(rows-1)*gap;
+    var pby=[0,0,0]; for(var j=0;j<paidN&&j<36;j++)pby[Math.floor(j/12)]++;
+    var r='';
+    for(var i=0;i<36;i++){var yr=Math.floor(i/12),pos=i%12,x=sx+pos*(cell+gap),y=yr*(cell+gap);
+      var paid=i<paidN,nx=i===paidN,est=paid?'pagada':(nx?'próxima':'pendiente');
+      r+='<rect class="cgsq" x="'+x+'" y="'+y+'" width="'+cell+'" height="'+cell+'" rx="4" fill="'+(paid?P.teal:P.pend)+'"'+(nx?' stroke="'+P.org+'" stroke-width="2"':'')+' data-c="'+(i+1)+'" data-est="'+est+'" data-fec="'+S[i][0]+'"/>';}
+    var xe=sx+cols*cell+(cols-1)*gap;
+    for(var k=0;k<3;k++){var cy=k*(cell+gap)+cell/2+3.5;
+      r+='<text x="112" y="'+cy+'" text-anchor="end" class="ax">'+YS[k]+'</text>';
+      r+='<text x="'+(xe+8)+'" y="'+cy+'" class="'+(pby[k]?'ccpaid':'cl2')+'">'+pby[k]+'/12</text>';}
+    r+='<text x="0" y="'+(H/2-3)+'" class="kpi" style="font-size:23px">'+paidN+'/36</text><text x="0" y="'+(H/2+14)+'" class="cl">'+Math.round(paidN/36*100)+'% pagado</text>';
+    return '<svg viewBox="0 0 '+W+' '+H+'" width="100%" style="max-width:'+W+'px">'+r+'</svg>';
+  }
+
+  function grafBlock(c){
+    return '<div class="cred-graf">'+
+      '<div class="card"><div class="card-h"><h3>Anatomía de la cuota</h3><span class="cred-glg"><span><i class="teal"></i>Capital</span><span><i class="org"></i>Interés</span></span></div><div class="cred-gbody" id="ganat-'+c.id+'"></div></div>'+
+      '<div class="card"><div class="card-h"><h3>Avance del crédito</h3><span class="cred-glg"><span><i class="teal"></i>Pagada</span><span><i class="pend"></i>Pendiente</span></span></div><div class="cred-gbody" id="gav-'+c.id+'"></div></div>'+
+    '</div>';
+  }
+
+  var _tip;
+  function tipEl(){if(!_tip){_tip=document.createElement('div');_tip.className='cred-tip';document.body.appendChild(_tip);}return _tip;}
+  function estTxt(e){return e==='pagada'?'✓ pagada':(e==='próxima'?'próxima cuota':'pendiente');}
+  function wire(el,kind){
+    var t=tipEl();
+    el.addEventListener('mousemove',function(e){
+      var g=e.target.closest('[data-c]'), ind=el.querySelector('.cgind');
+      if(!g){t.style.opacity=0;if(ind)ind.style.opacity=0;return;}
+      var c=g.getAttribute('data-c'),est=g.getAttribute('data-est'),fec=g.getAttribute('data-fec');
+      var html='<b>Cuota '+c+'/36</b> · '+estTxt(est);
+      if(kind==='anat'){var cap=+g.getAttribute('data-cap'),it=+g.getAttribute('data-int');
+        html+='<br>Capital '+fmt(cap)+'<br>Interés '+fmt(it)+'<br>Cuota '+fmt(cap+it);
+        if(ind){var i=+c-1,xx=GX(i);ind.style.opacity=1;
+          var ln=ind.querySelector('line'),d1=ind.querySelector('.d1'),d2=ind.querySelector('.d2');
+          ln.setAttribute('x1',xx);ln.setAttribute('x2',xx);
+          d1.setAttribute('cx',xx);d1.setAttribute('cy',GY(cap));d2.setAttribute('cx',xx);d2.setAttribute('cy',GY(it));}
+      }else{html+='<br>'+(est==='pagada'?'Pagada el ':'Vence ')+fdate(fec);}
+      t.innerHTML=html;t.style.opacity=1;
+      var tx=e.clientX+14,ty=e.clientY+16;
+      if(tx+220>window.innerWidth)tx=e.clientX-210;
+      t.style.left=tx+'px';t.style.top=ty+'px';
+    });
+    el.addEventListener('mouseleave',function(){t.style.opacity=0;var ind=el.querySelector('.cgind');if(ind)ind.style.opacity=0;});
+  }
+
+  function paintOne(c){var k=calc(c,MOVS),P=pal();
+    var an=document.getElementById('ganat-'+c.id),av=document.getElementById('gav-'+c.id);
+    if(an)an.innerHTML=anatSVG(c,k.paidN,P);
+    if(av)av.innerHTML=avanceSVG(c,k.paidN,P);
+  }
+  function initCharts(){CREDITOS.forEach(function(c){paintOne(c);
+    var an=document.getElementById('ganat-'+c.id),av=document.getElementById('gav-'+c.id);
+    if(an)wire(an,'anat');if(av)wire(av,'avance');});}
+  window.addEventListener('themechange',function(){CREDITOS.forEach(paintOne);});
 
   function renderCredito(c,movs){
     var k=calc(c,movs);
@@ -216,18 +334,20 @@
           '<div class="cred-bar"><i style="width:'+(k.avance*100).toFixed(1)+'%"></i></div></div>'+
         resumen+
       '</div></div>'+
-      pagosCard+calCard;
+      grafBlock(c)+pagosCard+calCard;
   }
 
   Promise.all([
-    fetch('data/creditos.json?v=2').then(function(r){return r.json();}),
+    fetch('data/creditos.json?v=3').then(function(r){return r.json();}),
     fetch('data/qq-movimientos.json?v=1').then(function(r){return r.json();}).catch(function(){return {movimientos:[]};})
   ]).then(function(res){
     var d=res[0], movs=(res[1]&&res[1].movimientos)||[];
+    CREDITOS=d.creditos; MOVS=movs;
     document.getElementById('creditos').innerHTML=d.creditos.map(function(c){return renderCredito(c,movs);}).join('');
     var vig=d.creditos.filter(function(c){return c.estado==='vigente';});
     var totSaldo=vig.reduce(function(s,c){return s+calc(c,movs).saldo;},0);
     document.getElementById('credSum').innerHTML='<span class="cs-lbl">Deuda vigente</span><span class="cs-v">'+fmt(totSaldo)+'</span><span class="cs-sub">'+vig.length+' crédito'+(vig.length>1?'s':'')+' · al '+fdate(d.updated)+'</span>';
+    initCharts();
   }).catch(function(e){console.error('creditos:',e);document.getElementById('creditos').innerHTML='<div class="card" style="padding:20px;color:var(--muted)">No se pudo cargar la información de créditos.</div>';});
 })();
 </script>
