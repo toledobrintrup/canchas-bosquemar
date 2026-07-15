@@ -1,5 +1,5 @@
 {
-"updated": "2026-07-10",
+"updated": "2026-07-15",
 "movimientos": [
 {
 "fecha": "2020-06-03",
@@ -137,7 +137,7 @@
 "tipo": "ingreso",
 "monto": 60000000.0,
 "glosa": "Abono de créditos",
-"cat": "Financiamiento",
+"cat": "Abono de créditos",
 "com": "",
 "autor": ""
 },
@@ -521,7 +521,7 @@
 "tipo": "ingreso",
 "monto": 31953.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -531,7 +531,7 @@
 "tipo": "ingreso",
 "monto": 77491444.0,
 "glosa": "Abono de créditos",
-"cat": "Financiamiento",
+"cat": "Abono de créditos",
 "com": "",
 "autor": ""
 },
@@ -541,7 +541,7 @@
 "tipo": "egreso",
 "monto": 31953.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -562,7 +562,7 @@
 "tipo": "egreso",
 "monto": 126.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -1209,7 +1209,7 @@
 "tipo": "egreso",
 "monto": 79366.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -1723,7 +1723,7 @@
 "tipo": "ingreso",
 "monto": 199999040.0,
 "glosa": "Abono de créditos",
-"cat": "Financiamiento",
+"cat": "Abono de créditos",
 "com": "",
 "autor": ""
 },
@@ -2548,7 +2548,7 @@
 "tipo": "ingreso",
 "monto": 204038635.0,
 "glosa": "Abono de créditos",
-"cat": "Financiamiento",
+"cat": "Abono de créditos",
 "com": "",
 "autor": ""
 },
@@ -3252,7 +3252,7 @@
 "tipo": "egreso",
 "monto": 85665.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -3812,7 +3812,7 @@
 "tipo": "ingreso",
 "monto": 938582.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -3822,7 +3822,7 @@
 "tipo": "egreso",
 "monto": 938582.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -3996,7 +3996,7 @@
 "tipo": "egreso",
 "monto": 619.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -4006,7 +4006,7 @@
 "tipo": "egreso",
 "monto": 1364.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -4109,7 +4109,7 @@
 "tipo": "ingreso",
 "monto": 844525.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -4119,7 +4119,7 @@
 "tipo": "egreso",
 "monto": 844525.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -4195,7 +4195,7 @@
 "tipo": "egreso",
 "monto": 557.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -4205,7 +4205,7 @@
 "tipo": "egreso",
 "monto": 4286.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -4352,7 +4352,7 @@
 "tipo": "egreso",
 "monto": 557.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -4362,7 +4362,7 @@
 "tipo": "egreso",
 "monto": 860.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -5016,7 +5016,7 @@
 "tipo": "egreso",
 "monto": 96054.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -5621,7 +5621,7 @@
 "tipo": "ingreso",
 "monto": 861039.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -5675,7 +5675,7 @@
 "tipo": "egreso",
 "monto": 861039.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -5927,7 +5927,7 @@
 "tipo": "egreso",
 "monto": 2348.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -5937,7 +5937,7 @@
 "tipo": "egreso",
 "monto": 568.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6019,7 +6019,7 @@
 "tipo": "ingreso",
 "monto": 770649.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6040,7 +6040,7 @@
 "tipo": "ingreso",
 "monto": 212058.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6060,7 +6060,7 @@
 "tipo": "egreso",
 "monto": 982707.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6176,7 +6176,7 @@
 "tipo": "ingreso",
 "monto": 60000000.0,
 "glosa": "Abono de créditos",
-"cat": "Financiamiento",
+"cat": "Abono de créditos",
 "com": "",
 "autor": ""
 },
@@ -6186,7 +6186,7 @@
 "tipo": "egreso",
 "monto": 4111.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6196,7 +6196,7 @@
 "tipo": "egreso",
 "monto": 635.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6829,7 +6829,7 @@
 "tipo": "egreso",
 "monto": 100095.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6839,7 +6839,7 @@
 "tipo": "ingreso",
 "monto": 751.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6859,7 +6859,7 @@
 "tipo": "egreso",
 "monto": 751.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6901,7 +6901,7 @@
 "tipo": "egreso",
 "monto": 1.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6921,7 +6921,7 @@
 "tipo": "ingreso",
 "monto": 773773.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -6931,7 +6931,7 @@
 "tipo": "egreso",
 "monto": 773773.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -7004,7 +7004,7 @@
 "tipo": "egreso",
 "monto": 3495.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -7014,7 +7014,7 @@
 "tipo": "egreso",
 "monto": 511.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -7899,7 +7899,7 @@
 "tipo": "ingreso",
 "monto": 578449.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -7953,7 +7953,7 @@
 "tipo": "egreso",
 "monto": 578449.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8117,7 +8117,7 @@
 "tipo": "egreso",
 "monto": 401.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8127,7 +8127,7 @@
 "tipo": "egreso",
 "monto": 382.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8147,7 +8147,7 @@
 "tipo": "ingreso",
 "monto": 236748.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8157,7 +8157,7 @@
 "tipo": "egreso",
 "monto": 236748.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8254,7 +8254,7 @@
 "tipo": "egreso",
 "monto": 167.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8264,7 +8264,7 @@
 "tipo": "egreso",
 "monto": 1921.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8577,7 +8577,7 @@
 "tipo": "egreso",
 "monto": 105014.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8879,7 +8879,7 @@
 "tipo": "ingreso",
 "monto": 845210.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8889,7 +8889,7 @@
 "tipo": "egreso",
 "monto": 290.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8899,7 +8899,7 @@
 "tipo": "egreso",
 "monto": 558.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -8909,7 +8909,7 @@
 "tipo": "egreso",
 "monto": 845210.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -9146,7 +9146,7 @@
 "tipo": "egreso",
 "monto": 558.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -9156,7 +9156,7 @@
 "tipo": "egreso",
 "monto": 290.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -9319,7 +9319,7 @@
 "tipo": "ingreso",
 "monto": 42567.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -9362,7 +9362,7 @@
 "tipo": "egreso",
 "monto": 42567.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -9469,7 +9469,7 @@
 "tipo": "egreso",
 "monto": 28.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -9479,7 +9479,7 @@
 "tipo": "egreso",
 "monto": 198.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -9858,7 +9858,7 @@
 "tipo": "ingreso",
 "monto": 300000000.0,
 "glosa": "Abono de créditos",
-"cat": "Financiamiento",
+"cat": "Abono de créditos",
 "com": "",
 "autor": ""
 },
@@ -10202,7 +10202,7 @@
 "tipo": "ingreso",
 "monto": 428384.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -10223,7 +10223,7 @@
 "tipo": "egreso",
 "monto": 428384.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -10320,7 +10320,7 @@
 "tipo": "egreso",
 "monto": 426.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -10330,7 +10330,7 @@
 "tipo": "egreso",
 "monto": 283.0,
 "glosa": "Línea de crédito",
-"cat": "Financiamiento",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
@@ -11319,8 +11319,8 @@
 "cuenta": "qq-chile",
 "tipo": "egreso",
 "monto": 107573.0,
-"glosa": "Línea/abono de crédito",
-"cat": "Financiamiento",
+"glosa": "Línea de crédito",
+"cat": "Línea de crédito",
 "com": "",
 "autor": ""
 },
