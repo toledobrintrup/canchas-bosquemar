@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/intranet.css?v=33">
-<script src="assets/intranet.js?v=33"></script>
+<link rel="stylesheet" href="assets/intranet.css?v=34">
+<script src="assets/intranet.js?v=34"></script>
 <style>
   /* Paleta del módulo · teal = capital / lo tuyo · naranjo = interés / costo · pizarra = tasa — theme-aware */
   :root{
@@ -438,7 +438,7 @@
   window.addEventListener('themechange',function(){if(SEL)paintCharts(find(SEL));});
 
   Promise.all([
-    fetch('data/creditos.json?v=5').then(function(r){return r.json();}),
+    fetch('data/creditos.json?v=6').then(function(r){return r.json();}),
     fetch('data/qq-movimientos.json?v=1').then(function(r){return r.json();}).catch(function(){return {movimientos:[]};})
   ]).then(function(res){
     var d=res[0], movs=(res[1]&&res[1].movimientos)||[];

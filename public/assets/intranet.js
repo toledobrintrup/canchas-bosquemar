@@ -11,7 +11,7 @@
 
 /* 1.5) Marca de versión — visible (oculta) en TODAS las pestañas. Se inyecta al fondo del body.
    Bumpear aquí junto con ?v=N de los assets. CSS de .cb-ver vive en intranet.css. */
-var CB_VER = 'V33';
+var CB_VER = 'V34';
 function cbBuildVer() {
   if (!document.body || document.querySelector('.cb-ver')) return;
   var d = document.createElement('div');
