@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/intranet.css?v=27">
-<script src="assets/intranet.js?v=27"></script>
+<link rel="stylesheet" href="assets/intranet.css?v=28">
+<script src="assets/intranet.js?v=28"></script>
 <style>
   /* Paleta del módulo · teal = capital / lo tuyo · naranjo = interés / costo · pizarra = tasa — theme-aware */
   :root{
@@ -97,12 +97,13 @@
   /* ===== Gráficos (anatomía de la cuota + avance del crédito) ===== */
   .cred-graf{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
   @media(max-width:880px){.cred-graf{grid-template-columns:1fr}}
+  .cred-graf .card{display:flex;flex-direction:column}
   .cred-glg{display:inline-flex;gap:12px;font-family:var(--mono);font-size:.68rem;color:var(--muted);font-weight:500}
   .cred-glg i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:5px}
   .cred-glg i.teal{background:var(--accent)}
   .cred-glg i.org{background:#ff7a1a}
   .cred-glg i.pend{background:var(--cr-sq-pend)}
-  .cred-gbody{padding:16px 16px 14px;display:flex;align-items:center;justify-content:center;min-height:150px}
+  .cred-gbody{padding:16px 16px 14px;display:flex;flex:1;align-items:center;justify-content:center;min-height:150px}
   .cred-gbody svg{width:100%;display:block}
   .cred-gbody svg text{font-family:var(--mono)}
   .cred-gbody .ax{font-size:10px;fill:var(--faint)}
@@ -118,6 +119,15 @@
   .cgz{cursor:crosshair}
   .cred-tip{position:fixed;z-index:9999;pointer-events:none;background:var(--ink);color:var(--panel);font-family:var(--mono);font-size:.72rem;line-height:1.55;padding:8px 11px;border-radius:9px;box-shadow:0 8px 22px rgba(0,0,0,.28);opacity:0;transition:opacity .12s;white-space:nowrap}
   .cred-tip b{font-weight:700}
+  /* Avance · contenido centrado en toda la altura + resumen */
+  .cred-avwrap{width:100%;display:flex;flex-direction:column;justify-content:center;gap:20px}
+  .cred-avgrid{display:flex;justify-content:center}
+  .cred-avgrid svg{max-width:100%}
+  .cred-avstats{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;border-top:1px solid var(--line);padding-top:16px}
+  .cred-avstats>div{display:flex;flex-direction:column;gap:2px;min-width:0}
+  .cred-avstats span{font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+  .cred-avstats b{font-family:var(--mono);font-size:1rem;font-weight:700;color:var(--ink);white-space:nowrap}
+  .cred-avstats small{font-family:var(--mono);font-size:.68rem;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -223,20 +233,29 @@
       hoy+xl+ind+hz+'</svg>';
   }
 
-  function avanceSVG(c,paidN,P){
-    var S=sched(c), YS=['2026','2027','2028'];
-    var cell=18,gap=5,sx=120,cols=12,rows=3,cntW=44,W=sx+cols*cell+(cols-1)*gap+cntW,H=rows*cell+(rows-1)*gap;
+  function avanceHTML(c,k,P){
+    var paidN=k.paidN, S=sched(c), YS=['2026','2027','2028'];
+    var cell=20,gap=6,sx=118,cols=12,rows=3,cntW=46,W=sx+cols*cell+(cols-1)*gap+cntW,H=rows*cell+(rows-1)*gap;
     var pby=[0,0,0]; for(var j=0;j<paidN&&j<36;j++)pby[Math.floor(j/12)]++;
     var r='';
     for(var i=0;i<36;i++){var yr=Math.floor(i/12),pos=i%12,x=sx+pos*(cell+gap),y=yr*(cell+gap);
       var paid=i<paidN,nx=i===paidN,est=paid?'pagada':(nx?'próxima':'pendiente');
       r+='<rect class="cgsq" x="'+x+'" y="'+y+'" width="'+cell+'" height="'+cell+'" rx="4" fill="'+(paid?P.teal:P.pend)+'"'+(nx?' stroke="'+P.org+'" stroke-width="2"':'')+' data-c="'+(i+1)+'" data-est="'+est+'" data-fec="'+S[i][0]+'"/>';}
     var xe=sx+cols*cell+(cols-1)*gap;
-    for(var k=0;k<3;k++){var cy=k*(cell+gap)+cell/2+3.5;
-      r+='<text x="112" y="'+cy+'" text-anchor="end" class="ax">'+YS[k]+'</text>';
-      r+='<text x="'+(xe+8)+'" y="'+cy+'" class="'+(pby[k]?'ccpaid':'cl2')+'">'+pby[k]+'/12</text>';}
-    r+='<text x="0" y="'+(H/2-3)+'" class="kpi" style="font-size:23px">'+paidN+'/36</text><text x="0" y="'+(H/2+14)+'" class="cl">'+Math.round(paidN/36*100)+'% pagado</text>';
-    return '<svg viewBox="0 0 '+W+' '+H+'" width="100%" style="max-width:'+W+'px">'+r+'</svg>';
+    for(var kk=0;kk<3;kk++){var cy=kk*(cell+gap)+cell/2+3.5;
+      r+='<text x="'+(sx-8)+'" y="'+cy+'" text-anchor="end" class="ax">'+YS[kk]+'</text>';
+      r+='<text x="'+(xe+8)+'" y="'+cy+'" class="'+(pby[kk]?'ccpaid':'cl2')+'">'+pby[kk]+'/12</text>';}
+    r+='<text x="0" y="'+(H/2-3)+'" class="kpi" style="font-size:24px">'+paidN+'/36</text><text x="0" y="'+(H/2+15)+'" class="cl">'+Math.round(paidN/36*100)+'% pagado</text>';
+    var grid='<div class="cred-avgrid"><svg viewBox="0 0 '+W+' '+H+'" width="100%" style="max-width:'+W+'px">'+r+'</svg></div>';
+    var abonado=paidN*c.valorCuota, intPag=abonado-k.capPagado;
+    var st=function(lb,v,sm){return '<div><span>'+lb+'</span><b>'+v+'</b><small>'+(sm||'&nbsp;')+'</small></div>';};
+    var stats='<div class="cred-avstats">'+
+      st('Total abonado',fmt(abonado),paidN+(paidN==1?' cuota':' cuotas')+' pagadas')+
+      st('Interés ya pagado',fmt(intPag),'de lo abonado')+
+      st('Falta por pagar',fmt(k.saldo),k.restantes+' cuotas')+
+      st('Término',fdate(c.termino),'última cuota')+
+    '</div>';
+    return '<div class="cred-avwrap">'+grid+stats+'</div>';
   }
 
   function grafBlock(c){
@@ -274,7 +293,7 @@
   function paintOne(c){var k=calc(c,MOVS),P=pal();
     var an=document.getElementById('ganat-'+c.id),av=document.getElementById('gav-'+c.id);
     if(an)an.innerHTML=anatSVG(c,k.paidN,P);
-    if(av)av.innerHTML=avanceSVG(c,k.paidN,P);
+    if(av)av.innerHTML=avanceHTML(c,k,P);
   }
   function initCharts(){CREDITOS.forEach(function(c){paintOne(c);
     var an=document.getElementById('ganat-'+c.id),av=document.getElementById('gav-'+c.id);
