@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/intranet.css?v=35" />
-<script src="assets/intranet.js?v=35"></script>
+<link rel="stylesheet" href="assets/intranet.css?v=36" />
+<script src="assets/intranet.js?v=36"></script>
 <style>
   /* ---- LOADING SCREEN ---- */
   #loader{position:fixed;inset:0;z-index:999;background:linear-gradient(160deg,#042820,#041c14 55%,#020e0a);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:opacity .5s ease,visibility .5s ease}
@@ -915,10 +915,15 @@
     const egrTot = sumAll('egreso');
     rows += `<tr class="et-total"><td>Total egresos</td>${egrMes.map(v=>`<td class="num neg">−${fmt(v).replace('−','')}</td>`).join('')}<td class="num neg total-col">−${fmt(egrTot).replace('−','')}</td></tr>`;
 
-    // SALDO NETO
-    const netoMes = meses.map((_,i)=>ingMes[i]-egrMes[i]);
-    const netoTot = ingTot-egrTot;
-    rows += `<tr class="et-saldo"><td>Saldo neto</td>${netoMes.map(v=>`<td class="num ${v<0?'neg':'pos'}">${v<0?'−':'+'}${fmt(Math.abs(v)).replace('−','')}</td>`).join('')}<td class="num ${netoTot<0?'neg':'pos'} total-col">${netoTot<0?'−':'+'}${fmt(Math.abs(netoTot)).replace('−','')}</td></tr>`;
+    // SALDO EN CUENTA (cierre de mes) = saldo inicial de la(s) cuenta(s) + acumulado hasta fin de ese mes.
+    // OJO: se calcula sobre TODO el histórico (no solo el rango filtrado) para que el saldo sea el real.
+    const _ids = idsForScope(scope);
+    const _ini = _ids.reduce((s,id)=>{const c=CUENTAS.find(x=>x.id===id);return s+(c?c.saldoIni:0);},0);
+    const _allScope = MOV.filter(m=>_ids.includes(m.cuenta));
+    const saldoCierre = mes => _ini + _allScope.filter(m=>m.fecha.slice(0,7)<=mes).reduce((s,m)=>s+signed(m),0);
+    const saldoMes = meses.map(saldoCierre);
+    const saldoFin = saldoMes.length ? saldoMes[saldoMes.length-1] : _ini;
+    rows += `<tr class="et-saldo"><td>Saldo en cuenta (cierre)</td>${saldoMes.map(v=>`<td class="num ${v<0?'neg':'pos'}">${fmt(Math.round(v))}</td>`).join('')}<td class="num ${saldoFin<0?'neg':'pos'} total-col">${fmt(Math.round(saldoFin))}</td></tr>`;
 
     document.getElementById('excelTbl').innerHTML =
       `<thead><tr><th>Categoría</th>${mesHead}<th class="total-col">Total</th></tr></thead><tbody>${rows}</tbody>`;
