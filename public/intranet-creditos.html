@@ -8,19 +8,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/intranet.css?v=34">
-<script src="assets/intranet.js?v=34"></script>
+<link rel="stylesheet" href="assets/intranet.css?v=35">
+<script src="assets/intranet.js?v=35"></script>
 <style>
   /* Paleta del módulo · teal = capital / lo tuyo · naranjo = interés / costo · pizarra = tasa — theme-aware */
   :root{
     --cr-org:#ff7a1a; --cr-org-ink:#d9640f; --cr-org-soft:rgba(255,122,26,.09); --cr-org-line:rgba(255,122,26,.24);
     --cr-teal-ink:#0a8f7a; --cr-teal-soft:var(--accent-soft); --cr-teal-line:rgba(15,184,156,.26); --cr-teal-tint:#d9f1ea;
     --cr-slate:#4c6b80; --cr-slate-soft:#eef2f6; --cr-sq-pend:#e9edeb; --cr-grid:#eef2f0;
+    --cr-dot:rgba(23,33,29,.06); --cr-past:rgba(15,184,156,.075);
   }
   [data-theme="dark"]{
     --cr-org:#ff9a4d; --cr-org-ink:#ffb070; --cr-org-soft:rgba(255,154,77,.13); --cr-org-line:rgba(255,154,77,.26);
     --cr-teal-ink:var(--accent); --cr-teal-line:rgba(44,240,201,.24); --cr-teal-tint:rgba(44,240,201,.15);
     --cr-slate:#9fc0d6; --cr-slate-soft:rgba(159,192,214,.12); --cr-sq-pend:rgba(255,255,255,.09); --cr-grid:rgba(255,255,255,.08);
+    --cr-dot:rgba(255,255,255,.05); --cr-past:rgba(44,240,201,.055);
   }
 
   /* ===== Dashboard (resumen de todos los créditos) ===== */
@@ -35,27 +37,36 @@
   .cred-dupd{font-family:var(--mono);font-size:.72rem;color:var(--muted);margin:0 2px 20px}
   .cred-dupd b{color:var(--ink);font-weight:600}
 
-  /* ===== Línea de tiempo (gantt de créditos) ===== */
+  /* ===== Línea de tiempo (fondo puntos + estela del pasado; hoy refinado detrás de las píldoras) ===== */
   .cred-tlcard{margin-bottom:20px}
-  .cred-tl{padding:18px 22px 22px}
+  .cred-tl{position:relative;padding:34px 22px 22px}
   .cred-tlhint{font-size:.78rem;color:var(--muted)}
-  .cred-tl-axis{position:relative;height:16px;margin-bottom:16px}
+  .cred-tl-axis{position:relative;height:16px;margin-bottom:16px;z-index:3}
   .cred-tl-axis span{position:absolute;transform:translateX(-50%);font-family:var(--mono);font-size:.66rem;color:var(--faint)}
   .cred-tl-plot{position:relative}
-  .cred-tl-g{position:absolute;top:0;bottom:0;width:1px;background:var(--line);opacity:.7}
-  .cred-tl-crow{position:relative;height:46px;margin-bottom:18px}
+  .cred-tl-bg{position:absolute;inset:0;z-index:0;pointer-events:none;border-radius:9px;overflow:hidden;background-image:radial-gradient(circle,var(--cr-dot) 1px,transparent 1.5px);background-size:17px 17px;background-position:2px 2px}
+  .cred-tl-past{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,transparent,var(--cr-past));pointer-events:none}
+  .cred-tl-g{position:absolute;top:0;bottom:0;width:1px;background:var(--line);opacity:.55;z-index:0}
+  .cred-tl-crow{position:relative;height:46px;margin-bottom:30px}
   .cred-tl-bar{position:absolute;top:0;height:46px;border-radius:12px;display:flex;align-items:center;overflow:hidden;cursor:pointer;z-index:2;transition:filter .12s,box-shadow .15s}
   .cred-tl-bar:hover{filter:brightness(1.04)}
   .cred-tl-bar.vig{background:var(--cr-teal-soft);box-shadow:0 3px 14px rgba(15,184,156,.16),inset 0 0 0 1px var(--cr-teal-line)}
-  .cred-tl-bar .fill{position:absolute;left:0;top:0;bottom:0;border-radius:10px;background:var(--accent);opacity:.5}
+  .cred-tl-bar .fill{position:absolute;left:0;top:0;bottom:0;border-radius:12px;background:var(--accent);opacity:.5}
   .cred-tl-bar.pag{background:var(--cr-teal-tint);box-shadow:inset 0 0 0 1px var(--cr-teal-line)}
   .cred-tl-bar .cin{position:relative;z-index:1;font-family:var(--mono);font-size:.68rem;font-weight:700;color:var(--ink);padding:0 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .cred-tl-bar.pag .cin{color:var(--cr-teal-ink)}
   .cred-tl-bar .cpct{position:relative;z-index:1;margin-left:auto;font-family:var(--mono);font-size:.66rem;font-weight:700;color:var(--cr-teal-ink);padding-right:12px;white-space:nowrap;flex:none}
   .cred-tl-bar .cpct.done{color:var(--accent)}
   .cred-tl-bar.on{box-shadow:0 0 0 2px var(--accent),0 3px 16px rgba(15,184,156,.24)}
-  .cred-tl-hoy{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--cr-org);border-radius:2px;z-index:1;pointer-events:none;transform:translateX(-50%)}
-  .cred-tl-flag{position:absolute;top:-18px;transform:translateX(-50%);z-index:5;pointer-events:none;font-family:var(--mono);font-size:.58rem;font-weight:700;color:#fff;background:var(--cr-org);padding:1px 6px;border-radius:5px}
+  .cred-tl-sub{position:absolute;top:50px;font-family:var(--mono);font-size:.62rem;color:var(--muted);display:flex;align-items:center;gap:6px;z-index:2;white-space:nowrap}
+  .cred-tl-sub svg{width:11px;height:11px;fill:none;stroke:currentColor;stroke-width:2;flex:none}
+  .cred-tl-sub b{color:var(--ink);font-weight:600}
+  .cred-tl-hoy{position:absolute;top:6px;bottom:20px;transform:translateX(-50%);pointer-events:none}
+  .cred-tl-hoylbl{position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:6;display:inline-flex;align-items:baseline;gap:5px;background:var(--cr-org);color:#fff;font-family:var(--mono);padding:3px 9px;border-radius:7px;white-space:nowrap;box-shadow:0 2px 8px rgba(255,122,26,.3)}
+  .cred-tl-hoylbl b{font-size:.6rem;font-weight:700;letter-spacing:.06em}
+  .cred-tl-hoylbl span{font-size:.56rem;font-weight:500;opacity:.9}
+  .cred-tl-hoycap{position:absolute;top:21px;left:50%;transform:translateX(-50%);width:6px;height:6px;border-radius:50%;background:var(--cr-org);z-index:6}
+  .cred-tl-hoyline{position:absolute;top:24px;bottom:0;left:50%;transform:translateX(-50%);width:1.75px;background:linear-gradient(180deg,var(--cr-org),rgba(255,122,26,.28));z-index:1}
 
   /* ===== Detalle del crédito ===== */
   .cred{margin-bottom:14px}
@@ -401,21 +412,26 @@
     var pad=(t1-t0)*0.03; t0-=pad; t1+=pad;
     var P=function(t){return (t-t0)/(t1-t0)*100;};
     var hoy=Date.now(), hp=P(hoy), showHoy=hoy>=t0&&hoy<=t1;
+    var td=new Date(), hoyLbl=td.getDate()+' '+MES[td.getMonth()]+' '+td.getFullYear();
     // eje de años
     var y0=new Date(t0).getFullYear(),y1=new Date(t1).getFullYear(),ax='',gl='';
-    for(var y=y0;y<=y1;y++){var xp=P(ts(y+'-01-01')); if(xp>=0&&xp<=100){ax+='<span style="left:'+xp+'%">'+y+'</span>';gl+='<i style="left:'+xp+'%"></i>';}}
-    var hoyLn=showHoy?'<div class="cred-tl-hoy" style="left:'+hp+'%"></div>':'';
-    var hoyFlag=showHoy?'<div class="cred-tl-flag" style="left:'+hp+'%">hoy</div>':'';
+    for(var y=y0;y<=y1;y++){var xp=P(ts(y+'-01-01')); if(xp>=0&&xp<=100){ax+='<span style="left:'+xp+'%">'+y+'</span>';gl+='<i class="cred-tl-g" style="left:'+xp+'%"></i>';}}
+    var hoyEl=showHoy?'<div class="cred-tl-hoy" style="left:'+hp+'%"><div class="cred-tl-hoylbl"><b>HOY</b><span>'+hoyLbl+'</span></div><div class="cred-tl-hoycap"></div><div class="cred-tl-hoyline"></div></div>':'';
+    var past=showHoy?'<div class="cred-tl-past" style="width:'+hp+'%"></div>':'';
+    var clock='<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
     var rows=list.map(function(x){
       var c=x.c,k=x.k,vig=c.estado==='vigente';
       var l=P(ts(c.emision)),w=P(ts(c.termino))-l;
       var inner=vig
         ?'<div class="fill" style="width:'+(k.avance*100).toFixed(1)+'%"></div><span class="cin">'+c.destino+'</span><span class="cpct">'+Math.round(k.avance*100)+'%</span>'
         :'<span class="cin">'+c.destino+'</span><span class="cpct done">✓ pagado</span>';
+      var sub;
+      if(vig){var em=new Date(c.emision+'T00:00:00');var el=(td.getFullYear()-em.getFullYear())*12+(td.getMonth()-em.getMonth());el=Math.max(1,Math.min(c.nCuotas,el));sub=clock+'<b>mes '+el+'</b> de '+c.nCuotas;}
+      else{sub=clock+'<b>'+c.nCuotas+' meses</b> · completado';}
       var tip=c.destino+' · '+fmes(c.emision)+' → '+fmes(c.termino)+' · '+(vig?('vigente '+Math.round(k.avance*100)+'%'):'pagado');
-      return '<div class="cred-tl-crow"><div class="cred-tl-bar '+(vig?'vig':'pag')+'" data-bar="'+c.id+'" title="'+tip+'" onclick="cbSelCred(\''+c.id+'\')" style="left:'+l+'%;width:'+w+'%">'+inner+'</div></div>';
+      return '<div class="cred-tl-crow"><div class="cred-tl-bar '+(vig?'vig':'pag')+'" data-bar="'+c.id+'" title="'+tip+'" onclick="cbSelCred(\''+c.id+'\')" style="left:'+l+'%;width:'+w+'%">'+inner+'</div><div class="cred-tl-sub" style="left:'+l+'%">'+sub+'</div></div>';
     }).join('');
-    return '<div class="cred-tl-axis">'+ax+'</div><div class="cred-tl-plot">'+gl+hoyLn+hoyFlag+rows+'</div>';
+    return hoyEl+'<div class="cred-tl-axis">'+ax+'</div><div class="cred-tl-plot"><div class="cred-tl-bg">'+past+'</div>'+gl+rows+'</div>';
   }
 
   /* ---- Estado + orquestación ---- */
